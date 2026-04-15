@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Cirúrgico de Bolso</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Estudo estruturado de habilidades cirúrgicas</p>
+          <h1>Atlas Cirúrgico de Bolso</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <button type="button" id="clearSavedProgressButton" class="button button-ghost">
+            Limpar progresso
+          </button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <section class="panel sidebar-intro">
+            <div class="panel-heading">
+              <h2>Procedimentos</h2>
+              <span id="procedureCountBadge" class="badge muted">0</span>
+            </div>
+
+            <p class="sidebar-copy">
+              Busque um roteiro, filtre por categoria e escolha como estudar: visão completa ou treino
+              passo a passo.
+            </p>
+
+            <label class="field">
+              <span>Buscar por nome</span>
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Ex.: sonda vesical, sutura, enxertia..."
+                autocomplete="off"
+              />
+            </label>
+
+            <label class="field">
+              <span>Categoria</span>
+              <select id="categoryFilter">
+                <option value="all">Todas as categorias</option>
+              </select>
+            </label>
+
+            <div class="sidebar-actions">
+              <button type="button" id="manualImportButton" class="button button-secondary">
+                Importar JSON
+              </button>
+              <input type="file" id="jsonFileInput" accept=".json,application/json" hidden />
+            </div>
+
+            <div id="loadMessage" class="message hidden" aria-live="polite"></div>
+          </section>
+
+          <section class="panel procedure-panel">
+            <div id="procedureList" class="procedure-list" aria-live="polite"></div>
+          </section>
+        </aside>
+
+        <main class="content">
+          <section id="emptyState" class="empty-state">
+            <div class="empty-state-card">
+              <p class="eyebrow">Seleção de procedimento</p>
+              <h2>Escolha um roteiro para começar</h2>
+              <p>
+                Ao selecionar um procedimento, você poderá alternar entre um modo completo de estudo
+                e um modo de sequência para treino mental passo a passo.
+              </p>
+            </div>
+          </section>
+
+          <section id="procedureView" class="procedure-view hidden">
+            <article class="hero panel">
+              <div class="hero-copy">
+                <div class="hero-meta-row">
+                  <span id="selectedCategory" class="badge category-badge"></span>
+                  <span id="selectedStepSummary" class="badge neutral-badge"></span>
+                </div>
+
+                <h2 id="selectedProcedureName"></h2>
+                <p id="selectedProcedureDescription" class="hero-description"></p>
+
+                <div class="hero-actions">
+                  <button type="button" id="studyModeButton" class="button button-primary">
+                    Modo Estudo
+                  </button>
+                  <button type="button" id="sequenceModeButton" class="button button-secondary">
+                    Modo Sequência
+                  </button>
+                  <button type="button" id="backToStartButton" class="button button-ghost">
+                    Voltar ao início
+                  </button>
+                </div>
+              </div>
+
+              <div id="heroImageWrapper" class="hero-image-wrapper hidden">
+                <img id="heroImage" alt="" />
+              </div>
+            </article>
+
+            <section id="studyView" class="view-block">
+              <div id="overviewCards" class="overview-grid"></div>
+
+              <div class="panel">
+                <div class="section-header">
+                  <div>
+                    <p class="eyebrow">Conteúdo complementar</p>
+                    <h3>Blocos expansíveis</h3>
+                  </div>
+                </div>
+
+                <div id="detailsContainer" class="details-grid"></div>
+              </div>
+
+              <div class="panel">
+                <div class="section-header">
+                  <div>
+                    <p class="eyebrow">Checklist detalhado</p>
+                    <h3>Passos do procedimento</h3>
+                  </div>
+
+                  <button type="button" id="clearChecklistButton" class="button button-ghost">
+                    Desmarcar tudo
+                  </button>
+                </div>
+
+                <div id="checklistProgressText" class="section-meta"></div>
+                <div id="studyStepsList" class="step-list"></div>
+              </div>
+            </section>
+
+            <section id="sequenceSection" class="view-block hidden">
+              <div class="panel sequence-summary">
+                <div class="sequence-topline">
+                  <div>
+                    <p class="eyebrow">Treino de sequência</p>
+                    <h3>Progresso atual</h3>
+                  </div>
+
+                  <div id="sequenceCounter" class="sequence-counter">0 / 0</div>
+                </div>
+
+                <div class="progress-track" aria-hidden="true">
+                  <div id="sequenceProgressBar" class="progress-fill"></div>
+                </div>
+
+                <div class="sequence-controls">
+                  <button type="button" id="previousStepButton" class="button button-ghost">
+                    Voltar um passo
+                  </button>
+                  <button type="button" id="nextStepButton" class="button button-primary">
+                    Próximo passo
+                  </button>
+                  <button type="button" id="restartSequenceButton" class="button button-secondary">
+                    Reiniciar procedimento
+                  </button>
+                </div>
+              </div>
+
+              <div class="panel">
+                <div class="section-header">
+                  <div>
+                    <p class="eyebrow">Sequência revelada</p>
+                    <h3>Passos já exibidos</h3>
+                  </div>
+                </div>
+
+                <div id="sequenceIntro" class="sequence-intro">
+                  Clique em <strong>Próximo passo</strong> para revelar a sequência do procedimento.
+                </div>
+
+                <div id="sequenceStepsList" class="step-list"></div>
+              </div>
+            </section>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

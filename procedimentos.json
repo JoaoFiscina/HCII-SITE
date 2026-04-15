@@ -1,0 +1,278 @@
+{
+  "procedimentos": [
+    {
+      "id": "sonda_vesical_demora",
+      "nome": "Passagem de sonda vesical de demora",
+      "categoria": "Urologia / Procedimentos básicos",
+      "descricao_curta": "Roteiro estruturado para treino de segurança, assepsia e sequência correta da cateterização vesical de demora.",
+      "indicacoes": [
+        "Monitorização rigorosa do débito urinário em pacientes críticos.",
+        "Retenção urinária aguda ou crônica com necessidade de drenagem contínua.",
+        "Preparo ou acompanhamento pós-operatório de procedimentos selecionados.",
+        "Imobilização prolongada com indicação clínica formal."
+      ],
+      "contraindicacoes": [
+        "Suspeita de lesão uretral sem avaliação adequada prévia.",
+        "Trauma pélvico com sangue no meato uretral.",
+        "Estenose uretral conhecida sem planejamento técnico apropriado."
+      ],
+      "preparo": [
+        "Confirmar identidade do paciente, indicação clínica e consentimento.",
+        "Explicar o procedimento e preservar privacidade.",
+        "Selecionar calibre da sonda, volume do balão e material adequado ao caso.",
+        "Realizar higiene das mãos e organizar campo limpo ou estéril."
+      ],
+      "materiais": [
+        "Sonda vesical de demora adequada.",
+        "Sistema coletor fechado.",
+        "Luvas de procedimento e luvas estéreis.",
+        "Solução para antissepsia.",
+        "Lubrificante estéril e seringa com água estéril para insuflar o balão.",
+        "Campos e compressas."
+      ],
+      "acoes_iniciais": [
+        "Rever alergias, principalmente a látex e antissépticos.",
+        "Posicionar o paciente de forma confortável e com exposição mínima necessária.",
+        "Testar o balão antes da inserção, conforme protocolo local."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Apresentação, confirmação e orientação",
+          "descricao": "Confirmar identidade, explicar o procedimento, revisar indicação e obter concordância antes do início da técnica.",
+          "critico": true,
+          "alerta": "Falhas nesta etapa comprometem segurança, ética e adesão do paciente.",
+          "imagem": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 480'%3E%3Crect width='800' height='480' fill='%23edf4f1'/%3E%3Crect x='90' y='70' width='620' height='340' rx='34' fill='%23fff' stroke='%23cfe0db'/%3E%3Crect x='140' y='130' width='250' height='22' rx='11' fill='%231c5c59' opacity='.18'/%3E%3Crect x='140' y='170' width='420' height='26' rx='13' fill='%231e2d2c'/%3E%3Crect x='140' y='214' width='360' height='16' rx='8' fill='%23667b7b'/%3E%3Crect x='140' y='246' width='310' height='16' rx='8' fill='%23667b7b'/%3E%3Crect x='140' y='292' width='220' height='58' rx='29' fill='%231c5c59'/%3E%3Ccircle cx='610' cy='278' r='74' fill='%23f8e6e2'/%3E%3Cpath d='M610 214 632 276 698 276 644 316 664 378 610 340 556 378 576 316 522 276 588 276Z' fill='%23b85042'/%3E%3C/svg%3E"
+        },
+        {
+          "numero": 2,
+          "titulo": "Montagem do material e técnica asséptica",
+          "descricao": "Organizar todos os materiais ao alcance, higienizar as mãos, preparar campo e manter técnica asséptica durante todo o procedimento.",
+          "critico": true,
+          "alerta": "Quebras de assepsia aumentam risco de infecção associada ao cateter."
+        },
+        {
+          "numero": 3,
+          "titulo": "Antissepsia da região",
+          "descricao": "Realizar antissepsia da genitália e do meato uretral conforme a técnica apropriada para o sexo biológico e o protocolo local.",
+          "critico": true
+        },
+        {
+          "numero": 4,
+          "titulo": "Lubrificação e inserção delicada",
+          "descricao": "Lubrificar adequadamente a sonda e inseri-la com delicadeza, sem forçar a progressão diante de resistência anormal.",
+          "critico": true,
+          "alerta": "Resistência importante exige reavaliação técnica e, em alguns casos, ajuda especializada."
+        },
+        {
+          "numero": 5,
+          "titulo": "Confirmação de posicionamento",
+          "descricao": "Aguardar drenagem urinária para confirmar entrada na bexiga antes de insuflar o balão, avançando a sonda conforme técnica segura.",
+          "critico": true
+        },
+        {
+          "numero": 6,
+          "titulo": "Insuflação do balão",
+          "descricao": "Insuflar o balão com o volume prescrito de água estéril após confirmação do posicionamento vesical."
+        },
+        {
+          "numero": 7,
+          "titulo": "Fixação e conexão do sistema",
+          "descricao": "Conectar ao sistema coletor fechado, acomodar sem tração excessiva e fixar a sonda para reduzir trauma uretral."
+        },
+        {
+          "numero": 8,
+          "titulo": "Reavaliação e registro",
+          "descricao": "Garantir conforto do paciente, posicionar a bolsa coletora abaixo do nível vesical e registrar data, calibre e intercorrências."
+        }
+      ],
+      "observacoes_finais": [
+        "Reavaliar diariamente a necessidade de permanência da sonda.",
+        "A bolsa coletora deve permanecer abaixo do nível da bexiga e sem contato com o chão.",
+        "Qualquer dor intensa, sangramento ou ausência de drenagem deve motivar revisão do posicionamento."
+      ],
+      "referencias": [
+        "Rotinas hospitalares de prevenção de infecção do trato urinário associada a cateter.",
+        "Materiais de ensino de semiotécnica e procedimentos básicos."
+      ],
+      "imagem_capa": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 640'%3E%3Crect width='960' height='640' fill='%23eef5f2'/%3E%3Ccircle cx='145' cy='118' r='88' fill='%23dcece8'/%3E%3Ccircle cx='812' cy='126' r='112' fill='%23f7e8e2'/%3E%3Crect x='96' y='96' width='768' height='448' rx='42' fill='%23fff' stroke='%23dbe8e3'/%3E%3Ctext x='156' y='212' font-size='56' font-family='Georgia' fill='%231e2d2c'%3ESonda vesical de demora%3C/text%3E%3Crect x='156' y='248' width='506' height='24' rx='12' fill='%23607373'/%3E%3Crect x='156' y='298' width='412' height='18' rx='9' fill='%23607373' opacity='.78'/%3E%3Crect x='156' y='352' width='280' height='72' rx='36' fill='%231c5c59'/%3E%3Ctext x='206' y='398' font-size='31' font-family='Georgia' fill='%23fff'%3EModo Estudo%3C/text%3E%3Crect x='688' y='226' width='96' height='190' rx='48' fill='none' stroke='%231c5c59' stroke-width='16'/%3E%3Ccircle cx='736' cy='446' r='40' fill='none' stroke='%231c5c59' stroke-width='16'/%3E%3Cpath d='M736 182V226' stroke='%231c5c59' stroke-width='16' stroke-linecap='round'/%3E%3C/svg%3E"
+    },
+    {
+      "id": "sutura_simples_interrompida",
+      "nome": "Sutura simples interrompida",
+      "categoria": "Cirurgia geral / Técnica básica",
+      "descricao_curta": "Treino dos princípios da sutura simples interrompida com foco em aproximação anatômica, eversão e cuidado com a tensão.",
+      "indicacoes": [
+        "Fechamento de feridas lineares limpas com bordas aproximáveis.",
+        "Situações em que se deseja controle individual de cada ponto.",
+        "Áreas em que a retirada seletiva de pontos pode ser útil."
+      ],
+      "contraindicacoes": [
+        "Feridas contaminadas sem indicação adequada de fechamento primário.",
+        "Tensão excessiva sem estratégia complementar para descarga."
+      ],
+      "preparo": [
+        "Avaliar profundidade da ferida e necessidade de hemostasia.",
+        "Escolher fio, agulha e instrumental conforme tecido e localização.",
+        "Posicionar o campo de modo confortável e com boa iluminação."
+      ],
+      "materiais": [
+        "Porta-agulhas.",
+        "Pinça anatômica ou Adson.",
+        "Fio de sutura adequado.",
+        "Tesoura e material para antissepsia."
+      ],
+      "acoes_iniciais": [
+        "Inspecionar alinhamento das bordas.",
+        "Planejar distância simétrica da agulha em relação à margem.",
+        "Identificar áreas de maior tensão antes do primeiro ponto."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Alinhar e expor as bordas da ferida",
+          "descricao": "Visualizar completamente a ferida, remover obstáculos à visão e alinhar as bordas para planejar pontos simétricos.",
+          "critico": true,
+          "alerta": "Mau alinhamento inicial favorece degraus, má coaptação e pior resultado estético."
+        },
+        {
+          "numero": 2,
+          "titulo": "Passar a agulha no primeiro lado",
+          "descricao": "Introduzir a agulha perpendicularmente à pele, respeitando distância uniforme em relação à borda e profundidade suficiente para boa ancoragem."
+        },
+        {
+          "numero": 3,
+          "titulo": "Emergir e repetir no lado oposto",
+          "descricao": "Repetir o movimento no lado oposto mantendo espelhamento do trajeto para garantir coaptação anatômica."
+        },
+        {
+          "numero": 4,
+          "titulo": "Ajustar a tensão do fio",
+          "descricao": "Aproximar as bordas sem estrangulamento, buscando leve eversão e evitando isquemia tecidual.",
+          "critico": true,
+          "alerta": "Tensão excessiva pode marcar a pele e comprometer perfusão local."
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar o nó cirúrgico",
+          "descricao": "Confeccionar nó seguro com quantidade adequada de lançadas, mantendo estabilidade sem comprimir excessivamente os tecidos."
+        },
+        {
+          "numero": 6,
+          "titulo": "Cortar as pontas do fio",
+          "descricao": "Deixar pontas com comprimento suficiente para segurança do nó e futura remoção."
+        },
+        {
+          "numero": 7,
+          "titulo": "Repetir em intervalos regulares",
+          "descricao": "Distribuir os demais pontos de maneira homogênea ao longo da ferida, corrigindo pequenas assimetrias durante o fechamento."
+        },
+        {
+          "numero": 8,
+          "titulo": "Revisar hemostasia e coaptação final",
+          "descricao": "Ao término, confirmar hemostasia, alinhamento, tensão adequada e orientação pós-procedimento."
+        }
+      ],
+      "observacoes_finais": [
+        "A sutura simples interrompida oferece segurança, pois a falha de um ponto não compromete necessariamente os demais.",
+        "Em áreas de maior tensão, pode ser necessário associar pontos profundos ou técnicas de alívio."
+      ],
+      "referencias": [
+        "Textos clássicos de técnica cirúrgica e treinamento de habilidades manuais.",
+        "Protocolos de fechamento cutâneo de ambulatório cirúrgico."
+      ],
+      "imagem_capa": ""
+    },
+    {
+      "id": "enxertia_cutanea",
+      "nome": "Enxertia cutânea",
+      "categoria": "Cirurgia plástica / Habilidades cirúrgicas II",
+      "descricao_curta": "Roteiro de estudo sobre princípios técnicos dos enxertos cutâneos, com foco em indicação, tipos, integração e vigilância de complicações.",
+      "indicacoes": [
+        "Cobertura de áreas cruentas bem vascularizadas sem possibilidade de sutura primária.",
+        "Reconstrução de áreas extensas quando o tecido local é insuficiente para retalho.",
+        "Cobertura de feridas crônicas com leito adequadamente preparado."
+      ],
+      "contraindicacoes": [
+        "Insuficiência vascular do leito receptor."
+      ],
+      "preparo": [
+        "Avaliar vascularização e preparo do leito receptor.",
+        "Definir tipo de enxerto conforme necessidade anatômica, funcional e extensão da área.",
+        "Selecionar área doadora apropriada para o enxerto planejado."
+      ],
+      "materiais": [
+        "Instrumental básico para preparo do leito e retirada do enxerto.",
+        "Coberturas para fixação e proteção do enxerto.",
+        "Material para curativo da área doadora."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o enxerto cutâneo depende de novo suprimento sanguíneo vindo do leito receptor.",
+        "Classificar o enxerto por composição, origem, espessura e forma de processamento.",
+        "Confirmar que o leito receptor é capaz de sustentar a integração do enxerto."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Definir a necessidade reconstrutiva",
+          "descricao": "Avaliar a ferida e reconhecer situações em que a enxertia cutânea é mais indicada do que fechamento primário ou retalhos locais.",
+          "critico": true,
+          "alerta": "Indicação inadequada compromete o resultado desde o planejamento."
+        },
+        {
+          "numero": 2,
+          "titulo": "Excluir contraindicação absoluta",
+          "descricao": "Avaliar o leito receptor e excluir insuficiência vascular relevante antes de prosseguir.",
+          "critico": true,
+          "alerta": "Leito receptor inadequado inviabiliza a integração do enxerto."
+        },
+        {
+          "numero": 3,
+          "titulo": "Definir composição e origem do enxerto",
+          "descricao": "Classificar o enxerto quanto à composição e à origem para orientar a estratégia reconstrutiva."
+        },
+        {
+          "numero": 4,
+          "titulo": "Escolher a espessura adequada",
+          "descricao": "Selecionar enxerto de pele total ou parcial conforme área receptora, necessidade funcional e extensão da cobertura.",
+          "critico": true,
+          "alerta": "A escolha inadequada da espessura pode prejudicar integração, estabilidade e resultado funcional."
+        },
+        {
+          "numero": 5,
+          "titulo": "Selecionar área doadora",
+          "descricao": "Escolher o sítio doador conforme o tipo de enxerto e o objetivo estético-funcional."
+        },
+        {
+          "numero": 6,
+          "titulo": "Aplicar o enxerto no leito receptor",
+          "descricao": "Posicionar o enxerto sobre área receptora bem vascularizada e devidamente preparada, garantindo contato íntimo e estável.",
+          "critico": true,
+          "alerta": "A qualidade do leito receptor é determinante para a pega do enxerto."
+        },
+        {
+          "numero": 7,
+          "titulo": "Acompanhar as fases de integração",
+          "descricao": "Reconhecer aderência por fibrina, embebição plasmática, inosculação, neovascularização e integração final."
+        },
+        {
+          "numero": 8,
+          "titulo": "Vigiar complicações e causas de falha",
+          "descricao": "Monitorar seroma, hematoma, deiscência, infecção, cicatrização hipertrófica e insuficiência vascular.",
+          "critico": true,
+          "alerta": "Espessura excessiva, tensão e avaliação inadequada do leito aumentam risco de falha."
+        }
+      ],
+      "observacoes_finais": [
+        "Enxertos de pele total tendem a melhor resultado estético e menor contração secundária.",
+        "Enxertos de pele parcial são úteis em áreas extensas e costumam integrar-se bem ao leito receptor."
+      ],
+      "referencias": [
+        "Goffi. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia.",
+        "Sabiston. Tratado de cirurgia.",
+        "Mélega. Cirurgia Plástica: Fundamentos e Arte."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
