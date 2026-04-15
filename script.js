@@ -87,6 +87,9 @@ const elements = {
   previousStepButton: document.querySelector("#previousStepButton"),
   nextStepButton: document.querySelector("#nextStepButton"),
   restartSequenceButton: document.querySelector("#restartSequenceButton"),
+  mobilePreviousStepButton: document.querySelector("#mobilePreviousStepButton"),
+  mobileNextStepButton: document.querySelector("#mobileNextStepButton"),
+  mobileRestartSequenceButton: document.querySelector("#mobileRestartSequenceButton"),
   sequenceCounter: document.querySelector("#sequenceCounter"),
   sequenceProgressBar: document.querySelector("#sequenceProgressBar"),
   sequenceIntro: document.querySelector("#sequenceIntro"),
@@ -257,15 +260,19 @@ function bindEvents() {
   });
 
   elements.restartSequenceButton.addEventListener("click", () => {
-    const procedure = getSelectedProcedure();
+    restartSequence();
+  });
 
-    if (!procedure) {
-      return;
-    }
+  elements.mobilePreviousStepButton.addEventListener("click", () => {
+    updateSequenceBy(-1);
+  });
 
-    ensureProcedureProgress(procedure.id).sequenceIndex = 0;
-    persistState();
-    renderSequenceView(procedure);
+  elements.mobileNextStepButton.addEventListener("click", () => {
+    updateSequenceBy(1);
+  });
+
+  elements.mobileRestartSequenceButton.addEventListener("click", () => {
+    restartSequence();
   });
 
   elements.procedureList.addEventListener("click", (event) => {
@@ -293,6 +300,8 @@ function bindEvents() {
 
     toggleChecklistStep(procedure.id, Number(checkbox.dataset.stepNumber), checkbox.checked);
   });
+
+  document.addEventListener("keydown", handleSequenceShortcuts);
 }
 
 async function bootstrapCatalog() {
@@ -1082,7 +1091,8 @@ function normalizeProcedureRecord(rawProcedure, fileInfo, index) {
       descricao,
       critico: Boolean(rawStep.critico),
       alerta: safeText(rawStep.alerta),
-      imagem: resolveMediaPath(rawStep.imagem)
+      imagem: resolveMediaPath(rawStep.imagem),
+      subacoes: normalizeStepSubactions(rawStep.subacoes)
     });
   });
 
@@ -1113,6 +1123,29 @@ function normalizeProcedureRecord(rawProcedure, fileInfo, index) {
   };
 
   return { ok: true, procedure, issues: [] };
+}
+
+function normalizeStepSubactions(rawSubactions) {
+  if (!Array.isArray(rawSubactions)) {
+    return [];
+  }
+
+  return rawSubactions
+    .map((item) => {
+      if (!isPlainObject(item)) {
+        return null;
+      }
+
+      const rotulo = safeText(item.rotulo);
+      const texto = safeText(item.texto);
+
+      if (!rotulo || !texto) {
+        return null;
+      }
+
+      return { rotulo, texto };
+    })
+    .filter(Boolean);
 }
 
 async function importLocalFiles(fileList) {
@@ -1515,37 +1548,12 @@ function renderStudyView(procedure) {
   elements.checklistProgressText.textContent = `${checklistCount} de ${procedure.passos.length} passos marcados como concluídos.`;
 
   elements.studyStepsList.innerHTML = procedure.passos
-    .map((step) => {
-      const checked = progress.checklist.includes(step.numero);
-
-      return `
-        <article class="step-card ${checked ? "is-checked" : ""} ${step.critico ? "is-critical" : ""}">
-          <div class="step-topline">
-            <div class="step-title-group">
-              <span class="step-number">${step.numero}</span>
-              <div class="step-meta">
-                <h4>${escapeHtml(step.titulo)}</h4>
-                <div class="step-badges">
-                  ${step.critico ? '<span class="badge critical-badge">Etapa crítica</span>' : ""}
-                  ${checked ? '<span class="badge checked-badge">Concluído</span>' : ""}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="step-description">${escapeHtml(step.descricao)}</p>
-          ${step.alerta ? `<div class="step-alert">${escapeHtml(step.alerta)}</div>` : ""}
-          ${step.imagem ? createImageBlock(step.imagem, `Imagem do passo ${step.numero}: ${step.titulo}`) : ""}
-
-          <div class="step-actions">
-            <label class="step-check">
-              <input type="checkbox" data-step-number="${step.numero}" ${checked ? "checked" : ""} />
-              <span>Marcar como concluído</span>
-            </label>
-          </div>
-        </article>
-      `;
-    })
+    .map((step) =>
+      createStepCard(step, {
+        checked: progress.checklist.includes(step.numero),
+        showChecklist: true
+      })
+    )
     .join("");
 }
 
@@ -1557,9 +1565,7 @@ function renderSequenceView(procedure) {
 
   elements.sequenceCounter.textContent = `${progress.sequenceIndex} / ${totalSteps}`;
   elements.sequenceProgressBar.style.width = `${percentage}%`;
-  elements.previousStepButton.disabled = progress.sequenceIndex === 0;
-  elements.nextStepButton.disabled = progress.sequenceIndex >= totalSteps;
-  elements.restartSequenceButton.disabled = progress.sequenceIndex === 0;
+  syncSequenceControls(progress.sequenceIndex, totalSteps);
   elements.sequenceIntro.classList.toggle("hidden", revealedSteps.length > 0);
 
   if (!revealedSteps.length) {
@@ -1568,29 +1574,85 @@ function renderSequenceView(procedure) {
   }
 
   elements.sequenceStepsList.innerHTML = revealedSteps
-    .map(
-      (step, index) => `
-        <article class="step-card ${step.critico ? "is-critical" : ""}">
-          <div class="step-topline">
-            <div class="step-title-group">
-              <span class="step-number">${step.numero}</span>
-              <div class="step-meta">
-                <h4>${escapeHtml(step.titulo)}</h4>
-                <div class="step-badges">
-                  ${step.critico ? '<span class="badge critical-badge">Etapa crítica</span>' : ""}
-                  ${index === revealedSteps.length - 1 ? '<span class="badge checked-badge">Passo atual</span>' : ""}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p class="step-description">${escapeHtml(step.descricao)}</p>
-          ${step.alerta ? `<div class="step-alert">${escapeHtml(step.alerta)}</div>` : ""}
-          ${step.imagem ? createImageBlock(step.imagem, `Imagem do passo ${step.numero}: ${step.titulo}`) : ""}
-        </article>
-      `
+    .map((step, index) =>
+      createStepCard(step, {
+        current: index === revealedSteps.length - 1,
+        sequenceIndex: index + 1
+      })
     )
     .join("");
+}
+
+function createStepCard(step, options = {}) {
+  const {
+    checked = false,
+    current = false,
+    showChecklist = false,
+    sequenceIndex = null
+  } = options;
+
+  return `
+    <article
+      class="step-card ${checked ? "is-checked" : ""} ${step.critico ? "is-critical" : ""} ${current ? "is-current" : ""}"
+      ${sequenceIndex ? `data-sequence-index="${sequenceIndex}"` : ""}
+    >
+      <div class="step-topline">
+        <div class="step-title-group">
+          <span class="step-number">${step.numero}</span>
+          <div class="step-meta">
+            <h4>${escapeHtml(step.titulo)}</h4>
+            <div class="step-badges">
+              ${step.critico ? '<span class="badge critical-badge">Etapa crítica</span>' : ""}
+              ${checked ? '<span class="badge checked-badge">Concluído</span>' : ""}
+              ${current ? '<span class="badge checked-badge">Passo atual</span>' : ""}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="step-description">${escapeHtml(step.descricao)}</p>
+      ${createSubactionsBlock(step.subacoes)}
+      ${step.alerta ? `<div class="step-alert">${escapeHtml(step.alerta)}</div>` : ""}
+      ${step.imagem ? createImageBlock(step.imagem, `Imagem do passo ${step.numero}: ${step.titulo}`) : ""}
+
+      ${
+        showChecklist
+          ? `
+          <div class="step-actions">
+            <label class="step-check">
+              <input type="checkbox" data-step-number="${step.numero}" ${checked ? "checked" : ""} />
+              <span>Marcar como concluído</span>
+            </label>
+          </div>
+        `
+          : ""
+      }
+    </article>
+  `;
+}
+
+function createSubactionsBlock(subactions) {
+  if (!Array.isArray(subactions) || !subactions.length) {
+    return "";
+  }
+
+  return `
+    <div class="step-subactions">
+      <div class="step-subactions-title">Subações</div>
+      <ul class="step-subaction-list">
+        ${subactions
+          .map(
+            (subaction) => `
+              <li class="step-subaction-item">
+                <span class="step-subaction-label">${escapeHtml(subaction.rotulo)}</span>
+                <span>${escapeHtml(subaction.texto)}</span>
+              </li>
+            `
+          )
+          .join("")}
+      </ul>
+    </div>
+  `;
 }
 
 function renderMode() {
@@ -1711,6 +1773,19 @@ function toggleChecklistStep(procedureId, stepNumber, checked) {
   }
 }
 
+function restartSequence() {
+  const procedure = getSelectedProcedure();
+
+  if (!procedure) {
+    return;
+  }
+
+  ensureProcedureProgress(procedure.id).sequenceIndex = 0;
+  persistState();
+  renderSequenceView(procedure);
+  scrollSequenceSummaryIntoView();
+}
+
 function updateSequenceBy(amount) {
   const procedure = getSelectedProcedure();
 
@@ -1719,9 +1794,100 @@ function updateSequenceBy(amount) {
   }
 
   const entry = ensureProcedureProgress(procedure.id);
-  entry.sequenceIndex = Math.max(0, Math.min(entry.sequenceIndex + amount, procedure.passos.length));
+  const previousIndex = entry.sequenceIndex;
+  const nextIndex = Math.max(0, Math.min(entry.sequenceIndex + amount, procedure.passos.length));
+
+  if (previousIndex === nextIndex) {
+    return;
+  }
+
+  entry.sequenceIndex = nextIndex;
   persistState();
   renderSequenceView(procedure);
+
+  if (amount > 0) {
+    emphasizeSequenceStep(nextIndex);
+  }
+}
+
+function syncSequenceControls(currentIndex, totalSteps) {
+  const isAtStart = currentIndex === 0;
+  const isComplete = currentIndex >= totalSteps;
+
+  elements.previousStepButton.disabled = isAtStart;
+  elements.nextStepButton.disabled = isComplete;
+  elements.restartSequenceButton.disabled = isAtStart;
+  elements.mobilePreviousStepButton.disabled = isAtStart;
+  elements.mobileNextStepButton.disabled = isComplete;
+  elements.mobileRestartSequenceButton.disabled = isAtStart;
+}
+
+function emphasizeSequenceStep(sequenceIndex) {
+  const target = elements.sequenceStepsList.querySelector(`[data-sequence-index="${sequenceIndex}"]`);
+
+  if (!target) {
+    return;
+  }
+
+  target.classList.remove("is-revealed");
+
+  requestAnimationFrame(() => {
+    target.classList.add("is-revealed");
+    target.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    window.setTimeout(() => {
+      target.classList.remove("is-revealed");
+    }, 1600);
+  });
+}
+
+function scrollSequenceSummaryIntoView() {
+  const summary = document.querySelector(".sequence-summary");
+
+  if (!summary) {
+    return;
+  }
+
+  summary.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function handleSequenceShortcuts(event) {
+  if (appState.mode !== "sequence" || !getSelectedProcedure()) {
+    return;
+  }
+
+  if (event.defaultPrevented || event.repeat || event.altKey || event.ctrlKey || event.metaKey) {
+    return;
+  }
+
+  if (isInteractiveTarget(event.target)) {
+    return;
+  }
+
+  if (event.code === "Space") {
+    event.preventDefault();
+    updateSequenceBy(1);
+    return;
+  }
+
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    updateSequenceBy(-1);
+    return;
+  }
+
+  if (event.key.toLowerCase() === "r") {
+    event.preventDefault();
+    restartSequence();
+  }
+}
+
+function isInteractiveTarget(target) {
+  if (!(target instanceof Element)) {
+    return false;
+  }
+
+  return Boolean(target.closest("input, textarea, select, button, [contenteditable='true'], [contenteditable='']"));
 }
 
 function setStatusDetail(message) {

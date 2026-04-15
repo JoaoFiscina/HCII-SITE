@@ -91,9 +91,18 @@
         {
           "numero": 8,
           "titulo": "Preparar o enxerto e a área doadora",
-          "descricao": "Definir o tipo de enxerto quanto à composição, origem, espessura e forma de processamento. Preparar a área doadora com tosquiamento, se necessário. Demarcar a extensão da exérese da pele. Realizar antissepsia e assepsia da área doadora. Fazer anestesia local ou anestesia geral, se a área for extensa. Distender a pele e, se desejado, cobri-la com parafina líquida, óleo mineral ou gel lubrificante cirúrgico à base de água para facilitar o deslizamento. Iniciar a incisão com dermátomo elétrico, faca de Blair ou dissecção com bisturi em plano justadérmico. Remover a gordura remanescente, expandir e fenestrar o enxerto quando indicado, mantendo-o umedecido em soro fisiológico. Ao final, realizar curativo oclusivo na área doadora.",
+          "descricao": "Organizar o preparo do enxerto e da área doadora, garantindo retirada adequada, manipulação atraumática e manutenção do tecido em boas condições até a fixação.",
           "critico": true,
           "alerta": "Na escolha da área doadora, considerar cor, textura, espessura, quantidade de pele necessária e visibilidade da cicatriz. A fenestração favorece drenagem e reduz hematoma.",
+          "subacoes": [
+            { "rotulo": "8a", "texto": "Definir o tipo de enxerto quanto à composição, origem, espessura e forma de processamento." },
+            { "rotulo": "8b", "texto": "Preparar a área doadora com tosquiamento, se necessário, e demarcar a extensão da exérese da pele." },
+            { "rotulo": "8c", "texto": "Realizar antissepsia, assepsia e anestesia local ou geral conforme a extensão da área." },
+            { "rotulo": "8d", "texto": "Distender a pele e, se desejado, aplicar parafina líquida, óleo mineral ou gel lubrificante cirúrgico à base de água para facilitar o deslizamento." },
+            { "rotulo": "8e", "texto": "Iniciar a incisão com dermátomo elétrico, faca de Blair ou dissecção com bisturi em plano justadérmico." },
+            { "rotulo": "8f", "texto": "Remover a gordura remanescente, expandir e fenestrar o enxerto quando indicado, mantendo-o umedecido em soro fisiológico." },
+            { "rotulo": "8g", "texto": "Ao final, realizar curativo oclusivo na área doadora." }
+          ],
           "imagem": ""
         },
         {

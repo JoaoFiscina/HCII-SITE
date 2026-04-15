@@ -35,6 +35,8 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--sans);
+  font-size: clamp(1rem, 0.22vw + 0.96rem, 1.08rem);
+  line-height: 1.7;
   color: var(--text);
   background:
     radial-gradient(circle at top right, rgba(185, 220, 214, 0.95), transparent 28%),
@@ -171,7 +173,7 @@ button {
 .content,
 .view-block {
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 
 .panel,
@@ -202,7 +204,7 @@ button {
 .sequence-summary,
 .empty-state-card,
 .panel {
-  padding: 24px;
+  padding: clamp(20px, 2vw, 28px);
 }
 
 .status-panel {
@@ -289,7 +291,7 @@ button {
 .field input,
 .field select {
   width: 100%;
-  padding: 14px 16px;
+  padding: 15px 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: rgba(255, 255, 255, 0.86);
@@ -309,7 +311,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
+  min-height: 48px;
   padding: 12px 18px;
   border-radius: 999px;
   font-weight: 700;
@@ -377,9 +379,9 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 12px;
+  padding: 8px 12px;
   border-radius: 999px;
-  font-size: 0.82rem;
+  font-size: clamp(0.82rem, 0.12vw + 0.8rem, 0.92rem);
   font-weight: 700;
 }
 
@@ -413,7 +415,7 @@ button {
 .issues-list,
 .step-list {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .procedure-card {
@@ -442,13 +444,13 @@ button {
 }
 
 .procedure-card h3 {
-  font-size: 1.15rem;
+  font-size: clamp(1.14rem, 0.32vw + 1.06rem, 1.3rem);
   margin: 8px 0;
 }
 
 .procedure-card p {
   margin: 0 0 14px;
-  font-size: 0.95rem;
+  font-size: clamp(0.98rem, 0.16vw + 0.95rem, 1.05rem);
 }
 
 .procedure-card-footer {
@@ -522,7 +524,7 @@ button {
 
 .hero-copy {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .hero h2 {
@@ -562,7 +564,7 @@ button {
 .overview-grid,
 .details-grid {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
 .overview-grid {
@@ -570,7 +572,7 @@ button {
 }
 
 .overview-card {
-  padding: 20px;
+  padding: clamp(18px, 1.8vw, 24px);
   border-radius: 22px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.76);
@@ -578,12 +580,14 @@ button {
 
 .overview-card h3 {
   margin: 0 0 12px;
-  font-size: 1rem;
+  font-size: clamp(1.02rem, 0.22vw + 0.98rem, 1.16rem);
 }
 
 .overview-card ul {
   margin: 0;
   padding-left: 18px;
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.06rem);
+  line-height: 1.75;
 }
 
 .details-grid {
@@ -610,6 +614,7 @@ button {
   padding: 18px 20px;
   cursor: pointer;
   font-weight: 700;
+  font-size: clamp(1rem, 0.14vw + 0.97rem, 1.08rem);
 }
 
 .detail-panel summary::-webkit-details-marker {
@@ -628,12 +633,14 @@ button {
 }
 
 .detail-content {
-  padding: 0 20px 20px;
+  padding: 0 20px 22px;
 }
 
 .detail-list {
   margin: 0;
   padding-left: 18px;
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.06rem);
+  line-height: 1.75;
 }
 
 .detail-list li + li {
@@ -643,15 +650,18 @@ button {
 .step-card {
   position: relative;
   display: grid;
-  gap: 14px;
-  padding: 18px;
+  gap: 16px;
+  width: min(100%, 960px);
+  margin-inline: auto;
+  padding: clamp(18px, 2.2vw, 26px);
   border-radius: 24px;
   border: 1px solid var(--border);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(242, 247, 245, 0.9));
   transition:
     transform 180ms ease,
     border-color 180ms ease,
-    box-shadow 180ms ease;
+    box-shadow 180ms ease,
+    background-color 180ms ease;
 }
 
 .step-card:hover {
@@ -670,6 +680,17 @@ button {
   box-shadow: inset 0 0 0 1px rgba(184, 80, 66, 0.08);
 }
 
+.step-card.is-current {
+  border-color: rgba(28, 92, 89, 0.32);
+  box-shadow:
+    0 16px 32px rgba(18, 53, 51, 0.08),
+    inset 0 0 0 1px rgba(28, 92, 89, 0.08);
+}
+
+.step-card.is-revealed {
+  animation: stepRevealPulse 1.45s ease;
+}
+
 .step-topline {
   display: flex;
   align-items: flex-start;
@@ -684,19 +705,21 @@ button {
 }
 
 .step-number {
-  min-width: 46px;
-  min-height: 46px;
+  min-width: 50px;
+  min-height: 50px;
   display: inline-grid;
   place-items: center;
   border-radius: 16px;
   background: rgba(28, 92, 89, 0.1);
   color: var(--accent-strong);
   font-weight: 800;
+  font-size: clamp(1rem, 0.28vw + 0.95rem, 1.14rem);
 }
 
 .step-title-group h4 {
   margin: 0 0 6px;
-  font-size: 1.08rem;
+  font-size: clamp(1.14rem, 0.4vw + 1.04rem, 1.34rem);
+  line-height: 1.35;
 }
 
 .step-badges {
@@ -717,15 +740,61 @@ button {
 
 .step-description {
   margin: 0;
+  max-width: 72ch;
+  font-size: clamp(1.03rem, 0.2vw + 0.99rem, 1.14rem);
+  line-height: 1.82;
+  color: #314242;
 }
 
 .step-alert {
-  padding: 12px 14px;
+  padding: 15px 16px;
   border-radius: 18px;
   border-left: 4px solid var(--warning);
   background: var(--warning-soft);
   color: #744a10;
-  line-height: 1.55;
+  line-height: 1.72;
+  font-size: clamp(0.98rem, 0.18vw + 0.95rem, 1.05rem);
+}
+
+.step-subactions {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(28, 92, 89, 0.12);
+  background: rgba(28, 92, 89, 0.04);
+}
+
+.step-subactions-title {
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+}
+
+.step-subaction-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step-subaction-item {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #304040;
+  font-size: clamp(0.98rem, 0.18vw + 0.95rem, 1.04rem);
+  line-height: 1.72;
+}
+
+.step-subaction-label {
+  font-weight: 800;
+  color: var(--accent-strong);
 }
 
 .step-image {
@@ -751,7 +820,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 14px;
+  padding: 11px 15px;
   border-radius: 999px;
   border: 1px solid var(--border-strong);
   background: rgba(255, 255, 255, 0.9);
@@ -767,6 +836,9 @@ button {
 .sequence-summary {
   display: grid;
   gap: 18px;
+  position: sticky;
+  top: 18px;
+  z-index: 2;
 }
 
 .sequence-counter {
@@ -793,12 +865,46 @@ button {
 
 .sequence-intro {
   margin-bottom: 18px;
+  width: min(100%, 960px);
+  font-size: clamp(1rem, 0.18vw + 0.96rem, 1.08rem);
+  line-height: 1.75;
+}
+
+.sequence-shortcut-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.sequence-mobile-bar {
+  display: none;
 }
 
 .empty-procedures,
 .issue-empty {
   text-align: center;
   color: var(--muted);
+}
+
+@keyframes stepRevealPulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(28, 92, 89, 0.2),
+      inset 0 0 0 1px rgba(28, 92, 89, 0.08);
+  }
+
+  45% {
+    box-shadow:
+      0 0 0 10px rgba(28, 92, 89, 0),
+      inset 0 0 0 1px rgba(28, 92, 89, 0.12);
+  }
+
+  100% {
+    box-shadow:
+      0 16px 32px rgba(18, 53, 51, 0.08),
+      inset 0 0 0 1px rgba(28, 92, 89, 0.08);
+  }
 }
 
 @media (max-width: 1220px) {
@@ -825,7 +931,7 @@ button {
 
 @media (max-width: 720px) {
   .page-shell {
-    padding: 14px;
+    padding: 12px;
   }
 
   .topbar,
@@ -852,16 +958,90 @@ button {
 
   .status-actions,
   .hero-actions,
-  .sequence-controls,
   .topbar-actions {
     width: 100%;
   }
 
   .status-actions .button,
   .hero-actions .button,
-  .sequence-controls .button,
   .topbar-actions .button {
     flex: 1 1 100%;
+  }
+
+  .field input,
+  .field select,
+  .button {
+    min-height: 50px;
+  }
+
+  .procedure-card,
+  .issue-item,
+  .issue-empty {
+    padding: 16px;
+  }
+
+  .procedure-card-footer {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .sequence-summary {
+    position: static;
+  }
+
+  .sequence-controls {
+    display: none;
+  }
+
+  #sequenceSection {
+    padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .sequence-mobile-bar {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    z-index: 30;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 36px rgba(18, 53, 51, 0.16);
+  }
+
+  .sequence-mobile-bar .button {
+    min-height: 48px;
+    padding-inline: 10px;
+    font-size: 0.95rem;
+  }
+
+  .sequence-shortcut-hint {
+    font-size: 0.88rem;
+  }
+
+  .step-card {
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .step-title-group {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .step-number {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .step-check {
+    width: 100%;
+    justify-content: center;
   }
 
   .step-actions {
