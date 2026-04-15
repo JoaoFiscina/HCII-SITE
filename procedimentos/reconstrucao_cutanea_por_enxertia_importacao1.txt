@@ -1,8 +1,8 @@
 {
   "procedimentos": [
     {
-      "id": "reconstrucao_cutanea_por_enxertia",
-      "nome": "Reconstrução cutânea por enxertia",
+      "id": "reconstrucao_cutanea_por_enxertia_importacao1",
+      "nome": "Reconstrução cutânea por enxertia (roteiro ampliado)",
       "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
       "descricao_curta": "Roteiro prático de reconstrução cutânea por enxertia, com avaliação da área receptora, preparo do enxerto, fixação, curativo e seguimento.",
       "indicacoes": [
