@@ -2,10 +2,24 @@ const STORAGE_KEY = "atlas-cirurgico-de-bolso:v2";
 const CONFIG_PATH = "config/app-config.json";
 const MANIFEST_FILENAME = "procedimentos-manifest.json";
 const SUPPORTED_EXTENSIONS = [".json", ".txt"];
+const DEBUG_PREFIX = "[Atlas]";
+const DEFAULT_APP_CONFIG = {
+  github: {
+    owner: "JoaoFiscina",
+    repo: "HCII-SITE",
+    branch: "main",
+    proceduresPath: "procedimentos"
+  }
+};
+const LOCAL_EXAMPLE_FILES = [
+  "procedimentos/sonda_vesical_demora.json",
+  "procedimentos/reconstrucao_cutanea_por_enxertia.txt"
+];
 const SOURCE_PRIORITY = {
   local: 0,
   github: 1,
-  manifest: 2
+  manifest: 2,
+  example: 3
 };
 
 const appState = {
@@ -31,7 +45,8 @@ const appState = {
     label: "Aguardando",
     current: 0,
     total: 0
-  }
+  },
+  statusDetail: "Aguardando inicialização."
 };
 
 const elements = {
@@ -93,10 +108,46 @@ const elements = {
 document.addEventListener("DOMContentLoaded", initializeApp);
 
 async function initializeApp() {
-  restoreState();
-  bindEvents();
-  render();
-  await bootstrapCatalog();
+  logInfo("Início da inicialização.");
+
+  try {
+    restoreState();
+    bindEvents();
+    render();
+    await bootstrapCatalog();
+  } catch (error) {
+    logError("Falha inesperada na inicialização.", error);
+    setStatusDetail("Falha inesperada na inicialização. Você ainda pode usar a importação local.");
+    setLoadingState(false, "Falha na inicialização", 0, 0);
+    showMessage("A inicialização automática falhou. A importação local continua disponível.", "error");
+  }
+}
+
+function logInfo(message, details) {
+  if (details === undefined) {
+    console.info(`${DEBUG_PREFIX} ${message}`);
+    return;
+  }
+
+  console.info(`${DEBUG_PREFIX} ${message}`, details);
+}
+
+function logWarn(message, details) {
+  if (details === undefined) {
+    console.warn(`${DEBUG_PREFIX} ${message}`);
+    return;
+  }
+
+  console.warn(`${DEBUG_PREFIX} ${message}`, details);
+}
+
+function logError(message, details) {
+  if (details === undefined) {
+    console.error(`${DEBUG_PREFIX} ${message}`);
+    return;
+  }
+
+  console.error(`${DEBUG_PREFIX} ${message}`, details);
 }
 
 function bindEvents() {
@@ -246,76 +297,109 @@ function bindEvents() {
 
 async function bootstrapCatalog() {
   setLoadingState(true, "Lendo app-config.json", 0, 1);
+  setStatusDetail("Lendo configuração...");
 
   const configResult = await loadAppConfig();
 
-  if (!configResult.ok) {
-    appState.config = null;
-    appState.primarySource = {
-      kind: "none",
-      label: "Configuração indisponível",
-      fileCount: 0,
-      filesProcessed: 0
-    };
-    appState.baseProcedures = [];
-    appState.baseIssues = configResult.issues;
-    setLoadingState(false, "Falha ao ler configuração", 1, 1);
-    rebuildCatalog();
-    showMessage("Não foi possível ler a configuração do app. Você ainda pode usar a importação local temporária.", "error");
-    return;
+  appState.config = configResult.config;
+  appState.baseIssues = configResult.issues;
+  setLoadingState(false, "Configuração carregada", 1, 1);
+  setStatusDetail(
+    configResult.usedDefault
+      ? "Falha ao ler config/app-config.json, usando configuração padrão embutida."
+      : "Configuração carregada."
+  );
+
+  if (configResult.usedDefault) {
+    showMessage("Configuração padrão embutida ativada porque app-config.json falhou ou estava inválido.", "warning");
   }
 
-  appState.config = configResult.config;
-  setLoadingState(false, "Configuração carregada", 1, 1);
   await reloadPrimaryProcedures();
 }
 
 async function reloadPrimaryProcedures() {
-  if (!appState.config) {
-    showMessage("A configuração do app não está disponível. Corrija app-config.json para habilitar a leitura automática.", "error");
-    return;
-  }
+  const configIssues = appState.baseIssues.filter((issue) => issue.sourceKind === "config");
 
-  showMessage("", "");
+  try {
+    if (!appState.config) {
+      logWarn("Configuração ausente; não foi possível iniciar a leitura automática.");
+      setStatusDetail("Nenhuma configuração disponível. Importe um arquivo local para continuar.");
+      showMessage("A configuração do app não está disponível. Corrija app-config.json para habilitar a leitura automática.", "error");
+      return;
+    }
 
-  const githubResult = await loadProceduresFromGitHub(appState.config);
+    showMessage("", "");
+    logInfo("Iniciando leitura automática de procedimentos.", appState.config.github);
 
-  if (githubResult.ok) {
-    appState.primarySource = githubResult.source;
-    appState.baseProcedures = githubResult.entries;
-    appState.baseIssues = githubResult.issues;
+    const githubResult = await loadProceduresFromGitHub(appState.config);
+
+    if (githubResult.ok) {
+      appState.primarySource = githubResult.source;
+      appState.baseProcedures = githubResult.entries;
+      appState.baseIssues = [...configIssues, ...githubResult.issues];
+      rebuildCatalog();
+      return;
+    }
+
+    // The manifest keeps the site usable on GitHub Pages if the public API is unavailable.
+    const manifestResult = await loadProceduresFromManifest(appState.config, githubResult.issues);
+
+    if (manifestResult.ok) {
+      appState.primarySource = manifestResult.source;
+      appState.baseProcedures = manifestResult.entries;
+      appState.baseIssues = [...configIssues, ...manifestResult.issues];
+      rebuildCatalog();
+      showMessage("A leitura direta do GitHub falhou, então o site usou o manifest local como fallback.", "warning");
+      return;
+    }
+
+    const exampleResult = await loadProceduresFromLocalExamples(appState.config, manifestResult.issues);
+
+    if (exampleResult.ok) {
+      appState.primarySource = exampleResult.source;
+      appState.baseProcedures = exampleResult.entries;
+      appState.baseIssues = [...configIssues, ...exampleResult.issues];
+      rebuildCatalog();
+      showMessage("Falha ao ler GitHub e manifest. O site carregou exemplos locais para continuar utilizável.", "warning");
+      return;
+    }
+
+    appState.primarySource = {
+      kind: "none",
+      label: "Falha no carregamento",
+      fileCount: 0,
+      filesProcessed: 0
+    };
+    appState.baseProcedures = [];
+    appState.baseIssues = [...configIssues, ...exampleResult.issues];
+    setStatusDetail("Nenhum procedimento encontrado. Importe arquivo local para continuar.");
     rebuildCatalog();
-    return;
-  }
-
-  // The manifest keeps the site usable on GitHub Pages if the public API is unavailable.
-  const manifestResult = await loadProceduresFromManifest(appState.config, githubResult.issues);
-
-  if (manifestResult.ok) {
-    appState.primarySource = manifestResult.source;
-    appState.baseProcedures = manifestResult.entries;
-    appState.baseIssues = manifestResult.issues;
+    showMessage("Não foi possível carregar a pasta do GitHub nem o manifest local.", "error");
+  } catch (error) {
+    logError("Falha inesperada ao recarregar procedimentos.", error);
+    appState.primarySource = {
+      kind: "none",
+      label: "Falha no carregamento",
+      fileCount: 0,
+      filesProcessed: 0
+    };
+    appState.baseProcedures = [];
+    appState.baseIssues = [
+      ...configIssues,
+      createIssue("error", "github", "Leitura automática", getReadableError(error))
+    ];
+    setStatusDetail("Falha inesperada na leitura automática. Importe arquivo local para continuar.");
     rebuildCatalog();
-    showMessage("A leitura direta do GitHub falhou, então o site usou o manifest local como fallback.", "warning");
-    return;
+    showMessage("A leitura automática falhou inesperadamente. A importação local continua disponível.", "error");
   }
-
-  appState.primarySource = {
-    kind: "none",
-    label: "Falha no carregamento",
-    fileCount: 0,
-    filesProcessed: 0
-  };
-  appState.baseProcedures = [];
-  appState.baseIssues = manifestResult.issues;
-  rebuildCatalog();
-  showMessage("Não foi possível carregar a pasta do GitHub nem o manifest local.", "error");
 }
 
 async function loadAppConfig() {
+  const configUrl = buildAppUrl(CONFIG_PATH);
+  logInfo(`Tentando ler configuração em ${configUrl.href}`);
+
   try {
-    const url = new URL(CONFIG_PATH, getSiteBaseUrl());
-    const response = await fetch(url, { cache: "no-store" });
+    const response = await fetch(configUrl, { cache: "no-store" });
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
@@ -323,15 +407,19 @@ async function loadAppConfig() {
 
     const data = await response.json();
     const config = normalizeAppConfig(data);
+    logInfo("Configuração carregada com sucesso.", config.github);
 
-    return { ok: true, config, issues: [] };
+    return { ok: true, config, issues: [], usedDefault: false };
   } catch (error) {
+    logWarn("Falha ao ler configuração; usando configuração padrão embutida.", error);
+
+    const config = normalizeAppConfig(DEFAULT_APP_CONFIG);
     const issues = [
       createIssue(
-        "error",
+        "warning",
         "config",
         "app-config.json",
-        `Não foi possível ler ${CONFIG_PATH}: ${getReadableError(error)}`
+        `Não foi possível ler ${CONFIG_PATH}: ${getReadableError(error)}. O sistema passou a usar a configuração padrão embutida.`
       )
     ];
 
@@ -346,7 +434,7 @@ async function loadAppConfig() {
       );
     }
 
-    return { ok: false, config: null, issues };
+    return { ok: true, config, issues, usedDefault: true };
   }
 }
 
@@ -379,11 +467,13 @@ function normalizeAppConfig(data) {
 async function loadProceduresFromGitHub(config) {
   const repoInfo = buildRepositoryLabel(config);
   const folderPath = config.github.proceduresPath;
+  const listingUrl = buildGitHubContentsUrl(config.github, folderPath);
 
   setLoadingState(true, "Consultando pasta do GitHub", 0, 1);
+  setStatusDetail("Lendo pasta de procedimentos...");
+  logInfo(`Consultando a pasta do GitHub em ${listingUrl}`);
 
   try {
-    const listingUrl = buildGitHubContentsUrl(config.github, folderPath);
     const response = await fetch(listingUrl, { cache: "no-store" });
 
     if (!response.ok) {
@@ -402,11 +492,15 @@ async function loadProceduresFromGitHub(config) {
       .filter((item) => item.name !== MANIFEST_FILENAME)
       .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
 
+    logInfo(`Pasta listada com sucesso. ${candidateFiles.length} arquivo(s) candidato(s) encontrados.`, candidateFiles.map((item) => item.name));
+    setStatusDetail(`${candidateFiles.length} arquivo(s) encontrados na pasta de procedimentos.`);
+
     if (!candidateFiles.length) {
       setLoadingState(false, "Pasta consultada", 1, 1);
+      setStatusDetail("Nenhum arquivo válido encontrado no GitHub. Tentando manifest local.");
 
       return {
-        ok: true,
+        ok: false,
         entries: [],
         issues: [
           createIssue(
@@ -437,7 +531,32 @@ async function loadProceduresFromGitHub(config) {
       "Lendo arquivos do GitHub"
     );
 
+    logInfo(`Leitura do GitHub concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
     setLoadingState(false, "Leitura do GitHub concluída", candidateFiles.length, candidateFiles.length);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados do GitHub.`);
+
+    if (!aggregate.entries.length) {
+      return {
+        ok: false,
+        entries: [],
+        issues: [
+          ...aggregate.issues,
+          createIssue(
+            "warning",
+            "github",
+            folderPath,
+            "Os arquivos do GitHub foram lidos, mas nenhum procedimento válido foi encontrado. O sistema tentará o manifest local."
+          )
+        ],
+        source: {
+          kind: "github",
+          label: "GitHub",
+          fileCount: candidateFiles.length,
+          filesProcessed: candidateFiles.length,
+          repositoryLabel: repoInfo
+        }
+      };
+    }
 
     return {
       ok: true,
@@ -452,7 +571,9 @@ async function loadProceduresFromGitHub(config) {
       }
     };
   } catch (error) {
+    logError("Falha ao listar a pasta de procedimentos no GitHub.", error);
     setLoadingState(false, "Falha ao consultar GitHub", 1, 1);
+    setStatusDetail("Falha ao ler GitHub. Tentando manifest local...");
 
     return {
       ok: false,
@@ -478,11 +599,13 @@ async function loadProceduresFromGitHub(config) {
 
 async function loadProceduresFromManifest(config, previousIssues) {
   const manifestPath = joinPaths(config.github.proceduresPath, MANIFEST_FILENAME);
+  const manifestUrl = buildAppUrl(manifestPath);
 
   setLoadingState(true, "Tentando manifest local", 0, 1);
+  setStatusDetail("Falha ao ler GitHub, usando manifest local.");
+  logInfo(`Tentando manifest local em ${manifestUrl.href}`);
 
   try {
-    const manifestUrl = new URL(manifestPath, getSiteBaseUrl());
     const response = await fetch(manifestUrl, { cache: "no-store" });
 
     if (!response.ok) {
@@ -495,12 +618,14 @@ async function loadProceduresFromManifest(config, previousIssues) {
 
     const data = await response.json();
     const files = normalizeManifestEntries(data, config.github.proceduresPath);
+    logInfo(`Manifest local lido com sucesso. ${files.length} arquivo(s) listado(s).`, files.map((file) => file.fileName));
 
     if (!files.length) {
       setLoadingState(false, "Manifest lido", 1, 1);
+      setStatusDetail("Manifest lido, mas sem arquivos válidos. Tentando exemplos locais.");
 
       return {
-        ok: true,
+        ok: false,
         entries: [],
         issues: [
           ...previousIssues,
@@ -525,14 +650,40 @@ async function loadProceduresFromManifest(config, previousIssues) {
       files.map((file) => ({
         fileName: file.fileName,
         filePath: file.filePath,
-        fileUrl: new URL(file.filePath, getSiteBaseUrl()).href,
+        fileUrl: buildAppUrl(file.filePath).href,
         sourceKind: "manifest",
         sourceLabel: "Manifest local"
       })),
       "Lendo arquivos do manifest"
     );
 
+    logInfo(`Leitura do manifest concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
     setLoadingState(false, "Leitura do manifest concluída", files.length, files.length);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados do manifest local.`);
+
+    if (!aggregate.entries.length) {
+      return {
+        ok: false,
+        entries: [],
+        issues: [
+          ...previousIssues,
+          ...aggregate.issues,
+          createIssue(
+            "warning",
+            "manifest",
+            manifestPath,
+            "O manifest foi lido, mas nenhum procedimento válido foi encontrado. O sistema tentará os exemplos locais."
+          )
+        ],
+        source: {
+          kind: "manifest",
+          label: "Manifest local",
+          fileCount: files.length,
+          filesProcessed: files.length,
+          repositoryLabel: buildRepositoryLabel(config)
+        }
+      };
+    }
 
     return {
       ok: true,
@@ -556,7 +707,9 @@ async function loadProceduresFromManifest(config, previousIssues) {
       }
     };
   } catch (error) {
+    logError("Falha ao usar o manifest local.", error);
     setLoadingState(false, "Falha no manifest", 1, 1);
+    setStatusDetail("Falha ao ler manifest, tentando exemplos locais.");
 
     return {
       ok: false,
@@ -573,6 +726,98 @@ async function loadProceduresFromManifest(config, previousIssues) {
       source: {
         kind: "manifest",
         label: "Manifest indisponível",
+        fileCount: 0,
+        filesProcessed: 0,
+        repositoryLabel: buildRepositoryLabel(config)
+      }
+    };
+  }
+}
+
+async function loadProceduresFromLocalExamples(config, previousIssues) {
+  setLoadingState(true, "Tentando exemplos locais", 0, 1);
+  setStatusDetail("Falha ao ler manifest, usando exemplos locais.");
+  logInfo("Tentando carregar os exemplos locais embutidos.", LOCAL_EXAMPLE_FILES);
+
+  try {
+    const files = LOCAL_EXAMPLE_FILES.map((filePath) => ({
+      fileName: getFileNameFromPath(filePath),
+      filePath,
+      fileUrl: buildAppUrl(filePath).href,
+      sourceKind: "example",
+      sourceLabel: "Exemplos locais"
+    }));
+
+    const aggregate = await loadProcedureFilesSequentially(files, "Lendo exemplos locais");
+    logInfo(`Leitura dos exemplos locais concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
+    setLoadingState(false, "Leitura dos exemplos concluída", files.length, files.length);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados dos exemplos locais.`);
+
+    if (!aggregate.entries.length) {
+      return {
+        ok: false,
+        entries: [],
+        issues: [
+          ...previousIssues,
+          createIssue(
+            "error",
+            "example",
+            "Exemplos locais",
+            "Os exemplos locais foram encontrados, mas nenhum procedimento válido pôde ser carregado."
+          ),
+          ...aggregate.issues
+        ],
+        source: {
+          kind: "example",
+          label: "Exemplos indisponíveis",
+          fileCount: files.length,
+          filesProcessed: files.length,
+          repositoryLabel: buildRepositoryLabel(config)
+        }
+      };
+    }
+
+    return {
+      ok: true,
+      entries: aggregate.entries,
+      issues: [
+        ...previousIssues,
+        createIssue(
+          "warning",
+          "example",
+          "Exemplos locais",
+          "GitHub e manifest falharam. O site passou a usar exemplos locais do projeto para permanecer utilizável."
+        ),
+        ...aggregate.issues
+      ],
+      source: {
+        kind: "example",
+        label: "Exemplos locais",
+        fileCount: files.length,
+        filesProcessed: files.length,
+        repositoryLabel: buildRepositoryLabel(config)
+      }
+    };
+  } catch (error) {
+    logError("Falha ao carregar os exemplos locais.", error);
+    setLoadingState(false, "Falha nos exemplos locais", 1, 1);
+    setStatusDetail("Falha ao ler exemplos locais. A importação manual continua disponível.");
+
+    return {
+      ok: false,
+      entries: [],
+      issues: [
+        ...previousIssues,
+        createIssue(
+          "error",
+          "example",
+          "Exemplos locais",
+          getReadableError(error)
+        )
+      ],
+      source: {
+        kind: "example",
+        label: "Exemplos indisponíveis",
         fileCount: 0,
         filesProcessed: 0,
         repositoryLabel: buildRepositoryLabel(config)
@@ -625,6 +870,7 @@ async function loadProcedureFilesSequentially(files, loadingLabel) {
   for (let index = 0; index < files.length; index += 1) {
     const file = files[index];
     setLoadingState(true, loadingLabel, index, files.length);
+    logInfo(`Processando arquivo ${file.fileName}.`, { source: file.sourceLabel, url: file.fileUrl });
 
     try {
       const response = await fetch(file.fileUrl, { cache: "no-store" });
@@ -638,7 +884,9 @@ async function loadProcedureFilesSequentially(files, loadingLabel) {
 
       entries.push(...result.entries);
       issues.push(...result.issues);
+      logInfo(`Arquivo ${file.fileName} interpretado com sucesso. ${result.entries.length} procedimento(s) válido(s).`);
     } catch (error) {
+      logError(`Falha ao processar o arquivo ${file.fileName}.`, error);
       issues.push(
         createIssue(
           "error",
@@ -673,6 +921,7 @@ function parseProcedureDocument(text, fileInfo) {
       }
     });
   } catch (error) {
+    logError(`JSON mal formatado em ${fileInfo.fileName}.`, error);
     issues.push(
       createIssue(
         "error",
@@ -915,6 +1164,11 @@ function rebuildCatalog() {
   populateCategoryFilter();
   persistState();
   render();
+  logInfo(`Catálogo reconstruído. ${appState.procedures.length} procedimento(s) final(is) disponível(is).`);
+
+  if (!appState.procedures.length) {
+    setStatusDetail("Nenhum procedimento encontrado, importe arquivo local.");
+  }
 }
 
 function mergeProcedureCollections(localProcedures, baseProcedures) {
@@ -1063,7 +1317,7 @@ function renderStatusPanel() {
   elements.issueSummary.textContent = issueCount
     ? `${issueCount} erro(s) ou aviso(s) de importação registrados.`
     : "Sem erros de importação.";
-  elements.statusMessage.textContent = buildStatusMessage(procedures.length, localCount);
+  elements.statusMessage.textContent = appState.statusDetail || buildStatusMessage(procedures.length, localCount);
   elements.loadingLabel.textContent = appState.loading.label;
   elements.loadingCounter.textContent = `${appState.loading.current} / ${appState.loading.total}`;
   elements.loadingProgressBar.style.width = `${getLoadingPercentage()}%`;
@@ -1434,6 +1688,11 @@ function updateSequenceBy(amount) {
   renderSequenceView(procedure);
 }
 
+function setStatusDetail(message) {
+  appState.statusDetail = message;
+  renderStatusPanel();
+}
+
 function setLoadingState(active, label, current, total) {
   appState.loading = {
     active,
@@ -1459,7 +1718,7 @@ function countProceduresBySource() {
       accumulator[procedure._meta.sourceKind] = (accumulator[procedure._meta.sourceKind] || 0) + 1;
       return accumulator;
     },
-    { github: 0, manifest: 0, local: 0 }
+    { github: 0, manifest: 0, example: 0, local: 0 }
   );
 }
 
@@ -1478,6 +1737,10 @@ function buildProcedureBreakdownText(sourceCounts) {
     parts.push(`Local: ${sourceCounts.local}`);
   }
 
+  if (sourceCounts.example) {
+    parts.push(`Exemplos: ${sourceCounts.example}`);
+  }
+
   return parts.length ? parts.join(" • ") : "Nenhum procedimento final carregado.";
 }
 
@@ -1490,6 +1753,10 @@ function buildSourceLabel() {
 
   if (appState.primarySource.kind === "manifest") {
     return hasLocal ? "Manifest local + importação local" : "Manifest local";
+  }
+
+  if (appState.primarySource.kind === "example") {
+    return hasLocal ? "Exemplos locais + importação local" : "Exemplos locais";
   }
 
   if (hasLocal) {
@@ -1518,6 +1785,12 @@ function buildStatusMessage(totalProcedures, localCount) {
     return localCount
       ? "Procedimentos lidos do GitHub e enriquecidos com arquivos locais temporários para pré-visualização."
       : "Procedimentos lidos automaticamente da pasta configurada no repositório GitHub.";
+  }
+
+  if (appState.primarySource.kind === "example") {
+    return localCount
+      ? "Exemplos locais carregados e enriquecidos com arquivos temporários desta sessão."
+      : "GitHub e manifest falharam, então o site carregou exemplos locais para permanecer utilizável.";
   }
 
   if (localCount) {
@@ -1565,6 +1838,7 @@ function getIssueSourceLabel(sourceKind) {
     config: "Configuração",
     github: "GitHub",
     manifest: "Manifest local",
+    example: "Exemplos locais",
     local: "Importação local",
     merge: "Mesclagem",
     validation: "Validação"
@@ -1593,7 +1867,7 @@ function resolveMediaPath(value) {
   }
 
   // Relative media paths are resolved against the published site root, which keeps GitHub Pages compatible.
-  return new URL(normalizeRelativePath(path), getSiteBaseUrl()).href;
+  return buildAppUrl(path).href;
 }
 
 function buildGitHubContentsUrl(githubConfig, path) {
@@ -1635,8 +1909,43 @@ function getReadableError(error) {
   return error instanceof Error ? error.message : String(error);
 }
 
+function buildAppUrl(path) {
+  return new URL(normalizeRelativePath(path), getSiteBaseUrl());
+}
+
 function getSiteBaseUrl() {
-  return new URL("./", document.baseURI);
+  const currentUrl = new URL(window.location.href);
+  const cleanHref = currentUrl.href.split("#")[0].split("?")[0];
+
+  if (currentUrl.protocol === "file:") {
+    if (currentUrl.pathname.endsWith("/")) {
+      return new URL(cleanHref);
+    }
+
+    const lastSegment = currentUrl.pathname.split("/").pop() || "";
+
+    if (lastSegment.includes(".")) {
+      return new URL("./", cleanHref);
+    }
+
+    return new URL(`${cleanHref.replace(/\/?$/, "/")}`);
+  }
+
+  let pathname = currentUrl.pathname || "/";
+
+  if (pathname.endsWith("/")) {
+    return new URL(pathname, currentUrl.origin);
+  }
+
+  const lastSegment = pathname.split("/").pop() || "";
+
+  if (lastSegment.includes(".")) {
+    pathname = pathname.slice(0, pathname.lastIndexOf("/") + 1) || "/";
+  } else {
+    pathname = `${pathname}/`;
+  }
+
+  return new URL(pathname, currentUrl.origin);
 }
 
 function normalizeRelativePath(path) {
