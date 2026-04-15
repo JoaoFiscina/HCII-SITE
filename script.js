@@ -12,8 +12,8 @@ const DEFAULT_APP_CONFIG = {
   }
 };
 const LOCAL_EXAMPLE_FILES = [
-  "procedimentos/sonda_vesical_demora.json",
-  "procedimentos/reconstrucao_cutanea_por_enxertia.txt"
+  "procedimentos/reconstrucao_cutanea_por_enxertia.txt",
+  "procedimentos/reconstrucao_cutanea_por_enxertia_importacao1.txt"
 ];
 const SOURCE_PRIORITY = {
   local: 0,
@@ -486,6 +486,8 @@ async function loadProceduresFromGitHub(config) {
       throw new Error("A API retornou um formato inesperado para a pasta de procedimentos.");
     }
 
+    logInfo(`Listagem do GitHub recebida com ${payload.length} item(ns).`, payload.map((item) => item.name));
+
     const candidateFiles = payload
       .filter((item) => item.type === "file")
       .filter((item) => isProcedureFileName(item.name))
@@ -493,7 +495,7 @@ async function loadProceduresFromGitHub(config) {
       .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
 
     logInfo(`Pasta listada com sucesso. ${candidateFiles.length} arquivo(s) candidato(s) encontrados.`, candidateFiles.map((item) => item.name));
-    setStatusDetail(`${candidateFiles.length} arquivo(s) encontrados na pasta de procedimentos.`);
+    setStatusDetail(`${candidateFiles.length} arquivo(s) .txt/.json encontrados na pasta de procedimentos.`);
 
     if (!candidateFiles.length) {
       setLoadingState(false, "Pasta consultada", 1, 1);
@@ -870,6 +872,7 @@ async function loadProcedureFilesSequentially(files, loadingLabel) {
   for (let index = 0; index < files.length; index += 1) {
     const file = files[index];
     setLoadingState(true, loadingLabel, index, files.length);
+    setStatusDetail(`Processando arquivo ${file.fileName}...`);
     logInfo(`Processando arquivo ${file.fileName}.`, { source: file.sourceLabel, url: file.fileUrl });
 
     try {
@@ -880,6 +883,7 @@ async function loadProcedureFilesSequentially(files, loadingLabel) {
       }
 
       const text = await response.text();
+      logInfo(`Conteúdo de ${file.fileName} lido com ${text.length} caractere(s).`);
       const result = parseProcedureDocument(text, file);
 
       entries.push(...result.entries);
@@ -908,10 +912,11 @@ function parseProcedureDocument(text, fileInfo) {
   const entries = [];
 
   try {
-    const parsed = JSON.parse(stripBom(text));
-    const rawProcedures = extractProcedures(parsed, fileInfo.fileName, issues);
+    const parsedContent = parseProcedureFileContent(text, fileInfo.fileName);
+    logInfo(`Parse concluído para ${fileInfo.fileName}. ${parsedContent.procedures.length} item(ns) bruto(s) encontrado(s).`);
+    issues.push(...parsedContent.issues);
 
-    rawProcedures.forEach((rawProcedure, index) => {
+    parsedContent.procedures.forEach((rawProcedure, index) => {
       const result = normalizeProcedureRecord(rawProcedure, fileInfo, index);
 
       if (result.ok) {
@@ -921,18 +926,49 @@ function parseProcedureDocument(text, fileInfo) {
       }
     });
   } catch (error) {
-    logError(`JSON mal formatado em ${fileInfo.fileName}.`, error);
+    logError(`Falha ao interpretar ${fileInfo.fileName}.`, error);
     issues.push(
       createIssue(
         "error",
         fileInfo.sourceKind,
         fileInfo.fileName,
-        `JSON mal formatado: ${getReadableError(error)}`
+        `Falha ao interpretar o arquivo: ${getReadableError(error)}`
       )
     );
   }
 
   return { entries, issues };
+}
+
+function parseProcedureFileContent(content, fileName) {
+  const normalizedText = normalizeProcedureFileText(content);
+
+  if (!normalizedText) {
+    throw new Error("Arquivo vazio ou sem JSON utilizável.");
+  }
+
+  const parsed = JSON.parse(normalizedText);
+  const issues = [];
+  const procedures = extractProcedures(parsed, fileName, issues);
+
+  return { procedures, issues };
+}
+
+function normalizeProcedureFileText(content) {
+  const asText = String(content ?? "");
+  const withoutBom = stripBom(asText);
+  const trimmed = withoutBom.trim();
+
+  if (!trimmed) {
+    return "";
+  }
+
+  return stripJsonCodeFence(trimmed).trim();
+}
+
+function stripJsonCodeFence(text) {
+  const match = String(text).match(/^```(?:json)?\s*([\s\S]*?)\s*```$/i);
+  return match ? match[1] : text;
 }
 
 function extractProcedures(payload, fileName, issues) {
