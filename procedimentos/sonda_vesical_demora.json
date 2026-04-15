@@ -1,0 +1,97 @@
+{
+  "id": "sonda_vesical_demora",
+  "nome": "Passagem de sonda vesical de demora",
+  "categoria": "Urologia / Procedimentos básicos",
+  "descricao_curta": "Roteiro estruturado para treino de segurança, assepsia e sequência correta da cateterização vesical de demora.",
+  "indicacoes": [
+    "Monitorização rigorosa do débito urinário em pacientes críticos.",
+    "Retenção urinária aguda ou crônica com necessidade de drenagem contínua.",
+    "Preparo ou acompanhamento pós-operatório de procedimentos selecionados.",
+    "Imobilização prolongada com indicação clínica formal."
+  ],
+  "contraindicacoes": [
+    "Suspeita de lesão uretral sem avaliação adequada prévia.",
+    "Trauma pélvico com sangue no meato uretral.",
+    "Estenose uretral conhecida sem planejamento técnico apropriado."
+  ],
+  "preparo": [
+    "Confirmar identidade do paciente, indicação clínica e consentimento.",
+    "Explicar o procedimento e preservar privacidade.",
+    "Selecionar calibre da sonda, volume do balão e material adequado ao caso.",
+    "Organizar campo limpo ou estéril antes do início."
+  ],
+  "materiais": [
+    "Sonda vesical de demora adequada.",
+    "Sistema coletor fechado.",
+    "Luvas de procedimento e luvas estéreis.",
+    "Solução para antissepsia.",
+    "Lubrificante estéril e seringa com água estéril para insuflar o balão.",
+    "Campos e compressas."
+  ],
+  "acoes_iniciais": [
+    "Rever alergias, principalmente a látex e antissépticos.",
+    "Posicionar o paciente de forma confortável e com exposição mínima necessária.",
+    "Testar o balão antes da inserção, conforme protocolo local."
+  ],
+  "passos": [
+    {
+      "numero": 1,
+      "titulo": "Apresentação, confirmação e orientação",
+      "descricao": "Confirmar identidade, explicar o procedimento, revisar a indicação e obter concordância antes do início da técnica.",
+      "critico": true,
+      "alerta": "Falhas nesta etapa comprometem segurança, ética e adesão do paciente."
+    },
+    {
+      "numero": 2,
+      "titulo": "Montagem do material e técnica asséptica",
+      "descricao": "Organizar os materiais ao alcance, higienizar as mãos, preparar o campo e manter técnica asséptica durante todo o procedimento.",
+      "critico": true,
+      "alerta": "Quebras de assepsia aumentam risco de infecção associada ao cateter.",
+      "imagem": "assets/imagens/sonda-vesical/assepsia.svg"
+    },
+    {
+      "numero": 3,
+      "titulo": "Antissepsia da região",
+      "descricao": "Realizar antissepsia da genitália e do meato uretral conforme a técnica apropriada para o sexo biológico e o protocolo local.",
+      "critico": true
+    },
+    {
+      "numero": 4,
+      "titulo": "Lubrificação e inserção delicada",
+      "descricao": "Lubrificar adequadamente a sonda e inseri-la com delicadeza, sem forçar a progressão diante de resistência anormal.",
+      "critico": true,
+      "alerta": "Resistência importante exige reavaliação técnica e, em alguns casos, ajuda especializada."
+    },
+    {
+      "numero": 5,
+      "titulo": "Confirmação do posicionamento",
+      "descricao": "Aguardar drenagem urinária para confirmar entrada na bexiga antes de insuflar o balão e avançar conforme técnica segura.",
+      "critico": true
+    },
+    {
+      "numero": 6,
+      "titulo": "Insuflação do balão",
+      "descricao": "Insuflar o balão com o volume prescrito de água estéril após confirmação do posicionamento vesical."
+    },
+    {
+      "numero": 7,
+      "titulo": "Fixação e conexão do sistema",
+      "descricao": "Conectar ao sistema coletor fechado, acomodar sem tração excessiva e fixar a sonda para reduzir trauma uretral."
+    },
+    {
+      "numero": 8,
+      "titulo": "Reavaliação e registro",
+      "descricao": "Garantir conforto do paciente, posicionar a bolsa coletora abaixo do nível vesical e registrar data, calibre e intercorrências."
+    }
+  ],
+  "observacoes_finais": [
+    "Reavaliar diariamente a necessidade de permanência da sonda.",
+    "A bolsa coletora deve permanecer abaixo do nível da bexiga e sem contato com o chão.",
+    "Dor intensa, sangramento ou ausência de drenagem devem motivar revisão do posicionamento."
+  ],
+  "referencias": [
+    "Rotinas hospitalares de prevenção de infecção do trato urinário associada a cateter.",
+    "Materiais de ensino de semiotécnica e procedimentos básicos."
+  ],
+  "imagem_capa": "assets/imagens/sonda-vesical/capa.svg"
+}

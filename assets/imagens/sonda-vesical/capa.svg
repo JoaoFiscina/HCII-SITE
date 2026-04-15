@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração de capa para sonda vesical de demora</title>
+  <desc id="desc">Cartão ilustrativo com elementos clínicos em tons verdes e areia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef5f2" />
+      <stop offset="100%" stop-color="#f7efe4" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="640" fill="url(#bg)" />
+  <circle cx="162" cy="126" r="88" fill="#d8ebe6" />
+  <circle cx="820" cy="128" r="118" fill="#f5e3d9" />
+  <rect x="92" y="98" width="776" height="444" rx="40" fill="#ffffff" stroke="#d8e7e1" />
+  <text x="150" y="210" font-family="Georgia, serif" font-size="54" fill="#1e2d2c">Sonda vesical de demora</text>
+  <rect x="150" y="246" width="520" height="24" rx="12" fill="#667b7b" />
+  <rect x="150" y="292" width="430" height="18" rx="9" fill="#667b7b" opacity="0.78" />
+  <rect x="150" y="348" width="284" height="74" rx="37" fill="#1c5c59" />
+  <text x="208" y="394" font-family="Georgia, serif" font-size="32" fill="#ffffff">Modo Estudo</text>
+  <rect x="690" y="222" width="96" height="194" rx="48" fill="none" stroke="#1c5c59" stroke-width="16" />
+  <circle cx="738" cy="448" r="40" fill="none" stroke="#1c5c59" stroke-width="16" />
+  <path d="M738 178v44" stroke="#1c5c59" stroke-width="16" stroke-linecap="round" />
+</svg>

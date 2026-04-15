@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração da etapa de assepsia</title>
+  <desc id="desc">Composição visual em tons clínicos destacando preparo asséptico do procedimento.</desc>
+  <rect width="820" height="480" fill="#eef4f1" />
+  <rect x="76" y="64" width="668" height="352" rx="34" fill="#ffffff" stroke="#d8e6e0" />
+  <rect x="126" y="116" width="240" height="22" rx="11" fill="#1c5c59" opacity="0.18" />
+  <rect x="126" y="160" width="408" height="26" rx="13" fill="#1e2d2c" />
+  <rect x="126" y="206" width="350" height="16" rx="8" fill="#667b7b" />
+  <rect x="126" y="238" width="292" height="16" rx="8" fill="#667b7b" />
+  <rect x="126" y="290" width="226" height="58" rx="29" fill="#1c5c59" />
+  <text x="172" y="326" font-family="Georgia, serif" font-size="28" fill="#ffffff">Assepsia</text>
+  <circle cx="610" cy="258" r="76" fill="#f8e6e2" />
+  <path d="M610 198 632 260 700 260 646 302 666 366 610 328 554 366 574 302 520 260 588 260Z" fill="#b85042" />
+</svg>

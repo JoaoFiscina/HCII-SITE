@@ -9,9 +9,13 @@
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div>
+        <div class="topbar-copy">
           <p class="eyebrow">Estudo estruturado de habilidades cirúrgicas</p>
           <h1>Atlas Cirúrgico de Bolso</h1>
+          <p class="topbar-description">
+            Leitura automática de roteiros salvos no próprio repositório, pronta para crescer no
+            GitHub Pages sem mexer no código principal.
+          </p>
         </div>
 
         <div class="topbar-actions">
@@ -21,17 +25,94 @@
         </div>
       </header>
 
+      <section class="panel status-panel">
+        <div class="status-intro">
+          <div>
+            <p class="eyebrow">Sincronização dos dados</p>
+            <h2>Carregamento automático do repositório</h2>
+          </div>
+
+          <p id="statusMessage" class="status-message" aria-live="polite">
+            Preparando leitura da pasta de procedimentos...
+          </p>
+        </div>
+
+        <div class="status-grid">
+          <article class="status-card">
+            <span class="status-label">Procedimentos únicos</span>
+            <strong id="loadedProcedureCount">0</strong>
+            <small id="statusProcedureBreakdown">Aguardando carregamento</small>
+          </article>
+
+          <article class="status-card">
+            <span class="status-label">Fonte dos dados</span>
+            <strong id="dataSourceLabel">Carregando</strong>
+            <small id="configSummary">Configuração ainda não lida.</small>
+          </article>
+
+          <article class="status-card">
+            <span class="status-label">Arquivos processados</span>
+            <strong id="fileLoadSummary">0</strong>
+            <small id="issueSummary">Sem erros de importação.</small>
+          </article>
+        </div>
+
+        <div class="loading-panel" aria-live="polite">
+          <div class="loading-meta">
+            <span id="loadingLabel">Aguardando</span>
+            <span id="loadingCounter">0 / 0</span>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <div id="loadingProgressBar" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="status-actions">
+          <button type="button" id="reloadProceduresButton" class="button button-primary">
+            Recarregar procedimentos
+          </button>
+          <button type="button" id="importSingleButton" class="button button-secondary">
+            Importar arquivo local
+          </button>
+          <button type="button" id="importMultipleButton" class="button button-secondary">
+            Importar vários arquivos locais
+          </button>
+          <button type="button" id="clearLocalImportsButton" class="button button-ghost">
+            Limpar importação local
+          </button>
+        </div>
+
+        <input
+          type="file"
+          id="singleFileInput"
+          accept=".json,.txt,application/json,text/plain"
+          hidden
+        />
+        <input
+          type="file"
+          id="multipleFilesInput"
+          accept=".json,.txt,application/json,text/plain"
+          multiple
+          hidden
+        />
+      </section>
+
       <div class="layout">
         <aside class="sidebar">
           <section class="panel sidebar-intro">
             <div class="panel-heading">
-              <h2>Procedimentos</h2>
-              <span id="procedureCountBadge" class="badge muted">0</span>
+              <div>
+                <p class="eyebrow">Seleção</p>
+                <h2>Procedimentos</h2>
+              </div>
+
+              <span id="procedureCountBadge" class="badge neutral-badge">0 / 0</span>
             </div>
 
             <p class="sidebar-copy">
-              Busque um roteiro, filtre por categoria e escolha como estudar: visão completa ou treino
-              passo a passo.
+              Busque por nome, filtre por categoria e escolha um roteiro para estudar no modo
+              completo ou na sequência passo a passo.
             </p>
 
             <label class="field">
@@ -39,7 +120,7 @@
               <input
                 type="search"
                 id="searchInput"
-                placeholder="Ex.: sonda vesical, sutura, enxertia..."
+                placeholder="Ex.: sonda vesical, enxertia, sutura..."
                 autocomplete="off"
               />
             </label>
@@ -51,29 +132,35 @@
               </select>
             </label>
 
-            <div class="sidebar-actions">
-              <button type="button" id="manualImportButton" class="button button-secondary">
-                Importar JSON
-              </button>
-              <input type="file" id="jsonFileInput" accept=".json,application/json" hidden />
-            </div>
-
             <div id="loadMessage" class="message hidden" aria-live="polite"></div>
           </section>
 
           <section class="panel procedure-panel">
             <div id="procedureList" class="procedure-list" aria-live="polite"></div>
           </section>
+
+          <section class="panel issues-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Validação</p>
+                <h2>Erros de importação</h2>
+              </div>
+
+              <span id="issueCountBadge" class="badge muted">0</span>
+            </div>
+
+            <div id="issuesList" class="issues-list" aria-live="polite"></div>
+          </section>
         </aside>
 
         <main class="content">
           <section id="emptyState" class="empty-state">
             <div class="empty-state-card">
-              <p class="eyebrow">Seleção de procedimento</p>
-              <h2>Escolha um roteiro para começar</h2>
-              <p>
-                Ao selecionar um procedimento, você poderá alternar entre um modo completo de estudo
-                e um modo de sequência para treino mental passo a passo.
+              <p class="eyebrow">Leitura automática ativa</p>
+              <h2 id="emptyStateTitle">Escolha um procedimento para começar</h2>
+              <p id="emptyStateText">
+                O site carrega os arquivos da pasta <strong>/procedimentos</strong>, normaliza tudo
+                em uma lista única e mantém seus dois modos de estudo para treino prático e mental.
               </p>
             </div>
           </section>
@@ -84,10 +171,15 @@
                 <div class="hero-meta-row">
                   <span id="selectedCategory" class="badge category-badge"></span>
                   <span id="selectedStepSummary" class="badge neutral-badge"></span>
+                  <span id="selectedSourceBadge" class="badge muted"></span>
                 </div>
 
                 <h2 id="selectedProcedureName"></h2>
                 <p id="selectedProcedureDescription" class="hero-description"></p>
+
+                <div class="hero-file-row">
+                  <span id="selectedFileLabel" class="hero-file-label"></span>
+                </div>
 
                 <div class="hero-actions">
                   <button type="button" id="studyModeButton" class="button button-primary">

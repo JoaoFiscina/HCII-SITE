@@ -1,0 +1,117 @@
+{
+  "procedimentos": [
+    {
+      "id": "reconstrucao_cutanea_por_enxertia",
+      "nome": "Reconstrução cutânea por enxertia",
+      "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
+      "descricao_curta": "Roteiro prático de reconstrução cutânea por enxertia, com avaliação da área receptora, preparo do enxerto, fixação, curativo e seguimento.",
+      "indicacoes": [
+        "Ferida com impossibilidade de fechamento por sutura simples.",
+        "Área receptora com suprimento sanguíneo adequado.",
+        "Reconstruções em que a enxertia seja mais apropriada do que cicatrização por terceira intenção."
+      ],
+      "contraindicacoes": [
+        "Leito receptor mal vascularizado.",
+        "Infecção ativa sem controle local adequado."
+      ],
+      "preparo": [
+        "Organizar os materiais de paramentação, antissepsia, anestesia, procedimento e curativo.",
+        "Inspecionar a ferida quanto à profundidade, contaminação e viabilidade do leito receptor.",
+        "Realizar antissepsia, assepsia e hemostasia da área receptora antes do preparo definitivo."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Clorexidina, pinça de Foerster, gaze e campo estéril.",
+        "Lidocaína, seringas, agulhas e soro fisiológico.",
+        "Bisturi, dermátomo ou faca de Blair, pinças, tesouras, porta-agulha e fios."
+      ],
+      "acoes_iniciais": [
+        "Confirmar a necessidade de enxertia após avaliação clínica da ferida.",
+        "Garantir preparo adequado da área receptora antes da integração do enxerto.",
+        "Planejar o tipo de enxerto e a área doadora conforme a reconstrução."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente do procedimento e reunir todos os materiais necessários antes de iniciar.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de atraso, quebra de assepsia e improvisos."
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higienização das mãos, apresentar-se ao paciente e explicar o procedimento de forma clara.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança, comunicação e preparo emocional do paciente."
+        },
+        {
+          "numero": 3,
+          "titulo": "Inspecionar a ferida e confirmar indicação",
+          "descricao": "Avaliar a área receptora quanto à impossibilidade de fechamento por sutura simples, profundidade, contaminação e suprimento sanguíneo.",
+          "critico": true,
+          "alerta": "Leito receptor inadequado compromete a pega do enxerto."
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar antissepsia, assepsia e hemostasia da área receptora",
+          "descricao": "Executar antissepsia e assepsia da ferida aberta e promover hemostasia adequada antes das etapas seguintes.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada favorece sangramento sob o enxerto e formação de hematoma."
+        },
+        {
+          "numero": 5,
+          "titulo": "Desbridar e irrigar a ferida",
+          "descricao": "Realizar o desbridamento do leito receptor e proceder à irrigação, associando controle bacteriológico conforme necessário.",
+          "critico": true,
+          "alerta": "Persistência de tecido inviável ou controle bacteriano inadequado piora a integração do enxerto."
+        },
+        {
+          "numero": 6,
+          "titulo": "Preparar o enxerto e a área doadora",
+          "descricao": "Definir tipo, espessura e área doadora do enxerto. Preparar a pele, realizar a retirada e manter o tecido umedecido em soro fisiológico até a fixação.",
+          "critico": true,
+          "alerta": "Ao escolher a área doadora, considerar cor, textura, espessura, quantidade de pele necessária e visibilidade da cicatriz.",
+          "imagem": "assets/imagens/reconstrucao-enxertia/preparo.svg"
+        },
+        {
+          "numero": 7,
+          "titulo": "Preparar definitivamente a área receptora",
+          "descricao": "Remover a gaze previamente posicionada, revisar o leito e garantir que a superfície receptora esteja pronta para receber o enxerto.",
+          "critico": true
+        },
+        {
+          "numero": 8,
+          "titulo": "Fixar o enxerto",
+          "descricao": "Fixar o enxerto com suturas ou cola de tecido, assegurando bom contato com o leito e evitando dobras ou deslocamentos.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento, seroma, hematoma e falha de pega."
+        },
+        {
+          "numero": 9,
+          "titulo": "Cobrir com curativo não aderente",
+          "descricao": "Cobrir o enxerto com gaze vaselinada ou outra cobertura não aderente antes da imobilização.",
+          "critico": true
+        },
+        {
+          "numero": 10,
+          "titulo": "Imobilizar e acompanhar precocemente",
+          "descricao": "Imobilizar o enxerto com curativo compressivo adequado e reavaliar em 24 a 72 horas para observar complicações precoces.",
+          "critico": true,
+          "alerta": "A reavaliação precoce é essencial para identificar sangramento, infecção, deslocamento e falha de integração."
+        }
+      ],
+      "observacoes_finais": [
+        "A fenestração do enxerto favorece drenagem e reduz formação de hematoma.",
+        "Ao escolher a área doadora, considerar cor, textura, espessura, quantidade de pele necessária e visibilidade da cicatriz.",
+        "Curativos compressivos devem proteger sem gerar deslocamento do enxerto."
+      ],
+      "referencias": [
+        "Goffi. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia.",
+        "Sabiston. Tratado de cirurgia.",
+        "Teixeira Neto N et al. Tratamento cirúrgico das feridas complexas."
+      ],
+      "imagem_capa": "assets/imagens/reconstrucao-enxertia/capa.svg"
+    }
+  ]
+}

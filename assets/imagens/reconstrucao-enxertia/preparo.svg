@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" role="img" aria-labelledby="title desc">
+  <title id="title">Ilustração do preparo do enxerto</title>
+  <desc id="desc">Composição visual com bloco central e ícones geométricos remetendo ao preparo do enxerto.</desc>
+  <rect width="820" height="480" fill="#f1f5f2" />
+  <rect x="84" y="66" width="652" height="348" rx="34" fill="#ffffff" stroke="#d6e4de" />
+  <rect x="136" y="116" width="250" height="22" rx="11" fill="#1c5c59" opacity="0.18" />
+  <rect x="136" y="162" width="430" height="24" rx="12" fill="#1e2d2c" />
+  <rect x="136" y="208" width="360" height="16" rx="8" fill="#667b7b" />
+  <rect x="136" y="240" width="300" height="16" rx="8" fill="#667b7b" />
+  <rect x="136" y="292" width="250" height="60" rx="30" fill="#1c5c59" />
+  <text x="182" y="330" font-family="Georgia, serif" font-size="28" fill="#ffffff">Área doadora</text>
+  <rect x="570" y="154" width="108" height="108" rx="24" fill="#f8e6e2" />
+  <rect x="608" y="190" width="34" height="34" rx="8" fill="#b85042" />
+  <path d="M566 326h120" stroke="#b85042" stroke-width="12" stroke-linecap="round" />
+  <path d="M626 286v78" stroke="#b85042" stroke-width="12" stroke-linecap="round" />
+</svg>
