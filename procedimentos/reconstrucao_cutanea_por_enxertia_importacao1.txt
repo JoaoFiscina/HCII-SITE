@@ -1,0 +1,177 @@
+{
+  "procedimentos": [
+    {
+      "id": "reconstrucao_cutanea_por_enxertia",
+      "nome": "Reconstrução cutânea por enxertia",
+      "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
+      "descricao_curta": "Roteiro prático de reconstrução cutânea por enxertia, com avaliação da área receptora, preparo do enxerto, fixação, curativo e seguimento.",
+      "indicacoes": [
+        "Ferida com impossibilidade de fechamento por sutura simples.",
+        "Ferida cuja profundidade e características permitam reconstrução por enxertia.",
+        "Área receptora com suprimento sanguíneo adequado.",
+        "Situações em que, após avaliação da ferida, a enxertia seja mais apropriada do que cicatrização por terceira intenção."
+      ],
+      "contraindicacoes": [],
+      "preparo": [
+        "Organizar a sala e separar previamente os materiais de paramentação, antissepsia, anestesia, procedimento e curativo.",
+        "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo quanto ao procedimento.",
+        "Inspecionar a ferida quanto à impossibilidade de fechamento por sutura simples, à profundidade e à presença de suprimento sanguíneo adequado.",
+        "Considerar o tempo de evolução da ferida e o grau de contaminação ou infecção para afastar ou reconsiderar a possibilidade de cicatrização por terceira intenção.",
+        "Realizar antissepsia, assepsia e hemostasia da área receptora antes do preparo definitivo do leito."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Antissepsia e assepsia: clorexidina degermante, clorexidina alcoólica, pinça de Foerster, gaze e campo estéril.",
+        "Material para anestesia: lidocaína 1% ou 2% sem vasoconstrictor (7-10 mg/kg), seringa de 5 mL e agulhas 40x1,20 mm, 10x0,45 mm, 25x0,8 mm ou 25x0,7 mm.",
+        "Material do procedimento: caneta marcadora cutânea, bisturi com lâmina nº 15, dermátomo ou faca de Blair, expansor, pinça hemostática curva, pinça de Allis, pinça de dissecção traumática e atraumática, tesoura de Mayo reta, tesoura de Metzenbaum curva, porta-agulha, fios de nylon 3-0 e 4-0, fios de poliglactina 3-0 e 4-0 e soro fisiológico.",
+        "Outros materiais: fita adesiva cirúrgica (Micropore®), solução salina isotônica e gaze não aderente."
+      ],
+      "acoes_iniciais": [
+        "Confirmar a necessidade de enxertia após avaliação clínica da ferida.",
+        "Garantir preparo adequado da área receptora antes da integração do enxerto.",
+        "Planejar o tipo de enxerto e a área doadora de acordo com as características da reconstrução."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente do procedimento e reunir todos os materiais necessários antes de iniciar. Devem estar disponíveis itens de paramentação, antissepsia e assepsia, material anestésico, instrumentos para retirada e preparo do enxerto, fios de sutura, soro fisiológico e materiais para curativo.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de atraso, quebra de assepsia e improvisos durante o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higienização das mãos, apresentar-se ao paciente, tranquilizá-lo e explicar o procedimento de forma clara antes do início da técnica.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança, comunicação e preparação do paciente para o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Inspecionar a ferida e confirmar indicação",
+          "descricao": "Avaliar a área receptora quanto à impossibilidade de fechamento por sutura simples, profundidade da ferida e presença de suprimento sanguíneo adequado. Considerar também o tempo de evolução e o grau de contaminação ou infecção da ferida, para descartar ou reconsiderar cicatrização por terceira intenção.",
+          "critico": true,
+          "alerta": "Leito receptor inadequado ou mal avaliado compromete a pega do enxerto.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar antissepsia, assepsia e hemostasia da área receptora",
+          "descricao": "Executar antissepsia e assepsia da ferida aberta e, em seguida, promover hemostasia adequada da área receptora antes das etapas seguintes.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada favorece sangramento sob o enxerto e formação de hematoma.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Fazer a anestesia conforme a extensão da lesão",
+          "descricao": "Escolher anestesia local, bloqueio regional ou anestesia geral de acordo com a extensão da lesão. Em ferida limpa, realizar anestesia intradérmica. Em ferida contaminada, fazer botão anestésico e infiltrar a região adjacente em formato de elipse.",
+          "critico": true,
+          "alerta": "A escolha da técnica anestésica deve respeitar o tipo e a extensão da lesão.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Desbridar e irrigar a ferida",
+          "descricao": "Realizar o desbridamento do leito receptor e proceder à irrigação, associando controle bacteriológico conforme necessário.",
+          "critico": true,
+          "alerta": "Persistência de tecido inviável ou controle bacteriano inadequado piora a integração do enxerto.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Promover hemostasia final e umidificação da área receptora",
+          "descricao": "Aplicar gaze embebida em solução fisiológica para auxiliar na hemostasia e manter o leito receptor umidificado até a colocação do enxerto.",
+          "critico": true,
+          "alerta": "O leito deve estar preparado, hemostático e umidificado no momento da integração do enxerto.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Preparar o enxerto e a área doadora",
+          "descricao": "Definir o tipo de enxerto quanto à composição, origem, espessura e forma de processamento. Preparar a área doadora com tosquiamento, se necessário. Demarcar a extensão da exérese da pele. Realizar antissepsia e assepsia da área doadora. Fazer anestesia local ou anestesia geral, se a área for extensa. Distender a pele e, se desejado, cobri-la com parafina líquida, óleo mineral ou gel lubrificante cirúrgico à base de água para facilitar o deslizamento. Iniciar a incisão com dermátomo elétrico, faca de Blair ou dissecção com bisturi em plano justadérmico. Remover a gordura remanescente, expandir e fenestrar o enxerto quando indicado, mantendo-o umedecido em soro fisiológico. Ao final, realizar curativo oclusivo na área doadora.",
+          "critico": true,
+          "alerta": "Na escolha da área doadora, considerar cor, textura, espessura, quantidade de pele necessária e visibilidade da cicatriz. A fenestração favorece drenagem e reduz hematoma.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Preparar definitivamente a área receptora e integrar o enxerto",
+          "descricao": "Remover a gaze previamente posicionada, retirar o tecido de granulação da área receptora quando indicado e então integrar o enxerto ao leito preparado.",
+          "critico": true,
+          "alerta": "A superfície receptora deve estar adequadamente preparada imediatamente antes da colocação do enxerto.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Fixar o enxerto",
+          "descricao": "Fixar o enxerto com suturas ou cola de tecido. Se optar por sutura, utilizar ponto simples descontínuo ou sutura contínua, com fio absorvível ou não absorvível, a critério do cirurgião. Se for usado curativo de Brown, realizar sutura descontínua em ponto simples. Se optar por cola, utilizar selantes de fibrina, usualmente na concentração de 4 a 5 unidades/mL.",
+          "critico": true,
+          "alerta": "A fixação inadequada favorece deslocamento, seroma, hematoma e falha da pega.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Verificar sangramento e disposição do enxerto",
+          "descricao": "Checar se não há sangramento sob o enxerto e se ele está corretamente disposto sobre o leito receptor. Observar que a coloração inicial costuma ser pálida, podendo evoluir para cianose e, posteriormente, para coloração rosada, indicativa de boa vascularização.",
+          "critico": true,
+          "alerta": "Sangramento não identificado ou má acomodação do enxerto comprometem a integração.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Realizar cobertura não aderente",
+          "descricao": "Cobrir o enxerto com curativo não aderente, podendo usar gaze embebida em PVPI tópico, pomada antibiótica à base de gentamicina, bacitracina ou neomicina, ou gaze vaselinada.",
+          "critico": true,
+          "alerta": "A cobertura deve proteger sem aderir ao enxerto recém-fixado.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Imobilizar o enxerto com curativo compressivo",
+          "descricao": "Imobilizar o enxerto com curativo oclusivo acolchoado, curativo de Brown ou curativo compressivo. Se utilizar esponja, destacar a esponja da escova e cortá-la com cerca de 1 cm de espessura, excedendo aproximadamente 0,5 cm das margens do enxerto. Posicionar a esponja sobre a gaze umedecida e realizar nós cirúrgicos com os fios excedentes dos pontos cardeais, ajustando a tensão para manter o curativo compressivo e o enxerto imobilizado. Se forem usadas gazes, aplicar na ordem: gaze vaselinada, gaze seca e, por último, gaze algodoada. O uso de fita cirúrgica adesiva também é permitido.",
+          "critico": true,
+          "alerta": "Evitar curativo de Brown em feridas infectadas ou com alta produção de linfa.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Reavaliar precocemente",
+          "descricao": "Reavaliar o enxerto em 24 a 72 horas para observar complicações cirúrgicas precoces.",
+          "critico": true,
+          "alerta": "A reavaliação precoce é essencial para identificar sangramento, infecção, deslocamento e falha de integração.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Remover os pontos conforme a localização",
+          "descricao": "Programar a retirada dos pontos de sutura de acordo com o local: em face, por volta de 7 dias; em outros locais, por volta de 14 dias.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "O uso de material lubrificante é facultativo quando a dissecção for realizada com bisturi.",
+        "A fenestração do enxerto favorece a drenagem e reduz a formação de hematoma.",
+        "Ao escolher a área doadora, considerar cor, textura, espessura, quantidade de pele necessária e visibilidade da cicatriz.",
+        "O curativo de Brown pode ser realizado com gazes empilhadas ou esponja cirúrgica.",
+        "Vídeos do material têm finalidade ilustrativa; para aulas e avaliações, prevalecem as informações do roteiro da monitoria."
+      ],
+      "referencias": [
+        "Teixeira Neto N et al. Tratamento cirúrgico das feridas complexas. Rev Med (São Paulo). 2010 jul-dez;89(3/4):147-151.",
+        "Goffi, Fábio Schimit. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª ed. São Paulo: Atheneu; 1996.",
+        "Speranzini, Manlio Basilio et al. Manual de Diagnóstico e Tratamento para o Residente de Cirurgia. São Paulo: Atheneu; 2013.",
+        "Lofêgo JÁ et al. Enxertia de pele em oncologia cutânea. An Bras Dermatol. 2006;81(5):465-472.",
+        "Fonseca Franklin Pinto et al. Cirurgia Ambulatorial. Rio de Janeiro: Guanabara Koogan; 1999.",
+        "Kirk RM. Bases técnicas da cirurgia. Tradução da 6ª edição. Rio de Janeiro: Elsevier; 2012.",
+        "Zanini Mauricio et al. Uso de esponja cirúrgica para curativo compressivo de enxerto cutâneo. An Bras Dermatol. 2004;79(3):359-362.",
+        "Chang KP et al. An alternative dressing for skin graft immobilization: negative pressure dressing. Burns. 2001;27(8):839-842.",
+        "Sabiston. Tratado de cirurgia: a base biológica da prática cirúrgica moderna. 21ª ed. Elsevier; 2022."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
