@@ -31,6 +31,7 @@ const appState = {
   mergeIssues: [],
   selectedProcedureId: null,
   mode: "study",
+  sequencePanelPinned: true,
   searchTerm: "",
   selectedCategory: "all",
   progress: {},
@@ -84,9 +85,11 @@ const elements = {
   clearChecklistButton: document.querySelector("#clearChecklistButton"),
   studyView: document.querySelector("#studyView"),
   sequenceSection: document.querySelector("#sequenceSection"),
+  sequenceSummary: document.querySelector("#sequenceSummary"),
   previousStepButton: document.querySelector("#previousStepButton"),
   nextStepButton: document.querySelector("#nextStepButton"),
   restartSequenceButton: document.querySelector("#restartSequenceButton"),
+  toggleSequencePinButton: document.querySelector("#toggleSequencePinButton"),
   mobilePreviousStepButton: document.querySelector("#mobilePreviousStepButton"),
   mobileNextStepButton: document.querySelector("#mobileNextStepButton"),
   mobileRestartSequenceButton: document.querySelector("#mobileRestartSequenceButton"),
@@ -263,6 +266,12 @@ function bindEvents() {
     restartSequence();
   });
 
+  elements.toggleSequencePinButton.addEventListener("click", () => {
+    appState.sequencePanelPinned = !appState.sequencePanelPinned;
+    persistState();
+    renderSequenceSummaryState();
+  });
+
   elements.mobilePreviousStepButton.addEventListener("click", () => {
     updateSequenceBy(-1);
   });
@@ -302,6 +311,8 @@ function bindEvents() {
   });
 
   document.addEventListener("keydown", handleSequenceShortcuts);
+  window.addEventListener("scroll", updateSequenceSummaryState, { passive: true });
+  window.addEventListener("resize", updateSequenceSummaryState);
 }
 
 async function bootstrapCatalog() {
@@ -1301,6 +1312,7 @@ function restoreState() {
 
     appState.selectedProcedureId = safeText(saved.selectedProcedureId) || null;
     appState.mode = saved.mode === "sequence" ? "sequence" : "study";
+    appState.sequencePanelPinned = typeof saved.sequencePanelPinned === "boolean" ? saved.sequencePanelPinned : true;
     appState.searchTerm = typeof saved.searchTerm === "string" ? saved.searchTerm : "";
     appState.selectedCategory = typeof saved.selectedCategory === "string" ? saved.selectedCategory : "all";
     appState.progress = isPlainObject(saved.progress) ? saved.progress : {};
@@ -1315,6 +1327,7 @@ function persistState() {
   const payload = {
     selectedProcedureId: appState.selectedProcedureId,
     mode: appState.mode,
+    sequencePanelPinned: appState.sequencePanelPinned,
     searchTerm: appState.searchTerm,
     selectedCategory: appState.selectedCategory,
     progress: appState.progress
@@ -1566,6 +1579,7 @@ function renderSequenceView(procedure) {
   elements.sequenceCounter.textContent = `${progress.sequenceIndex} / ${totalSteps}`;
   elements.sequenceProgressBar.style.width = `${percentage}%`;
   syncSequenceControls(progress.sequenceIndex, totalSteps);
+  renderSequenceSummaryState();
   elements.sequenceIntro.classList.toggle("hidden", revealedSteps.length > 0);
 
   if (!revealedSteps.length) {
@@ -1667,10 +1681,45 @@ function renderMode() {
   elements.sequenceModeButton.classList.toggle("button-secondary", !isSequence);
   elements.studyModeButton.setAttribute("aria-pressed", String(!isSequence));
   elements.sequenceModeButton.setAttribute("aria-pressed", String(isSequence));
+  renderSequenceSummaryState();
 
   if (procedure && isSequence) {
     renderSequenceView(procedure);
   }
+}
+
+function renderSequenceSummaryState() {
+  const isPinned = appState.sequencePanelPinned;
+  const isSequenceVisible = !elements.sequenceSection.classList.contains("hidden");
+
+  elements.sequenceSummary.classList.toggle("is-static", !isPinned);
+  elements.sequenceSummary.classList.toggle("is-condensed", false);
+  elements.toggleSequencePinButton.textContent = isPinned ? "Desfixar do topo" : "Fixar no topo";
+  elements.toggleSequencePinButton.setAttribute("aria-pressed", String(isPinned));
+  elements.toggleSequencePinButton.setAttribute(
+    "aria-label",
+    isPinned ? "Desativar painel fixo no topo" : "Ativar painel fixo no topo"
+  );
+  elements.toggleSequencePinButton.classList.toggle("is-active", isPinned);
+  elements.toggleSequencePinButton.disabled = !isSequenceVisible;
+
+  updateSequenceSummaryState();
+}
+
+function updateSequenceSummaryState() {
+  const isDesktop = window.innerWidth > 720;
+  const isSequenceVisible = !elements.sequenceSection.classList.contains("hidden");
+  const shouldBeSticky = isDesktop && isSequenceVisible && appState.mode === "sequence" && appState.sequencePanelPinned;
+
+  if (!shouldBeSticky) {
+    elements.sequenceSummary.classList.remove("is-condensed");
+    return;
+  }
+
+  const summaryTop = elements.sequenceSummary.getBoundingClientRect().top;
+  const isCondensed = summaryTop <= 18.5 && window.scrollY > 0;
+
+  elements.sequenceSummary.classList.toggle("is-condensed", isCondensed);
 }
 
 function createOverviewCard(title, items) {

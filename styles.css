@@ -839,6 +839,67 @@ button {
   position: sticky;
   top: 18px;
   z-index: 2;
+  transition:
+    padding 180ms ease,
+    gap 180ms ease,
+    box-shadow 180ms ease,
+    border-radius 180ms ease,
+    transform 180ms ease;
+}
+
+.sequence-summary.is-static {
+  position: static;
+}
+
+.sequence-summary.is-condensed {
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 22px;
+  box-shadow: 0 14px 28px rgba(18, 53, 51, 0.12);
+}
+
+.sequence-summary.is-condensed .progress-track {
+  height: 8px;
+}
+
+.sequence-summary.is-condensed .sequence-counter {
+  font-size: clamp(1.02rem, 1.4vw, 1.24rem);
+}
+
+.sequence-summary.is-condensed .button {
+  min-height: 40px;
+  padding: 9px 14px;
+}
+
+.sequence-summary.is-condensed .sequence-shortcut-hint {
+  font-size: 0.82rem;
+}
+
+.sequence-summary.is-condensed .eyebrow {
+  font-size: 0.72rem;
+}
+
+.sequence-summary.is-condensed h3 {
+  font-size: 1.08rem;
+}
+
+.sequence-summary-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.button-compact {
+  min-height: 40px;
+  padding: 9px 14px;
+  font-size: 0.92rem;
+}
+
+.sequence-pin-toggle.is-active {
+  border-color: rgba(28, 92, 89, 0.28);
+  background: rgba(255, 255, 255, 0.82);
 }
 
 .sequence-counter {
@@ -987,6 +1048,15 @@ button {
 
   .sequence-summary {
     position: static;
+  }
+
+  .sequence-summary-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .sequence-pin-toggle {
+    display: none;
   }
 
   .sequence-controls {

@@ -231,14 +231,23 @@
             </section>
 
             <section id="sequenceSection" class="view-block hidden">
-              <div class="panel sequence-summary">
+              <div id="sequenceSummary" class="panel sequence-summary">
                 <div class="sequence-topline">
                   <div>
                     <p class="eyebrow">Treino de sequência</p>
                     <h3>Progresso atual</h3>
                   </div>
 
-                  <div id="sequenceCounter" class="sequence-counter">0 / 0</div>
+                  <div class="sequence-summary-actions">
+                    <div id="sequenceCounter" class="sequence-counter">0 / 0</div>
+                    <button
+                      type="button"
+                      id="toggleSequencePinButton"
+                      class="button button-ghost button-compact sequence-pin-toggle"
+                    >
+                      Desfixar do topo
+                    </button>
+                  </div>
                 </div>
 
                 <div class="progress-track" aria-hidden="true">
