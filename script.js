@@ -67,9 +67,8 @@ const elements = {
   emptyStateTitle: document.querySelector("#emptyStateTitle"),
   emptyStateText: document.querySelector("#emptyStateText"),
   quickProcedurePicker: document.querySelector("#quickProcedurePicker"),
-  quickProcedureMeta: document.querySelector("#quickProcedureMeta"),
+  quickProcedureSelect: document.querySelector("#quickProcedureSelect"),
   quickProcedureHint: document.querySelector("#quickProcedureHint"),
-  quickProcedureList: document.querySelector("#quickProcedureList"),
   randomProcedureButton: document.querySelector("#randomProcedureButton"),
   procedureView: document.querySelector("#procedureView"),
   selectedCategory: document.querySelector("#selectedCategory"),
@@ -174,6 +173,16 @@ function bindEvents() {
     persistState();
     renderProcedureList();
     renderQuickProcedurePicker();
+  });
+
+  elements.quickProcedureSelect.addEventListener("change", (event) => {
+    const procedureId = safeText(event.target.value);
+
+    if (!procedureId) {
+      return;
+    }
+
+    selectProcedure(procedureId);
   });
 
   elements.randomProcedureButton.addEventListener("click", () => {
@@ -303,16 +312,6 @@ function bindEvents() {
     }
 
     selectProcedure(card.dataset.procedureId);
-  });
-
-  elements.quickProcedureList.addEventListener("click", (event) => {
-    const option = event.target.closest("[data-quick-procedure-id]");
-
-    if (!option) {
-      return;
-    }
-
-    selectProcedure(option.dataset.quickProcedureId);
   });
 
   elements.studyStepsList.addEventListener("change", (event) => {
@@ -1409,7 +1408,7 @@ function renderQuickProcedurePicker() {
   const allProcedures = appState.procedures;
   const filteredProcedures = getFilteredProcedures();
 
-  elements.quickProcedureMeta.textContent = `${allProcedures.length} itens`;
+  elements.quickProcedureSelect.disabled = allProcedures.length === 0;
   elements.randomProcedureButton.disabled = filteredProcedures.length === 0;
   elements.randomProcedureButton.title = filteredProcedures.length
     ? "Seleciona aleatoriamente um procedimento visível com os filtros atuais."
@@ -1419,29 +1418,26 @@ function renderQuickProcedurePicker() {
     : "Nenhum procedimento visível com os filtros atuais. Ajuste a busca ou a categoria para sortear.";
 
   if (!allProcedures.length) {
-    elements.quickProcedurePicker.removeAttribute("open");
-    elements.quickProcedureList.innerHTML = `
-      <div class="quick-procedure-empty">
-        Nenhum procedimento carregado ainda.
-      </div>
+    elements.quickProcedureHint.textContent = "Nenhum procedimento carregado ainda.";
+    elements.quickProcedureSelect.innerHTML = `
+      <option value="">Nenhum procedimento carregado</option>
     `;
     return;
   }
 
-  elements.quickProcedureList.innerHTML = allProcedures
-    .map(
-      (procedure) => `
-        <button
-          type="button"
-          class="quick-procedure-option ${procedure.id === appState.selectedProcedureId ? "is-active" : ""}"
-          data-quick-procedure-id="${escapeAttribute(procedure.id)}"
-          title="${escapeAttribute(procedure.nome)}"
-        >
-          ${escapeHtml(procedure.nome)}
-        </button>
-      `
-    )
-    .join("");
+  const selectedProcedureExists = allProcedures.some((procedure) => procedure.id === appState.selectedProcedureId);
+
+  elements.quickProcedureSelect.innerHTML = `
+    <option value="">Escolha um procedimento...</option>
+    ${allProcedures
+      .map(
+        (procedure) => `
+          <option value="${escapeAttribute(procedure.id)}">${escapeHtml(procedure.nome)}</option>
+        `
+      )
+      .join("")}
+  `;
+  elements.quickProcedureSelect.value = selectedProcedureExists ? appState.selectedProcedureId : "";
 }
 
 function renderStatusPanel() {
@@ -1543,10 +1539,6 @@ function renderProcedureList() {
       `;
     })
     .join("");
-}
-
-function closeQuickProcedurePicker() {
-  elements.quickProcedurePicker.removeAttribute("open");
 }
 
 function renderSelectedProcedure() {
@@ -1851,7 +1843,6 @@ function selectProcedure(procedureId) {
     return;
   }
 
-  closeQuickProcedurePicker();
   appState.selectedProcedureId = procedureId;
   persistState();
   render();
