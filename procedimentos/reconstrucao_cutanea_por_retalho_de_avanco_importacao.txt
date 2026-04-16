@@ -1,0 +1,244 @@
+{
+  "procedimentos": [
+    {
+      "id": "reconstrucao_cutanea_por_retalho_de_avanco",
+      "nome": "Reconstrução cutânea por retalho de avanço",
+      "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
+      "descricao_curta": "Roteiro prático de reconstrução cutânea por retalho de avanço, com planejamento, incisão, divulsão, avanço, correção do triângulo de Burow, sutura e seguimento pós-operatório.",
+      "indicacoes": [
+        "Cobertura de áreas cruentas ou substituição de áreas cicatriciais que exijam melhor resultado estético e funcional.",
+        "Reconstrução em áreas nobres como nariz, lábios, pálpebras e pavilhão auricular.",
+        "Cobertura de estruturas com vascularização deficiente, como cartilagem sem pericôndrio, osso sem periósteo, tendão sem peritendão, nervos e áreas submetidas à radioterapia.",
+        "Cobertura de proeminências ósseas sujeitas à pressão.",
+        "Proteção de troncos nervosos e grandes vasos sanguíneos.",
+        "Situações em que métodos reconstrutivos menos complexos falharam ou são inadequados, como sutura simples e enxertia cutânea.",
+        "Feridas com exposição de estruturas profundas.",
+        "Casos em que o resultado cosmético e funcional tem maior importância."
+      ],
+      "contraindicacoes": [
+        "Insuficiência vascular da área doadora."
+      ],
+      "preparo": [
+        "Avaliar a ferida quanto à impossibilidade de fechamento por sutura simples.",
+        "Avaliar profundidade da lesão e adequação do suprimento sanguíneo local.",
+        "Considerar tempo de evolução e grau de contaminação ou infecção da ferida para afastar a possibilidade de cicatrização por terceira intenção.",
+        "Planejar o tipo de retalho com base no tamanho da lesão, direção das linhas de tensão mínima, vascularização dos leitos doador e receptor, comorbidades do paciente e necessidade estética e funcional."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Antissepsia e assepsia: clorexidina, PVPI, pinça de Foerster e campo estéril.",
+        "Material para anestesia: lidocaína 1% ou 2% sem vasoconstrictor (7-10 mg/kg), seringa de 5 mL e agulhas 40x1,20 mm, 10x0,45 mm, 25x0,8 mm ou 25x0,7 mm.",
+        "Material do procedimento: caneta marcadora cutânea, bisturi com lâmina nº 15, pinça hemostática curva, pinça de Allis, pinça de dissecção traumática e atraumática, tesoura de Mayo reta, tesoura de Metzenbaum curva, porta-agulha, fios de nylon 3-0 e 4-0, fios de poliglactina 3-0 e 4-0 e soro fisiológico.",
+        "Outros materiais: fita adesiva cirúrgica (Micropore®), solução salina isotônica e gaze vaselinada (não aderente)."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o retalho cutâneo é composto por pele e tela subcutânea transferidas com seu pedículo vascular, responsável pela nutrição do retalho.",
+        "Priorizar o uso de retalho quando sutura simples e enxertia cutânea forem inadequadas ou insuficientes e quando houver exposição de estruturas profundas.",
+        "Planejar o retalho com atenção à vascularização da área doadora e receptora, à necessidade funcional e ao resultado estético."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir todo o material necessário antes de iniciar o procedimento.",
+          "critico": true,
+          "alerta": "Falhas na preparação inicial aumentam risco de atraso, quebra de assepsia e improvisação técnica.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "1a", "texto": "Separar materiais de paramentação: luvas estéreis, máscara, gorro e óculos de proteção." },
+            { "rotulo": "1b", "texto": "Separar materiais de antissepsia e assepsia: clorexidina, PVPI, pinça de Foerster e campo estéril." },
+            { "rotulo": "1c", "texto": "Separar material anestésico: lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas adequadas." },
+            { "rotulo": "1d", "texto": "Separar material do procedimento: caneta marcadora cutânea, bisturi lâmina nº 15, pinças, tesouras, porta-agulha, fios de nylon e poliglactina, além de soro fisiológico." },
+            { "rotulo": "1e", "texto": "Separar materiais complementares: Micropore®, solução salina isotônica e gaze vaselinada não aderente." }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo de forma clara sobre o procedimento a ser realizado.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança, preparo emocional e alinhamento do procedimento com o paciente.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Inspecionar a ferida e confirmar a indicação do retalho",
+          "descricao": "Examinar a área receptora para confirmar que o fechamento por sutura simples não é possível e que há condições para reconstrução por retalho de avanço.",
+          "critico": true,
+          "alerta": "Má avaliação do leito receptor e da ferida pode levar à escolha inadequada do método reconstrutivo.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "3a", "texto": "Constatar a impossibilidade de fechamento por sutura simples." },
+            { "rotulo": "3b", "texto": "Avaliar a profundidade da lesão." },
+            { "rotulo": "3c", "texto": "Verificar presença de suprimento sanguíneo adequado." },
+            { "rotulo": "3d", "texto": "Considerar tempo de evolução e grau de contaminação ou infecção da ferida." },
+            { "rotulo": "3e", "texto": "Descartar, quando apropriado, a possibilidade de cicatrização por terceira intenção após resolução do processo infeccioso." }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Planejar o retalho e demarcar as linhas de incisão",
+          "descricao": "Desenhar o retalho de avanço conforme o tamanho da lesão e a biomecânica local, respeitando a direção das linhas de tensão mínima.",
+          "critico": true,
+          "alerta": "Planejamento inadequado aumenta tensão, prejudica mobilização e compromete vascularização.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "4a", "texto": "Definir o tipo de retalho tendo em vista o tamanho da lesão a ser recoberta." },
+            { "rotulo": "4b", "texto": "Demarcar as linhas de incisão com caneta marcadora cutânea." },
+            { "rotulo": "4c", "texto": "Orientar a marcação pela direção das linhas de tensão mínima." },
+            { "rotulo": "4d", "texto": "Planejar o retalho em formato retangular, partindo de uma borda cruenta." }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia, assepsia e hemostasia da área receptora",
+          "descricao": "Executar antissepsia e assepsia da ferida aberta e obter hemostasia inicial adequada da área receptora.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada aumenta risco de hematoma e sofrimento do retalho.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar anestesia conforme extensão e condições da lesão",
+          "descricao": "Escolher anestesia local, bloqueio regional ou anestesia geral conforme a extensão da lesão e a estratégia reconstrutiva.",
+          "critico": true,
+          "alerta": "A técnica anestésica deve ser compatível com o tipo de ferida e a extensão do procedimento.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "6a", "texto": "Realizar anestesia intradérmica em ferida limpa." },
+            { "rotulo": "6b", "texto": "Em ferida contaminada, fazer botão anestésico e anestesiar a região adjacente em formato de elipse." },
+            { "rotulo": "6c", "texto": "Indicar bloqueio regional ou anestesia geral quando a extensão da lesão exigir." }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Desbridar e irrigar a ferida",
+          "descricao": "Realizar desbridamento do leito receptor e proceder à irrigação, associando controle bacteriológico quando indicado.",
+          "critico": true,
+          "alerta": "Tecido inviável e contaminação residual prejudicam o resultado reconstrutivo.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Incisar a pele",
+          "descricao": "Incisar a pele com bisturi, mantendo-o perpendicular à pele para preservar a qualidade das bordas e a geometria planejada do retalho.",
+          "critico": true,
+          "alerta": "Incisão inadequada compromete a mobilização, a coaptação e a vascularização das bordas.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Divulsionar o retalho e a pele adjacente",
+          "descricao": "Divulsionar o retalho e a pele adjacente às bordas com o objetivo de reduzir a tensão e facilitar o avanço.",
+          "critico": true,
+          "alerta": "Liberação insuficiente mantém tensão excessiva; liberação inadequada pode comprometer o pedículo e a vascularização.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar hemostasia minuciosa",
+          "descricao": "Revisar cuidadosamente o campo operatório e realizar hemostasia minuciosa antes do avanço e da fixação do retalho.",
+          "critico": true,
+          "alerta": "Sangramento residual favorece hematoma, deiscência e sofrimento vascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Elevar e deslizar o retalho em avanço",
+          "descricao": "Elevar o retalho como uma tenda e deslizá-lo em direção à área lesada, em movimento retilíneo, após minimizar as áreas de tensão.",
+          "critico": true,
+          "alerta": "Tração excessiva, torção ou avanço sob tensão podem comprometer a perfusão do retalho.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "11a", "texto": "Elevar o retalho com delicadeza, como uma tenda." },
+            { "rotulo": "11b", "texto": "Tracionar a ponta do retalho com gancho na derme." },
+            { "rotulo": "11c", "texto": "Deslizar o retalho em direção à área lesada em movimento retilíneo." },
+            { "rotulo": "11d", "texto": "Confirmar previamente que as áreas de maior tensão foram suficientemente minimizadas." }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Ressecar o triângulo de Burow se necessário",
+          "descricao": "Avaliar a necessidade de retirar o triângulo de Burow para eliminar excesso de pele e reduzir a tensão residual na região caudal do retalho.",
+          "critico": true,
+          "alerta": "Persistência de sobra cutânea e tensão inferior pode distorcer o retalho e prejudicar a acomodação final.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "12a", "texto": "Identificar sobra de pele na região caudal do retalho após o movimento de avanço." },
+            { "rotulo": "12b", "texto": "Reconhecer resistência na porção inferior como indício de necessidade de correção." },
+            { "rotulo": "12c", "texto": "Posicionar lateralmente o triângulo de Burow em relação à região caudal do retalho." },
+            { "rotulo": "12d", "texto": "Usar como base do triângulo a continuação da linha de incisão." },
+            { "rotulo": "12e", "texto": "Ressecar o triângulo para minimizar a tensão e melhorar a acomodação do retalho." }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Fixar o retalho com sutura descontínua",
+          "descricao": "Fixar o retalho iniciando pelas extremidades com ponto de Gillies e, em seguida, completar a coaptação das bordas com pontos simples utilizando fio não absorvível.",
+          "critico": true,
+          "alerta": "Número excessivo de pontos, pontos muito próximos ou sutura sob tensão podem comprometer a vascularização das bordas.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "13a", "texto": "Iniciar a fixação pelas extremidades do retalho." },
+            { "rotulo": "13b", "texto": "Realizar ponto de Gillies nos ângulos." },
+            { "rotulo": "13c", "texto": "Completar a síntese das bordas com pontos simples utilizando fio não absorvível." },
+            { "rotulo": "13d", "texto": "No ponto de Gillies, transfixar a borda da pele do ângulo aberto no sentido proximal-distal." },
+            { "rotulo": "13e", "texto": "Em seguida, transfixar apenas a derme horizontalmente no ângulo fechado." },
+            { "rotulo": "13f", "texto": "Por fim, transfixar a outra extremidade de ângulo aberto no sentido distal-proximal." },
+            { "rotulo": "13g", "texto": "Evitar grande quantidade de pontos e excessiva proximidade entre eles." }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Realizar curativo semi-oclusivo",
+          "descricao": "Fazer curativo semi-oclusivo, seco e levemente compressivo, com gaze presa nas bordas por esparadrapo e centro sem fixação.",
+          "critico": true,
+          "alerta": "Curativo excessivamente compressivo pode comprometer o pedículo; curativo insuficiente favorece instabilidade e complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Reavaliar precocemente",
+          "descricao": "Reavaliar o retalho em 24 a 72 horas para observar complicações cirúrgicas precoces, como hematoma, infecção, deiscência ou comprometimento vascular.",
+          "critico": true,
+          "alerta": "A reavaliação precoce é essencial para detectar sofrimento vascular e outras complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Remover os pontos conforme a localização",
+          "descricao": "Programar a retirada dos pontos de sutura conforme a localização anatômica da reconstrução.",
+          "critico": false,
+          "alerta": "",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "16a", "texto": "Retirar pontos da face em aproximadamente 7 dias." },
+            { "rotulo": "16b", "texto": "Retirar pontos de outros locais em aproximadamente 14 dias." }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Retalhos cutâneos são transferidos juntamente com seu pedículo vascular, diferentemente dos enxertos, e por isso podem ser usados em leitos com vascularização deficiente.",
+        "O retalho de avanço é um retalho de vizinhança deslocado em movimento retilíneo em direção ao defeito.",
+        "A retirada do triângulo de Burow pode ser necessária para resolver excesso de pele e reduzir tensão na base do avanço.",
+        "Complicações incluem seroma, hematoma, deiscência, infecção, comprometimento vascular, necrose de ponta e problemas decorrentes de cuidados pós-operatórios inadequados.",
+        "Compressão do pedículo pelo curativo e imobilização insuficiente são causas pós-operatórias de falha do retalho."
+      ],
+      "referencias": [
+        "Goffi, Fábio Schimit. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª edição. São Paulo: Atheneu, 1996.",
+        "Fonseca, Franklin Pinto et al. Cirurgia Ambulatorial. 3ª edição. Rio de Janeiro: Guanabara Koogan, 1999.",
+        "Kirk RM. Bases técnicas da cirurgia. Tradução da 6ª edição. Rio de Janeiro: Elsevier, 2012.",
+        "Galimbert, Gaston et al. Utilidade do retalho de avanço e rotação para fechamento de defeitos cutâneos na região malar. Surg Cosmet Dermatol. 2013;5(1):76-79.",
+        "Santos, Susana et al. Colgajos de avance con triángulo de Burow en la cara. Actas Dermosifiliogr. 2002;93:602-606.",
+        "Ingracio, Anderson Ricardo. Técnica Cirúrgica. 1ª edição. Caxias do Sul: Educs, 2017.",
+        "Morris D. Overview of flaps for soft tissue reconstruction. UpToDate, 2018.",
+        "Mélega, José Marcos. Cirurgia Plástica: Fundamentos e Arte, Princípios Gerais. 1ª edição. MEDSI, 2002.",
+        "UpToDate. Overview of flaps for soft tissue reconstruction. Mar 2020.",
+        "Chasmar, Leslie. The versatile rhomboid (Limberg) flap. The Canadian Journal of Plastic Surgery. 2007.",
+        "Sabiston. Tratado de cirurgia: a base biológica da prática cirúrgica moderna. 19ª ed. Elsevier, 2014.",
+        "Fraga DS, Lima VS, Silveira ÁS, Citrin M, Maito EDM, Santos FZ. O uso do retalho de Limberg para reparos de defeitos na face. Rev Bras Cir Plást. 2012;27(3):23."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
