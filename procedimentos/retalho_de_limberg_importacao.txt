@@ -1,0 +1,279 @@
+{
+  "procedimentos": [
+    {
+      "id": "retalho_de_limberg",
+      "nome": "Retalho de Limberg",
+      "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
+      "descricao_curta": "Roteiro prático de retalho de Limberg, com avaliação da lesão, demarcação losangular, excisão, transposição, fixação e curativo.",
+      "indicacoes": [],
+      "contraindicacoes": [],
+      "preparo": [
+        "Avaliar a presença de tecido necrótico ou isquêmico e desbridar quando necessário.",
+        "Verificar sinais de infecção, como celulite local, edema ou drenagem purulenta, que devem ser resolvidos antes do procedimento.",
+        "Inspecionar a ferida quanto à impossibilidade de fechamento por sutura simples e à profundidade da lesão.",
+        "Considerar o tempo e o local de contaminação ou infecção da ferida para descartar cicatrização por terceira intenção."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Antissepsia e assepsia: clorexidina alcoólica, PVPI, pinça Foester e campos estéreis.",
+        "Anestesia: lidocaína (7-10 mg/kg) a 1% ou 2% com ou sem vasoconstrictor, seringa de 5 mL e agulhas com os pavilhões rosa (40x1,20 mm), marrom (10x0,45 mm) e verde (25x0,8 mm) ou preto (25x0,7 mm).",
+        "Procedimento: caneta marcadora cutânea, afastador Farabeuf, bisturi cabo nº 3 com lâmina nº 15, pinça hemostática curva, pinça Allis, pinça de dissecção traumática e atraumática, tesoura Mayo reta, tesoura Metzenbaum curva, porta-agulha, fios de sutura (nylon 3-0 e 4-0 e poliglactina 3-0 e 4-0) e soro fisiológico.",
+        "Outros: fita adesiva cirúrgica (Micropore®), solução salina isotônica e gaze vaselinada (não aderente)."
+      ],
+      "acoes_iniciais": [
+        "Confirmar que a lesão exige reconstrução por retalho e que não há condição melhor para fechamento por sutura simples.",
+        "Reconhecer que, diferentemente dos enxertos, o leito da ferida não precisa ser bem vascularizado, pois o retalho possui irrigação sanguínea própria.",
+        "Planejar a geometria do retalho antes da incisão."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para o procedimento.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de quebra de assepsia e interrupções desnecessárias.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar materiais de paramentação: luvas estéreis, máscara, gorro e óculos de proteção."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar materiais de antissepsia e assepsia: clorexidina alcoólica, PVPI, pinça Foester e campos estéreis."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar material anestésico: lidocaína 1% ou 2% com ou sem vasoconstrictor, seringa de 5 mL e agulhas adequadas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar instrumental do procedimento: caneta marcadora cutânea, afastador Farabeuf, bisturi cabo nº 3 com lâmina nº 15, pinça hemostática curva, pinça Allis, pinças de dissecção, tesouras, porta-agulha, fios e soro fisiológico."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar materiais complementares: Micropore®, solução salina isotônica e gaze vaselinada não aderente."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança e preparo adequado do paciente.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Avaliar a ferida e confirmar condições para o retalho",
+          "descricao": "Examinar a área receptora e confirmar se há condições adequadas para a reconstrução por retalho de Limberg.",
+          "critico": true,
+          "alerta": "Necrose, isquemia ou infecção não resolvidas comprometem o resultado cirúrgico.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Avaliar se há presença de tecido necrótico ou isquêmico e desbridar quando necessário."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Verificar a presença de sinais de infecção, como celulite local, edema ou drenagem purulenta, e solucioná-los antes do início do procedimento."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Inspecionar o local da ferida avaliando a impossibilidade do fechamento por sutura simples e a profundidade."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Considerar o tempo e o local de contaminação ou infecção da ferida para descartar a possibilidade de cicatrização por terceira intenção."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Lembrar que, diferentemente do uso de enxertos, o leito da ferida não precisa ser bem vascularizado, pois o retalho possui irrigação sanguínea própria."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Demarcar o retalho de Limberg",
+          "descricao": "Realizar a marcação do losango de exérese e do prolongamento do retalho conforme a geometria do retalho de Limberg.",
+          "critico": true,
+          "alerta": "A demarcação inadequada compromete a transposição e a acomodação do retalho.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Desenhar as linhas de incisão da exérese, com caneta marcadora cutânea não estéril, em formato losangular com ângulos de 60° e 120°, limitando a área que será removida."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Escolher a melhor opção de traçado dentre as quatro opções possíveis."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Desenhar uma linha vertical partindo do maior ângulo (120°), no sentido caudal ou cranial."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Ao final, acrescentar uma linha oblíqua formando 60° para cima ou para baixo e para esquerda ou para direita, dependendo da escolha inicial delimitada."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "Considerar o desenho da imagem em posição anatômica."
+            },
+            {
+              "rotulo": "4f",
+              "texto": "Manter as linhas de incisão desenhadas com o mesmo comprimento, igual a 2 cm."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia da área de excisão",
+          "descricao": "Executar antissepsia e assepsia da área de excisão antes da anestesia e da incisão.",
+          "critico": true,
+          "alerta": "A preparação inadequada do campo aumenta o risco de infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar anestesia",
+          "descricao": "Fazer anestesia local ou bloqueio regional a depender da extensão da lesão.",
+          "critico": true,
+          "alerta": "A escolha da anestesia deve ser compatível com a extensão do procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Incisar, excisar e divulsionar",
+          "descricao": "Realizar a incisão do losango, remover a lesão e preparar o retalho nas linhas previamente demarcadas.",
+          "critico": true,
+          "alerta": "Incisão ou divulsão inadequadas podem comprometer a mobilidade e a viabilidade do retalho.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Realizar a incisão da pele limitada pelo losango, realizando a hemostasia."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Excisar a área da lesão."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Enviar o tecido excisado (losango) para a biópsia."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Realizar a incisão das linhas demarcadas para formação do retalho."
+            },
+            {
+              "rotulo": "7e",
+              "texto": "Divulsionar o retalho com o bisturi cabo nº 3 e lâmina nº 15."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar hemostasia e lavagem",
+          "descricao": "Fazer hemostasia e lavagem copiosa da área excisionada com soro fisiológico.",
+          "critico": true,
+          "alerta": "Sangramento residual favorece hematoma e compromete a acomodação do retalho.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Transpor e fixar o retalho",
+          "descricao": "Transpor o retalho por movimento giratório para alcançar a área cruenta e iniciar a sutura.",
+          "critico": true,
+          "alerta": "A fixação deve respeitar os pontos de maior tensão e a técnica correta do ponto de Gillies.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Transpor o retalho através de um movimento giratório para alcançar a área cruenta."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Realizar ponto de Gillies no ponto de maior tensão, que corresponde à união dos pontos D+F."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Realizar ponto de Gillies nas extremidades angulares, nos pontos A+E’ e B+D’."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Finalizar com pontos simples espaçados nas bordas."
+            },
+            {
+              "rotulo": "9e",
+              "texto": "No ponto de Gillies, transfixar a borda da pele onde o ângulo é aberto no sentido proximal-distal."
+            },
+            {
+              "rotulo": "9f",
+              "texto": "Em seguida, transfixar apenas a derme horizontalmente onde o ângulo é fechado."
+            },
+            {
+              "rotulo": "9g",
+              "texto": "Por fim, transfixar a outra extremidade de ângulo aberto no sentido distal-proximal."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar curativo semi-oclusivo",
+          "descricao": "Fazer curativo semi-oclusivo, seco e levemente compressivo.",
+          "critico": true,
+          "alerta": "Curativo inadequado pode comprometer proteção e estabilidade do retalho.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "10a",
+              "texto": "Aplicar curativo semi-oclusivo, seco e levemente compressivo."
+            },
+            {
+              "rotulo": "10b",
+              "texto": "Reavaliar o curativo após 24 a 72 horas."
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Remover os pontos conforme a localização",
+          "descricao": "Programar a retirada dos pontos de sutura conforme a localização anatômica.",
+          "critico": false,
+          "alerta": "",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Retirar pontos da face em 7 dias."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Retirar pontos de outros locais em 14 dias."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Na avaliação inicial, sinais infecciosos devem ser resolvidos antes do procedimento.",
+        "O losango de exérese deve ter ângulos de 60° e 120°.",
+        "O guia orienta manter todas as linhas demarcadas com o mesmo comprimento, igual a 2 cm.",
+        "Vídeo do procedimento de retalho de Limberg em cisto pilonidal: https://youtu.be/LLKyk6S6occ",
+        "Vídeo demonstrativo do ponto de Gillies: https://www.youtube.com/watch?v=PzWfvpoN6CA"
+      ],
+      "referencias": [
+        "Goffi, Fábio Schimit. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª edição. São Paulo: Atheneu, 1996.",
+        "Fonseca, Franklin Pinto et al. Cirurgia Ambulatorial. 3ª edição. Rio de Janeiro: Guanabara Koogan, 1999.",
+        "Kirk, R.M. Bases técnicas da cirurgia. Tradução da 6ª edição. Rio de Janeiro: Elsevier Ltda, 2012.",
+        "Simão, Tiago Sarmento et al. Versatilidade do Retalho de Limberg nas reconstruções pós ressecção de tumores em face. Surg Cosmet Dermato. 2012;4(2):127-129.",
+        "Alvarez, Gustavo Steffen et al. Aplicações do retalho romboide em reparações cutâneas. Rev Bras Cir Plást. 2012;27(1):102-107.",
+        "Thorne, Charles H. et al. Cirurgia Plástica. 6ª edição. Rio de Janeiro: Guanabara Koogan, 2009.",
+        "Up to Date. Overview of flaps for soft tissue reconstruction. Feb 2022. Acesso em: 02 de janeiro de 2024."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
