@@ -132,6 +132,33 @@
               </select>
             </label>
 
+            <details id="quickProcedurePicker" class="quick-picker">
+              <summary class="quick-picker-summary">
+                <span>Lista rápida de procedimentos</span>
+                <span id="quickProcedureMeta" class="badge muted">0 itens</span>
+              </summary>
+
+              <div class="quick-picker-content">
+                <button
+                  type="button"
+                  id="randomProcedureButton"
+                  class="button button-secondary quick-random-button"
+                >
+                  Escolher aleatoriamente
+                </button>
+
+                <p id="quickProcedureHint" class="quick-picker-hint">
+                  O sorteio usa os procedimentos visíveis com os filtros atuais.
+                </p>
+
+                <div
+                  id="quickProcedureList"
+                  class="quick-procedure-list"
+                  aria-label="Lista rápida de procedimentos"
+                ></div>
+              </div>
+            </details>
+
             <div id="loadMessage" class="message hidden" aria-live="polite"></div>
           </section>
 

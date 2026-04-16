@@ -66,6 +66,11 @@ const elements = {
   emptyState: document.querySelector("#emptyState"),
   emptyStateTitle: document.querySelector("#emptyStateTitle"),
   emptyStateText: document.querySelector("#emptyStateText"),
+  quickProcedurePicker: document.querySelector("#quickProcedurePicker"),
+  quickProcedureMeta: document.querySelector("#quickProcedureMeta"),
+  quickProcedureHint: document.querySelector("#quickProcedureHint"),
+  quickProcedureList: document.querySelector("#quickProcedureList"),
+  randomProcedureButton: document.querySelector("#randomProcedureButton"),
   procedureView: document.querySelector("#procedureView"),
   selectedCategory: document.querySelector("#selectedCategory"),
   selectedStepSummary: document.querySelector("#selectedStepSummary"),
@@ -161,12 +166,18 @@ function bindEvents() {
     appState.searchTerm = event.target.value.trim().toLowerCase();
     persistState();
     renderProcedureList();
+    renderQuickProcedurePicker();
   });
 
   elements.categoryFilter.addEventListener("change", (event) => {
     appState.selectedCategory = event.target.value;
     persistState();
     renderProcedureList();
+    renderQuickProcedurePicker();
+  });
+
+  elements.randomProcedureButton.addEventListener("click", () => {
+    selectRandomProcedure();
   });
 
   elements.reloadProceduresButton.addEventListener("click", async () => {
@@ -292,6 +303,16 @@ function bindEvents() {
     }
 
     selectProcedure(card.dataset.procedureId);
+  });
+
+  elements.quickProcedureList.addEventListener("click", (event) => {
+    const option = event.target.closest("[data-quick-procedure-id]");
+
+    if (!option) {
+      return;
+    }
+
+    selectProcedure(option.dataset.quickProcedureId);
   });
 
   elements.studyStepsList.addEventListener("change", (event) => {
@@ -1378,9 +1399,49 @@ function populateCategoryFilter() {
 function render() {
   renderStatusPanel();
   renderIssuesPanel();
+  renderQuickProcedurePicker();
   renderProcedureList();
   renderSelectedProcedure();
   renderMode();
+}
+
+function renderQuickProcedurePicker() {
+  const allProcedures = appState.procedures;
+  const filteredProcedures = getFilteredProcedures();
+
+  elements.quickProcedureMeta.textContent = `${allProcedures.length} itens`;
+  elements.randomProcedureButton.disabled = filteredProcedures.length === 0;
+  elements.randomProcedureButton.title = filteredProcedures.length
+    ? "Seleciona aleatoriamente um procedimento visível com os filtros atuais."
+    : "Nenhum procedimento visível para sorteio com os filtros atuais.";
+  elements.quickProcedureHint.textContent = filteredProcedures.length
+    ? `${filteredProcedures.length} procedimento(s) disponíveis para sorteio com os filtros atuais.`
+    : "Nenhum procedimento visível com os filtros atuais. Ajuste a busca ou a categoria para sortear.";
+
+  if (!allProcedures.length) {
+    elements.quickProcedurePicker.removeAttribute("open");
+    elements.quickProcedureList.innerHTML = `
+      <div class="quick-procedure-empty">
+        Nenhum procedimento carregado ainda.
+      </div>
+    `;
+    return;
+  }
+
+  elements.quickProcedureList.innerHTML = allProcedures
+    .map(
+      (procedure) => `
+        <button
+          type="button"
+          class="quick-procedure-option ${procedure.id === appState.selectedProcedureId ? "is-active" : ""}"
+          data-quick-procedure-id="${escapeAttribute(procedure.id)}"
+          title="${escapeAttribute(procedure.nome)}"
+        >
+          ${escapeHtml(procedure.nome)}
+        </button>
+      `
+    )
+    .join("");
 }
 
 function renderStatusPanel() {
@@ -1482,6 +1543,10 @@ function renderProcedureList() {
       `;
     })
     .join("");
+}
+
+function closeQuickProcedurePicker() {
+  elements.quickProcedurePicker.removeAttribute("open");
 }
 
 function renderSelectedProcedure() {
@@ -1786,9 +1851,25 @@ function selectProcedure(procedureId) {
     return;
   }
 
+  closeQuickProcedurePicker();
   appState.selectedProcedureId = procedureId;
   persistState();
   render();
+}
+
+function selectRandomProcedure() {
+  const pool = getFilteredProcedures();
+
+  if (!pool.length) {
+    return;
+  }
+
+  const randomIndex = Math.floor(Math.random() * pool.length);
+  const selected = pool[randomIndex];
+
+  if (selected) {
+    selectProcedure(selected.id);
+  }
 }
 
 function ensureProcedureProgress(procedureId) {
