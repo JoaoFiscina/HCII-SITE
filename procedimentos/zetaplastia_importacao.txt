@@ -1,0 +1,258 @@
+{
+  "procedimentos": [
+    {
+      "id": "zetaplastia",
+      "nome": "Zetaplastia",
+      "categoria": "Habilidades Cirúrgicas II / Cirurgia Plástica",
+      "descricao_curta": "Roteiro prático de zetaplastia, com demarcação do Z, incisão, transposição dos retalhos triangulares, fixação e curativo.",
+      "indicacoes": [],
+      "contraindicacoes": [],
+      "preparo": [
+        "Identificar a orientação das linhas de tensão da pele relaxada ou a orientação desejada da nova cicatriz.",
+        "Planejar o ângulo da zetaplastia entre 30° e 90°, preferencialmente 60° quando possível.",
+        "Manter as linhas traçadas paralelas entre si e com o mesmo comprimento da cicatriz linear."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Antissepsia e assepsia: clorexidina degermante, clorexidina alcoólica, PVPI, pinça de Foester e campos estéreis.",
+        "Anestesia: lidocaína 1% ou 2% com ou sem vasoconstrictor (7-10 mg/kg), seringa de 5 mL e agulhas 40x1,20 mm, 10x0,45 mm, 25x0,8 mm ou 25x0,7 mm.",
+        "Procedimento: caneta marcadora cutânea, afastador Farabeuf, bisturi cabo nº 3 com lâmina nº 15, pinça hemostática curva, pinça de dissecção traumática e atraumática, tesoura Mayo reta, tesoura Metzenbaum curva, porta-agulha, fios de nylon 3-0 e 4-0, fios de poliglactina 3-0 e 4-0 e soro fisiológico.",
+        "Outros: fita adesiva cirúrgica (Micropore®), solução salina isotônica e gaze vaselinada não aderente."
+      ],
+      "acoes_iniciais": [
+        "Identificar a orientação das linhas de tensão da pele relaxada ou a orientação desejada da nova cicatriz.",
+        "Planejar a geometria do Z antes da incisão.",
+        "Priorizar, quando possível, o ângulo de 60°, por oferecer equilíbrio entre alongamento e facilidade de fechamento."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a zetaplastia.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de quebra de assepsia e interrupções desnecessárias.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar materiais de paramentação: luvas estéreis, máscara, gorro e óculos de proteção."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar materiais de antissepsia e assepsia: clorexidina degermante, clorexidina alcoólica, PVPI, pinça de Foester e campos estéreis."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar material anestésico: lidocaína 1% ou 2% com ou sem vasoconstrictor, seringa de 5 mL e agulhas adequadas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar instrumental do procedimento: caneta marcadora cutânea, afastador Farabeuf, bisturi cabo nº 3 com lâmina nº 15, pinça hemostática curva, pinças de dissecção, tesouras, porta-agulha, fios e soro fisiológico."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar materiais complementares: Micropore®, solução salina isotônica e gaze vaselinada não aderente."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientar sobre o procedimento.",
+          "critico": true,
+          "alerta": "Esta etapa faz parte da segurança e do preparo adequado do procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Demarcar a zetaplastia",
+          "descricao": "Realizar a marcação do Z a partir da cicatriz linear, respeitando ângulo, paralelismo e comprimentos adequados.",
+          "critico": true,
+          "alerta": "A demarcação inadequada compromete alongamento, transposição e fechamento.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Identificar a orientação das linhas de tensão da pele relaxada ou a orientação desejada da nova cicatriz."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Demarcar as linhas de incisão com caneta marcadora cutânea."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "A partir de uma das extremidades da cicatriz linear, traçar uma linha com o mesmo comprimento da cicatriz, inclinada para cima."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Fazer essa linha formar ângulo de 30° a 90° com a cicatriz; quando possível, preferir 60°."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Repetir a marcação na outra extremidade da cicatriz, com o mesmo ângulo, agora inclinada para baixo."
+            },
+            {
+              "rotulo": "3f",
+              "texto": "Manter as linhas paralelas entre si e com o mesmo comprimento da cicatriz linear."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Executar antissepsia e assepsia da área pré-cicatrizada com retração.",
+          "critico": true,
+          "alerta": "Preparação inadequada do campo aumenta o risco de infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar anestesia",
+          "descricao": "Fazer anestesia local ou bloqueio regional conforme a extensão da lesão.",
+          "critico": true,
+          "alerta": "A escolha da anestesia deve ser compatível com a extensão do procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Incisar a zetaplastia",
+          "descricao": "Incisar a cicatriz e as linhas demarcadas, formando um Z.",
+          "critico": true,
+          "alerta": "Os retalhos devem manter certa quantidade de tecido subcutâneo, permanecendo relativamente espessos.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Incisar a cicatriz linear e as linhas previamente demarcadas, formando um Z."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Manter os retalhos com certa quantidade de tecido subcutâneo, preservando relativa espessura."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Transpor os retalhos triangulares",
+          "descricao": "Transpor atraumaticamente os dois retalhos triangulares descolados, respeitando os pontos de maior tensão.",
+          "critico": true,
+          "alerta": "Evitar posicionar a base do retalho sobre cicatrizes laterais à linha de retenção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Transpor, por técnica atraumática, os dois retalhos triangulares descolados utilizando pinças hemostáticas curvas posicionadas nos pontos de maior tensão, B e C."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Unir o ponto B ao ponto D."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Unir o ponto C ao ponto A."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Evitar colocar a base do retalho sobre cicatrizes laterais à linha de retenção, quando existirem."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar hemostasia",
+          "descricao": "Fazer hemostasia após a transposição dos retalhos.",
+          "critico": true,
+          "alerta": "Sangramento residual pode dificultar acomodação e fixação adequadas.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Fixar os retalhos",
+          "descricao": "Fixar os retalhos primeiro nos pontos de maior angulação e tensão com ponto de Gillies e, depois, completar a síntese com pontos simples.",
+          "critico": true,
+          "alerta": "A fixação deve priorizar os pontos B-D e C-A e respeitar a técnica do ponto de Gillies.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Fixar inicialmente os pontos de maior angulação e tensão, B-D e C-A, utilizando ponto de Gillies."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Evoluir depois com pontos simples para as bordas."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "No ponto de Gillies, transfixar a borda da pele onde o ângulo é aberto no sentido proximal-distal."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Em seguida, transfixar apenas a derme horizontalmente onde o ângulo é fechado."
+            },
+            {
+              "rotulo": "9e",
+              "texto": "Por fim, transfixar a outra extremidade de ângulo aberto no sentido distal-proximal."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar curativo semi-oclusivo",
+          "descricao": "Aplicar curativo semi-oclusivo, seco e levemente compressivo.",
+          "critico": true,
+          "alerta": "Curativo inadequado compromete proteção e estabilidade da área operada.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "10a",
+              "texto": "Realizar curativo semi-oclusivo, seco e levemente compressivo."
+            },
+            {
+              "rotulo": "10b",
+              "texto": "Reavaliar o curativo após 24 a 72 horas."
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Remover os pontos conforme a localização",
+          "descricao": "Programar a retirada dos pontos de sutura conforme a localização anatômica.",
+          "critico": false,
+          "alerta": "",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Retirar pontos da face em 7 dias."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Retirar pontos de outros locais em 14 dias."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Quando possível, o ângulo de 60° é preferível por proporcionar equilíbrio ideal entre alongamento e facilidade de fechamento.",
+        "As linhas laterais devem ser paralelas entre si e ter o mesmo comprimento da cicatriz linear.",
+        "Se houver cicatrizes laterais à linha de retenção, evitar colocar a base do retalho sobre elas.",
+        "Vídeo do procedimento: https://youtu.be/Xw0UD6lIcTs",
+        "Vídeo do ponto de Gillies: https://www.youtube.com/watch?v=PzWfvpoN6CA",
+        "Vídeo de transposição: https://www.youtube.com/watch?v=dtrwILj32K0",
+        "Vídeo passo a passo: https://www.youtube.com/watch?v=J4gqR7J9QXg"
+      ],
+      "referencias": [
+        "Goffi, Fábio Schimit. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª edição. São Paulo: Atheneu, 1996.",
+        "Fonseca, Franklin Pinto et al. Cirurgia Ambulatorial. 3ª edição. Rio de Janeiro: Guanabara Koogan, 1999.",
+        "Kirk, R.M. Bases técnicas da cirurgia. Tradução da 6ª edição. Rio de Janeiro: Elsevier, 2012.",
+        "Simão, Tiago Sarmento et al. Versatilidade do Retalho de Limberg nas reconstruções pós-ressecção de tumores em face. Surg Cosmet Dermatol. 2012;4(2):127-129.",
+        "Alvarez, Gustavo Steffen et al. Aplicações do retalho romboide em reparações cutâneas. Rev Bras Cir Plást. 2012;27(1):102-107.",
+        "Moraes, Mariana et al. Zetaplastia na retração axilar: técnica e tática para facilitar o aprendizado dos residentes. Rev Bras Cir Plást. 2017;32(2):241-244.",
+        "UpToDate. Z-plasty. Oct 2022. Acesso em 02 de janeiro de 2024.",
+        "Gon S, Araújo FM. Zetaplasty as an alternative for reconstructing double surgical defects. Surgical & Cosmetic Dermatology. 2015;7(2).",
+        "Araújo LR, Filho JM, Loda G. Rejuvenescimento com lifting da região cervical e zetaplastia. Surgical & Cosmetic Dermatology. 2019;11(3):252-255."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
