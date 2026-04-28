@@ -1,0 +1,397 @@
+{
+  "procedimentos": [
+    {
+      "id": "intubacao_orotraqueal",
+      "nome": "Intubação orotraqueal",
+      "categoria": "Habilidades Cirúrgicas II / Vias aéreas",
+      "descricao_curta": "Roteiro prático de intubação orotraqueal em sequência rápida, com checagem de material, avaliação da via aérea, pré-oxigenação, indução, laringoscopia, confirmação do tubo e cuidados pós-intubação.",
+      "indicacoes": [
+        "Impossibilidade de manter a via aérea patente por outros meios, com comprometimento iminente ou potencial da via aérea, como lesões por inalação, queimaduras em face, fraturas na face ou hematomas retrofaríngeos.",
+        "Impossibilidade de oxigenação adequada com ventilação sob dispositivo bolsa-válvula-máscara e oxigênio suplementar.",
+        "Pontuação ≤ 8 na escala de coma de Glasgow, ou redução ≥ 2 pontos na escala em 1 hora no cenário de trauma.",
+        "Risco de aspiração de vômito ou sangue.",
+        "Convulsões persistentes.",
+        "Situações que levem à diminuição ou perda do tônus muscular, como anestesia geral, sedação ou bloqueio neuromuscular.",
+        "Insuficiência respiratória aguda, como edema agudo de pulmão, crise asmática grave, exacerbação da DPOC, tórax instável grave ou contusão pulmonar.",
+        "Apneia."
+      ],
+      "contraindicacoes": [
+        "Hemorragia orofaríngea maciça que obstrua a via aérea.",
+        "Edema de glote.",
+        "Fratura de laringe.",
+        "Transecção parcial de via aérea.",
+        "Ruptura da junção laringotraqueal.",
+        "Presença de tumores nas vias aéreas superiores."
+      ],
+      "preparo": [
+        "Organizar todo o material e testar previamente os equipamentos.",
+        "Garantir acesso venoso periférico calibroso.",
+        "Monitorizar o paciente com oxímetro de pulso, pressão arterial, monitorização cardíaca e capnógrafo.",
+        "Avaliar a via aérea por inspeção clínica e pelo mnemônico LEMON, identificando possíveis dificuldades para intubação.",
+        "Planejar sequência rápida de intubação conforme o estado fisiológico do paciente."
+      ],
+      "materiais": [
+        "Paramentação: luvas, máscara e óculos.",
+        "Material para monitorização não invasiva.",
+        "Material para pré-oxigenação: dispositivo bolsa-válvula-máscara (AMBU®) acoplado a fonte de oxigênio e cânula de Guedel.",
+        "Drogas preparadas e rotuladas.",
+        "Laringoscópio com lâminas 3 e 4 (Macintosh/curva) ou 2 e 3 (Miller/reta), testadas, e pelo menos 2 cabos.",
+        "Tubo endotraqueal nº 7,0 / 7,5 / 8,0 / 8,5.",
+        "Fio guia.",
+        "Seringa de 10 mL para insuflar o balonete.",
+        "Aspirador com ponta rígida funcionando.",
+        "Material para fixação do tubo: esparadrapo ou cadarço.",
+        "Estetoscópio.",
+        "Capnógrafo."
+      ],
+      "acoes_iniciais": [
+        "Aplicar o raciocínio da sequência rápida de intubação pelos 7 Ps.",
+        "Checar o material usando o mnemônico STOP MAID para não omitir itens críticos.",
+        "Avaliar antecipadamente dificuldade de via aérea e risco fisiológico peri-intubação.",
+        "Selecionar drogas e estratégia de acordo com o quadro clínico."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a intubação orotraqueal.",
+          "critico": true,
+          "alerta": "Falhas na checagem inicial aumentam risco de intubação difícil, atraso e eventos críticos evitáveis.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar luvas, máscara e óculos."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar material de monitorização não invasiva."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar material para pré-oxigenação: bolsa-válvula-máscara acoplada a fonte de oxigênio e cânula de Guedel."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Preparar e rotular as drogas."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Testar laringoscópio, lâminas e cabos; separar tubo endotraqueal adequado e fio guia."
+            },
+            {
+              "rotulo": "1f",
+              "texto": "Separar seringa de 10 mL para o cuff, aspirador rígido, material de fixação, estetoscópio e capnógrafo."
+            },
+            {
+              "rotulo": "1g",
+              "texto": "Aplicar o mnemônico STOP MAID: S sucção; T ferramentas para intubação; O oxigênio; P posicionamento; M monitores; A assistência/dispositivos; I acesso intravenoso; D drogas."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento, quando clinicamente possível.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança, comunicação e preparação do paciente.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Preparação e avaliação da via aérea",
+          "descricao": "Executar o 1º P da sequência rápida, garantindo que o material funcione, que haja monitorização adequada e que a via aérea seja avaliada antes da laringoscopia.",
+          "critico": true,
+          "alerta": "Não reconhecer uma via aérea difícil ou falha de material antes da indução pode gerar cenário crítico.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Definir o tubo a ser utilizado, insuflar o balonete e verificar se não há vazamentos."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Inserir o fio guia garantindo que a ponta esteja retraída pelo menos 1 cm do óstio do tubo para evitar trauma de via aérea."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Moldar o tubo, preferencialmente em forma de vírgula ou bastão de hóquei, para facilitar a intubação em laringe anteriorizada."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Montar o laringoscópio e conferir se a luz branca está funcionando adequadamente."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Garantir acesso venoso periférico calibroso."
+            },
+            {
+              "rotulo": "3f",
+              "texto": "Monitorizar com oxímetro de pulso, pressão arterial, monitorização cardíaca e capnógrafo."
+            },
+            {
+              "rotulo": "3g",
+              "texto": "Avaliar a via aérea pelo mnemônico LEMON."
+            },
+            {
+              "rotulo": "3h",
+              "texto": "L do LEMON: procurar externamente sinais de ventilação/intubação difícil, como boca pequena, mandíbula pequena, prognatismo ou trauma facial."
+            },
+            {
+              "rotulo": "3i",
+              "texto": "E do LEMON: aplicar a regra 3-3-2 — abertura bucal de pelo menos 3 dedos; distância mento-hioide de pelo menos 3 dedos; distância entre proeminência laríngea e assoalho da boca de pelo menos 2 dedos."
+            },
+            {
+              "rotulo": "3j",
+              "texto": "M do LEMON: classificar Mallampati; classes III e IV sugerem via aérea difícil."
+            },
+            {
+              "rotulo": "3k",
+              "texto": "O do LEMON: procurar obstruções de via aérea que dificultem laringoscopia e ventilação."
+            },
+            {
+              "rotulo": "3l",
+              "texto": "N do LEMON: avaliar mobilidade cervical, pedindo ao paciente que coloque o queixo no peito e depois olhe para o teto."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Pré-oxigenação",
+          "descricao": "Executar o 2º P da sequência rápida, realizando pré-oxigenação adequada antes da indução.",
+          "critico": true,
+          "alerta": "Pré-oxigenação inadequada reduz a reserva de oxigênio e aumenta o risco de dessaturação durante a laringoscopia.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Pré-oxigenar com bolsa-válvula-máscara conectada a fonte de oxigênio a 100% e fluxo máximo de 40 a 70 L/min por 3 a 5 minutos."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Usar vedação adequada da máscara com a mão em formato de C e E."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Evitar pressão positiva rotineiramente pelo maior risco de regurgitação e aspiração."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Exceção: em pacientes com doenças alveolares, como DPOC e pneumonia, ou com shunt intrapulmonar, considerar ventilação com pressão positiva."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "Garantir perviedade da via aérea com manobras de jaw-thrust e chin-lift."
+            },
+            {
+              "rotulo": "4f",
+              "texto": "Avaliar necessidade de cânula de Guedel."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Otimização fisiológica e pré-tratamento",
+          "descricao": "Executar o 3º P, prevenindo colapso cardiovascular peri-intubação por hipotensão e hipóxia.",
+          "critico": true,
+          "alerta": "A ausência de otimização fisiológica antes da indução pode precipitar choque, hipoxemia grave e parada.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "5a",
+              "texto": "Em hipovolemia, infundir fluidos isotônicos (20–30 mL/kg) ou 1–2 unidades de sangue, conforme o quadro clínico."
+            },
+            {
+              "rotulo": "5b",
+              "texto": "Se não houver resposta adequada após fluidos, administrar norepinefrina com dose inicial de 5–15 mcg/min IV até PAM de 65 mmHg ou resolução da hipoperfusão."
+            },
+            {
+              "rotulo": "5c",
+              "texto": "Em hipoxemia, manter objetivo de SpO₂ > 93%."
+            },
+            {
+              "rotulo": "5d",
+              "texto": "Pacientes com doença alveolar ou shunt intrapulmonar podem necessitar de ventilação com pressão positiva durante a pré-oxigenação."
+            },
+            {
+              "rotulo": "5e",
+              "texto": "Mesmo sem hipovolemia ou hipoxemia, manter materiais e drogas de suporte prontamente disponíveis."
+            },
+            {
+              "rotulo": "5f",
+              "texto": "Drogas de pré-tratamento devem ser feitas com pelo menos 3 minutos de antecedência e são reservadas para cenários selecionados, como crianças pequenas, alta resistência de via aérea, PIC elevada/risco de elevação e condições cardiovasculares específicas."
+            },
+            {
+              "rotulo": "5g",
+              "texto": "Quando indicado, usar fentanil 3 mcg/kg em infusão lenta de 60 s; evitar em choque ou instabilidade hemodinâmica."
+            },
+            {
+              "rotulo": "5h",
+              "texto": "Quando indicado, usar lidocaína sem vasoconstrictor 1,5 mg/kg, especialmente em doenças alveolares e aumento de PIC."
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Indução e paralisia",
+          "descricao": "Executar o 4º P, administrando primeiro o hipnótico e depois o bloqueador neuromuscular, adequando a droga ao contexto clínico.",
+          "critico": true,
+          "alerta": "Escolha inadequada das drogas pode agravar hipotensão, hipercalemia, broncoaspiração ou instabilidade neurológica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Administrar em bolus primeiro o hipnótico e em seguida o bloqueador neuromuscular."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Hipnóticos possíveis: etomidato 0,3 mg/kg; midazolam 0,3 mg/kg; quetamina 1,5 mg/kg; propofol 1,5 mg/kg."
+            },
+            {
+              "rotulo": "6c",
+              "texto": "Bloqueadores neuromusculares possíveis: succinilcolina 1,5 mg/kg ou rocurônio 1 mg/kg."
+            },
+            {
+              "rotulo": "6d",
+              "texto": "Etomidato é útil em instabilidade hemodinâmica e HIC; midazolam tem efeito anticonvulsivante; quetamina favorece broncodilatação e pode ser útil em hipotensão; propofol deve ser evitado no choque."
+            },
+            {
+              "rotulo": "6e",
+              "texto": "A succinilcolina deve ser usada com cautela em lesões por esmagamento, grandes queimados, lesões elétricas, doença renal crônica e doença muscular crônica."
+            },
+            {
+              "rotulo": "6f",
+              "texto": "A succinilcolina é contraindicada em história de hipertermia maligna, doença neuromuscular, hiperpotassemia com alterações no ECG e queimaduras graves com mais de 72 horas."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Executar o 5º P, posicionando o paciente para melhor alinhamento dos eixos oral, faríngeo e traqueal.",
+          "critico": true,
+          "alerta": "Posicionamento inadequado dificulta a laringoscopia e reduz a chance de sucesso na primeira tentativa.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Colocar o paciente em posição olfativa (sniff position) com coxim occipital e head tilt, alinhando meato acústico externo com o osso esterno."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Em suspeita de trauma cervical ou TRM, evitar apenas a hiperextensão do pescoço e solicitar ao auxiliar estabilização manual da cabeça."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Posicionar o tubo e confirmar a intubação",
+          "descricao": "Executar o 6º P, realizando laringoscopia, passagem do tubo e confirmação imediata da posição correta.",
+          "critico": true,
+          "alerta": "Intubação esofágica não reconhecida pode ocasionar hipoxemia, hipercarbia e morte.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "8a",
+              "texto": "Posicionar-se atrás da cabeça do paciente."
+            },
+            {
+              "rotulo": "8b",
+              "texto": "Segurar o laringoscópio com a mão esquerda."
+            },
+            {
+              "rotulo": "8c",
+              "texto": "Introduzir a lâmina pela rima labial direita, deslocando a língua para a esquerda."
+            },
+            {
+              "rotulo": "8d",
+              "texto": "Avançar a lâmina até a valécula se a lâmina for curva (Macintosh) ou até a face traqueal da epiglote se for reta (Miller), expondo as pregas vocais."
+            },
+            {
+              "rotulo": "8e",
+              "texto": "Realizar movimentos do laringoscópio para cima e para frente, evitando alavanca sobre os dentes."
+            },
+            {
+              "rotulo": "8f",
+              "texto": "Introduzir o tubo pelo canto direito da boca e avançar até que a porção proximal do balonete fique 3 a 4 cm além das cordas vocais; em geral, entre 19 e 23 cm nos incisivos."
+            },
+            {
+              "rotulo": "8g",
+              "texto": "Retirar o fio guia sem perder o controle do tubo."
+            },
+            {
+              "rotulo": "8h",
+              "texto": "Insuflar o balonete com 6 a 10 mL de ar."
+            },
+            {
+              "rotulo": "8i",
+              "texto": "Se necessário, utilizar manobras auxiliares: Sellick e BURP."
+            },
+            {
+              "rotulo": "8j",
+              "texto": "Ventilar o paciente e observar expansão torácica bilateral."
+            },
+            {
+              "rotulo": "8k",
+              "texto": "Auscultar 5 pontos: epigástrio primeiro, depois hemitórax esquerdo e direito, em bases e ápices, avaliando simetria ventilatória."
+            },
+            {
+              "rotulo": "8l",
+              "texto": "Investigar intubação seletiva do brônquio direito."
+            },
+            {
+              "rotulo": "8m",
+              "texto": "Confirmar com capnógrafo; CO₂ esperado entre 35 e 45 mmHg. Ausência de CO₂ sugere intubação esofágica."
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Cuidados pós-intubação",
+          "descricao": "Executar o 7º P, estabilizando o tubo e completando a avaliação pós-procedimento.",
+          "critico": true,
+          "alerta": "O cuidado pós-intubação é essencial para evitar deslocamento do tubo, ventilação inadequada e complicações precoces.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Após confirmar a posição, fixar o tubo com fita adesiva ou fixador comercial."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Realizar radiografia de tórax para confirmar posicionamento, idealmente 3 a 7 cm acima da carina, e investigar complicações."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Conectar o tubo a um sistema de ventilação assistida com mistura enriquecida com oxigênio."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Lembrar do mnemônico DOPE para causas de hipoxemia pós-IOT: deslocamento do tubo, obstrução do tubo, pneumotórax/TEP e equipamento."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Fratura de laringe pode manifestar-se com rouquidão, enfisema subcutâneo e fratura palpável.",
+        "Intubação prolongada predispõe a complicações e exige cuidados diários com o tubo.",
+        "A sequência rápida de intubação está indicada para pacientes que precisam de controle de via aérea, mas ainda apresentam reflexo de vômito intacto.",
+        "Queimaduras faciais podem cursar com comprometimento respiratório insidioso e justificam intubação precoce."
+      ],
+      "referencias": [
+        "Colégio Americano de Cirurgiões. ATLS: Suporte Avançado de Vida no Trauma. 10ª ed. Chicago; 2018.",
+        "Orebaugh S, Snyder JV. Direct laryngoscopy and endotracheal intubation in adults. UpToDate. 2021.",
+        "Kabrhel C, Thomsen TW, Setnik GS, Walls RM. Orotracheal Intubation. N Engl J Med. 2010;363(4):398.",
+        "Pinheiro BV, Pinheiro GSM, Mendes MM. Entendendo melhor a insuficiência respiratória aguda. Pulmão RJ. 2015;24(3):3-8.",
+        "Brown CA. Approach to the failed airway in adults outside the operating room. UpToDate. 2019.",
+        "Reynolds SF, Heffner J. Airway management of the critically ill patient: rapid-sequence intubation. Chest. 2005;127(4):1397-1412.",
+        "Martins HS, Neto RAB, Velasco IT. Medicina de Emergência: Abordagem Prática. 11ª ed. São Paulo: Manole; 2016.",
+        "Hyzy RC. Complications of the endotracheal tube following initial placement: Prevention and management in adult intensive care unit patients. UpToDate. 2019.",
+        "Brown CA III, Sakles JC. Rapid sequence intubation in adults for emergency medicine and critical care. UpToDate. 2025.",
+        "Anesi GL. COVID-19: Respiratory care of the nonintubated hypoxemic adult. UpToDate. 2021.",
+        "EMS Airway. An Emergency Guide to Mechanical Ventilation. 2021."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
