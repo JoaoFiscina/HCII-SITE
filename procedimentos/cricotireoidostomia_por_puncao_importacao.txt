@@ -1,0 +1,266 @@
+{
+  "procedimentos": [
+    {
+      "id": "cricotireoidostomia_por_puncao",
+      "nome": "Cricotireoidostomia por punção",
+      "categoria": "Habilidades Cirúrgicas II / Vias aéreas",
+      "descricao_curta": "Roteiro prático de cricotireoidostomia por punção, com identificação da membrana cricotireoidea, punção com cateter agulhado, ventilação temporária e encaminhamento para via aérea definitiva.",
+      "indicacoes": [
+        "Impossibilidade de manter a via aérea pérvia por métodos não invasivos.",
+        "Trauma maxilofacial grave.",
+        "Obstrução da via aérea por sangramento incontrolável na cavidade oral ou vômitos.",
+        "Corpo estranho na laringe que não possa ser removido rapidamente.",
+        "Edema de via aérea superior.",
+        "Fratura de laringe.",
+        "Falha na intubação orotraqueal.",
+        "Trismo.",
+        "Lesões obstrutivas, como tumor ou pólipo.",
+        "Deformidades traumáticas ou congênitas."
+      ],
+      "contraindicacoes": [
+        "Edema anterior no pescoço, como em anafilaxia, por dificultar a identificação anatômica.",
+        "Dificuldade de identificar os marcos anatômicos em casos de obesidade ou trauma cervical.",
+        "Anormalidades anatômicas ou distorções da laringe e traqueia.",
+        "Transecção de traqueia.",
+        "Descontinuidade laringotraqueal.",
+        "Coagulopatias.",
+        "Neoplasia laríngea.",
+        "Infecção local.",
+        "Obstrução das vias aéreas distal à subglote.",
+        "Cricotireoidostomia cirúrgica não recomendada para crianças menores de 10 a 12 anos."
+      ],
+      "preparo": [
+        "Reconhecer que a cricotireoidostomia por punção é medida emergencial e temporária, não constituindo via aérea definitiva.",
+        "Separar previamente material de proteção, antissepsia, cateter agulhado, seringa, conectores e fonte de oxigênio.",
+        "Posicionar o paciente em decúbito dorsal com hiperextensão cervical, se possível.",
+        "Identificar cartilagem tireoide, membrana cricotireoidea e cartilagem cricoide.",
+        "Avaliar possíveis sinais de cricotireoidostomia difícil pelo mnemônico SMART."
+      ],
+      "materiais": [
+        "Proteção: pijama cirúrgico, gorro, máscara, luvas estéreis e óculos de proteção.",
+        "Assepsia e antissepsia: esponja degermante e compressa, pinça de Foester, gaze, solução antisséptica PVPI ou clorexidina degermante/alcoólica e campos estéreis.",
+        "Procedimento: cateter agulhado 14 G (laranja) ou 16 G (cinza) para adultos; 16 G (cinza) ou 18 G (verde) para crianças; seringa de 5 ou 10 mL.",
+        "Outros: gaze, esparadrapo, tubo conector com fenestra/em Y/de três vias, solução salina, bolsa-válvula-máscara ou fonte de oxigênio a alta pressão."
+      ],
+      "acoes_iniciais": [
+        "Entender que a punção da membrana cricotireoidea permite oxigenação temporária por curto período, geralmente 30 a 45 minutos.",
+        "Diferenciar a cricotireoidostomia por punção da cirúrgica: a por punção não garante via aérea definitiva; a cirúrgica envolve incisão da pele e membrana para passagem de tubo endotraqueal e pode ser mantida por até 72 horas.",
+        "Planejar a obtenção de via aérea definitiva após a punção."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a cricotireoidostomia por punção.",
+          "critico": true,
+          "alerta": "Mesmo em contexto emergencial, falhas no material podem impedir oxigenação temporária adequada.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar materiais de proteção: pijama cirúrgico, gorro, máscara, luvas estéreis e óculos de proteção."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar materiais de assepsia e antissepsia: esponja degermante, compressa, pinça de Foester, gaze, PVPI ou clorexidina e campos estéreis."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar cateter agulhado 14 G ou 16 G para adultos; 16 G ou 18 G para crianças."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar seringa de 5 ou 10 mL."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze, esparadrapo, tubo conector com fenestra/em Y/de três vias, solução salina, bolsa-válvula-máscara ou fonte de oxigênio a alta pressão."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Orientar o paciente, se houver estabilidade clínica",
+          "descricao": "Caso haja estabilidade clínica, lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Em emergência extrema, a prioridade é garantir oxigenação; a orientação ocorre quando o estado clínico permite.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal e hiperextensão cervical, se possível.",
+          "critico": true,
+          "alerta": "O posicionamento facilita a identificação da membrana cricotireoidea, mas deve respeitar limitações por trauma cervical.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Identificar marcos anatômicos e avaliar dificuldade",
+          "descricao": "Identificar o local do procedimento palpando cartilagem tireoide, membrana cricotireoidea e cartilagem cricoide; em seguida, avaliar sinais de cricotireoidostomia difícil pelo mnemônico SMART.",
+          "critico": true,
+          "alerta": "Erro na identificação da membrana cricotireoidea pode causar falha do procedimento, falso trajeto ou lesão de estruturas adjacentes.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Palpar a cartilagem tireoide."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Palpar a membrana cricotireoidea."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Palpar a cartilagem cricoide."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "S do SMART — Surgery: cirurgias prévias podem distorcer a anatomia por processos fibróticos."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "M do SMART — Mass: hematoma, abscesso ou massa podem dificultar a identificação dos marcos anatômicos."
+            },
+            {
+              "rotulo": "4f",
+              "texto": "A do SMART — Anatomy/Access: pescoço curto, excesso de tecido subcutâneo, enfisema subcutâneo ou infecção local dificultam o acesso."
+            },
+            {
+              "rotulo": "4g",
+              "texto": "R do SMART — Radiation: radioterapia prévia pode causar distorção e fibrose dos tecidos."
+            },
+            {
+              "rotulo": "4h",
+              "texto": "T do SMART — Tumor: tumores da via aérea ou compressivos externos dificultam o acesso."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia cervical",
+          "descricao": "Realizar antissepsia na região do pescoço, se possível.",
+          "critico": true,
+          "alerta": "A antissepsia deve ser feita quando o tempo e a estabilidade permitirem, sem atrasar uma via aérea emergencial.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Estabilizar a traqueia e palpar a membrana",
+          "descricao": "Com a mão não dominante, estabilizar a traqueia com o 1º e 3º quirodáctilos, enquanto o 2º quirodáctilo palpa a membrana cricotireoidea.",
+          "critico": true,
+          "alerta": "Manter controle manual e imobilização da laringe durante todo o procedimento preserva as relações anatômicas.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Puncionar a membrana cricotireoidea",
+          "descricao": "Puncionar a pele com seringa e cateter montados, na linha média, em ângulo de 45° direcionado caudalmente, aplicando pressão negativa na seringa.",
+          "critico": true,
+          "alerta": "A aspiração de ar indica entrada na traqueia; punção mal direcionada pode gerar falso trajeto ou lesão posterior.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Montar seringa e cateter."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Puncionar na linha média, sobre a membrana cricotireoidea."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Manter o conjunto a 45° direcionado caudalmente."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Aplicar pressão negativa na seringa, puxando o êmbolo."
+            },
+            {
+              "rotulo": "7e",
+              "texto": "Reconhecer aspiração de ar como sinal de penetração na traqueia."
+            },
+            {
+              "rotulo": "7f",
+              "texto": "Como alternativa, colocar líquido na seringa; o surgimento de bolhas indica presença do cateter na via aérea."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Progredir o cateter e remover agulha/seringa",
+          "descricao": "Remover a seringa e a agulha enquanto progride o cateter para dentro da via aérea.",
+          "critico": true,
+          "alerta": "A progressão deve manter o cateter adequadamente posicionado na luz traqueal, evitando deslocamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Conectar oxigênio e fixar o cateter",
+          "descricao": "Conectar fonte de oxigênio a 15 L/min ao cateter por meio de tubo conector com fenestra, em Y ou de três vias, e fixá-lo ao pescoço com esparadrapo.",
+          "critico": true,
+          "alerta": "Conexão e fixação inadequadas comprometem a oxigenação temporária.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Conectar fonte de oxigênio a 15 L/min ao cateter."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Usar tubo conector com fenestra, em Y ou de três vias."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Fixar o cateter ao pescoço com esparadrapo em formato do símbolo da AIDS, conforme o roteiro."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar insuflação intermitente",
+          "descricao": "Realizar insuflação intermitente, ocluindo o orifício do tubo por 1 segundo e liberando-o por 4 segundos, durante 30 a 45 minutos.",
+          "critico": true,
+          "alerta": "A cricotireoidostomia por punção é temporária e não deve ser mantida além do período recomendado.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Avaliar efetividade ventilatória",
+          "descricao": "Avaliar movimentação do tórax, ausculta e oxímetro de pulso.",
+          "critico": true,
+          "alerta": "Ausência de expansão torácica, queda de saturação ou ausculta inadequada indicam falha de ventilação/oxigenação.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Encaminhar para via aérea definitiva",
+          "descricao": "Após a realização do procedimento, encaminhar o paciente para obtenção de via aérea definitiva.",
+          "critico": true,
+          "alerta": "Por definição, via aérea definitiva exige cateter com cuff insuflado abaixo das cordas vocais conectado a sistema que forneça oxigênio.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A cricotireoidostomia por punção envolve inserção de cateter agulhado através da membrana cricotireoidea em situação emergencial, por curto período de tempo, até obtenção de via aérea definitiva.",
+        "A cricotireoidostomia por punção pode ser mantida por 30 a no máximo 45 minutos e não garante via aérea definitiva.",
+        "A cricotireoidostomia cirúrgica envolve incisão da pele e da membrana cricotireoidea para passagem de tubo endotraqueal, podendo ser mantida por até 72 horas e garantindo via aérea definitiva.",
+        "Em pacientes que necessitam de procedimento cirúrgico emergencial para via aérea definitiva, a cricotireoidostomia cirúrgica é preferível à traqueostomia por ser mais fácil e rápida, com menor índice de sangramento.",
+        "Complicações da cricotireoidostomia por punção incluem aspiração de sangue, acidose respiratória por hipoventilação, enfisema subcutâneo, enfisema mediastínico, estenose subglótica, hematoma, perfuração da parede traqueal posterior, perfuração esofágica, lesão da tireoide, ventilação inadequada e pneumotórax.",
+        "Complicações da cricotireoidostomia cirúrgica incluem aspiração de sangue, barotrauma, falso trajeto, enfisema de mediastino, enfisema subcutâneo, estenose de laringe, estenose/edema subglótico, fístula esofágica, hemorragia/hematoma, hipercapnia, ferimento de traqueia, ferimento de esôfago, paralisia de cordas vocais/rouquidão, pneumotórax, infecção e laceração de cartilagens ou anéis traqueais.",
+        "Vídeo para melhor visualização do processo: https://www.youtube.com/watch?v=RekYwJB9LEU",
+        "Vídeo complementar: https://www.youtube.com/watch?v=I6wodB2S0uc"
+      ],
+      "referencias": [
+        "Colégio Americano de Cirurgiões. ATLS: Manual de Suporte Avançado de Vida no Trauma. 10ª ed. 2017.",
+        "Fagan J. Cricothyroidotomy & Needle Cricothyrotomy. Open Access Atlas of Otolaryngology, Head & Neck Operative Surgery.",
+        "Hinze JD, Barker JA, Joner TR, Winn RE. Life-threatening upper airway edema caused by a distal rattlesnake bite. Annals of Emergency Medicine. 2001.",
+        "Sise MJ, Shackford SR, Cruickshank JC, Murphy G, Fridlund PH. Cricothyroidotomy for long-term tracheal access: a prospective analysis of morbidity and mortality in 76 patients.",
+        "Linares AZ, Aldana JLD. Cicatricial subglottic stenosis due to cricothyroidotomy. Case report and review of literature. Revista Colombiana de Anestesiología. 2015.",
+        "Brown CA, Sakles JC. Rapid sequence intubation for adults outside the operating room. UpToDate. 2019.",
+        "Walls RM, Murphy MF. Manual of Emergency Airway Management. 2018."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

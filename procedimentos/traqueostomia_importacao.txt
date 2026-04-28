@@ -1,0 +1,387 @@
+{
+  "procedimentos": [
+    {
+      "id": "traqueostomia",
+      "nome": "Traqueostomia",
+      "categoria": "Habilidades Cirúrgicas II / Vias aéreas",
+      "descricao_curta": "Roteiro prático de traqueostomia aberta, com indicação, preparo, abertura traqueal, introdução e fixação da cânula, cuidados com cuff e etapas essenciais de decanulação.",
+      "indicacoes": [
+        "Obstruções respiratórias altas (laríngeas ou acima), como tumores, exsudatos, hematomas, corpos estranhos, processos inflamatórios agudos, processos infecciosos, traumatismos cervicais e faciais, anafilaxia e traumatismo laríngeo penetrante.",
+        "Insuficiência respiratória prolongada que leve à intubação orotraqueal por mais de 7 dias.",
+        "Complicações de cirurgias da glândula tireoide, como lesão inadvertida e bilateral dos nervos laríngeos recorrentes ou colapso da traqueia.",
+        "Impossibilidade de intubar o paciente.",
+        "Vias aéreas que precisam de ventilação e/ou controle de secreção.",
+        "Edema das vias aéreas e via aérea de alto risco após trauma e cirurgia maxilofacial.",
+        "Estenose subglótica grave não responsiva a terapias convencionais.",
+        "Pacientes submetidos a cricotireoidostomia de emergência.",
+        "Tempo prévio ou complementar a outras cirurgias, como laringectomia, glossectomia ampla, ressecção de tumores de assoalho de boca e cirurgia buco-maxilo-facial extensa."
+      ],
+      "contraindicacoes": [
+        "Alteração da hemostasia (petéquias, sangramento em mucosas e hematomas).",
+        "Cirurgia local prévia alterando os referenciais anatômicos.",
+        "Infecção da pele no local.",
+        "Pescoço obeso ou curto.",
+        "Bócio.",
+        "Massas pulsáteis ou neoplasias cervicais.",
+        "Impossibilidade de extensão da coluna cervical."
+      ],
+      "preparo": [
+        "Confirmar que se trata de procedimento eletivo, certificar-se da indicação e obter termo de consentimento assinado.",
+        "Checar condições respiratórias do paciente.",
+        "Escolher o tamanho da cânula conforme o biotipo do paciente.",
+        "Posicionar adequadamente o paciente, considerando contraindicações à hiperextensão cervical.",
+        "Identificar marcos anatômicos cervicais antes da incisão."
+      ],
+      "materiais": [
+        "Proteção: luva, gorro, máscara, óculos e pijama cirúrgico.",
+        "Antissepsia e assepsia: esponja para degermação, pinça de Foerster, gaze, PVPI tintura ou clorexidina alcoólica e campos estéreis.",
+        "Anestesia: seringa de 5 ou 10 mL, lidocaína 2% com vasoconstritor, agulhas de pavilhão rosa (40x1,2 mm), marrom (13x0,45 mm), verde ou preta (25x0,8 mm).",
+        "Procedimento: lâminas nº 12 e 15, cabo de bisturi nº 3, pinça anatômica e traumática, pinça hemostática curva, afastadores de Farabeuf, porta-agulha, tesoura de Mayo, fio nylon 3-0, cânula endotraqueal plástica de tamanho 7 ou 8, fonte de oxigênio e capnógrafo.",
+        "Outros: gaze, esparadrapo e cadarço fixador."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a traqueostomia é um procedimento eletivo e não deve ser realizada como primeira escolha em emergência.",
+        "Planejar a abertura da parede anterior da traqueia para comunicação com o meio externo por meio de cânula.",
+        "Avaliar se a finalidade é preventiva, curativa ou paliativa, e se a permanência será temporária ou definitiva."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e consentimento",
+          "descricao": "Certificar-se da indicação do procedimento e obter a assinatura do termo de consentimento.",
+          "critico": true,
+          "alerta": "A traqueostomia do roteiro é eletiva; deve haver indicação clara e consentimento formal.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a traqueostomia.",
+          "critico": true,
+          "alerta": "Falhas na checagem inicial aumentam risco de interrupções, quebra de assepsia e dificuldade na passagem/fixação da cânula.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar materiais de proteção: luva, gorro, máscara, óculos e pijama cirúrgico."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Separar material de antissepsia e assepsia: esponja para degermação, pinça de Foerster, gaze, PVPI tintura ou clorexidina alcoólica e campos estéreis."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Separar material anestésico: seringa de 5 ou 10 mL, lidocaína 2% com vasoconstritor e agulhas adequadas."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Separar instrumental: lâminas nº 12 e 15, cabo nº 3, pinças anatômica e traumática, pinça hemostática curva, afastadores de Farabeuf, porta-agulha, tesoura de Mayo, fio nylon 3-0, cânula plástica, fonte de oxigênio e capnógrafo."
+            },
+            {
+              "rotulo": "2e",
+              "texto": "Separar gaze, esparadrapo e cadarço fixador."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Esta etapa integra segurança, preparo emocional e comunicação adequada.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Checar condições respiratórias",
+          "descricao": "Avaliar as condições respiratórias do paciente antes do procedimento.",
+          "critico": true,
+          "alerta": "A avaliação respiratória inicial ajuda a definir urgência, estratégia e tolerância ao procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Escolher a cânula",
+          "descricao": "Escolher o tamanho da cânula plástica de acordo com o biotipo do paciente.",
+          "critico": true,
+          "alerta": "Cânula inadequada pode dificultar passagem, vedação e ventilação.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal com coxim sob os ombros e hiperextensão cervical, se possível.",
+          "critico": true,
+          "alerta": "Posicionamento inadequado dificulta a exposição da traqueia e aumenta risco de erro anatômico.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Colocar o paciente em decúbito dorsal."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Posicionar coxim sob os ombros."
+            },
+            {
+              "rotulo": "6c",
+              "texto": "Promover hiperextensão cervical, quando não houver contraindicação."
+            },
+            {
+              "rotulo": "6d",
+              "texto": "Se não for possível hiperextensão, realizar o procedimento em posição neutra."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Realizar antissepsia do campo",
+          "descricao": "Realizar antissepsia desde a borda inferior da mandíbula até a região peitoral e, lateralmente, até a borda lateral dos músculos esternocleidomastoídeos.",
+          "critico": true,
+          "alerta": "Campo inadequadamente preparado aumenta risco de infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Identificar marcos anatômicos",
+          "descricao": "Identificar e palpar os pontos de referência anatômicos do pescoço antes da incisão.",
+          "critico": true,
+          "alerta": "Erro na identificação anatômica pode resultar em abertura em nível inadequado e lesão iatrogênica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "8a",
+              "texto": "Palpar cartilagem tireoide."
+            },
+            {
+              "rotulo": "8b",
+              "texto": "Palpar cartilagem cricoide."
+            },
+            {
+              "rotulo": "8c",
+              "texto": "Palpar a fúrcula esternal."
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Realizar anestesia em elipse",
+          "descricao": "Realizar anestesia em elipse na região utilizando lidocaína 2% com vasoconstrictor.",
+          "critico": true,
+          "alerta": "A anestesia deve cobrir adequadamente o campo operatório planejado.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Incisar pele e subcutâneo",
+          "descricao": "Realizar incisão da pele e do subcutâneo com bisturi de lâmina nº 15, longitudinal ou transversalmente.",
+          "critico": true,
+          "alerta": "Escolha inadequada do tipo ou do local da incisão dificulta a exposição da traqueia.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "10a",
+              "texto": "Se optar por incisão longitudinal, iniciar na borda inferior da cartilagem cricoide em direção à fúrcula esternal, em extensão de 2 a 3 cm na linha mediana."
+            },
+            {
+              "rotulo": "10b",
+              "texto": "Se optar por incisão transversal, realizá-la na linha média entre a borda inferior da cartilagem cricoide e a fúrcula esternal, paralela às linhas de tensão da pele."
+            },
+            {
+              "rotulo": "10c",
+              "texto": "Em crianças, preferir incisão transversa."
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Dissecar os planos cervicais",
+          "descricao": "Proceder à dissecção e hemostasia dos planos inferiores à pele, utilizando afastadores dinâmicos para melhor visualização.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada e dissecção imprecisa prejudicam a exposição e elevam o risco de complicações.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Dissecar os planos abaixo da pele de forma progressiva."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Utilizar afastadores de Farabeuf para melhor visualização."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Se o istmo da tireoide for visualizado, afastá-lo látero-superiormente ou seccioná-lo (istmectomia), conforme necessidade."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Expor a traqueia e realizar abertura traqueal",
+          "descricao": "Realizar exposição da traqueia seguida de incisão do segundo ou terceiro anel traqueal, usando lâmina em foice nº 12 e aspirador para evitar entrada de sangue na árvore brônquica.",
+          "critico": true,
+          "alerta": "Abertura inadequada da traqueia e má aspiração do campo aumentam risco de sangramento, falso trajeto e broncoaspiração.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "12a",
+              "texto": "Expor a traqueia adequadamente."
+            },
+            {
+              "rotulo": "12b",
+              "texto": "Incisar o segundo ou terceiro anel traqueal com lâmina em foice nº 12."
+            },
+            {
+              "rotulo": "12c",
+              "texto": "Usar aspirador para evitar entrada de sangue na árvore brônquica."
+            },
+            {
+              "rotulo": "12d",
+              "texto": "Se optar por abertura em H deitado, realizar incisão a partir da linha média, com cerca de 2 cm na vertical e 1 a 2 cm nas horizontais."
+            },
+            {
+              "rotulo": "12e",
+              "texto": "Transfixar lateralmente cada lado do anel traqueal com fio agulhado, fazendo um ponto de reparo em cada borda."
+            },
+            {
+              "rotulo": "12f",
+              "texto": "Se desejar, cortar a agulha após o reparo."
+            },
+            {
+              "rotulo": "12g",
+              "texto": "Tracionar os fios reparados para ampliar a abertura e facilitar a passagem da cânula."
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Introduzir a cânula",
+          "descricao": "Introduzir a cânula escolhida previamente, com a curvatura voltada para a direção caudal e diâmetro compatível com a traqueia do paciente.",
+          "critico": true,
+          "alerta": "Atenção à retirada do mandril e à insuflação do balonete após a inserção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "13a",
+              "texto": "Introduzir a cânula com curvatura voltada caudalmente."
+            },
+            {
+              "rotulo": "13b",
+              "texto": "Retirar o mandril após a inserção."
+            },
+            {
+              "rotulo": "13c",
+              "texto": "Insuflar o balonete após posicionar a cânula."
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Fixar a cânula com os fios de reparo",
+          "descricao": "Fixar a cânula com os fios utilizados para realizar o reparo, envolvendo-a uma vez com cada fio e finalizando com três seminós de cada lado.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento da cânula e perda da via aérea.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "14a",
+              "texto": "Envolver a cânula com cada fio de reparo uma vez."
+            },
+            {
+              "rotulo": "14b",
+              "texto": "Finalizar com três seminós de cada lado."
+            },
+            {
+              "rotulo": "14c",
+              "texto": "Retirar a pinça hemostática de um lado, elevar os materiais em campo para facilitar a passagem dos fios e repetir do lado contralateral."
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "titulo": "Fechar pele e tela subcutânea",
+          "descricao": "Fechar pele e tela subcutânea com pontos simples e um pouco afastados, mantendo a abertura para introdução da cânula suficientemente ampla.",
+          "critico": true,
+          "alerta": "Fechamento excessivamente apertado favorece enfisema subcutâneo.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Fixar com cadarço no pescoço",
+          "descricao": "Fixar a cânula ao redor do pescoço com um cadarço apropriado.",
+          "critico": true,
+          "alerta": "A cânula deve permanecer estável sem compressão excessiva do pescoço.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Realizar curativo lateral",
+          "descricao": "Realizar curativo lateral com gaze sob as extremidades externas da cânula.",
+          "critico": true,
+          "alerta": "O curativo deve proteger a pele e a região periostomal sem obstruir a cânula.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Monitorizar o cuff",
+          "descricao": "Monitorizar a pressão do balonete pelo menos uma vez por turno, idealmente mantendo-a entre 20 e 30 cmH2O.",
+          "critico": true,
+          "alerta": "Pressão inadequada do cuff pode alterar mecânica respiratória e causar complicações traqueais.",
+          "imagem": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "Obter avaliação para decanulação",
+          "descricao": "Obter avaliação do fisioterapeuta e do fonoaudiólogo antes de iniciar o processo de decanulação.",
+          "critico": true,
+          "alerta": "A decanulação deve ocorrer apenas quando o paciente puder respirar adequadamente por via aérea fisiológica.",
+          "imagem": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "Desinsuflar o balonete e considerar troca da cânula",
+          "descricao": "Desinsuflar o balonete e, após 24 a 48 horas, caso não haja sinais de desconforto respiratório e broncoaspiração, considerar troca da cânula plástica por metálica.",
+          "critico": true,
+          "alerta": "A troca para cânula metálica costuma ser reservada a traqueostomizados de longo prazo.",
+          "imagem": ""
+        },
+        {
+          "numero": 21,
+          "titulo": "Ocluir a cânula e testar estabilidade",
+          "descricao": "Ocluir a cânula durante o atendimento e, se o paciente permanecer estável, mantê-la ocluída por 24 a 48 horas.",
+          "critico": true,
+          "alerta": "A oclusão só deve prosseguir se não houver desconforto respiratório, broncoaspiração ou instabilidade.",
+          "imagem": ""
+        },
+        {
+          "numero": 22,
+          "titulo": "Decanular e realizar curativo oclusivo",
+          "descricao": "Decanular na presença de tosse eficaz, ausência de secreção, ausência de desconforto respiratório e ausência de broncoaspiração, realizando em seguida curativo oclusivo.",
+          "critico": true,
+          "alerta": "Critérios clínicos de decanulação incluem expectoração adequada, deglutição adequada, estabilidade hemodinâmica, ausência de obstrução alta e ausência de broncoaspiração.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A traqueostomia pode ser classificada quanto à finalidade (preventiva, curativa ou paliativa), ao tempo de permanência (temporária ou definitiva) e à técnica (cirúrgica/aberta ou percutânea).",
+        "No material teórico, a técnica percutânea não é recomendada no ambiente do trauma.",
+        "Complicações intraoperatórias incluem hemorragia, lesão de traqueia e/ou esôfago, lesão do nervo laríngeo recorrente, pneumotórax e pneumomediastino.",
+        "Complicações pós-operatórias incluem infecção, obstrução, deslocamento do tubo, enfisema subcutâneo e edema agudo de pulmão.",
+        "Complicações tardias incluem estenose traqueal, estenose subglótica, fístulas traqueoarterial e traqueoesofágica, traqueomalácia, aspiração, pneumonia nosocomial e redução da fonação."
+      ],
+      "referencias": [
+        "Goffi FC. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª ed. São Paulo: Atheneu, 1996.",
+        "Ricz HMA, Mello-Filho FV, Conti de Freitas LC, Mamede RCM. Traqueostomia. Medicina (Ribeirão Preto, Online). 2011;44(1):63-69.",
+        "Leyn P, Bedert L, Delcroix M, Depuydt P, Lauwers G, Sokolov Y, Meerhaeghe AV, Schil PV. Tracheotomy: clinical review and guidelines. Eur J Cardiothorac Surg. 2007.",
+        "Townsend CD, Beauchamp RD, Evers BM, Mattox KL. Sabiston Tratado de Cirurgia. 19ª ed. Rio de Janeiro: Elsevier; 2015.",
+        "Hyzy RC. Overview of tracheostomy. UpToDate. 2021.",
+        "Hyzy RC, McSparron JI. Tracheostomy: Rationale, indications, and contraindications. UpToDate. 2023.",
+        "Hyzy RC, McSparron JI. Tracheostomy: Postoperative care, maintenance, and complications in adults. UpToDate. 2023.",
+        "Hyzy RC, Cardenas JL. Tracheostomy in adults: Techniques and intraoperative complications. UpToDate. 2023.",
+        "Empresa Brasileira de Serviços Hospitalares. Universidade Federal do Triângulo Mineiro. Traqueostomia: Indicações e orientações de cuidado ao paciente adulto. 2023.",
+        "Taylor CB, Otto RA. Open Tracheostomy Procedure. Atlas of the Oral and Maxillofacial Surgery Clinics. 2015;23(2):117–124."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
