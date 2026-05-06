@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atlas Cirúrgico de Bolso</title>
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -37,36 +38,40 @@
           </p>
         </div>
 
-        <div class="status-grid">
-          <article class="status-card">
+        <details class="status-details">
+          <summary>Detalhes da sincronização</summary>
+
+          <div class="status-grid">
+            <article class="status-card">
             <span class="status-label">Procedimentos únicos</span>
             <strong id="loadedProcedureCount">0</strong>
             <small id="statusProcedureBreakdown">Aguardando carregamento</small>
           </article>
 
-          <article class="status-card">
+            <article class="status-card">
             <span class="status-label">Fonte dos dados</span>
             <strong id="dataSourceLabel">Carregando</strong>
             <small id="configSummary">Configuração ainda não lida.</small>
           </article>
 
-          <article class="status-card">
+            <article class="status-card">
             <span class="status-label">Arquivos processados</span>
             <strong id="fileLoadSummary">0</strong>
             <small id="issueSummary">Sem erros de importação.</small>
           </article>
-        </div>
-
-        <div class="loading-panel" aria-live="polite">
-          <div class="loading-meta">
-            <span id="loadingLabel">Aguardando</span>
-            <span id="loadingCounter">0 / 0</span>
           </div>
 
-          <div class="progress-track" aria-hidden="true">
-            <div id="loadingProgressBar" class="progress-fill"></div>
+          <div class="loading-panel" aria-live="polite">
+            <div class="loading-meta">
+              <span id="loadingLabel">Aguardando</span>
+              <span id="loadingCounter">0 / 0</span>
+            </div>
+
+            <div class="progress-track" aria-hidden="true">
+              <div id="loadingProgressBar" class="progress-fill"></div>
+            </div>
           </div>
-        </div>
+        </details>
 
         <div class="status-actions">
           <button type="button" id="reloadProceduresButton" class="button button-primary">

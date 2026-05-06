@@ -1521,8 +1521,6 @@ function renderProcedureList() {
 
   elements.procedureList.innerHTML = procedures
     .map((procedure) => {
-      const progress = ensureProcedureProgress(procedure.id);
-      const checkedCount = progress.checklist.length;
       const totalSteps = procedure.passos.length;
 
       return `
@@ -1531,9 +1529,7 @@ function renderProcedureList() {
           <h3>${escapeHtml(procedure.nome)}</h3>
           <p>${escapeHtml(procedure.descricao_curta)}</p>
           <div class="procedure-card-footer">
-            <span>${totalSteps} passos</span>
-            <span>${checkedCount} marcados</span>
-            <span>${escapeHtml(procedure._meta.sourceLabel)}</span>
+            <span class="procedure-step-count">${totalSteps} passos</span>
           </div>
         </article>
       `;
@@ -1674,30 +1670,27 @@ function createStepCard(step, options = {}) {
             <h4>${escapeHtml(step.titulo)}</h4>
             <div class="step-badges">
               ${step.critico ? '<span class="badge critical-badge">Etapa crítica</span>' : ""}
-              ${checked ? '<span class="badge checked-badge">Concluído</span>' : ""}
               ${current ? '<span class="badge checked-badge">Passo atual</span>' : ""}
             </div>
           </div>
         </div>
+
+        ${
+          showChecklist
+            ? `
+            <label class="step-check step-check-inline">
+              <input type="checkbox" data-step-number="${step.numero}" ${checked ? "checked" : ""} />
+              <span>${checked ? "Concluído" : "Marcar como concluído"}</span>
+            </label>
+          `
+            : ""
+        }
       </div>
 
       <p class="step-description">${escapeHtml(step.descricao)}</p>
       ${createSubactionsBlock(step.subacoes)}
       ${step.alerta ? `<div class="step-alert">${escapeHtml(step.alerta)}</div>` : ""}
       ${step.imagem ? createImageBlock(step.imagem, `Imagem do passo ${step.numero}: ${step.titulo}`) : ""}
-
-      ${
-        showChecklist
-          ? `
-          <div class="step-actions">
-            <label class="step-check">
-              <input type="checkbox" data-step-number="${step.numero}" ${checked ? "checked" : ""} />
-              <span>Marcar como concluído</span>
-            </label>
-          </div>
-        `
-          : ""
-      }
     </article>
   `;
 }
