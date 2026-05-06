@@ -1,0 +1,247 @@
+{
+  "procedimentos": [
+    {
+      "id": "toracocentese",
+      "nome": "Toracocentese",
+      "categoria": "Habilidades Cirúrgicas II / Caixa torácica",
+      "descricao_curta": "Roteiro prático de toracocentese, com posicionamento, demarcação do local de punção, anestesia por planos, introdução do Jelco®, drenagem do líquido pleural, coleta para análise, retirada do cateter e curativo oclusivo.",
+      "indicacoes": [
+        "Pacientes com líquido no espaço pleural sem diagnóstico etiológico, para determinar a natureza do líquido pleural.",
+        "Obtenção de amostras de líquido pleural para exames laboratoriais.",
+        "Identificação imediata do tipo de derrame pleural.",
+        "Esvaziamento parcial ou completo do derrame pleural.",
+        "Alívio de sintomas, especialmente dispneia.",
+        "Prevenção de complicações que não possam ser drenadas, como espessamento pleural.",
+        "Necessidade de realizar biópsia da pleura parietal.",
+        "Finalidade diagnóstica, quando se deseja confirmar presença de coleção pleural ou caracterizar o derrame.",
+        "Finalidade terapêutica, quando se deseja esvaziar a cavidade pleural para alívio sintomático."
+      ],
+      "contraindicacoes": [
+        "Alterações de coagulação, como plaquetas abaixo de 50.000/mm³.",
+        "RNI aumentado, conforme o roteiro teórico.",
+        "Creatinina sérica acima de 6 mg/dL.",
+        "Lesões ou infecções de pele no local de punção, como queimaduras por radioterapia, herpes zoster ou piodermite.",
+        "Derrames menores que 1 cm na radiografia em decúbito lateral ou na ultrassonografia.",
+        "Paciente não cooperativo, devendo-se avaliar realização sob anestesia.",
+        "Não há contraindicações absolutas segundo o roteiro teórico."
+      ],
+      "preparo": [
+        "Confirmar indicação diagnóstica ou terapêutica da toracocentese.",
+        "Definir o local de punção por exame clínico criterioso e confirmar com radiografia de tórax, ultrassonografia ou outro método de imagem quando disponível.",
+        "Preferir ultrassonografia quando exame clínico e radiológico não forem conclusivos ou para aumentar segurança da punção.",
+        "Preparar material estéril, anestesia local, Jelco®, seringa, equipo e recipiente de coleta.",
+        "Planejar retirada controlada do líquido pleural, evitando ultrapassar 1.500 mL.",
+        "Preparar frascos/tubos adequados para análise do líquido pleural quando a finalidade for diagnóstica."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, gorro, máscara e pijama cirúrgico.",
+        "Assepsia e antissepsia: solução antisséptica, campos estéreis, pinça de Foerster, gaze e esponja degermante.",
+        "Anestesia: lidocaína 1% ou 2% sem vasoconstrictor, agulhas rosa (40 x 1,2 mm), marrom (13 x 0,45 mm), verde (25 x 0,8 mm) ou preta (25 x 0,7 mm).",
+        "Procedimento: seringas de 20 mL ou maior, Jelco® 14G (laranja) ou 16G (cinza), recipiente estéril para coleta e equipo de soro.",
+        "Outros: gaze e fita adesiva cirúrgica (Micropore®)."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que toracocentese é punção da parede torácica, sendo método de escolha para obtenção de amostras de líquido pleural.",
+        "Diferenciar toracocentese diagnóstica de toracocentese terapêutica.",
+        "Lembrar que o local de punção deve ser confirmado por imagem sempre que possível.",
+        "Evitar punção muito baixa, pois um erro frequente é introduzir a agulha abaixo do referencial e perfurar o diafragma.",
+        "Inserir a agulha perpendicularmente à parede torácica, junto à borda superior da costela inferior, para evitar lesão do feixe vasculonervoso."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a toracocentese.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de quebra de assepsia, interrupção do procedimento e coleta inadequada do líquido pleural.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "1a", "texto": "Separar paramentação: luvas estéreis, gorro, máscara e pijama cirúrgico." },
+            { "rotulo": "1b", "texto": "Separar materiais de assepsia e antissepsia: solução antisséptica, campos estéreis, pinça de Foerster, gaze e esponja degermante." },
+            { "rotulo": "1c", "texto": "Separar lidocaína 1% ou 2% sem vasoconstrictor e agulhas adequadas para botão anestésico e anestesia dos planos profundos." },
+            { "rotulo": "1d", "texto": "Separar seringas de 20 mL ou maior, Jelco® 14G ou 16G, recipiente estéril para coleta e equipo de soro." },
+            { "rotulo": "1e", "texto": "Separar gaze e fita adesiva cirúrgica para curativo oclusivo." }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "A orientação reduz ansiedade e melhora cooperação, especialmente durante posicionamento, inspiração profunda e retirada do cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar preferencialmente o paciente sentado, com o tronco levemente inclinado para frente, com a mão ipsilateral ao derrame apoiada sobre o ombro contralateral ou com os braços apoiados sobre travesseiro ou anteparo.",
+          "critico": true,
+          "alerta": "O posicionamento adequado expõe a região posterior/lateral do tórax e facilita acesso seguro ao espaço pleural.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "3a", "texto": "Preferir paciente sentado, com tronco levemente inclinado para frente." },
+            { "rotulo": "3b", "texto": "Apoiar a mão ipsilateral ao derrame sobre o ombro contralateral." },
+            { "rotulo": "3c", "texto": "Como alternativa, apoiar os braços sobre travesseiro ou anteparo." },
+            { "rotulo": "3d", "texto": "Em pacientes em ventilação mecânica ou sem condições clínicas de sentar, usar decúbito lateral ou posição semissentada no leito." }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Demarcar o local de punção",
+          "descricao": "Demarcar o local de punção a partir da propedêutica e confirmar com ultrassonografia ou radiografia de tórax. Habitualmente, o derrame localiza-se na região subescapular, 2 a 4 cm abaixo da escápula, coincidindo com o 8º ou 9º espaço intercostal e 9 a 10 cm lateral à coluna espinhal.",
+          "critico": true,
+          "alerta": "Introduzir a agulha muito abaixo do referencial é erro frequente e pode perfurar o diafragma.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "4a", "texto": "Realizar propedêutica para localizar o derrame pleural." },
+            { "rotulo": "4b", "texto": "Confirmar o local com ultrassonografia ou radiografia de tórax quando disponível." },
+            { "rotulo": "4c", "texto": "Identificar a região subescapular, geralmente 2 a 4 cm abaixo da escápula." },
+            { "rotulo": "4d", "texto": "Usar como referência o 8º ou 9º espaço intercostal, cerca de 9 a 10 cm lateral à coluna espinhal." },
+            { "rotulo": "4e", "texto": "Evitar punção abaixo do referencial para reduzir risco de lesão diafragmática e visceral." }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia local, seguida de colocação de campo estéril.",
+          "critico": true,
+          "alerta": "A técnica asséptica reduz risco de infecção local e pleural.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar pele e planos profundos",
+          "descricao": "Realizar botão anestésico na pele com lidocaína junto à margem superior da costela inferior; em seguida, anestesiar progressivamente tecido subcutâneo, periósteo e pleura parietal, aspirando intermitentemente para descartar punção intravascular.",
+          "critico": true,
+          "alerta": "A punção deve ocorrer junto à margem superior da costela inferior para evitar lesão do feixe vasculonervoso.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "6a", "texto": "Realizar botão anestésico na pele com lidocaína." },
+            { "rotulo": "6b", "texto": "Puncionar junto à margem superior da costela inferior." },
+            { "rotulo": "6c", "texto": "Prosseguir com anestesia do tecido subcutâneo." },
+            { "rotulo": "6d", "texto": "Anestesiar periósteo e pleura parietal." },
+            { "rotulo": "6e", "texto": "Infiltrar progressivamente, utilizando aspiração intermitente para descartar punção intravascular." }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Identificar espaço pleural com a anestesia",
+          "descricao": "Ao atingir o espaço pleural e identificar a presença de líquido, retirar a agulha de anestesia.",
+          "critico": true,
+          "alerta": "A identificação de líquido confirma acesso ao espaço pleural no trajeto planejado.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Introduzir o Jelco® com aspiração contínua",
+          "descricao": "Introduzir o Jelco® acoplado a uma seringa de 20 mL ou maior, com a agulha em angulação perpendicular à pele, mantendo aspiração contínua durante a progressão até visualizar refluxo de líquido pleural.",
+          "critico": true,
+          "alerta": "A progressão deve ser feita com pressão negativa contínua e ângulo perpendicular, evitando avanço excessivo após refluxo.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "8a", "texto": "Acoplar Jelco® 14G ou 16G à seringa de 20 mL ou maior." },
+            { "rotulo": "8b", "texto": "Introduzir a agulha perpendicularmente à pele." },
+            { "rotulo": "8c", "texto": "Manter aspiração contínua durante a progressão." },
+            { "rotulo": "8d", "texto": "Parar ao visualizar refluxo do líquido pleural." }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Progredir o cateter plástico e ocluir a extremidade",
+          "descricao": "Assim que houver refluxo de conteúdo, retirar a agulha metálica juntamente com a seringa, progredindo apenas o cateter plástico no espaço pleural. Em seguida, ocluir imediatamente a extremidade externa do cateter para evitar entrada de ar no espaço pleural.",
+          "critico": true,
+          "alerta": "A oclusão imediata da extremidade externa do cateter é fundamental para reduzir o risco de pneumotórax.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "9a", "texto": "Após refluxo, retirar a agulha metálica e a seringa." },
+            { "rotulo": "9b", "texto": "Progredir apenas o cateter plástico no espaço pleural." },
+            { "rotulo": "9c", "texto": "Ocluir imediatamente a extremidade externa do cateter." }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Conectar equipo e drenar o líquido",
+          "descricao": "Conectar um equipo aberto ao cateter plástico e direcioná-lo para um recipiente de coleta, promovendo drenagem do líquido pleural. Recomenda-se não ultrapassar retirada de 1.500 mL pelo risco de edema pulmonar de reexpansão.",
+          "critico": true,
+          "alerta": "Interromper imediatamente o procedimento se houver desconforto respiratório, tosse persistente ou hipotensão.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "10a", "texto": "Conectar equipo aberto ao cateter plástico." },
+            { "rotulo": "10b", "texto": "Direcionar o equipo para recipiente de coleta." },
+            { "rotulo": "10c", "texto": "Drenar o líquido pleural de forma controlada." },
+            { "rotulo": "10d", "texto": "Não ultrapassar 1.500 mL de drenagem no procedimento." },
+            { "rotulo": "10e", "texto": "Interromper se o paciente apresentar desconforto respiratório, tosse persistente ou hipotensão." }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Coletar amostra para análise",
+          "descricao": "Coletar aproximadamente 50 mL do líquido pleural em recipiente estéril para enviar para análise.",
+          "critico": true,
+          "alerta": "O líquido deve ser enviado em recipientes adequados para análise laboratorial conforme a finalidade diagnóstica.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Retirar o cateter com manobra respiratória",
+          "descricao": "Ao final do procedimento, solicitar que o paciente faça uma inspiração profunda e prenda a respiração. Em seguida, retirar rapidamente o cateter e ocluir o orifício de punção com gaze.",
+          "critico": true,
+          "alerta": "A retirada rápida com oclusão imediata reduz risco de entrada de ar e pneumotórax.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "12a", "texto": "Solicitar inspiração profunda." },
+            { "rotulo": "12b", "texto": "Orientar o paciente a prender a respiração." },
+            { "rotulo": "12c", "texto": "Retirar o cateter rapidamente." },
+            { "rotulo": "12d", "texto": "Ocluir imediatamente o orifício com gaze." }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Aplicar curativo oclusivo",
+          "descricao": "Aplicar curativo oclusivo no local da punção.",
+          "critico": true,
+          "alerta": "O curativo deve manter o orifício selado e protegido após a retirada do cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Avaliar necessidade de radiografia pós-procedimento",
+          "descricao": "Avaliar se há indicação de radiografia de tórax de controle. Segundo o guia, ela não é mais rotineiramente necessária após toracocentese, sendo indicada se o paciente apresentar tosse, dispneia e/ou dor torácica, se houver saída de ar pela seringa durante a punção ou se a ausculta pulmonar revelar murmúrio vesicular abolido.",
+          "critico": true,
+          "alerta": "Na ausência desses sinais ou sintomas, o guia informa que não há indicação rotineira de radiografia de tórax de controle.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "14a", "texto": "Indicar radiografia se houver tosse, dispneia ou dor torácica após o procedimento." },
+            { "rotulo": "14b", "texto": "Indicar radiografia se houver saída de ar pela seringa durante a punção." },
+            { "rotulo": "14c", "texto": "Indicar radiografia se a ausculta pulmonar revelar murmúrio vesicular abolido." },
+            { "rotulo": "14d", "texto": "Não solicitar rotineiramente se não houver sinais/sintomas associados a risco de pneumotórax." }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "A toracocentese pode ser realizada no centro cirúrgico ou à beira do leito.",
+        "Toracocentese de grande volume é definida no roteiro teórico como remoção de mais de 1 litro de líquido pleural durante toracocentese terapêutica.",
+        "Os critérios de Light diferenciam derrame pleural transudativo de exsudativo pela comparação entre líquido pleural e sangue.",
+        "Pelos critérios de Light mostrados no guia: relação proteína pleural/sérica > 0,5, relação DHL pleural/sérica > 0,6 ou DHL pleural > 2/3 do limite superior sérico favorecem exsudato.",
+        "Testes comuns no líquido pleural incluem contagem de células, proteína, lactato desidrogenase, pH, glicose, amilase, Gram, cultura e citologia.",
+        "Complicações incluem pneumotórax, tosse, dor, dispneia, reflexo vasovagal, hemotórax, hematoma de parede torácica, infecção local, edema pulmonar de reexpansão e lacerações pulmonares, hepáticas ou esplênicas inadvertidas.",
+        "Vídeo do procedimento: https://www.youtube.com/watch?v=Qh13JaPMXmA"
+      ],
+      "referencias": [
+        "Mio Kanai, Hiroshi Sekiguchi. Avoiding vessel laceration in thoracentesis: a role of vascular ultrasound with color Doppler. Chest. 2014;147(1):e5-e7.",
+        "Fábio Schimit. Técnica Cirúrgica: Bases Anatômicas, Fisiopatológicas e Técnicas de Cirurgia. 4ª edição. São Paulo: Atheneu; 1996.",
+        "Sales Roberta, Onishi Roberto. Toracocentese e biópsia pleural. J Bras Pneumol. 2006;32(Suppl 4):S170-S173.",
+        "Colégio Americano de Cirurgiões. Manual de Suporte Avançado de Vida no Trauma — ATLS. 10ª ed. 2017.",
+        "Paul H Mayo, John E. Heffner. Ultrasound-guided thoracentesis. UpToDate. 2024.",
+        "Hajjar LA. Medicina de Emergência: abordagem prática. 18ª ed. Manole; 2024.",
+        "Ruy Garcia Marques. Técnica Operatória e Cirurgia Experimental. 1ª ed. Guanabara; 2005.",
+        "Amato ACM. Procedimentos Médicos — Técnica e Tática. 2ª ed. Rio de Janeiro: Grupo GEN; 2016.",
+        "Todd W. Thomsen, Jennifer DeLaPena, Gary S. Setnik. Thoracentesis. N Engl J Med. 2006;355:e16.",
+        "Havelock T, Teoh R, Laws D, Gleeson F. BTS Pleural Disease Guideline Group. Pleural procedures and thoracic ultrasound. Thorax. 2010;65 Suppl 2:ii61-ii76.",
+        "John T. Huggins, Amit Chopra. Large volume therapeutic thoracentesis: procedure and complications. UpToDate. 2021.",
+        "YC Gary Lee. Diagnostic evaluation of hemodynamically stable adult with a pleural effusion. UpToDate. 2023."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

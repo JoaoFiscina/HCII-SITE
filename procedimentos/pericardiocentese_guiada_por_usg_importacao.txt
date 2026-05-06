@@ -1,0 +1,243 @@
+{
+  "procedimentos": [
+    {
+      "id": "pericardiocentese_guiada_por_usg",
+      "nome": "Pericardiocentese guiada por USG",
+      "categoria": "Habilidades Cirúrgicas II / Caixa torácica",
+      "descricao_curta": "Roteiro prático de pericardiocentese com monitorização ultrassonográfica, incluindo preparo, monitorização, punção subxifoide pela técnica de Marfan, confirmação ultrassonográfica, drenagem, fixação do cateter e cuidados após o procedimento.",
+      "indicacoes": [
+        "Tamponamento cardíaco.",
+        "Derrame pericárdico sem tamponamento quando houver efusões grandes, com mais de 20 mm ao ecocardiograma na diástole, ou recorrentes em paciente hipotenso.",
+        "Suspeita de neoplasia.",
+        "Suspeita de pericardite bacteriana ou purulenta.",
+        "Suspeita de hemopericárdio pós-trauma.",
+        "Derrames pericárdicos importantes assintomáticos, pela possibilidade de evolução súbita para tamponamento pericárdico.",
+        "Coleta de líquido pericárdico para análise quando houver suspeita de pericardite purulenta, tuberculosa ou neoplásica.",
+        "Derrame pericárdico moderado a grande de etiologia desconhecida que não responde rapidamente à terapia anti-inflamatória.",
+        "Pacientes sem tamponamento cardíaco, para fins diagnósticos, quando houver incerteza diagnóstica ou quando a etiologia específica puder mudar o manejo."
+      ],
+      "contraindicacoes": [
+        "Coagulopatias não corrigidas.",
+        "Terapia anticoagulante.",
+        "Trombocitopenia com contagem de plaquetas abaixo de 50.000/mm³.",
+        "Derrames pequenos, posteriores ou loculados, quando puderem ser diagnosticados ou resolvidos por outros meios.",
+        "Cirurgia toracoabdominal prévia.",
+        "Presença de válvulas cardíacas protéticas, marca-passos ou outros dispositivos cardíacos.",
+        "Situações em que melhores modalidades de tratamento estejam imediatamente disponíveis, como toracotomia de emergência.",
+        "Ruptura miocárdica associada ao tamponamento.",
+        "Distúrbios hemorrágicos graves.",
+        "Dissecção aórtica aguda associada ao tamponamento, descrita no roteiro como contraindicação absoluta segundo a I Diretriz Brasileira de Miocardites e Pericardites.",
+        "Em caráter emergencial, não há contraindicações absolutas segundo o roteiro."
+      ],
+      "preparo": [
+        "Reconhecer que a pericardiocentese é procedimento emergencial para remoção de fluido do espaço pericárdico por punção.",
+        "Definir se a finalidade é terapêutica, diagnóstica ou ambas.",
+        "Manter monitorização eletrocardiográfica e de sinais vitais antes, durante e após o procedimento.",
+        "Garantir pelo menos um acesso venoso e oxigênio suplementar, caso via aérea avançada não esteja indicada.",
+        "Utilizar ultrassonografia para identificar a efusão e guiar a aspiração sempre que possível.",
+        "Alertar a equipe cirúrgica sobre possível necessidade de toracotomia de emergência como terapia definitiva.",
+        "Caso haja tempo, realizar sondagem nasogástrica para descomprimir o estômago."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, gorro, máscara e pijama cirúrgico.",
+        "Assepsia e antissepsia: solução antisséptica, campos estéreis, pinça de Foerster, gaze e esponja degermante.",
+        "Material para anestesia: lidocaína 1% ou 2% sem vasoconstrictor; agulhas rosa (40 x 1,2 mm), verde (25 x 0,8 mm) ou preta (25 x 0,7 mm).",
+        "Procedimento: seringas de 60 a 80 mL, Jelco® 16 a 18G de 7 a 9 cm para adultos, Jelco® de 4 cm para crianças mais velhas, Jelco® 20G para bebês/crianças pequenas ou agulha espinhal.",
+        "Torneira de três vias.",
+        "Transdutor de ultrassonografia.",
+        "Solução salina.",
+        "Material para fixação do cateter e curativo."
+      ],
+      "acoes_iniciais": [
+        "Identificar sinais clínicos de tamponamento cardíaco, incluindo a Tríade de Beck: hipofonese de bulhas, estase jugular e hipotensão arterial.",
+        "Lembrar que a Tríade de Beck não está presente de forma uniforme e que o USG FAST tem alto valor diagnóstico no tamponamento cardíaco.",
+        "Pesquisar outros sinais de tamponamento, como taquipneia, taquicardia, dor torácica, síncope ou pré-síncope, edema periférico, dispneia, pulso paradoxal, alterações no ECG, sinal de Kussmaul e atividade elétrica sem pulso.",
+        "Evitar que a pericardiocentese atrase toracotomia de emergência quando esta estiver indicada.",
+        "Planejar drenagem controlada, evitando remoção rápida de grande volume pelo risco de síndrome de descompressão cardíaca."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todos os materiais necessários para a pericardiocentese guiada por ultrassonografia.",
+          "critico": true,
+          "alerta": "Falhas no preparo do material podem atrasar uma intervenção emergencial em tamponamento cardíaco.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "1a", "texto": "Separar paramentação: luvas estéreis, gorro, máscara e pijama cirúrgico." },
+            { "rotulo": "1b", "texto": "Separar materiais de assepsia e antissepsia: solução antisséptica, campos estéreis, pinça de Foerster, gaze e esponja degermante." },
+            { "rotulo": "1c", "texto": "Separar anestésico local: lidocaína 1% ou 2% sem vasoconstrictor e agulhas adequadas." },
+            { "rotulo": "1d", "texto": "Separar seringas de 60 a 80 mL, Jelco® 16–18G de 7–9 cm para adultos, Jelco® de 4 cm para crianças mais velhas, Jelco® 20G para bebês/crianças pequenas ou agulha espinhal." },
+            { "rotulo": "1e", "texto": "Separar torneira de três vias, transdutor de USG, solução salina, material para fixação e curativo." }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento, quando clinicamente possível.",
+          "critico": true,
+          "alerta": "Em contexto emergencial, a comunicação deve ocorrer sem atrasar condutas essenciais.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Monitorizar e preparar suporte",
+          "descricao": "Manter o paciente monitorizado antes, durante e após o procedimento, garantindo suporte venoso, oxigênio e preparo para escalonamento cirúrgico.",
+          "critico": true,
+          "alerta": "A pericardiocentese não deve retardar toracotomia de emergência quando ela for necessária.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "3a", "texto": "Manter monitorização eletrocardiográfica e de sinais vitais antes, durante e após o procedimento." },
+            { "rotulo": "3b", "texto": "Garantir pelo menos um acesso venoso." },
+            { "rotulo": "3c", "texto": "Garantir oxigênio suplementar se via aérea avançada não estiver indicada." },
+            { "rotulo": "3d", "texto": "Caso haja tempo, realizar sondagem nasogástrica para descomprimir o estômago." },
+            { "rotulo": "3e", "texto": "Alertar a equipe cirúrgica sobre possível necessidade de toracotomia de emergência como terapia definitiva." },
+            { "rotulo": "3f", "texto": "Utilizar ultrassonografia para identificar a efusão pericárdica." }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal. Se estiver estável, considerar elevação da cabeceira entre 30 e 45 graus.",
+          "critico": true,
+          "alerta": "O posicionamento deve facilitar o acesso subxifoide sem comprometer a estabilidade clínica.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia das regiões xifoide e subxifoide, caso haja tempo.",
+          "critico": true,
+          "alerta": "A antissepsia é desejável, mas não deve atrasar uma intervenção emergencial em paciente instável.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar o trajeto",
+          "descricao": "Em pacientes conscientes, anestesiar o local de punção criando um botão anestésico e, em seguida, infiltrar até os tecidos mais profundos.",
+          "critico": true,
+          "alerta": "A anestesia deve acompanhar o trajeto planejado de punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Montar seringa, solução salina e cateter",
+          "descricao": "Conectar uma seringa de 60 mL com 10 mL de solução salina a um Jelco® 16–18G.",
+          "critico": true,
+          "alerta": "A solução salina será utilizada para confirmar o posicionamento por formação de bolhas visíveis ao ultrassom.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Pesquisar alterações anatômicas",
+          "descricao": "Pesquisar desvios de mediastino ou deformidades da anatomia da caixa torácica por inspeção e palpação, pois podem alterar significativamente a posição do coração e o local de punção.",
+          "critico": true,
+          "alerta": "Alterações anatômicas podem tornar perigosa a punção em ponto habitual.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Posicionar o transdutor de USG",
+          "descricao": "Posicionar o transdutor abaixo do processo xifoide, no sentido axial, direcionado ao ombro esquerdo do paciente, acompanhando o trajeto da agulha.",
+          "critico": true,
+          "alerta": "A ultrassonografia orienta o local de maior coleção líquida e reduz risco de complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Puncionar pela técnica de Marfan",
+          "descricao": "Puncionar a pele 1 cm abaixo da junção xifocondral, à esquerda, com cateter agulhado ou agulha espinhal, anteriormente ao transdutor, em ângulo de 30 a 45 graus em relação à pele, direcionado ao ombro esquerdo.",
+          "critico": true,
+          "alerta": "O local de punção pode variar; a ultrassonografia deve determinar o ponto de maior coleção líquida que merece punção.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "10a", "texto": "Identificar a junção xifocondral." },
+            { "rotulo": "10b", "texto": "Puncionar 1 cm abaixo da junção xifocondral, à esquerda." },
+            { "rotulo": "10c", "texto": "Inserir o cateter anteriormente ao transdutor." },
+            { "rotulo": "10d", "texto": "Manter ângulo de 30 a 45 graus em relação à pele." },
+            { "rotulo": "10e", "texto": "Direcionar a agulha em sentido ao ombro esquerdo." },
+            { "rotulo": "10f", "texto": "Reconhecer que outros locais possíveis incluem paraesternal esquerdo e apical, conforme a coleção ao USG." }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Avançar sob pressão negativa e confirmar no USG",
+          "descricao": "Avançar a agulha cuidadosamente, realizando pressão negativa. Ao atingir o saco pericárdico, injetar solução salina para confirmar a localização pela formação de bolhas visíveis na ultrassonografia.",
+          "critico": true,
+          "alerta": "Avanço sem controle pode causar lesão miocárdica, arritmias ou punção de estruturas adjacentes.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Aspirar, drenar e conectar torneira de três vias",
+          "descricao": "Após aspiração, remover a seringa e a agulha, avançar o cateter e conectá-lo à torneira de três vias. Drenar o líquido até atenuação do quadro clínico, considerando que o volume varia conforme o paciente.",
+          "critico": true,
+          "alerta": "Em casos crônicos, evitar drenagem inicial superior a 500 mL para reduzir risco de síndrome de descompressão pericárdica.",
+          "imagem": "",
+          "subacoes": [
+            { "rotulo": "12a", "texto": "Aspirar o líquido pericárdico." },
+            { "rotulo": "12b", "texto": "Remover seringa e agulha após aspiração." },
+            { "rotulo": "12c", "texto": "Avançar o cateter." },
+            { "rotulo": "12d", "texto": "Conectar a torneira de três vias ao cateter." },
+            { "rotulo": "12e", "texto": "Drenar até melhora/atenuação do quadro clínico." }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Reavaliar com ultrassonografia",
+          "descricao": "Visualizar o saco pericárdico com ultrassom após completar a drenagem para certificar que o líquido foi retirado e que o coração funciona normalmente.",
+          "critico": true,
+          "alerta": "A reavaliação por USG confirma efetividade da drenagem e ajuda a identificar persistência/recorrência de líquido.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Fixar o cateter",
+          "descricao": "Fixar o cateter suturando-o ao local e cobri-lo com pequeno curativo em calça, permitindo descompressão contínua a caminho da cirurgia ou transferência.",
+          "critico": true,
+          "alerta": "Fixação inadequada pode deslocar o cateter e comprometer a drenagem contínua.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Manter cateter como dreno pericárdico quando indicado",
+          "descricao": "Em casos crônicos, deixar o cateter servindo como dreno pericárdico até que a drenagem seja menor que 50 mL/dia, para evitar recorrência de derrame pericárdico.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Reaspirar se houver recorrência",
+          "descricao": "Abrir a torneira de três vias e realizar nova aspiração em caso de recorrência.",
+          "critico": true,
+          "alerta": "Recorrência de tamponamento ou derrame exige reavaliação imediata e pode demandar abordagem definitiva.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A pericardiocentese pode ter finalidade terapêutica e diagnóstica, mas não é necessariamente tratamento definitivo.",
+        "A ultrassonografia deve ser utilizada sempre que possível por aumentar a taxa de sucesso e reduzir complicações.",
+        "A Tríade de Beck não está uniformemente presente nos casos de tamponamento cardíaco.",
+        "O volume de fluido removido deve ser controlado; o roteiro teórico destaca remover menos de 500 mL por vez para evitar síndrome de descompressão cardíaca.",
+        "Complicações incluem perfuração/laceração de epicárdio ou miocárdio, aspiração intracardíaca, aspiração falso-negativa por coágulo, arritmias, edema pulmonar, lesão de vasos, pneumo/hemotórax, pneumo/hemopericárdio, punção de estômago, peritônio ou fígado, lesão diafragmática, embolia gasosa, infecção, síncope vasovagal e síndrome de descompressão cardíaca.",
+        "Dica do cirurgião do guia: em derrame crônico, pode-se utilizar cateter mais longo, idealmente pigtail, pois o Jelco® pode se deslocar com maior facilidade pelo seu comprimento.",
+        "Vídeo do procedimento: https://www.youtube.com/watch?v=GcoAHYcngEw"
+      ],
+      "referencias": [
+        "Fitch MT, Nicks BA, Pariyadath M, McGinnis HD, Manthey DE. Emergency Pericardiocentesis. N Engl J Med. 2012;366(12):e17.",
+        "Heffner AC. Emergency pericardiocentesis. UpToDate. 2021.",
+        "Colégio Americano de Cirurgiões. Manual de Suporte Avançado de Vida no Trauma para Médicos. ATLS. 10ª ed. 2017.",
+        "Gluer R, Murdoch D, Haqqani HM, Scalia GM, Walters DL. Pericardiocentesis — How to do it. Heart Lung Circ. 2015;24(6):621-625.",
+        "Shlamovitz GZ. Pericardiocentesis. Medscape. 2015/2017.",
+        "Tirado A, Wu T, Noble VE, Huang C, Lewiss RE, Martin JA, et al. Ultrasound-Guided Procedures in the Emergency Department. Emerg Med Clin North Am. 2013;31:117-149.",
+        "Tsang TS, Enriquez-Sarano M, Freeman WK, Barnes ME, Sinak LJ, Gersh BJ, et al. Consecutive 1127 therapeutic echocardiographically guided pericardiocenteses. Mayo Clin Proc. 2002;77:429-436.",
+        "Rafique AM, Patel N, Biner S, Eshaghian S, Mendoza F, Cercek B, et al. Extended versus nonextended pericardial catheter drainage. Am J Cardiol. 2011;108:1820-1825.",
+        "Sociedade Brasileira de Cardiologia. I Diretriz Brasileira de Miocardites e Pericardites. Arq Bras Cardiol. 2013;100(4 supl. 1):1-45.",
+        "Brian D Hoit et al. Cardiac tamponade. UpToDate. 2020.",
+        "Brian D Hoit et al. Pericardial effusion: Approach to diagnosis. UpToDate. 2023."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

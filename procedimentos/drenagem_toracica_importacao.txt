@@ -1,0 +1,379 @@
+{
+  "procedimentos": [
+    {
+      "id": "drenagem_toracica",
+      "nome": "Drenagem torácica",
+      "categoria": "Habilidades Cirúrgicas II / Caixa torácica",
+      "descricao_curta": "Roteiro prático de drenagem torácica fechada, com preparo do paciente, escolha do dreno, identificação do 5º espaço intercostal, dissecção, exploração digital, inserção do dreno, conexão ao selo d’água, fixação, curativo e critérios de retirada.",
+      "indicacoes": [
+        "Pneumotórax de grande monta.",
+        "Pneumotórax em paciente sob ventilação mecânica com pressão positiva.",
+        "Pneumotórax recorrente e/ou persistente.",
+        "Pneumotórax bilateral.",
+        "Pneumotórax iatrogênico.",
+        "Hemopneumotórax.",
+        "Hemotórax maciço.",
+        "Ruptura esofágica.",
+        "Pneumotórax hipertensivo após punção de alívio.",
+        "Efusão pleural maligna, recorrente, infectada ou inflamada.",
+        "Derrame ou empiema parapneumônico.",
+        "Quilotórax.",
+        "Realização de pleurodese.",
+        "Pós-operatório de cirurgias torácicas, como toracotomia, esofagectomia e cirurgias cardíacas."
+      ],
+      "contraindicacoes": [
+        "Adesão pulmonar completa à parede torácica.",
+        "Coagulopatias.",
+        "Terapia anticoagulante.",
+        "Aderências pleuropulmonares substanciais ou multiloculações.",
+        "Infecção no local.",
+        "Transudato pleural secundário à doença sistêmica, quando deve ser priorizado o tratamento da causa base."
+      ],
+      "preparo": [
+        "Revisar história clínica e exame físico em busca de fatores que impactem a inserção do tubo, como cardiomegalia, tumor de mediastino, terapia anticoagulante, cirurgia torácica prévia, drenagem torácica prévia, acesso central, marca-passo, obesidade, escoliose, deformidades da caixa torácica e fatores que elevem o diafragma.",
+        "Avaliar necessidade de antibiótico profilático conforme o contexto clínico; em trauma penetrante, o roteiro destaca necessidade de profilaxia.",
+        "Avaliar analgesia e anestesia local; no contexto de emergência, a drenagem pode ser feita sob anestesia local com lidocaína 1% ou 2%, podendo ser associada a bloqueio intercostal.",
+        "Preparar o sistema de drenagem em selo d’água antes da inserção do dreno.",
+        "Escolher o tamanho do dreno, geralmente entre 28 e 32 French, conforme o motivo da indicação.",
+        "Quando houver suspeita de adesões pleurais por infecções, pleurodese ou cirurgia pulmonar prévia, considerar guia por ultrassonografia ou tomografia quando possível."
+      ],
+      "materiais": [
+        "Paramentação: luvas estéreis, máscara, gorro, pijama cirúrgico e capa.",
+        "Assepsia e antissepsia: clorexidina ou PVPI, pinça de Foerster, gaze e campo estéril.",
+        "Material para anestesia: lidocaína 1% ou 2% com ou sem vasoconstrictor, seringas de 5, 10 ou 20 mL e agulhas de pavilhão rosa (40 x 1,20 mm), marrom (10 x 0,45 mm), verde (25 x 0,8 mm) ou preto (25 x 0,7 mm).",
+        "Procedimento: bisturi cabo nº 3, lâmina de bisturi nº 11 ou 15, pinças hemostáticas curvas, dreno de tórax, sistema de coleta em selo d’água e fio mononylon 2-0 ou 3-0.",
+        "Outros: gaze e fita adesiva cirúrgica (Micropore®)."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a drenagem torácica consiste na inserção de um tubo na cavidade pleural para drenagem de ar, sangue, bile, pus e outros fluidos, podendo também permitir administração de drogas.",
+        "Entender que o objetivo é viabilizar a reexpansão pulmonar ao restabelecer pressão subatmosférica no espaço pleural.",
+        "Lembrar que muitas injúrias torácicas no trauma podem ser manejadas com drenagem torácica e ressuscitação volêmica.",
+        "Preparar radiografia de tórax de controle após o procedimento para confirmar posicionamento do tubo e efetividade da drenagem."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir todos os materiais necessários antes de iniciar a drenagem torácica.",
+          "critico": true,
+          "alerta": "Falhas no preparo inicial aumentam risco de atraso, quebra de assepsia, contaminação do sistema e exposição desnecessária da cavidade pleural.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar paramentação: luvas estéreis, máscara, gorro, pijama cirúrgico e capa."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar antisséptico, pinça de Foerster, gaze e campo estéril."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar anestésico local, seringas e agulhas adequadas para botão anestésico e infiltração por planos."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar bisturi cabo nº 3, lâmina nº 11 ou 15, pinças hemostáticas curvas, dreno de tórax, selo d’água e fio mononylon 2-0 ou 3-0."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze e fita adesiva cirúrgica para curativo."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Realizar higiene das mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento, quando o quadro clínico permitir.",
+          "critico": true,
+          "alerta": "A comunicação e a higienização fazem parte da segurança, mas não devem atrasar intervenção emergencial quando necessária.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Preparar o material e escolher o dreno",
+          "descricao": "Preparar o material e escolher o tamanho do dreno, que pode variar de 28 a 32 French, conforme o motivo da indicação.",
+          "critico": true,
+          "alerta": "A escolha inadequada do calibre pode comprometer a drenagem ou aumentar complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal, com cabeceira elevada entre 30 e 45 graus, abduzindo ao máximo o membro superior ipsilateral e posicionando-o atrás da cabeça.",
+          "critico": true,
+          "alerta": "Posicionamento inadequado dificulta identificação do local e execução segura da técnica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Colocar o paciente em decúbito dorsal."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Elevar a cabeceira entre 30 e 45 graus."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Abduzir ao máximo o membro superior ipsilateral."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Posicionar o membro superior atrás da cabeça para expor melhor a região axilar."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Identificar o local de drenagem",
+          "descricao": "Identificar o 5º espaço intercostal entre as linhas axilares anterior e média. Usar como referências a linha mamilar em homens e o nível do sulco inframamário em mulheres.",
+          "critico": true,
+          "alerta": "Erro no espaço intercostal aumenta risco de lesões torácicas ou abdominais e mau posicionamento do dreno.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia do local escolhido e montar campo estéril.",
+          "critico": true,
+          "alerta": "A técnica asséptica reduz risco de infecção pleural e infecção do sítio de drenagem.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Anestesiar por planos",
+          "descricao": "Anestesiar a pele formando inicialmente um botão anestésico e, em seguida, infiltrar os planos profundos até a pleura parietal, margeando a borda superior da costela inferior.",
+          "critico": true,
+          "alerta": "A infiltração deve seguir pela borda superior da costela inferior para evitar lesão do feixe vasculonervoso intercostal.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Formar botão anestésico na pele com seringa de 20 mL e agulha de pavilhão marrom."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Utilizar agulha verde ou preta para avançar por planos."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Infiltrar tecido subcutâneo e musculatura até a pleura parietal."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Manter trajetória na porção superior da costela inferior, em ângulo reto, evitando o feixe vasculonervoso."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar incisão cutânea",
+          "descricao": "Realizar incisão de 2 a 3 cm paralelamente à costela inferior ao espaço intercostal escolhido, evitando a margem inferior da costela superior.",
+          "critico": true,
+          "alerta": "A incisão deve respeitar a anatomia intercostal para evitar lesão vascular e facilitar a passagem do dreno.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Dissecar até a pleura parietal",
+          "descricao": "Utilizar uma pinça hemostática curva para dissecar o tecido subcutâneo e a musculatura até perfurar a pleura parietal.",
+          "critico": true,
+          "alerta": "A entrada na pleura deve ser controlada; dissecção inadequada aumenta risco de falso trajeto e lesão de estruturas.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar exploração digital",
+          "descricao": "Realizar exploração digital para confirmar que a cavidade pleural foi alcançada e liberar possíveis adesões pleurais.",
+          "critico": true,
+          "alerta": "A exploração digital confirma o acesso pleural e reduz risco de introduzir o dreno em falso trajeto.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Preparar o dreno com pinças hemostáticas",
+          "descricao": "Clampear a extremidade proximal do dreno com pinças hemostáticas curvas e posicionar uma segunda pinça cerca de 8 cm após o último orifício, usando os instrumentos como guia de introdução e noção de profundidade.",
+          "critico": true,
+          "alerta": "O dreno deve estar clampeado conforme o roteiro antes da incisão, evitando demora na introdução com o espaço pleural aberto.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Clampear a extremidade proximal do dreno com pinça hemostática curva."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Posicionar uma segunda pinça cerca de 8 cm após o último orifício do dreno."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Usar as pinças como guia de introdução e referência de profundidade."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Inserir o dreno",
+          "descricao": "Inserir o dreno dirigindo-o em sentido apical e posterior. Avançar até que o último orifício de drenagem esteja pelo menos 2 cm dentro da cavidade torácica.",
+          "critico": true,
+          "alerta": "Inserção rasa deixa orifícios fora da cavidade; inserção inadequada compromete drenagem e pode lesar estruturas.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Confirmar localização do dreno",
+          "descricao": "Confirmar a localização do dreno por embaçamento do tubo, sugerindo drenagem de ar, ou por refluxo de líquido.",
+          "critico": true,
+          "alerta": "Ausência de sinais de drenagem exige reavaliação da posição e permeabilidade do sistema.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Conectar ao sistema em selo d’água",
+          "descricao": "Conectar o dreno ao sistema em selo d’água, mantendo-o abaixo do nível do paciente, e só então retirar a pinça hemostática distal.",
+          "critico": true,
+          "alerta": "Nunca deixar o dreno aberto; desconexão ou abertura do sistema favorece entrada de ar e pneumotórax.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "14a",
+              "texto": "Conectar o dreno ao sistema de selo d’água."
+            },
+            {
+              "rotulo": "14b",
+              "texto": "Manter o sistema abaixo do nível do paciente."
+            },
+            {
+              "rotulo": "14c",
+              "texto": "Retirar a pinça hemostática distal apenas após conexão ao selo d’água."
+            },
+            {
+              "rotulo": "14d",
+              "texto": "Se houver drenagem maior que 1000 a 1500 mL, clampear o dreno por pelo menos uma hora para reduzir risco de edema pulmonar de reexpansão."
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "titulo": "Fixar o dreno à pele",
+          "descricao": "Fixar o dreno na pele com sutura em U; em seguida, dar duas voltas no dreno com o fio e realizar três seminós, repetindo o processo três vezes com fio monofilamentar.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento, perda de drenagem e entrada de ar.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "15a",
+              "texto": "Realizar sutura em U na pele."
+            },
+            {
+              "rotulo": "15b",
+              "texto": "Dar duas voltas no dreno com o fio."
+            },
+            {
+              "rotulo": "15c",
+              "texto": "Fazer três seminós."
+            },
+            {
+              "rotulo": "15d",
+              "texto": "Repetir a fixação por três vezes usando fio monofilamentar."
+            },
+            {
+              "rotulo": "15e",
+              "texto": "Se necessário, o cirurgião pode clampear o dreno e desacoplá-lo do sistema para facilitar a fixação, reconectando-o em seguida sem contaminar o sistema e sem deixar o dreno aberto."
+            }
+          ]
+        },
+        {
+          "numero": 16,
+          "titulo": "Realizar curativo oclusivo estéril",
+          "descricao": "Realizar curativo oclusivo estéril no local de inserção do dreno.",
+          "critico": true,
+          "alerta": "A pele deve estar seca e desengordurada para garantir aderência completa do curativo.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Realizar radiografia de tórax de controle",
+          "descricao": "Realizar radiografia de tórax de controle após o procedimento para confirmar o posicionamento do tubo e a efetividade da drenagem.",
+          "critico": true,
+          "alerta": "A radiografia avalia posição do dreno, reexpansão pulmonar e complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Avaliar critérios de retirada",
+          "descricao": "Avaliar critérios clínicos e radiológicos para retirada do dreno conforme a indicação inicial.",
+          "critico": true,
+          "alerta": "Drenagem de qualquer quantidade de líquido sanguinolento ou purulento contraindica retirada do dreno.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "18a",
+              "texto": "No pneumotórax, após 12 a 24 horas sem escape aéreo, realizar radiografia; se houver expansão normal dos pulmões, o dreno pode ser retirado."
+            },
+            {
+              "rotulo": "18b",
+              "texto": "Em fluido pleural, considerar retirada se drenagem menor que 100 a 150 mL em 24 horas, líquido seroso, reexpansão pulmonar na radiografia e melhora clínica."
+            },
+            {
+              "rotulo": "18c",
+              "texto": "Não retirar se houver drenagem de líquido sanguinolento ou purulento."
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "titulo": "Retirar o dreno com manobra respiratória",
+          "descricao": "Solicitar que o paciente realize manobra de Valsalva ou inspiração máxima; retirar o dreno com dois profissionais, enquanto um remove e o outro fecha rapidamente o orifício com fio de sutura já presente ou curativo com gaze e esparadrapo.",
+          "critico": true,
+          "alerta": "Fechamento rápido do orifício durante a retirada evita pneumotórax residual.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "19a",
+              "texto": "Solicitar manobra de Valsalva ou inspiração máxima."
+            },
+            {
+              "rotulo": "19b",
+              "texto": "Um profissional remove o dreno."
+            },
+            {
+              "rotulo": "19c",
+              "texto": "O outro profissional fecha rapidamente o orifício com sutura ou curativo oclusivo."
+            }
+          ]
+        },
+        {
+          "numero": 20,
+          "titulo": "Radiografar após retirada",
+          "descricao": "Obter radiografia de tórax após retirada do dreno para avaliar recorrência de pneumotórax e/ou reacúmulo de líquido.",
+          "critico": true,
+          "alerta": "Controle pós-retirada permite detectar recorrência precoce ou reacúmulo pleural.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A drenagem torácica é essencial no manejo de pneumotórax, hemotórax e diversas coleções pleurais, buscando reexpansão pulmonar.",
+        "Em trauma penetrante, o roteiro teórico destaca necessidade de antibiótico profilático; em pneumotórax espontâneo, não é necessário.",
+        "Complicações incluem mau posicionamento do tubo, perfuração de grandes vasos, empiema, infecção do sítio, laceração de vísceras torácicas ou abdominais, lesão do feixe vasculonervoso, enfisema subcutâneo e edema pulmonar de reexpansão.",
+        "O edema pulmonar de reexpansão é raro, potencialmente fatal, e pode ocorrer após rápida descompressão de pulmão colapsado por pneumotórax ou derrame pleural de grande volume.",
+        "A incidência de complicações relaciona-se ao diâmetro do tubo; tubos menores apresentam menor taxa de complicações, mas maior risco de obstrução.",
+        "Dica do cirurgião: o dreno deve estar clampeado conforme o passo 11 antes da incisão da pele, para evitar demora na introdução com o espaço pleural aberto.",
+        "Dica do cirurgião: a pele na retirada do tubo deve estar seca e desengordurada para aderência completa do curativo.",
+        "Vídeo do procedimento: https://youtu.be/EUJ5VnABDzE"
+      ],
+      "referencias": [
+        "Huggins JT, Shamus C. Placement and management of thoracostomy tubes and catheters in adults and children. UpToDate. 2024.",
+        "de Azambuja MI, de Castro Junior MAM. Drenagem torácica. Vittalle. 2021;33(1):147-158.",
+        "Colégio Americano de Cirurgiões. Suporte Avançado de Vida no Trauma para Médicos. ATLS. 10ª ed. 2017/2018.",
+        "Ravi C, McKnight CL. Chest Tube. StatPearls. Treasure Island (FL): StatPearls Publishing; 2024.",
+        "Asciak R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 3):43-68.",
+        "Laws D, Neville E, Duffy J. BTS guidelines for the insertion of a chest drain. Thorax. 2003;58(Suppl II):53-59.",
+        "Dev SP, Nascimiento Jr B, Simone C, Chien V. Chest-Tube Insertion. N Engl J Med. 2007;357(15):e15.",
+        "Shlamovitz G. Tube thoracostomy: overview, indications, contraindications. Medscape. 2020.",
+        "Freitas VF, Saito EH. Edema Pulmonar de Reexpansão na Doença Pleural. Pulmão RJ. 2016;25(1):21-24."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
