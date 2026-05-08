@@ -1,0 +1,204 @@
+{
+  "procedimentos": [
+    {
+      "id": "sonda_orogastrica",
+      "nome": "Sonda orogástrica",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de passagem de sonda orogástrica tipo Fouché, com indicação, medição boca-orelha-xifoide, lubrificação oral e da sonda, introdução pela boca, proteção antimordedura, fixação facial e confirmação do posicionamento.",
+      "indicacoes": [
+        "Uso em pacientes inconscientes, pois a passagem pela cavidade oral pode ativar o reflexo de vômito em pacientes conscientes.",
+        "Lavagem gástrica.",
+        "Aspiração de conteúdo gástrico.",
+        "Situações em que há contraindicação ou impossibilidade de uso da sonda nasogástrica."
+      ],
+      "contraindicacoes": [
+        "Paciente consciente com reflexo de vômito preservado, pela possibilidade de ativação do reflexo durante a passagem oral.",
+        "Obstrução ou trauma importante de cavidade oral, faringe ou esôfago que impeça a progressão segura da sonda.",
+        "Suspeita de perfuração ou estenose esofágica importante, pelo risco de lesão durante a passagem.",
+        "Diátese hemorrágica importante, pela possibilidade de sangramento com trauma de mucosa."
+      ],
+      "preparo": [
+        "Confirmar a indicação da sonda orogástrica, especialmente em paciente inconsciente ou quando houver contraindicação para sonda nasogástrica.",
+        "Separar sonda orogástrica tipo Fouché, flexível, de lúmen único ou duplo.",
+        "Explicar o procedimento ao paciente quando possível ou à equipe/família quando aplicável.",
+        "Posicionar o paciente em Fowler, com cabeceira a 45°, quando clinicamente possível.",
+        "Separar material para medição, lubrificação, introdução, protetor antimordedura, fixação e confirmação do posicionamento."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Sonda orogástrica tipo Fouché.",
+        "Lidocaína spray para cavidade oral.",
+        "Lidocaína gel para lubrificação da sonda até o local demarcado.",
+        "Esparadrapo ou Micropore® para marcação e fixação.",
+        "Pequeno rolo de gaze para protetor antimordedura ou cânula de Guedel.",
+        "Seringa para injetar aproximadamente 20 mL de ar, quando usado teste clínico inicial semelhante ao da SNG.",
+        "Estetoscópio para ausculta epigástrica.",
+        "Material para radiografia de tórax inferior e abdome superior para confirmação do posicionamento, quando indicada."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a sonda orogástrica tipo Fouché é uma sonda flexível, de lúmen único ou duplo, passada da cavidade oral até o estômago.",
+        "Diferenciar a sonda orogástrica da nasogástrica: a técnica é semelhante, mas a medição começa no ângulo da boca, a introdução é pela boca e a fixação exige proteção antimordedura.",
+        "Lembrar que a via oral é preferida quando há contraindicação para passagem nasal.",
+        "Planejar a proteção contra mordedura para evitar oclusão ou dano ao lúmen da sonda."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e orientar",
+          "descricao": "Confirmar a necessidade de sonda orogástrica e orientar o paciente sobre o procedimento, quando clinicamente possível.",
+          "critico": true,
+          "alerta": "A sonda orogástrica é especialmente indicada em pacientes inconscientes ou quando existe contraindicação para sonda nasogástrica.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Higienizar as mãos e calçar luvas",
+          "descricao": "Realizar higienização simples das mãos e colocar luvas de procedimento.",
+          "critico": true,
+          "alerta": "A técnica reduz contaminação e protege o profissional durante manipulação da cavidade oral e secreções.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Colocar o paciente em posição de Fowler, com cabeceira a 45°, quando possível.",
+          "critico": true,
+          "alerta": "O posicionamento ajuda a reduzir risco de broncoaspiração e facilita a progressão da sonda ao trato digestivo.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Medir o comprimento da sonda",
+          "descricao": "Medir a sonda do ângulo da boca ao lóbulo da orelha e, em seguida, até o processo xifoide.",
+          "critico": true,
+          "alerta": "A medição correta é essencial para estimar o comprimento necessário até o estômago.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Iniciar a medida no ângulo da boca."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Levar a sonda até o lóbulo da orelha."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Prosseguir a medida até o processo xifoide."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Marcar o comprimento adequado",
+          "descricao": "Marcar a sonda no ponto correspondente ao comprimento medido, usando esparadrapo ou Micropore®.",
+          "critico": true,
+          "alerta": "A marcação orienta até onde a sonda deve ser introduzida.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Lubrificar cavidade oral e sonda",
+          "descricao": "Aplicar lidocaína spray na cavidade oral e lidocaína gel na sonda até o local previamente demarcado.",
+          "critico": true,
+          "alerta": "A lubrificação adequada reduz trauma de mucosa e facilita a passagem da sonda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Aplicar lidocaína spray na cavidade oral."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Aplicar lidocaína gel na sonda até a marcação."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Introduzir pela boca",
+          "descricao": "Introduzir a sonda pela cavidade oral, avançando cuidadosamente em direção ao esôfago e estômago.",
+          "critico": true,
+          "alerta": "A progressão deve ser suave; não forçar contra resistência importante.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Checar posicionamento inicial",
+          "descricao": "Quando utilizado o mesmo raciocínio da técnica nasogástrica, realizar checagem clínica inicial com injeção de aproximadamente 20 mL de ar e ausculta epigástrica.",
+          "critico": true,
+          "alerta": "A ausculta após injeção de ar pode ser útil como checagem inicial, mas não deve ser considerada confirmação definitiva de posicionamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Preparar protetor antimordedura",
+          "descricao": "Preparar protetor antimordedura com pequeno rolo de gaze de diâmetro maior que a sonda, ou utilizar cânula de Guedel.",
+          "critico": true,
+          "alerta": "O protetor evita que o paciente morda a sonda e oclua ou danifique seu lúmen.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Fazer pequeno rolo de gaze com diâmetro maior que o da sonda."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Posicionar o protetor entre os dentes, em paralelo à sonda, e não em torno dela."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Como alternativa, utilizar uma cânula de Guedel."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Fixar sonda e protetor",
+          "descricao": "Fixar a sonda com fita adesiva, esparadrapo ou Micropore®, prendendo uma ponta em um lado da face, envolvendo a sonda e o protetor antimordedura, e fixando a outra ponta no lado oposto da face.",
+          "critico": true,
+          "alerta": "A fixação deve impedir deslocamento, mordedura e oclusão do lúmen, sem tracionar excessivamente a sonda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "10a",
+              "texto": "Fixar uma ponta da fita adesiva em um lado da face."
+            },
+            {
+              "rotulo": "10b",
+              "texto": "Envolver a sonda e o protetor antimordedura."
+            },
+            {
+              "rotulo": "10c",
+              "texto": "Fixar a outra ponta da fita no lado contralateral da face."
+            },
+            {
+              "rotulo": "10d",
+              "texto": "Confirmar que o protetor está paralelo à sonda e não em torno dela."
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Confirmar posicionamento definitivo",
+          "descricao": "Confirmar o posicionamento da sonda conforme protocolo local, preferencialmente por radiografia quando houver necessidade de confirmação definitiva antes de uso terapêutico ou nutricional.",
+          "critico": true,
+          "alerta": "A confirmação definitiva é etapa de segurança antes de utilizar a sonda para administração, lavagem ou aspiração contínua.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A sonda orogástrica tipo Fouché é passada da cavidade oral até o estômago.",
+        "A técnica é semelhante à nasogástrica, mas possui particularidades: medição pelo ângulo da boca, lubrificação com lidocaína spray na cavidade oral, introdução pela boca e fixação com protetor antimordedura.",
+        "A passagem pela cavidade oral pode ativar reflexo de vômito em pacientes conscientes; por isso, o material destaca seu uso em pacientes inconscientes.",
+        "O protetor antimordedura deve ficar entre os dentes, paralelo à sonda, e não ao redor dela.",
+        "Uma cânula de Guedel pode ser usada no lugar do protetor antimordedura."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Sonda Orogástrica."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

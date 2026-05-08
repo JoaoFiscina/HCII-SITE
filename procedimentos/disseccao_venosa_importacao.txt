@@ -1,0 +1,335 @@
+{
+  "procedimentos": [
+    {
+      "id": "disseccao_venosa_safena_magna",
+      "nome": "Dissecção venosa",
+      "categoria": "Habilidades Cirúrgicas I / Vias aéreas e dissecção venosa",
+      "descricao_curta": "Roteiro prático de dissecção venosa, com foco na veia safena magna, incluindo indicações, contraindicações, preparo do equipo, degermação, anestesia em losango, incisão, divulsão, isolamento venoso, ligadura proximal, reparo distal, venotomia, inserção do cateter, conexão ao equipo e fechamento.",
+      "indicacoes": [
+        "Impossibilidade de acesso venoso periférico ou central em adultos.",
+        "Impossibilidade de acesso venoso periférico ou intraósseo em crianças.",
+        "Impossibilidade de acesso venoso periférico em trauma grave, para ressuscitação volêmica.",
+        "Grandes queimados com acometimento de membros superiores, pescoço e tórax.",
+        "Situações emergenciais em que outras técnicas para obtenção rápida de acesso intravenoso falharam."
+      ],
+      "contraindicacoes": [
+        "Trombose da veia a ser dissecada.",
+        "Celulite sobrejacente ao local de dissecção.",
+        "Descontinuidade anatômica.",
+        "Suspeita de perda de integridade das veias ilíacas, possível em trauma de crianças."
+      ],
+      "preparo": [
+        "Reconhecer que a dissecção venosa é procedimento cirúrgico de emergência para obtenção de acesso intravenoso quando outras vias falham.",
+        "Entender que o acesso por dissecção deve ser mantido por no máximo 12 a 24 horas.",
+        "Selecionar o local de dissecção: primeira escolha, veia safena magna; segunda escolha, veia basílica medial antecubital.",
+        "Localizar a veia safena magna 1 a 2 cm superior e anteriormente ao maléolo medial.",
+        "Localizar a veia basílica medial antecubital cerca de 2,5 a 3 cm lateralmente ao epicôndilo medial.",
+        "Preparar e escorvar o equipo, acoplando-o à solução prescrita antes do início do procedimento.",
+        "Realizar técnica asséptica rigorosa, por se tratar de procedimento cirúrgico com exposição vascular."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Material para degermação da face medial do pé e da perna.",
+        "Material para retirada do degermante.",
+        "Touca/gorro, máscara, propé, capa cirúrgica e luvas estéreis.",
+        "Solução antisséptica para antissepsia local.",
+        "Campos cirúrgicos estéreis.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor.",
+        "Agulha 13 x 4,5 mm, marrom/subcutânea, para botão anestésico.",
+        "Agulha 25 x 7 ou 25 x 8 mm, verde ou preta/intramuscular, para infiltração anestésica.",
+        "Seringa para anestesia.",
+        "Bisturi para incisão transversa.",
+        "Pinça hemostática curva.",
+        "Afastadores de Farabeuf.",
+        "Pinça hemostática curva ou Mixter para isolamento da veia.",
+        "Fios para ligadura proximal e reparo distal.",
+        "Tesoura Metzenbaum curva, Potts-Smith ou bisturi com lâmina nº 15 para venotomia parcial.",
+        "Cateter venoso.",
+        "Equipo previamente escorvado e acoplado à solução prescrita.",
+        "Fio para sutura da pele com pontos simples.",
+        "Gaze e esparadrapo para curativo simples."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o acesso intravenoso é um dos passos iniciais na ressuscitação de paciente gravemente doente ou ferido.",
+        "Utilizar a dissecção venosa quando houver insucesso na obtenção de acesso venoso periférico por punção e outras alternativas forem inadequadas ou indisponíveis.",
+        "Lembrar que a dissecção venosa inutiliza a veia utilizada após a retirada do cateter.",
+        "Planejar a técnica na safena magna como primeira escolha, especialmente na região 1 a 2 cm superior e anterior ao maléolo medial.",
+        "Identificar e proteger estruturas próximas, especialmente o nervo safeno sensitivo, visualizado anteriormente à veia safena."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e selecionar a veia",
+          "descricao": "Confirmar que há necessidade de dissecção venosa por falha ou impossibilidade de outros acessos e escolher o sítio de dissecção, preferencialmente a veia safena magna.",
+          "critico": true,
+          "alerta": "A dissecção venosa é alternativa emergencial e deve ser mantida por no máximo 12 a 24 horas.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Confirmar falha ou impossibilidade de acesso venoso periférico, central ou intraósseo conforme o contexto."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Preferir a veia safena magna como primeira escolha."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Usar como segunda escolha a veia basílica medial antecubital."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Excluir contraindicações locais, como trombose, celulite e descontinuidade anatômica."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Preparar material e escorvar o equipo",
+          "descricao": "Preparar todo o material do procedimento e escorvar o equipo, acoplando-o à solução prescrita.",
+          "critico": true,
+          "alerta": "O equipo deve estar pronto antes da cateterização para permitir conexão imediata e teste de perfusão.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar material de degermação, paramentação, antissepsia, anestesia, incisão, divulsão, isolamento venoso, ligadura, cateterização, sutura e curativo."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Acoplar o equipo à solução prescrita."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Escorvar o equipo antes do início do procedimento."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal, com rotação externa da perna quando a veia escolhida for a safena magna.",
+          "critico": true,
+          "alerta": "O posicionamento adequado expõe a face medial do tornozelo e facilita a localização da safena magna.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Higienizar as mãos e realizar degermação inicial",
+          "descricao": "Realizar higienização simples das mãos, calçar luvas de procedimento e degermar a face medial do pé e da perna.",
+          "critico": true,
+          "alerta": "A retirada do degermante deve ser feita de anterior para posterior, conforme o roteiro.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Realizar higienização simples das mãos."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Calçar luvas de procedimento."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Degermar a face medial do pé e da perna."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Retirar o degermante de anterior para posterior."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar lavagem cirúrgica e paramentação completa",
+          "descricao": "Realizar lavagem cirúrgica das mãos e paramentação cirúrgica completa, incluindo touca/gorro, máscara, propé, capa cirúrgica e luvas estéreis.",
+          "critico": true,
+          "alerta": "A dissecção venosa é procedimento cirúrgico e exige técnica estéril rigorosa.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar antissepsia e colocar campos",
+          "descricao": "Fazer antissepsia local em modo radial/centrífugo e colocar campos cirúrgicos estéreis.",
+          "critico": true,
+          "alerta": "A antissepsia centrífuga reduz risco de contaminação do campo operatório.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Realizar bloqueio de campo em losango",
+          "descricao": "Realizar bloqueio de campo com anestesia local da pele em losango, usando lidocaína 1% a 2% sem vasoconstrictor no local a ser incisado.",
+          "critico": true,
+          "alerta": "É fundamental aspirar antes de infiltrar para evitar aplicação inadvertida em vasos sanguíneos profundos.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Iniciar com botão anestésico em uma das pontas do losango, usando agulha 13 x 4,5 mm, marrom/subcutânea."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Trocar para agulha 25 x 7 ou 25 x 8 mm, verde ou preta/intramuscular."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Realizar infiltração anestésica retrógrada seguindo as arestas do losango."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Manter ângulo aproximado de 60° durante a infiltração."
+            },
+            {
+              "rotulo": "7e",
+              "texto": "Aspirar antes de cada infiltração."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar incisão transversa",
+          "descricao": "Realizar incisão transversa de aproximadamente 2,5 cm na pele, cerca de 2 cm superior e anteriormente ao maléolo medial.",
+          "critico": true,
+          "alerta": "Na safena magna, a incisão deve respeitar o ponto anatômico descrito para facilitar identificação da veia.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Divulsionar o subcutâneo",
+          "descricao": "Realizar divulsão do subcutâneo com pinça hemostática curva.",
+          "critico": true,
+          "alerta": "A divulsão deve ser cuidadosa para evitar lesão vascular, nervosa ou sangramento desnecessário.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Visualizar a veia safena e o nervo safeno",
+          "descricao": "Identificar a veia safena magna e reconhecer o nervo safeno sensitivo, localizado anteriormente.",
+          "critico": true,
+          "alerta": "O nervo safeno sensitivo deve ser reconhecido e preservado para evitar lesão nervosa.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Posicionar afastadores se necessário",
+          "descricao": "Posicionar afastadores de Farabeuf, se necessário, para melhorar a exposição do campo.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Isolar a veia safena",
+          "descricao": "Isolar a veia safena com auxílio de uma pinça hemostática curva ou Mixter.",
+          "critico": true,
+          "alerta": "O isolamento deve permitir passagem segura dos fios sem lesar a veia ou estruturas adjacentes.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Realizar ligadura proximal",
+          "descricao": "Passar fio e realizar ligadura proximal da veia safena. Não cortar o fio; deixar um reparo para tração.",
+          "critico": true,
+          "alerta": "O fio proximal funciona como reparo para tração e controle da veia durante as próximas etapas.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Passar fio distal para tração e oclusão",
+          "descricao": "Passar fio distal para tração e oclusão da veia safena, sem realizar ligadura neste momento, mantendo reparo distal.",
+          "critico": true,
+          "alerta": "O reparo distal ajuda a tracionar e controlar o segmento venoso durante a venotomia e inserção do cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Realizar venotomia parcial",
+          "descricao": "Realizar venotomia parcial com tesoura Metzenbaum curva, Potts-Smith ou bisturi com lâmina nº 15.",
+          "critico": true,
+          "alerta": "A venotomia deve ser parcial e controlada para permitir entrada do cateter sem seccionar completamente a veia.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Inserir o cateter",
+          "descricao": "Inserir o cateter no sentido do fluxo sanguíneo.",
+          "critico": true,
+          "alerta": "Inserir o cateter no sentido correto do fluxo facilita progressão e reduz trauma vascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Realizar ligadura distal abrangendo veia e cateter",
+          "descricao": "Retirar o reparo distal e realizar ligadura distal abrangendo a veia e o cateter.",
+          "critico": true,
+          "alerta": "A ligadura distal deve fixar o cateter à veia sem obstruir sua luz.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Conectar ao equipo e testar perfusão",
+          "descricao": "Acoplar o equipo ao cateter e testar a perfusão, observando o gotejamento da solução.",
+          "critico": true,
+          "alerta": "O gotejamento adequado confirma funcionamento inicial do acesso.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "18a",
+              "texto": "Conectar o equipo previamente escorvado ao cateter."
+            },
+            {
+              "rotulo": "18b",
+              "texto": "Abrir a solução prescrita."
+            },
+            {
+              "rotulo": "18c",
+              "texto": "Observar se há gotejamento adequado."
+            },
+            {
+              "rotulo": "18d",
+              "texto": "Reavaliar posição e permeabilidade se não houver fluxo."
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "titulo": "Suturar a pele",
+          "descricao": "Realizar sutura da pele com pontos simples.",
+          "critico": true,
+          "alerta": "A sutura deve fechar a incisão sem comprimir, dobrar ou deslocar o cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "Realizar curativo simples",
+          "descricao": "Finalizar com curativo simples usando gaze e esparadrapo.",
+          "critico": true,
+          "alerta": "O curativo deve proteger o sítio de dissecção e permitir vigilância de sangramento, infiltração ou infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 21,
+          "titulo": "Registrar e programar substituição do acesso",
+          "descricao": "Registrar indicação, local utilizado, intercorrências, funcionamento do acesso e planejar substituição por acesso mais adequado em até 12 a 24 horas.",
+          "critico": true,
+          "alerta": "O acesso por dissecção não deve ser mantido por período prolongado.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A dissecção venosa é procedimento de emergência indicado quando outras técnicas de acesso intravenoso falham.",
+        "O acesso por dissecção pode ser mantido por no máximo 12 a 24 horas.",
+        "A primeira escolha de local é a veia safena magna, localizada 1 a 2 cm superior e anteriormente ao maléolo medial.",
+        "A segunda escolha é a veia basílica medial antecubital, localizada 2,5 a 3 cm lateralmente ao epicôndilo medial.",
+        "As desvantagens descritas são: ser um procedimento cirúrgico e inutilizar a veia utilizada após a retirada do cateter.",
+        "Complicações possíveis incluem celulite, hemorragia, infecção, hematoma, flebite, trombose venosa, lesão arterial e nervosa e embolia gasosa.",
+        "No isolamento da safena, deve-se atentar para o nervo safeno sensitivo, visualizado anteriormente."
+      ],
+      "referencias": [
+        "Padronização 07 - Habilidades Cirúrgicas I 25.1. Máscaras e Cânulas, IOT e Dissecção Venosa.",
+        "Material institucional de Habilidades Cirúrgicas I — Dissecção Venosa."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

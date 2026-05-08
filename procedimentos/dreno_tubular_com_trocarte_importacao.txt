@@ -1,0 +1,263 @@
+{
+  "procedimentos": [
+    {
+      "id": "dreno_tubular_com_trocarte",
+      "nome": "Dreno tubular com trocarte",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de colocação de dreno tubular com trocarte, com indicação para alto débito, exteriorização por contra-abertura, conexão ao reservatório, pressão negativa, fixação com ponto em U horizontal, curativo e retirada.",
+      "indicacoes": [
+        "Drenagem de débito muito alto, quando há necessidade de aspiração ativa.",
+        "Drenagem de conteúdos cuja natureza exija maior controle, como secreções com possibilidade de coágulos ou rolhas proteicas.",
+        "Situações em que há necessidade de lavagem ou aspiração do conteúdo.",
+        "Uso em cavidades naturais ou cavidades com paredes bem definidas.",
+        "Abscessos encapsulados e pseudocistos, desde que o contexto clínico favoreça o uso de dreno tubular.",
+        "Drenagem fechada com pressão negativa, quando se deseja eliminação suave de líquido e dejetos de uma ferida para uma câmara-reservatório."
+      ],
+      "contraindicacoes": [
+        "Drenagem desnecessária ou mal indicada.",
+        "Cavidades em que a pressão de órgãos circunvizinhos favoreça o desabamento de alças sobre os orifícios do dreno, obstruindo-o.",
+        "Situações em que um dreno laminar ou outro tipo de drenagem seja mais adequado ao volume e à natureza do conteúdo.",
+        "Risco elevado de lesão visceral pelo trajeto ou pela maior consistência do dreno.",
+        "Infecção local não controlada no trajeto de exteriorização, quando houver alternativa mais segura."
+      ],
+      "preparo": [
+        "Confirmar a indicação do dreno tubular com base no débito esperado, natureza do conteúdo e necessidade de aspiração ativa.",
+        "Definir se o sistema será aberto/passivo por gravidade ou fechado/ativo por sucção.",
+        "Identificar a incisão cirúrgica original e planejar a contra-abertura na pele adjacente.",
+        "Preparar o dreno tubular, trocarte, conectores, mangueira e reservatório.",
+        "Garantir que a mangueira dos conectores já esteja acoplada ao reservatório e que o lacre esteja fechado antes da conexão para evitar extravasamento.",
+        "Preparar fio para ponto em U horizontal, material para curativo e instrumentos para corte/ligadura."
+      ],
+      "materiais": [
+        "Dreno tubular com trocarte.",
+        "Conectores do sistema de drenagem.",
+        "Mangueira conectada ao reservatório.",
+        "Reservatório de drenagem para sistema fechado com pressão negativa, quando indicado.",
+        "Pinça hemostática, se necessária para auxiliar posicionamento e manipulação.",
+        "Bisturi ou lâmina para incisão/contra-abertura, quando necessário.",
+        "Fio de sutura para ponto em U horizontal ao redor do dreno.",
+        "Tesoura ou material adequado para cortar a ponta do trocarte e cortar a agulha após o ponto em U.",
+        "Gazes.",
+        "Esparadrapo ou Micropore® para curativo.",
+        "Material de assepsia e antissepsia conforme o contexto cirúrgico."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o dreno tubular aberto é passivo e drena por gravidade.",
+        "Reconhecer que o dreno tubular fechado é ativo e drena por sucção.",
+        "Entender que o sistema fechado funciona por pressão negativa e elimina líquido/dejetos da ferida por uma sonda perfurada conectada a uma câmara-reservatório.",
+        "Lembrar que o trocarte é a lâmina utilizada para realizar incisão na pele no mesmo diâmetro do dreno tubular.",
+        "Considerar que drenos tubulares traumatizam mais os tecidos do que drenos laminares, mas permitem quantificação mais precisa do débito.",
+        "Antes de exteriorizar o dreno, planejar a contra-abertura para que o trajeto não comprometa a incisão principal."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação do dreno tubular",
+          "descricao": "Confirmar que o dreno tubular é adequado para o caso, considerando alto débito, necessidade de aspiração ativa, natureza do conteúdo e possibilidade de lavagem ou aspiração.",
+          "critico": true,
+          "alerta": "Drenagem desnecessária ou mal indicada pode causar desconforto, infecção, fístulas, eviscerações, eventrações e lesões iatrogênicas.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Definir sistema aberto ou fechado",
+          "descricao": "Definir se o dreno funcionará como sistema aberto/passivo por gravidade ou fechado/ativo por sucção com pressão negativa.",
+          "critico": true,
+          "alerta": "A escolha do sistema deve acompanhar a finalidade: drenagem passiva por gravidade ou aspiração ativa com reservatório.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Aberto: passivo, drena por gravidade."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Fechado: ativo, drena por sucção."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "No sistema fechado, o reservatório comprimido gera pressão negativa para aspirar secreções."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Preparar conectores e reservatório",
+          "descricao": "Preparar os conectores e o reservatório antes da exteriorização do dreno, mantendo a mangueira dos conectores já acoplada ao reservatório e o lacre fechado.",
+          "critico": true,
+          "alerta": "O lacre deve estar fechado para evitar extravasamento de secreção durante a montagem.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Introduzir o dreno pela incisão original",
+          "descricao": "Colocar o dreno com trocarte na cavidade através da incisão cirúrgica original.",
+          "critico": true,
+          "alerta": "A introdução deve respeitar o trajeto planejado e evitar lesão de vísceras ou vasos.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar contra-abertura com o trocarte",
+          "descricao": "Fazer uma nova incisão de dentro para fora na pele adjacente, exteriorizando o dreno por contra-abertura.",
+          "critico": true,
+          "alerta": "A contra-abertura deve ter diâmetro compatível com o dreno e ser planejada lateralmente à incisão original.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "5a",
+              "texto": "Avançar o trocarte em direção à pele adjacente."
+            },
+            {
+              "rotulo": "5b",
+              "texto": "Exteriorizar o dreno por uma nova incisão de dentro para fora."
+            },
+            {
+              "rotulo": "5c",
+              "texto": "Se o dreno fosse sem trocarte, seria necessária pequena incisão externa na pele adjacente para guiar e facilitar a exteriorização."
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Cortar a ponta do trocarte",
+          "descricao": "Cortar a ponta do trocarte após exteriorizar o dreno.",
+          "critico": true,
+          "alerta": "O corte do trocarte permite prosseguir com a conexão segura do dreno ao sistema.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Conectar o dreno ao sistema",
+          "descricao": "Ligar o dreno aos conectores do sistema de drenagem. A mangueira dos conectores já deve estar acoplada ao reservatório, com o lacre fechado.",
+          "critico": true,
+          "alerta": "A conexão deve evitar extravasamento, perda de sucção ou contaminação do sistema.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Conectar o dreno aos conectores."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Confirmar que a mangueira está acoplada ao reservatório."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Manter o lacre fechado durante a conexão para evitar extravasamento."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Gerar pressão negativa no reservatório",
+          "descricao": "Comprimir o reservatório e fechar sua tampa, permitindo obtenção da pressão negativa responsável pela sucção após a finalização do procedimento.",
+          "critico": true,
+          "alerta": "Se o reservatório não for comprimido adequadamente, a sucção ativa pode não ocorrer.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Fechar a incisão cirúrgica inicial",
+          "descricao": "Fechar a incisão cirúrgica original após posicionamento e exteriorização do dreno.",
+          "critico": true,
+          "alerta": "O fechamento deve preservar o trajeto do dreno e não obstruir seu funcionamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar ponto em U horizontal ao redor do dreno",
+          "descricao": "Realizar um ponto em U horizontal em volta do dreno, sem transfixá-lo.",
+          "critico": true,
+          "alerta": "O ponto deve fixar o dreno sem transfixá-lo, evitando lesão/oclusão do lúmen.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Cortar a agulha e realizar seminós",
+          "descricao": "Cortar a agulha e realizar 3 seminós, formando um nó completo para a fixação.",
+          "critico": true,
+          "alerta": "A fixação adequada reduz risco de perda do dreno para dentro da cavidade ou deslocamento externo.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Finalizar fixação do dreno",
+          "descricao": "Finalizar a fixação do dreno conforme a técnica do ponto em U, mantendo-o estável no trajeto de saída.",
+          "critico": true,
+          "alerta": "Evitar compressão excessiva que possa comprometer drenagem ou causar dano ao dreno.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Realizar curativo ao redor do dreno",
+          "descricao": "Realizar curativo ao redor do dreno cortando dois maços de gaze até o meio, em formato de calça, colocando-os ao redor do dreno e cobrindo-os com esparadrapo.",
+          "critico": true,
+          "alerta": "O curativo deve proteger a pele, estabilizar a saída e permitir observação de secreção ou sinais de infecção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "13a",
+              "texto": "Cortar dois maços de gaze até o meio, em formato de calça."
+            },
+            {
+              "rotulo": "13b",
+              "texto": "Colocar as gazes ao redor do dreno."
+            },
+            {
+              "rotulo": "13c",
+              "texto": "Cobrir o conjunto com esparadrapo."
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Monitorar débito e características da drenagem",
+          "descricao": "Monitorar volume, aspecto e evolução do débito drenado, observando funcionamento do sistema e necessidade de manutenção.",
+          "critico": true,
+          "alerta": "Alteração de débito, obstrução, sangramento ou perda de pressão negativa exigem reavaliação.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Retirar o dreno após cumprir sua função",
+          "descricao": "Após o dreno cumprir seu papel, remover o curativo, cortar os dois nós realizados para a fixação, remover o dreno e deixar que a incisão feche por segunda intenção.",
+          "critico": true,
+          "alerta": "A retirada deve ocorrer apenas quando a indicação tiver sido resolvida e o dreno não for mais necessário.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "15a",
+              "texto": "Remover o curativo."
+            },
+            {
+              "rotulo": "15b",
+              "texto": "Cortar os dois nós usados na fixação."
+            },
+            {
+              "rotulo": "15c",
+              "texto": "Remover o dreno."
+            },
+            {
+              "rotulo": "15d",
+              "texto": "Permitir fechamento da incisão por segunda intenção."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Drenagem terapêutica é usada para remover secreções já acumuladas; drenagem profilática é usada quando existe possibilidade de acúmulo de secreções como serohemática, biliosa ou digestiva.",
+        "Dreno tubular aberto é passivo e drena por gravidade; dreno tubular fechado é ativo e drena por sucção.",
+        "O sistema de aspiração fechado funciona com pressão negativa e elimina líquido/dejetos por sonda perfurada conectada a câmara-reservatório.",
+        "O dreno tubular é indicado quando o débito é muito alto e quando há necessidade de aspiração ativa, lavagem ou aspiração do conteúdo.",
+        "Drenos tubulares traumatizam mais os tecidos do que drenos laminares, mas permitem quantificação mais precisa do débito das secreções.",
+        "Complicações possíveis dos drenos incluem infecções exógenas ascendentes, lesão de vísceras por drenos de maior consistência, perda do dreno para dentro do abdome, hemorragia por lesão vascular, fístulas residuais, eviscerações, eventrações e desconforto local."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Dreno tubular com e sem trocarte."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "procedimentos": [
+    {
+      "id": "sondagem_vesical",
+      "nome": "Sondagem vesical",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de sondagem vesical de permanência com sonda Foley e observações sobre sondagem de alívio com Nelaton, incluindo indicações, contraindicações, preparo estéril, antissepsia, inserção feminina e masculina, insuflação do balonete, conexão ao sistema fechado e fixação.",
+      "indicacoes": [
+        "Obtenção de urina asséptica para exame laboratorial.",
+        "Monitorização do débito urinário para manejo de fluidos e testes diagnósticos.",
+        "Monitorização do status volêmico e prevenção de distensão vesical em cirurgias.",
+        "Durante ou após cirurgias específicas do trato geniturinário ou estruturas adjacentes, como cirurgias urológicas, ginecológicas ou colorretais.",
+        "Manejo da retenção urinária aguda ou crônica, com ou sem obstrução vesical.",
+        "Manejo de pacientes imobilizados, como fratura pélvica ou AVC.",
+        "Cateterismo vesical intermitente em pacientes com bexiga neurogênica.",
+        "Terapia farmacológica intravesical, como câncer de bexiga, ou uso de contrastes para exames.",
+        "Manejo de pacientes com incontinência urinária após falha de tratamentos conservadores, comportamentais, farmacológicos e cirúrgicos.",
+        "Conforto para paciente em cuidado paliativo.",
+        "Manejo de feridas abertas localizadas em região sacral ou perineal em pacientes incontinentes.",
+        "Manejo de hematúria associada a coágulos."
+      ],
+      "contraindicacoes": [
+        "Lesão uretral suspeita ou confirmada.",
+        "Sangue no meato uretral, hematúria ou equimose perineal, que devem levantar suspeita de lesão uretral.",
+        "Estenose uretral.",
+        "Cirurgia recente de vias urinárias, como uretra ou bexiga.",
+        "Presença de esfíncter artificial."
+      ],
+      "preparo": [
+        "Confirmar a indicação da sondagem vesical e avaliar diariamente a necessidade de permanência da sonda, quando for sondagem de demora.",
+        "Diferenciar se o procedimento será sondagem vesical de permanência com Foley ou sondagem vesical de alívio com Nelaton.",
+        "Escolher sonda Foley de 2 ou 3 vias, de silicone ou látex, quando a finalidade for permanência.",
+        "Em adultos, selecionar geralmente sonda 16–18 French; em hematúria com coágulos, considerar sondas mais largas, 20–24 French.",
+        "Preferir sondas de silicone em sondagens longas, pois o látex está associado a inflamações uretrais por aderência proteica e salina à superfície da sonda.",
+        "Posicionar mulheres em posição ginecológica e homens em decúbito dorsal.",
+        "Separar material para higiene, técnica estéril, antissepsia, anestesia/lubrificação, sistema coletor fechado e fixação."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Luvas estéreis.",
+        "Solução degermante para higiene da região pélvica e perineal.",
+        "Compressas.",
+        "Gazes.",
+        "PVPI tintura para pele e PVPI tópico para mucosa, ou antisséptico conforme protocolo local.",
+        "Campo fenestrado estéril.",
+        "Sonda Foley de 2 ou 3 vias, em silicone ou látex, geralmente 16–18F em adultos.",
+        "Sonda Foley 20–24F quando houver hematúria com coágulos, conforme indicação.",
+        "Sonda Nelaton para sondagem vesical de alívio.",
+        "Sistema coletor fechado.",
+        "Água destilada para insuflação do balonete, conforme volume indicado na sonda.",
+        "Lidocaína gel.",
+        "Seringa para aplicar lidocaína gel no meato uretral masculino e/ou insuflar balonete.",
+        "Esparadrapo ou Micropore® para fixação junto à coxa.",
+        "Cuba rim para desprezar urina na sondagem de alívio, quando aplicável."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que sondas vesicais são usadas tanto para drenagem urinária quanto para coleta de urina e monitorização de débito urinário.",
+        "Evitar uso sem indicação adequada e retirar a sonda assim que não houver mais necessidade, reduzindo complicações relacionadas ao procedimento.",
+        "Suspeitar de lesão uretral diante de sangue no meato uretral, hematúria ou equimose perineal; nesses casos, não realizar sondagem uretral às cegas.",
+        "Em sondagem de permanência, manter sistema coletor fechado sempre que possível.",
+        "Não utilizar soro fisiológico para insuflar balonete, pois pode propiciar formação de cristais, obstrução da sonda e dificuldade de retirada."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Orientar o paciente e confirmar a indicação",
+          "descricao": "Orientar o paciente sobre o procedimento e confirmar a indicação da sondagem vesical.",
+          "critico": true,
+          "alerta": "Antes de iniciar, excluir suspeita de lesão uretral, especialmente na presença de sangue no meato, hematúria ou equimose perineal.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar mulheres em posição ginecológica e homens em decúbito dorsal.",
+          "critico": true,
+          "alerta": "O posicionamento correto facilita exposição do meato uretral e reduz contaminação durante a técnica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Em mulheres, posicionar em posição ginecológica."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Em homens, posicionar em decúbito dorsal."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Higienizar as mãos e calçar luvas de procedimento",
+          "descricao": "Realizar higienização simples das mãos e calçar luvas de procedimento.",
+          "critico": true,
+          "alerta": "A etapa inicial permite higiene da região antes da técnica estéril propriamente dita.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Lavar região pélvica e perineal",
+          "descricao": "Lavar toda a região pélvica e perineal com solução degermante. Utilizar esponja em todos os locais e escova em todos os locais, exceto na genitália.",
+          "critico": true,
+          "alerta": "A higiene inicial reduz carga de contaminantes antes da colocação de luvas estéreis e do campo fenestrado.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Aplicar solução degermante na região pélvica e perineal."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Usar esponja em todos os locais."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Usar escova em todos os locais, exceto na genitália."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Retirar excesso do degermante e proteger genitália masculina",
+          "descricao": "Retirar o excesso do degermante com compressas. Em homens, proteger a glande e o corpo do pênis com uma gaze antes de repousá-lo na pele da região pubiana, em posição anatômica.",
+          "critico": true,
+          "alerta": "A proteção com gaze evita contato direto com a pele e ajuda a preservar a limpeza local antes da etapa estéril.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Calçar luvas estéreis",
+          "descricao": "Calçar luvas estéreis para iniciar a etapa asséptica da sondagem.",
+          "critico": true,
+          "alerta": "A partir desta etapa, manter técnica estéril para reduzir risco de infecção urinária associada ao cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Testar balonete e conectar sistema coletor",
+          "descricao": "Inflar o balonete da sonda para testar sua integridade e conectar a sonda ao sistema coletor fechado.",
+          "critico": true,
+          "alerta": "Testar o balonete antes da inserção evita falha após posicionamento; manter sistema fechado reduz contaminação.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Insuflar o balonete para verificar integridade."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Desinsuflar após o teste, antes da inserção."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Conectar a sonda ao sistema coletor fechado."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar antissepsia da pele e mucosa",
+          "descricao": "Realizar antissepsia da pele com PVPI tintura em sentido medial-lateral e aplicar PVPI tópico em mucosa, glande ou mucosa vaginal, em sentido radial do centro para fora.",
+          "critico": true,
+          "alerta": "A antissepsia deve respeitar sentido de limpeza que reduza a recontaminação da área uretral.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "8a",
+              "texto": "Fazer antissepsia da pele com PVPI tintura em sentido medial-lateral."
+            },
+            {
+              "rotulo": "8b",
+              "texto": "Fazer antissepsia da mucosa com PVPI tópico."
+            },
+            {
+              "rotulo": "8c",
+              "texto": "Na glande e mucosa vaginal, aplicar em sentido radial, do centro para fora."
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Retirar gaze de proteção no homem",
+          "descricao": "No paciente masculino, retirar a gaze que estava protegendo a glande e o corpo do pênis.",
+          "critico": true,
+          "alerta": "A retirada deve ser feita mantendo o controle da técnica estéril.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Delimitar campo com campo fenestrado",
+          "descricao": "Delimitar a área do procedimento com campo fenestrado estéril.",
+          "critico": true,
+          "alerta": "O campo fenestrado ajuda a manter exposição apenas da área necessária e reduz contaminação.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Lubrificar sonda ou uretra",
+          "descricao": "Aplicar lidocaína gel diretamente na sonda em mulheres. Em homens, aplicar 20 mL diretamente no meato uretral com auxílio de seringa, mantendo o corpo do pênis retificado.",
+          "critico": true,
+          "alerta": "Lubrificação/anestesia adequada reduz trauma e desconforto durante a passagem da sonda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Em mulheres, passar lidocaína gel diretamente na sonda."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Em homens, retificar o corpo do pênis."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Aplicar 20 mL de lidocaína gel diretamente no meato uretral com auxílio de seringa."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Inserir a sonda na mulher",
+          "descricao": "Na paciente feminina, afastar os lábios com a mão não dominante, identificar o orifício uretral e introduzir a sonda até a urina refluir.",
+          "critico": true,
+          "alerta": "Manter afastamento dos lábios durante a inserção reduz risco de contaminação da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Inserir a sonda no homem",
+          "descricao": "No paciente masculino, segurar o prepúcio do pênis a 90º entre o 2º e 3º quirodáctilos, com a palma da mão voltada para cima, iniciar a inserção até haver resistência, horizontalizar o pênis e finalizar a inserção até nova resistência e refluxo de urina.",
+          "critico": true,
+          "alerta": "Não insuflar o balonete antes de visualizar fluxo de urina; isso pode causar lesão uretral.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "13a",
+              "texto": "Segurar o prepúcio do pênis a 90º entre o 2º e 3º quirodáctilos."
+            },
+            {
+              "rotulo": "13b",
+              "texto": "Manter a palma da mão voltada para cima."
+            },
+            {
+              "rotulo": "13c",
+              "texto": "Iniciar a inserção da sonda até encontrar resistência."
+            },
+            {
+              "rotulo": "13d",
+              "texto": "Horizontalizar o pênis."
+            },
+            {
+              "rotulo": "13e",
+              "texto": "Finalizar a inserção até nova resistência e refluxo de urina."
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Insuflar balonete com água destilada",
+          "descricao": "Após visualizar fluxo de urina, insuflar o balonete com água destilada conforme o volume indicado na sonda. Em seguida, tracionar a sonda para verificar fixação na bexiga e abrir o lacre do sistema coletor.",
+          "critico": true,
+          "alerta": "Não usar soro fisiológico no balonete, pois pode formar cristais, obstruir a sonda e impedir sua retirada.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "14a",
+              "texto": "Confirmar refluxo de urina antes de insuflar o balonete."
+            },
+            {
+              "rotulo": "14b",
+              "texto": "Insuflar com água destilada no volume indicado na sonda."
+            },
+            {
+              "rotulo": "14c",
+              "texto": "Tracionar levemente a sonda para verificar se está fixa na bexiga."
+            },
+            {
+              "rotulo": "14d",
+              "texto": "Abrir o lacre do sistema coletor."
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "titulo": "Reorganizar sistema após drenagem inicial",
+          "descricao": "Após refluir toda a urina, fechar o lacre, desconectar a sonda do sistema coletor, retirar o campo fenestrado, reconectar a sonda ao sistema coletor e abrir o lacre novamente.",
+          "critico": true,
+          "alerta": "Evitar contaminação e manter o sistema coletor funcional após a drenagem inicial.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Fixar a sonda junto à coxa",
+          "descricao": "Fixar a sonda junto à coxa do paciente para evitar tração acidental, colocando uma camada de esparadrapo ou Micropore® por baixo da sonda e outra por cima.",
+          "critico": true,
+          "alerta": "A fixação reduz risco de tração uretral, deslocamento da sonda e desconforto.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "16a",
+              "texto": "Posicionar a sonda sem tensão."
+            },
+            {
+              "rotulo": "16b",
+              "texto": "Colocar uma camada de esparadrapo ou Micropore® por baixo da sonda."
+            },
+            {
+              "rotulo": "16c",
+              "texto": "Colocar outra camada por cima, fixando junto à coxa."
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "titulo": "Registrar e reavaliar necessidade diária",
+          "descricao": "Registrar tipo e calibre da sonda, indicação, volume drenado inicialmente, intercorrências e plano de reavaliação diária da necessidade de permanência.",
+          "critico": true,
+          "alerta": "A permanência desnecessária aumenta complicações relacionadas ao cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Sondagem vesical de alívio com Nelaton",
+          "descricao": "Quando a finalidade for alívio, utilizar sonda Nelaton. A técnica é semelhante à da Foley, mas a preparação pode ser estéril com antissepsia ou não estéril apenas com degermação; como não possui balonete, o conteúdo é desprezado em cuba rim e a sonda é retirada logo após o esvaziamento vesical.",
+          "critico": true,
+          "alerta": "Na sonda Nelaton não há balonete; ela não deve permanecer após o esvaziamento vesical.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "18a",
+              "texto": "Utilizar sonda Nelaton."
+            },
+            {
+              "rotulo": "18b",
+              "texto": "Desprezar o conteúdo em cuba rim."
+            },
+            {
+              "rotulo": "18c",
+              "texto": "Retirar a sonda logo após o esvaziamento vesical."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "A sondagem vesical pode ser usada para drenagem urinária, coleta de urina e monitorização de débito urinário.",
+        "A avaliação diária da necessidade de permanência da sonda é essencial para reduzir complicações relacionadas ao procedimento.",
+        "A contraindicação absoluta descrita no material é lesão uretral; deve-se suspeitar diante de sangue no meato uretral, hematúria ou equimose perineal.",
+        "Sonda Foley pode ser de 2 ou 3 vias, de silicone ou látex; em adultos, geralmente usa-se 16–18F.",
+        "Sondas mais largas, 20–24F, são mais adequadas para drenagem de hematúria com coágulos.",
+        "Sondas de silicone são preferidas em sondagens longas, pois o látex está associado a inflamações uretrais.",
+        "O balonete deve ser insuflado com água destilada, não com soro fisiológico.",
+        "A sondagem de alívio utiliza sonda Nelaton, não possui balonete e deve ser retirada após esvaziamento vesical."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Sondagem Vesical."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

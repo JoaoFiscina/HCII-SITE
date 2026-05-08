@@ -1,0 +1,309 @@
+{
+  "procedimentos": [
+    {
+      "id": "sequencia_rapida_de_intubacao_7ps",
+      "nome": "Sequência rápida de intubação — 7 Ps",
+      "categoria": "Habilidades Cirúrgicas I / Vias aéreas",
+      "descricao_curta": "Roteiro prático de sequência rápida de intubação em urgência e emergência, estruturado pelos 7 Ps: preparação, pré-oxigenação, pré-tratamento, paralisia com indução, proteção/posicionamento, posicionamento da cânula e pós-intubação.",
+      "indicacoes": [
+        "Necessidade de intubação orotraqueal em contexto de urgência e emergência.",
+        "Paciente que necessita de controle rápido e seguro da via aérea.",
+        "Situações em que há risco aumentado de broncoaspiração, como paciente potencialmente de estômago cheio.",
+        "Insuficiência ventilatória ou oxigenatória em que se indica via aérea avançada.",
+        "Rebaixamento importante do nível de consciência com perda de proteção de via aérea.",
+        "Falha ou inadequação de métodos não invasivos para manter ventilação e oxigenação.",
+        "Cenários em que a administração quase simultânea de sedativo e bloqueador neuromuscular pode facilitar a intubação de emergência."
+      ],
+      "contraindicacoes": [
+        "Hemorragia orofaríngea maciça que impeça visualização e passagem segura do tubo.",
+        "Edema de glote grave com impossibilidade de passagem do tubo por via oral.",
+        "Fratura de laringe ou suspeita de ruptura laringotraqueal.",
+        "Transecção parcial de via aérea.",
+        "Presença de tumor ou obstrução importante de vias aéreas superiores que impeça a intubação.",
+        "Situação de Crash Airway, com iminência de parada cardiorrespiratória, em que a sequência completa de ISR pode ser desconsiderada e deve-se prosseguir para pré-oxigenação e passagem imediata do tubo."
+      ],
+      "preparo": [
+        "Reconhecer que a sequência rápida de intubação é técnica de escolha para intubação orotraqueal em urgência e emergência.",
+        "Diferenciar a ISR da IOT eletiva: na ISR, há administração praticamente simultânea de sedativo e bloqueador neuromuscular.",
+        "Evitar ventilações durante a pré-oxigenação quando possível, para reduzir distensão gástrica, regurgitação e broncoaspiração.",
+        "Avaliar via aérea difícil e formular planos secundários antes de administrar as drogas.",
+        "Separar material de sucção, oxigênio, bolsa-válvula-máscara, laringoscópio, tubos, guia/bougie, drogas, monitores, acesso venoso e material de confirmação.",
+        "Comunicar a equipe sobre o plano de intubação, plano alternativo e funções de cada membro."
+      ],
+      "materiais": [
+        "Equipamentos de proteção individual.",
+        "Fonte de oxigênio.",
+        "Bolsa-válvula-máscara conectada ao oxigênio.",
+        "Cânulas orofaríngea e/ou nasofaríngea, se indicadas.",
+        "Aspirador funcionando com sonda rígida.",
+        "Laringoscópio com lâminas adequadas e luz testada.",
+        "Tubos orotraqueais de tamanhos adequados e tubos de reserva.",
+        "Seringa para insuflar cuff.",
+        "Fio-guia ou bougie/GEB, se disponível.",
+        "Drogas sedativas/indutoras e bloqueadores neuromusculares preparadas e rotuladas.",
+        "Acesso venoso funcionante.",
+        "Monitorização cardíaca, oximetria de pulso, pressão arterial e capnografia, se disponível.",
+        "Estetoscópio.",
+        "Material para fixação do tubo.",
+        "Dispositivos alternativos de via aérea e plano de via aérea cirúrgica, quando indicados."
+      ],
+      "acoes_iniciais": [
+        "Organizar o procedimento mentalmente pelos 7 Ps: preparação, pré-oxigenação, pré-tratamento, paralisia com indução, proteção e posicionamento, posicionamento da cânula e pós-intubação.",
+        "Avaliar a via aérea antes de administrar sedativo e bloqueador neuromuscular.",
+        "Preparar plano alternativo para via aérea difícil ou falha de intubação.",
+        "Evitar atrasar a passagem do tubo em situação de Crash Airway.",
+        "Lembrar que a sequência prolongada de intubação é variação em que o sedativo é administrado antes da pré-oxigenação para otimizar esse passo."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Preparação",
+          "descricao": "Realizar preparação completa do procedimento, avaliando via aérea, separando materiais, checando equipamentos, preparando drogas e comunicando o plano à equipe.",
+          "critico": true,
+          "alerta": "A preparação é decisiva para reduzir complicações, iatrogenias e falha da primeira tentativa.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Avaliar a via aérea do paciente com mnemônicos de predição de dificuldade e exame clínico."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Identificar dificuldades previstas e definir planos secundários de abordagem."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Comunicar à equipe o plano principal, o plano de resgate e as funções de cada profissional."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Checar fonte de oxigênio, bolsa-válvula-máscara, sucção, laringoscópio, tubos, guia/bougie e seringa do cuff."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Preparar e rotular drogas sedativas, bloqueadores neuromusculares e medicações de suporte."
+            },
+            {
+              "rotulo": "1f",
+              "texto": "Garantir acesso venoso funcionante e monitorização com oximetria, pressão arterial, ECG e capnografia, se disponível."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Pré-oxigenação",
+          "descricao": "Pré-oxigenar o paciente antes da indução, buscando aumentar a reserva de oxigênio e prolongar o tempo seguro de apneia durante a laringoscopia.",
+          "critico": true,
+          "alerta": "Na ISR, a pré-oxigenação deve ser feita preferencialmente sem ventilações, para evitar distensão gástrica, regurgitação e broncoaspiração.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Administrar oxigênio em alto fluxo com dispositivo adequado."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Manter vedação adequada da máscara, se usar bolsa-válvula-máscara."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Evitar ventilação com pressão positiva de rotina antes da indução quando não for necessária."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Considerar ventilação assistida se houver hipoxemia importante ou falha em manter oxigenação."
+            },
+            {
+              "rotulo": "2e",
+              "texto": "Manter aspiração disponível para secreções, vômitos ou sangue."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Pré-tratamento",
+          "descricao": "Avaliar necessidade de medicações ou medidas antes da indução para reduzir respostas fisiológicas indesejadas e otimizar o paciente.",
+          "critico": true,
+          "alerta": "O pré-tratamento deve ser seletivo e não deve atrasar uma via aérea urgente.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Corrigir ou mitigar hipotensão, hipóxia e instabilidade antes da indução quando houver tempo."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Considerar drogas de pré-tratamento conforme cenário clínico, risco cardiovascular, hipertensão intracraniana ou hiperreatividade de via aérea."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Manter vasopressores, fluidos e drogas de resgate disponíveis."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Não prolongar desnecessariamente esta etapa em paciente em deterioração rápida."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Paralisia com indução",
+          "descricao": "Administrar praticamente de forma simultânea um sedativo/indutor e um bloqueador neuromuscular para tornar o paciente inconsciente e relaxado, facilitando a intubação.",
+          "critico": true,
+          "alerta": "A droga deve ser escolhida conforme o estado fisiológico; escolha inadequada pode piorar hipotensão, broncoespasmo, hiperpotassemia ou instabilidade neurológica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Confirmar que materiais, monitorização, aspiração e plano de resgate estão prontos antes das drogas."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Administrar sedativo/indutor conforme perfil clínico do paciente."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Administrar bloqueador neuromuscular em sequência, conforme protocolo local."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Aguardar tempo adequado de ação antes da laringoscopia."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "Monitorar oximetria, pressão, ritmo cardíaco e resposta clínica durante a indução."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Proteção e posicionamento",
+          "descricao": "Posicionar o paciente de forma a otimizar a visualização glótica e aplicar manobras de proteção ou auxílio quando indicadas.",
+          "critico": true,
+          "alerta": "Posicionamento inadequado reduz chance de sucesso na primeira tentativa e pode piorar visualização laringoscópica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "5a",
+              "texto": "Colocar o paciente em posição olfativa quando não houver suspeita de lesão cervical."
+            },
+            {
+              "rotulo": "5b",
+              "texto": "Em suspeita de trauma cervical, manter estabilização manual e evitar hiperextensão cervical."
+            },
+            {
+              "rotulo": "5c",
+              "texto": "Alinhar e otimizar eixos para facilitar a laringoscopia."
+            },
+            {
+              "rotulo": "5d",
+              "texto": "Considerar manobras externas de auxílio, como manipulação laríngea externa, BURP ou pressão cricoide conforme avaliação da equipe e risco de aspiração."
+            },
+            {
+              "rotulo": "5e",
+              "texto": "Reavaliar se a manobra aplicada está ajudando ou prejudicando a visualização e ventilação."
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Posicionamento da cânula",
+          "descricao": "Realizar laringoscopia, visualizar a glote e passar o tubo orotraqueal, utilizando dispositivos auxiliares quando necessário.",
+          "critico": true,
+          "alerta": "Evitar alavancar o laringoscópio sobre os dentes; se não houver visualização adequada, interromper e seguir plano de resgate.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Segurar o laringoscópio com a mão esquerda."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Introduzir a lâmina pela direita da boca, deslocando a língua para a esquerda."
+            },
+            {
+              "rotulo": "6c",
+              "texto": "Posicionar a lâmina adequadamente para expor a glote."
+            },
+            {
+              "rotulo": "6d",
+              "texto": "Classificar a visualização glótica quando possível, como pela classificação de Cormack-Lehane."
+            },
+            {
+              "rotulo": "6e",
+              "texto": "Utilizar lâmina de McCoy ou bougie/GEB em visualizações difíceis, se disponíveis e indicados."
+            },
+            {
+              "rotulo": "6f",
+              "texto": "Passar o tubo pela glote sob visualização direta."
+            },
+            {
+              "rotulo": "6g",
+              "texto": "Insuflar o cuff e retirar guia/bougie com cuidado."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Pós-intubação",
+          "descricao": "Confirmar posição do tubo, ventilar, fixar, avaliar complicações e registrar o procedimento.",
+          "critico": true,
+          "alerta": "Intubação esofágica não reconhecida pode causar hipoxemia, hipercarbia e morte; capnografia é padrão-ouro quando disponível.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Ventilar com AMBU e observar expansão torácica simétrica."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Auscultar primeiro epigástrio, depois base pulmonar esquerda, base pulmonar direita, ápice esquerdo e ápice direito."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Se não houver expansão torácica adequada, considerar intubação esofágica."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Se houver expansão unilateral à direita, considerar intubação seletiva."
+            },
+            {
+              "rotulo": "7e",
+              "texto": "Confirmar com capnógrafo quando disponível."
+            },
+            {
+              "rotulo": "7f",
+              "texto": "Fixar o tubo após confirmação."
+            },
+            {
+              "rotulo": "7g",
+              "texto": "Solicitar radiografia de tórax para confirmação, ajuste de posicionamento e registro do procedimento."
+            },
+            {
+              "rotulo": "7h",
+              "texto": "Manter sedação, analgesia, ventilação adequada e vigilância de complicações pós-intubação."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "A Intubação de Sequência Rápida é descrita no material como a melhor forma de realizar intubação orotraqueal em urgência e emergência.",
+        "A ISR difere da IOT eletiva principalmente pela administração praticamente simultânea de sedativo e bloqueador neuromuscular e pela preocupação com broncoaspiração.",
+        "A pré-oxigenação deve ser preferencialmente feita sem ventilações para evitar distensão gástrica em paciente potencialmente de estômago cheio.",
+        "A Sequência Prolongada de Intubação é uma modificação em que o sedativo é administrado antes da pré-oxigenação para otimizar esse passo.",
+        "No conceito de Crash Airway, diante de iminência de parada cardiorrespiratória, a ISR completa é desconsiderada e procede-se com pré-oxigenação e passagem do tubo.",
+        "Na pós-intubação, capnografia é considerada padrão-ouro para confirmação quando disponível.",
+        "A radiografia de tórax é usada para confirmação, ajuste de posicionamento traqueal e registro do procedimento."
+      ],
+      "referencias": [
+        "Padronização 07 - Habilidades Cirúrgicas I 25.1. Máscaras e Cânulas, Intubação Orotraqueal e Dissecção Venosa.",
+        "ATLS - Suporte Avançado de Vida no Trauma para Médicos. 10ª ed. Elsevier; 2018.",
+        "Tallo FS, Guimarães HP, Lopes RD, Lopes AC. Intubação orotraqueal e a técnica da sequência rápida: uma revisão para o clínico. Rev Bras Clin Med. 2011;9(3):211-217.",
+        "Walls RM. Manual of Emergency Airway Management. 4ª ed. 2012.",
+        "Martins HS, Brandão Neto RA, Scalabrini Neto A, Velasco IT. Emergências Clínicas: Abordagem Prática. 10ª ed. Manole; 2015.",
+        "Bair AE, Walls RM, Grayzel J. Rapid sequence intubation for adults outside the operating room. UpToDate. 2016."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

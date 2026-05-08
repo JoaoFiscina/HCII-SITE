@@ -1,0 +1,256 @@
+{
+  "procedimentos": [
+    {
+      "id": "sonda_nasoenteral_enteral",
+      "nome": "Sonda nasoenteral / enteral",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de passagem de sonda nasoenteral tipo Dobbhoff, com indicação nutricional pós-pilórica, medição nariz-orelha-xifoide + 10 cm, checagem do fio-guia, lubrificação hidrofílica, introdução nasal, fixação, confirmação radiológica e liberação de dieta.",
+      "indicacoes": [
+        "Nutrição enteral pós-pilórica em longo prazo.",
+        "Pacientes em desnutrição ou risco nutricional por ingestão insuficiente para suprir necessidades diárias, como trauma, anorexia, alcoolismo ou queimaduras.",
+        "Impossibilidade de alimentação por via oral, como em pacientes inconscientes ou após AVC.",
+        "Impossibilidade de alimentação por via oral devido a dor ou desconforto, como em doenças gastrointestinais graves, pancreatite, quimioterapia ou radioterapia.",
+        "Disfunção do trato gastrintestinal, como fístulas, síndromes de má absorção ou síndrome do intestino curto.",
+        "Situações em que a localização pós-pilórica seja desejável para reduzir distensão gástrica importante e risco de vômitos."
+      ],
+      "contraindicacoes": [
+        "Fratura no terço médio da face ou fratura de base de crânio, pelo risco de passagem intracraniana quando a via nasal é utilizada.",
+        "Cirurgia nasal recente.",
+        "Estenose esofágica importante, pelo risco de perfuração.",
+        "Trauma ou obstrução importante de cavidade nasal, faringe ou esôfago que impeça progressão segura.",
+        "Diátese hemorrágica relevante, pela possibilidade de sangramento após trauma de mucosa.",
+        "Situações em que a nutrição enteral esteja contraindicada por condição clínica ou cirúrgica específica."
+      ],
+      "preparo": [
+        "Confirmar indicação de nutrição enteral, preferencialmente pós-pilórica.",
+        "Selecionar sonda nasoenteral tipo Dobbhoff, de pequeno calibre, flexível, biocompatível e com fio-guia quando necessário.",
+        "Explicar o procedimento ao paciente, quando possível.",
+        "Posicionar o paciente em Fowler, com cabeceira a 45° e pernas semiflexionadas.",
+        "Conferir presença e mobilidade do fio-guia antes da passagem.",
+        "Preparar água para ativar a lubrificação hidrofílica da sonda.",
+        "Planejar confirmação radiológica antes da liberação da dieta."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Sonda nasoenteral/enteral tipo Dobbhoff, flexível, com diâmetro menor, geralmente entre 3,5 e 12F.",
+        "Fio-guia de aço inoxidável flexível, quando presente na sonda.",
+        "Copo com água para ativar o revestimento lubrificante hidrofílico.",
+        "Esparadrapo ou Micropore® para marcação e fixação.",
+        "Seringa para injetar aproximadamente 20 mL de ar, quando usado teste clínico inicial.",
+        "Estetoscópio para ausculta epigástrica.",
+        "Material para radiografia simples de tórax inferior e abdome superior.",
+        "Embalagem limpa para guardar o fio-guia após retirada, caso a sonda precise ser posteriormente repassada."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a sonda nasoenteral tipo Dobbhoff é mais flexível, tem menor diâmetro e pode variar bastante em comprimento.",
+        "Lembrar que a sonda pode ser pesada ou não e deve ser feita de material biocompatível, resistente às secreções digestivas e de boa tolerabilidade.",
+        "Entender que a posição pós-pilórica reduz distensões gástricas importantes e diminui risco de vômitos.",
+        "Não liberar dieta antes da confirmação radiológica do posicionamento.",
+        "Ao retirar o fio-guia, segurar a sonda para evitar tracioná-la junto com o fio."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Orientar o paciente e confirmar indicação",
+          "descricao": "Explicar o procedimento ao paciente, quando possível, e confirmar a indicação de sonda nasoenteral para nutrição enteral, especialmente pós-pilórica.",
+          "critico": true,
+          "alerta": "A dieta só deve ser liberada após confirmação radiológica do posicionamento da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Higienizar as mãos e calçar luvas",
+          "descricao": "Realizar higienização simples das mãos e colocar luvas de procedimento.",
+          "critico": true,
+          "alerta": "A técnica deve reduzir contaminação e proteger o profissional durante manipulação da via nasal e secreções.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar em Fowler",
+          "descricao": "Colocar o paciente em posição de Fowler, com cabeceira a 45° e pernas semiflexionadas.",
+          "critico": true,
+          "alerta": "O posicionamento facilita a passagem da sonda e reduz risco de broncoaspiração.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Medir o comprimento da sonda",
+          "descricao": "Medir a sonda da asa do nariz ao lóbulo da orelha e, depois, até o processo xifoide, adicionando 10 cm em adultos para deslocamento ao duodeno. Em crianças, adicionar 4 cm.",
+          "critico": true,
+          "alerta": "A sonda nasoenteral exige acréscimo no comprimento para permitir posicionamento pós-pilórico.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Iniciar a medida na asa do nariz."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Levar a sonda até o lóbulo da orelha."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Prosseguir até o processo xifoide."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Em adultos, adicionar 10 cm para deslocamento ao duodeno."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "Em crianças, adicionar 4 cm para deslocamento ao duodeno."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Marcar o comprimento adequado",
+          "descricao": "Marcar a sonda com esparadrapo ou Micropore® no comprimento calculado.",
+          "critico": true,
+          "alerta": "A marcação orienta a profundidade de inserção e reduz risco de passagem insuficiente.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Conferir o fio-guia",
+          "descricao": "Conferir a presença e a mobilidade do fio-guia na sonda antes da passagem.",
+          "critico": true,
+          "alerta": "O fio-guia auxilia a passagem, mas deve ser manejado com cuidado para não lesar ou tracionar a sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Injetar água dentro da sonda",
+          "descricao": "Injetar água dentro da sonda antes da introdução.",
+          "critico": true,
+          "alerta": "A água auxilia no preparo da sonda e no funcionamento do revestimento lubrificante.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Lubrificar a extremidade da sonda",
+          "descricao": "Mergulhar a extremidade da sonda em copo com água para lubrificá-la, aproveitando o revestimento hidrofílico da sonda nasoenteral.",
+          "critico": true,
+          "alerta": "A lubrificação adequada facilita a passagem e reduz trauma da mucosa nasal e faríngea.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Introduzir pela narina",
+          "descricao": "Introduzir a sonda em uma das narinas, pedindo ao paciente que degluta durante a progressão.",
+          "critico": true,
+          "alerta": "Não forçar contra resistência importante; tosse intensa ou dificuldade de fala sugerem posicionamento inadequado em via aérea.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Escolher uma narina e iniciar a introdução de forma suave."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Avançar a sonda progressivamente."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Pedir que o paciente degluta, se estiver consciente e colaborativo."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Realizar checagem clínica inicial",
+          "descricao": "Injetar aproximadamente 20 mL de ar e auscultar ruídos hidroaéreos no epigástrio.",
+          "critico": true,
+          "alerta": "A ausculta epigástrica pode ser usada como checagem inicial, mas não substitui a confirmação radiológica.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Fixar no dorso nasal em formato de calça",
+          "descricao": "Cortar o esparadrapo ou Micropore® longitudinalmente até a metade, em formato de calça. Colar a porção íntegra no dorso nasal e, com a porção seccionada, envolver a sonda.",
+          "critico": true,
+          "alerta": "Evitar ocluir a narina com o esparadrapo durante a fixação.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Cortar o esparadrapo longitudinalmente até a metade."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Colar a porção íntegra no dorso nasal."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Envolver a sonda com a porção seccionada."
+            },
+            {
+              "rotulo": "11d",
+              "texto": "Verificar se a narina permanece pérvia."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Fixar a sonda na face",
+          "descricao": "Fixar a sonda na região temporomandibular ou na fronte com uma camada de esparadrapo ou Micropore® por baixo da sonda e outra por cima.",
+          "critico": true,
+          "alerta": "Não tracionar a asa nasal excessivamente para evitar ulceração ou necrose.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Confirmar localização e retirar fio-guia",
+          "descricao": "Realizar radiografia simples de tórax inferior e abdome superior para confirmar a localização da sonda. Após confirmação, retirar o fio-guia com tração firme, segurando a sonda para evitar que ela também seja tracionada.",
+          "critico": true,
+          "alerta": "O material ressalta que não há consenso sobre retirar o fio-guia antes ou após a confirmação radiológica; no roteiro, a dieta só é liberada após confirmação.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "13a",
+              "texto": "Solicitar radiografia simples de tórax inferior e abdome superior."
+            },
+            {
+              "rotulo": "13b",
+              "texto": "Confirmar a localização da sonda."
+            },
+            {
+              "rotulo": "13c",
+              "texto": "Segurar a sonda durante a retirada do fio-guia."
+            },
+            {
+              "rotulo": "13d",
+              "texto": "Tracionar firmemente o fio-guia, evitando deslocar a sonda."
+            },
+            {
+              "rotulo": "13e",
+              "texto": "Guardar o fio-guia em embalagem limpa junto aos pertences do paciente, caso a sonda precise ser posteriormente repassada."
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "titulo": "Liberar dieta após confirmação radiológica",
+          "descricao": "Liberar a dieta somente após confirmação radiológica adequada do posicionamento da sonda.",
+          "critico": true,
+          "alerta": "Não iniciar dieta antes da confirmação radiológica, pelo risco de administração em localização inadequada.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A sonda nasoenteral tipo Dobbhoff é mais flexível, tem menor diâmetro, pode ser pesada ou não e é usada para nutrição enteral.",
+        "O posicionamento pós-pilórico reduz distensão gástrica importante e diminui risco de vômitos.",
+        "Em adultos, a medida é asa do nariz → lóbulo da orelha → processo xifoide + 10 cm; em crianças, acrescenta-se 4 cm.",
+        "A sonda possui revestimento lubrificante hidrofílico, ativado com água.",
+        "Não há consenso literário sobre retirar o fio-guia antes ou depois da confirmação radiológica, mas a retirada deve ser feita segurando a sonda para evitar tração conjunta.",
+        "A dieta deve ser liberada apenas após confirmação radiológica."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Sonda Nasoenteral/Enteral."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

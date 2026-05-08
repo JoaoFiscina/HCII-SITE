@@ -1,0 +1,320 @@
+{
+  "procedimentos": [
+    {
+      "id": "puncao_intraossea",
+      "nome": "Punção intraóssea",
+      "categoria": "Habilidades Cirúrgicas I / Injeções e acessos vasculares",
+      "descricao_curta": "Roteiro prático de acesso intraósseo em situação de emergência, com escolha do sítio, preparo estéril, anestesia, inserção perpendicular, confirmação por aspiração/flush, conexão ao equipo, fixação, imobilização e reavaliação.",
+      "indicacoes": [
+        "Situações de emergência quando o acesso venoso periférico não for obtido.",
+        "Edema, obesidade, queimaduras ou falência de acessos que impeçam acesso venoso periférico.",
+        "Impossibilidade de acesso venoso periférico em crianças.",
+        "Ressuscitação cardiopulmonar para administração de drogas quando não for possível obter acesso venoso periférico em adultos."
+      ],
+      "contraindicacoes": [
+        "Infecção de pele no local de punção.",
+        "Fratura óssea no osso escolhido.",
+        "Síndrome compartimental.",
+        "Cirurgia prévia no local.",
+        "Queimaduras, celulite, dispositivo ortopédico ou prótese no local de punção.",
+        "Doenças ósseas genéticas ou adquiridas graves, como osteogênese imperfeita, osteoporose e osteomielite.",
+        "Tentativa malsucedida prévia no mesmo osso; após falha, não tentar nova punção no mesmo osso."
+      ],
+      "preparo": [
+        "Confirmar que se trata de situação de emergência e que não foi possível obter acesso venoso por outras vias.",
+        "Selecionar sítio seguro de punção: osso com cortical relativamente fina, grande cavidade medular, superfície plana, referências anatômicas fáceis e extremidade distal sem lesões.",
+        "Em adultos, considerar tíbia proximal, tíbia distal ou úmero proximal.",
+        "Em crianças, considerar tíbia proximal, tíbia distal ou extremidade distal do fêmur.",
+        "Evitar esterno sempre que possível, sobretudo pelo risco de transfixação e lesão de coração ou grandes vasos.",
+        "Preparar material de técnica estéril, anestesia local, dispositivo intraósseo, seringa com SF 0,9%, equipo, gaze, esparadrapo e material de imobilização."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Luvas estéreis.",
+        "Material para degermação e antissepsia local.",
+        "Campos estéreis.",
+        "Dispositivo de punção intraóssea manual ou automático.",
+        "Agulha/dispositivo intraósseo adequado à idade e ao local de punção.",
+        "Lidocaína 1% para anestesia de pele, subcutâneo e periósteo.",
+        "Agulha intramuscular de pavilhão verde ou preto para anestesia em adultos.",
+        "Agulha subcutânea de pavilhão marrom para anestesia em crianças, quando adequada.",
+        "Seringa com soro fisiológico 0,9% para teste e flush.",
+        "Equipo para infusão.",
+        "Gaze e esparadrapo para fixação.",
+        "Material para imobilização do membro, especialmente da perna quando o sítio for tibial."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o acesso intraósseo deve ser limitado a situações de emergência.",
+        "Trocar por outra via de acesso venoso assim que possível.",
+        "Entender que, em choque ou hipovolemia, as veias que drenam os seios medulares não colabam por serem sustentadas pela matriz óssea.",
+        "Preferir sítios com superfície plana, cortical fina e bons referenciais anatômicos.",
+        "Reavaliar rotineiramente se a agulha continua no canal medular."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e orientar",
+          "descricao": "Confirmar necessidade de acesso intraósseo em situação de emergência e explicar o procedimento ao paciente ou acompanhante, se possível.",
+          "critico": true,
+          "alerta": "O acesso intraósseo é via emergencial e deve ser trocado por acesso venoso assim que possível.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em posição supina. Quando o sítio for tibial, manter o joelho flexionado a aproximadamente 30°, apoiado confortavelmente, com o calcanhar repousado.",
+          "critico": true,
+          "alerta": "O posicionamento adequado facilita a identificação anatômica e reduz movimentação durante a punção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Colocar o paciente em posição supina."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Flexionar o joelho cerca de 30° se o local escolhido for tibial."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Apoiar confortavelmente o membro e deixar o calcanhar repousado."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Imobilizar o local de punção",
+          "descricao": "Imobilizar o local escolhido para evitar deslocamento durante a inserção da agulha.",
+          "critico": true,
+          "alerta": "Movimentação durante ou após a punção pode deslocar a agulha e causar extravasamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Separar materiais",
+          "descricao": "Separar todos os materiais necessários para punção, anestesia, teste, infusão, fixação e imobilização.",
+          "critico": true,
+          "alerta": "Como o procedimento é emergencial, falhas de material podem atrasar administração de fluidos e drogas.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Separar dispositivo intraósseo manual ou automático."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Separar luvas, antisséptico, campos estéreis e material de anestesia."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Separar seringa com SF 0,9%, equipo, gaze, esparadrapo e material de imobilização."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Higienizar mãos e degermar o local",
+          "descricao": "Realizar lavagem simples das mãos, calçar luvas de procedimento e degermar o local da punção.",
+          "critico": true,
+          "alerta": "A degermação inicial reduz contaminação antes da etapa estéril.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar técnica estéril",
+          "descricao": "Realizar lavagem cirúrgica das mãos, calçar luvas estéreis, realizar antissepsia do local de punção e colocar campos estéreis.",
+          "critico": true,
+          "alerta": "A punção atravessa pele, subcutâneo, periósteo e osso; técnica estéril reduz risco de infecção e osteomielite.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Realizar lavagem cirúrgica das mãos."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Calçar luvas estéreis."
+            },
+            {
+              "rotulo": "6c",
+              "texto": "Realizar antissepsia do local."
+            },
+            {
+              "rotulo": "6d",
+              "texto": "Colocar campos estéreis."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Anestesiar pele, subcutâneo e periósteo",
+          "descricao": "Anestesiar pele, subcutâneo e periósteo com lidocaína 1%. Em adultos, usar agulha intramuscular de pavilhão verde ou preto; em crianças, pode ser usada agulha subcutânea de pavilhão marrom.",
+          "critico": true,
+          "alerta": "A anestesia do periósteo é importante por ser estrutura muito dolorosa, quando houver tempo e paciente responsivo.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Localizar referenciais anatômicos",
+          "descricao": "Localizar os referenciais anatômicos do sítio escolhido antes da inserção do dispositivo.",
+          "critico": true,
+          "alerta": "Erro no ponto de punção aumenta risco de falha, extravasamento, fratura, lesão de placa de crescimento ou síndrome compartimental.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "8a",
+              "texto": "Adultos — tíbia proximal: 2 cm abaixo da tuberosidade tibial e 1 a 2 cm medial, no meio da superfície plana do osso."
+            },
+            {
+              "rotulo": "8b",
+              "texto": "Adultos — tíbia distal: 2 cm acima do maléolo medial, no meio da superfície plana do osso."
+            },
+            {
+              "rotulo": "8c",
+              "texto": "Adultos — úmero proximal: tubérculo maior, direcionando ao processo coracoide."
+            },
+            {
+              "rotulo": "8d",
+              "texto": "Crianças — tíbia proximal: linha média da face medial anterior da tíbia, abaixo da tuberosidade óssea."
+            },
+            {
+              "rotulo": "8e",
+              "texto": "Crianças — tíbia distal: superior ao maléolo medial e posterior à veia safena."
+            },
+            {
+              "rotulo": "8f",
+              "texto": "Crianças — extremidade distal do fêmur também pode ser usada, conforme referência anatômica local."
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Posicionar dispositivo perpendicularmente",
+          "descricao": "Posicionar o dispositivo intraósseo perpendicularmente à pele no local de punção.",
+          "critico": true,
+          "alerta": "O posicionamento perpendicular favorece entrada adequada na cavidade medular e reduz risco de falso trajeto.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Inserir o dispositivo",
+          "descricao": "Fazer a inserção do dispositivo. Em dispositivos manuais, pode-se realizar movimento de rotação para auxiliar a entrada; uma mudança abrupta na resistência confirma entrada na cavidade medular.",
+          "critico": true,
+          "alerta": "A perda súbita de resistência é sinal importante de entrada na cavidade medular.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Retirar o mandril",
+          "descricao": "Após inserção adequada, retirar o mandril do dispositivo intraósseo.",
+          "critico": true,
+          "alerta": "Retirar o mandril permite conectar seringa ou equipo para confirmação e infusão.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Conectar seringa teste",
+          "descricao": "Conectar seringa teste com soro fisiológico 0,9%. Se a agulha estiver na cavidade medular, ficará estável sem necessidade de fixação imediata.",
+          "critico": true,
+          "alerta": "Estabilidade da agulha sem fixação é um sinal de posicionamento adequado.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Aspirar medula óssea e sangue",
+          "descricao": "Aspirar medula óssea e sangue para confirmar posicionamento correto.",
+          "critico": true,
+          "alerta": "A aspiração de medula óssea e sangue confirma acesso à cavidade medular, mas a ausência de aspiração não deve ser avaliada isoladamente sem testar o flush.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Realizar flush com 10 mL de soro",
+          "descricao": "Inserir 10 mL de soro fisiológico. O soro deve fluir facilmente e sem resistência.",
+          "critico": true,
+          "alerta": "Se o soro não fluir, tracionar e reposicionar; se continuar sem fluir, escolher outro local.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "14a",
+              "texto": "Injetar 10 mL de SF 0,9%."
+            },
+            {
+              "rotulo": "14b",
+              "texto": "Confirmar fluxo fácil e sem resistência."
+            },
+            {
+              "rotulo": "14c",
+              "texto": "Se não fluir, tracionar e recolocar."
+            },
+            {
+              "rotulo": "14d",
+              "texto": "Se não fluir novamente, selecionar outro local de punção."
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "titulo": "Retirar campo e acoplar equipo",
+          "descricao": "Retirar o campo estéril, acoplar o equipo e liberar a infusão.",
+          "critico": true,
+          "alerta": "Após confirmação do posicionamento, o acesso deve ser rapidamente conectado para uso terapêutico.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Anestesiar cavidade medular se necessário",
+          "descricao": "Durante a liberação da infusão, pode-se infundir 20 a 40 mg de lidocaína 1% para anestesiar a cavidade medular.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Fixar o acesso",
+          "descricao": "Fixar o dispositivo com gaze e esparadrapo.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento, extravasamento e perda do acesso.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Imobilizar o membro",
+          "descricao": "Manter a perna ou o membro imobilizado para evitar movimentação da agulha.",
+          "critico": true,
+          "alerta": "Movimentação pode deslocar a agulha e causar extravasamento para tecidos moles.",
+          "imagem": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "Reavaliar posicionamento rotineiramente",
+          "descricao": "Reavaliar rotineiramente a colocação da agulha intraóssea, assegurando que ela permaneça no canal medular.",
+          "critico": true,
+          "alerta": "Extravasamento, edema, dor intensa, resistência à infusão ou piora local exigem reavaliação imediata.",
+          "imagem": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "Planejar troca por acesso venoso",
+          "descricao": "Assim que possível, substituir o acesso intraósseo por outra via de acesso venoso definitiva ou mais adequada ao contexto clínico.",
+          "critico": true,
+          "alerta": "O acesso intraósseo é medida temporária de emergência.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "O acesso intraósseo é utilizado quando não é possível obter acesso por outras vias, sendo mais usado em crianças e em emergências.",
+        "Em choque ou hipovolemia, as veias que drenam os seios medulares não colabam porque são sustentadas pela matriz óssea.",
+        "O acesso intraósseo deve ser trocado por outro acesso venoso assim que possível.",
+        "O dispositivo automático de punção intraóssea é descrito no material como método mais atual, mais simples, mais seguro e com menor risco de contaminação.",
+        "As complicações incluem infusão em subcutâneo ou subperiósteo, extravasamento, coágulo na agulha, necrose tecidual, síndrome compartimental, celulite, abscesso, osteomielite, infecção, fraturas, lesão da cartilagem de crescimento e embolia gordurosa.",
+        "Após tentativa malsucedida, não se deve repetir punção no mesmo osso."
+      ],
+      "referencias": [
+        "Padronização 06 - Habilidades Cirúrgicas I 25.1. Injeções, Acesso Periférico, Punção Intraóssea, Punção Arterial e Acesso Venoso Central.",
+        "Material institucional de Habilidades Cirúrgicas I — Acesso Intraósseo."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

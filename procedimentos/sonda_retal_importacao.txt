@@ -1,0 +1,202 @@
+{
+  "procedimentos": [
+    {
+      "id": "sonda_retal",
+      "nome": "Sonda retal",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de passagem de sonda retal, com indicação, preparo, posição de Sims, lubrificação dos 10 cm distais, introdução retal, conexão à solução prescrita e cuidados de segurança.",
+      "indicacoes": [
+        "Aliviar a tensão provocada por gases e líquidos no cólon.",
+        "Administração de medicamentos por via retal.",
+        "Uso em cirurgias anais, conforme indicação clínica.",
+        "Diarreias graves, conforme prescrição e objetivo assistencial.",
+        "Retirada de conteúdo fecal através do reto quando não for possível pelos meios naturais.",
+        "Lavagem intestinal para retirada de conteúdo fecal, geralmente indicada quando há obstipação por mais de 5 dias mesmo após uso de laxativos, como óleo mineral e lactulose."
+      ],
+      "contraindicacoes": [
+        "Suspeita de perfuração intestinal ou abdome agudo sem avaliação médica adequada.",
+        "Trauma anorretal importante.",
+        "Sangramento retal importante sem avaliação prévia.",
+        "Pós-operatório anorretal recente sem autorização da equipe responsável.",
+        "Dor intensa, resistência importante ou impossibilidade de progressão segura da sonda.",
+        "Lesões obstrutivas ou estenoses anorretais importantes."
+      ],
+      "preparo": [
+        "Confirmar a indicação da sondagem retal e a solução prescrita, quando houver.",
+        "Orientar o paciente sobre o procedimento e preservar sua privacidade.",
+        "Separar sonda retal, lubrificante, solução prescrita, equipo de soro se necessário, luvas e material de higiene.",
+        "Colocar o paciente em posição de Sims: decúbito lateral esquerdo, perna direita flexionada e esquerda estendida.",
+        "Lubrificar cerca de 10 cm da sonda com vaselina antes da introdução."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Sonda retal.",
+        "Vaselina ou lubrificante adequado.",
+        "Solução prescrita para lavagem ou administração retal, quando indicada.",
+        "Equipo de soro, se necessário.",
+        "Gaze ou material para higiene local.",
+        "Lençol ou campo para preservar privacidade.",
+        "Recipiente/coletor conforme finalidade do procedimento."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a sonda retal pode ser usada para descompressão de gases/líquidos, administração de medicamentos e retirada de conteúdo fecal.",
+        "Confirmar se a finalidade é descompressiva, medicamentosa, preparo/lavagem intestinal ou auxiliar em contexto de cirurgia anal.",
+        "Verificar a solução prescrita e adaptar a sonda ao equipo antes da introdução, quando necessário.",
+        "Durante a introdução, não forçar contra resistência ou dor importante."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Orientar o paciente e confirmar a indicação",
+          "descricao": "Orientar o paciente sobre o procedimento, explicar o objetivo da sonda retal e confirmar a indicação clínica.",
+          "critico": true,
+          "alerta": "Preservar privacidade e explicar a sequência reduz ansiedade e melhora cooperação.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Higienizar as mãos e calçar luvas",
+          "descricao": "Realizar higienização simples das mãos e colocar luvas de procedimento.",
+          "critico": true,
+          "alerta": "A técnica deve reduzir contaminação e proteger o profissional durante manipulação anorretal.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Adaptar sonda à solução prescrita",
+          "descricao": "Adaptar a sonda retal à solução prescrita e ao equipo de soro, se for necessário para o procedimento.",
+          "critico": true,
+          "alerta": "A conexão deve ser conferida antes da introdução para evitar manipulação desnecessária após posicionamento da sonda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Conferir a solução prescrita."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Adaptar a sonda ao equipo de soro, quando indicado."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Garantir que o sistema esteja pronto antes de posicionar a sonda."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar em Sims",
+          "descricao": "Colocar o paciente em posição de Sims: decúbito lateral esquerdo, perna direita flexionada e perna esquerda estendida.",
+          "critico": true,
+          "alerta": "A posição de Sims facilita o acesso retal e a progressão da sonda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Colocar o paciente em decúbito lateral esquerdo."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Manter a perna esquerda estendida."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Flexionar a perna direita."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Expor apenas a área necessária, preservando a privacidade."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Lubrificar a sonda",
+          "descricao": "Lubrificar cerca de 10 cm da extremidade distal da sonda retal com vaselina ou lubrificante adequado.",
+          "critico": true,
+          "alerta": "Lubrificação insuficiente aumenta desconforto, trauma de mucosa e dificuldade de introdução.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Afastar os glúteos",
+          "descricao": "Afastar os glúteos para visualizar melhor a região anal e alinhar a introdução da sonda.",
+          "critico": true,
+          "alerta": "A visualização adequada reduz trauma e facilita inserção no eixo correto.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Introduzir a sonda",
+          "descricao": "Introduzir aproximadamente 10 cm da sonda retal lubrificada, já acoplada à solução que será utilizada quando houver prescrição.",
+          "critico": true,
+          "alerta": "Não forçar se houver dor intensa, resistência importante ou sangramento.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Iniciar a introdução de forma suave."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Avançar cerca de 10 cm da sonda."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Manter a sonda acoplada à solução quando o procedimento exigir infusão."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Interromper se houver resistência, dor importante ou sangramento."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Administrar solução ou permitir drenagem",
+          "descricao": "Conforme a finalidade do procedimento, administrar a solução prescrita, permitir saída de gases/líquidos ou realizar retirada de conteúdo fecal pelo reto.",
+          "critico": true,
+          "alerta": "A velocidade e o volume da solução devem seguir a prescrição e a tolerância do paciente.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Monitorar tolerância e resposta",
+          "descricao": "Observar desconforto, dor, distensão, eliminação de gases, líquidos ou fezes, e resposta clínica ao procedimento.",
+          "critico": true,
+          "alerta": "Dor intensa, sangramento ou piora clínica exigem interrupção e reavaliação.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Finalizar, retirar e higienizar",
+          "descricao": "Ao final, retirar a sonda cuidadosamente, realizar higiene local e acomodar o paciente.",
+          "critico": true,
+          "alerta": "A retirada deve ser suave para evitar trauma de mucosa.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Registrar o procedimento",
+          "descricao": "Registrar a indicação, solução utilizada, volume administrado quando aplicável, resposta do paciente e intercorrências.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A sonda retal pode ser usada para aliviar tensão por gases e líquidos no cólon, administrar medicamentos, auxiliar em cirurgias anais, manejar diarreias graves e retirar conteúdo fecal pelo reto.",
+        "O material destaca que a lavagem intestinal para retirada de conteúdo fecal é geralmente indicada quando há obstipação por mais de 5 dias, mesmo após uso de laxativos como óleo mineral e lactulose.",
+        "A posição indicada é Sims: decúbito lateral esquerdo, perna direita flexionada e esquerda estendida.",
+        "Lubrificar cerca de 10 cm da sonda com vaselina antes da introdução.",
+        "A introdução descrita no material é de aproximadamente 10 cm da sonda.",
+        "Interromper a introdução diante de dor intensa, sangramento, resistência importante ou deterioração clínica."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Sonda Retal."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

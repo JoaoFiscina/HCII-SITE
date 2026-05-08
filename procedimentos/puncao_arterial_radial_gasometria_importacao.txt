@@ -1,0 +1,243 @@
+{
+  "procedimentos": [
+    {
+      "id": "puncao_arterial_radial_gasometria",
+      "nome": "Punção arterial radial / gasometria arterial",
+      "categoria": "Habilidades Cirúrgicas I / Injeções e acessos vasculares",
+      "descricao_curta": "Roteiro prático de punção arterial radial para hemogasometria, com indicações, contraindicações, Teste de Allen, posicionamento do punho, antissepsia, punção em arco de violino, coleta de 2–3 mL, hemostasia, retirada do ar da seringa, homogeneização com heparina e envio imediato para análise.",
+      "indicacoes": [
+        "Identificação de distúrbios acidobásicos.",
+        "Mensuração da pressão parcial de gases envolvidos na oxigenação e ventilação, como PaO2 e PaCO2.",
+        "Avaliação de resposta a terapias intervencionistas, como ventilação mecânica.",
+        "Em situações de emergência, na ausência de amostra venosa, obtenção de sangue arterial para diversos testes bioquímicos."
+      ],
+      "contraindicacoes": [
+        "Distorções anatômicas no local de punção.",
+        "Infecção local.",
+        "Fístulas arteriovenosas.",
+        "Doença vascular periférica severa.",
+        "Teste de Allen anormal, devendo-se considerar outro sítio.",
+        "Coagulopatia severa, considerada contraindicação relativa.",
+        "Terapia anticoagulante, considerada contraindicação relativa."
+      ],
+      "preparo": [
+        "Confirmar indicação da hemogasometria arterial.",
+        "Escolher o sítio de punção, preferencialmente artéria radial por ser superficial, compressível contra estrutura óssea e possuir circulação colateral pela artéria ulnar.",
+        "Localizar a artéria radial medialmente ao processo estiloide radial e lateralmente ao tendão do flexor radial do carpo, cerca de 2 a 3 cm proximal à superfície ventral da prega do punho.",
+        "Realizar Teste de Allen no lado selecionado para verificar suprimento arterial colateral suficiente.",
+        "Separar seringa própria para gasometria arterial ou seringa previamente heparinizada.",
+        "Preparar agulha adequada; na monitoria, para artéria radial, o material indica agulha 13 x 4,5 por ser sítio mais superficial.",
+        "Considerar anestesia local subcutânea com lidocaína 1% sem epinefrina apenas se desejado/necessário, lembrando que o material não recomenda rotineiramente por poder causar dor semelhante ao procedimento e distorcer a anatomia."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Óculos de proteção.",
+        "Solução antisséptica.",
+        "Gaze.",
+        "Seringa própria para gasometria arterial ou seringa previamente heparinizada.",
+        "Agulha acoplada à seringa; para radial, o material da monitoria indica agulha 13 x 4,5.",
+        "Tampa para ocluir a seringa após a coleta.",
+        "Recipiente com gelo para transporte imediato da amostra.",
+        "Bandagem adesiva, se necessária após hemostasia.",
+        "Lidocaína 1% sem epinefrina e agulha 25G, se anestesia local for indicada."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a hemogasometria arterial avalia trocas gasosas e equilíbrio acidobásico, auxiliando a condução de pacientes graves.",
+        "Preferir a artéria radial quando possível por ser mais superficial, facilmente acessível e compressível, além de contar com circulação colateral ulnar.",
+        "Realizar Teste de Allen antes da punção radial.",
+        "Não usar a técnica antiga de puncionar entre o dedo médio e o indicador da mão não dominante, pois o material a considera contraindicada pelo risco de acidentes.",
+        "Lembrar que não se deve puxar o êmbolo para obter refluxo, exceto em pulso muito fraco ou quando a agulha for pequena, como 25G."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e orientar o paciente",
+          "descricao": "Confirmar a indicação de gasometria arterial e orientar o paciente sobre o procedimento, quando possível.",
+          "critico": true,
+          "alerta": "A punção arterial deve ter indicação clara e exige atenção a contraindicações, circulação colateral e risco de sangramento.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Higienizar as mãos e usar proteção",
+          "descricao": "Realizar higienização simples das mãos, calçar luvas de procedimento e usar óculos de proteção.",
+          "critico": true,
+          "alerta": "A coleta de sangue arterial exige proteção contra exposição a sangue.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Separar e preparar o material",
+          "descricao": "Separar todo o material a ser utilizado, incluindo seringa própria para gasometria arterial ou seringa previamente heparinizada.",
+          "critico": true,
+          "alerta": "A amostra deve ser coletada e enviada rapidamente, evitando atraso por falta de material.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Separar seringa própria para gasometria arterial ou seringa heparinizada."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Separar agulha adequada; para radial, o material da monitoria indica agulha 13 x 4,5."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Separar gaze, antisséptico, tampa da seringa, recipiente com gelo e bandagem se necessário."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar Teste de Allen",
+          "descricao": "Realizar o Teste de Allen no lado selecionado e verificar se existe suprimento arterial colateral suficiente.",
+          "critico": true,
+          "alerta": "Teste de Allen anormal exige considerar outro sítio de punção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Elevar a mão do paciente com o punho fechado."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Comprimir simultaneamente as artérias radial e ulnar com os polegares."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Abaixar a mão e pedir para o paciente abrir o punho."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Liberar a compressão da artéria ulnar, mantendo compressão radial."
+            },
+            {
+              "rotulo": "4e",
+              "texto": "Observar reperfusão palmar; se não houver retorno adequado da coloração, considerar teste anormal e escolher outro sítio."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Posicionar o antebraço e o punho",
+          "descricao": "Posicionar o antebraço em supinação com extensão do punho em aproximadamente 40°, podendo usar coxim para apoio.",
+          "critico": true,
+          "alerta": "Não ultrapassar 40° de extensão pelo risco de interposição dos tendões flexores, dificultando o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Palpar a artéria radial",
+          "descricao": "Palpar o pulso radial usando as polpas dos dedos indicador e médio da mão não dominante.",
+          "critico": true,
+          "alerta": "A artéria radial é palpada medialmente ao processo estiloide radial e lateralmente ao tendão do flexor radial do carpo, 2 a 3 cm proximal à prega ventral do punho.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Realizar antissepsia local",
+          "descricao": "Limpar o local com solução antisséptica, realizando movimentos circulares.",
+          "critico": true,
+          "alerta": "A antissepsia reduz risco de infecção no sítio de punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Preparar seringa e agulha",
+          "descricao": "Utilizar seringa própria para gasometria arterial ou seringa previamente heparinizada. Retirar a proteção da agulha já acoplada, posicionar o bisel para cima, puxar o êmbolo e retorná-lo à posição original para que não fique preso.",
+          "critico": true,
+          "alerta": "Bolhas de ar e falhas na heparinização podem comprometer a qualidade da amostra.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Inserir a agulha",
+          "descricao": "Inserir a agulha até ultrapassar a pele com pegada em arco de violino, bisel para cima, angulação de 30° a 45°, próxima à mão não dominante que palpa o pulso.",
+          "critico": true,
+          "alerta": "Não puncionar entre os dedos indicador e médio; essa técnica antiga é considerada contraindicada pelo risco de acidentes.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Segurar a seringa em pegada de arco de violino."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Manter o bisel voltado para cima."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Introduzir a agulha com angulação de 30° a 45°."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Inserir próximo à mão não dominante que palpa o pulso, sem puncionar entre os dedos."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Avançar até refluxo arterial",
+          "descricao": "Avançar a agulha lentamente. Ao entrar no lúmen arterial, o fluxo de sangue arterial preencherá a seringa; nesse momento, a mão não dominante pode ser retirada do campo.",
+          "critico": true,
+          "alerta": "Se a agulha atravessar o vaso e não houver refluxo, pode-se tracioná-la lentamente até reposicionamento correto.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Coletar amostra sem aspirar, salvo exceções",
+          "descricao": "Coletar 2 a 3 mL de sangue arterial. Não é necessário puxar o êmbolo para refluir sangue, exceto em paciente com pulso muito fraco ou quando a agulha utilizada for pequena, como 25G.",
+          "critico": true,
+          "alerta": "Aspiração desnecessária pode aumentar hemólise ou dificultar a coleta adequada.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Remover agulha e comprimir",
+          "descricao": "Remover a agulha e imediatamente ocluir o local de punção com gaze por 5 minutos, sem checar o local durante esse período. Após verificar hemostasia, colocar bandagem adesiva se necessário.",
+          "critico": true,
+          "alerta": "Compressão adequada reduz risco de hematoma, sangramento e complicações vasculares.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Retirar bolhas de ar da seringa",
+          "descricao": "Segurar a seringa para cima e aplicar pequenos tapas até que as bolhas alcancem o topo, sendo então expelidas. Ocluir a seringa para transporte.",
+          "critico": true,
+          "alerta": "Qualquer quantidade de ar pode superestimar a PaO2 e subestimar a PaCO2.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Homogeneizar a amostra com heparina",
+          "descricao": "Rolar a seringa entre as mãos por alguns segundos para misturar o sangue com a heparina e prevenir coagulação.",
+          "critico": true,
+          "alerta": "Coagulação da amostra pode invalidar a análise gasométrica.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Enviar imediatamente para análise",
+          "descricao": "Colocar a seringa em recipiente com gelo e encaminhar imediatamente para análise para reduzir consumo de oxigênio pela amostra.",
+          "critico": true,
+          "alerta": "Atraso no processamento altera resultados e reduz confiabilidade da gasometria.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A punção arterial direta para hemogasometria é procedimento comum, de rápida análise e importante para condução de pacientes graves.",
+        "A artéria radial é a mais utilizada por ser superficial, compressível contra estrutura óssea e possuir circulação colateral pela artéria ulnar.",
+        "A artéria radial é localizada medialmente ao processo estiloide radial e lateralmente ao tendão do flexor radial do carpo, cerca de 2 a 3 cm proximal à superfície ventral da prega do punho.",
+        "Complicações possíveis incluem vasoespasmo arterial, hematoma local, oclusão arterial, tromboembolismo, infecção do sítio de punção, laceração do vaso, resposta vasovagal, hemorragia e dor local.",
+        "O material da monitoria não recomenda anestesia local de rotina, pois pode gerar dor semelhante ao procedimento e formar pápula que dificulta a identificação do vaso.",
+        "A técnica antiga de puncionar entre os dedos indicador e médio é contraindicada no material pelo risco de acidentes.",
+        "Amostra com bolhas de ar pode superestimar PaO2 e subestimar PaCO2."
+      ],
+      "referencias": [
+        "Padronização 06 - Habilidades Cirúrgicas I 25.1. Injeções, Acesso Periférico, Punção Intraóssea, Punção Arterial e Acesso Venoso Central.",
+        "Material institucional de Habilidades Cirúrgicas I — Punção arterial radial / hemogasometria arterial."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

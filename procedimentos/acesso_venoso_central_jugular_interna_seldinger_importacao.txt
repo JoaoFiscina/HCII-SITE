@@ -1,0 +1,360 @@
+{
+  "procedimentos": [
+    {
+      "id": "acesso_venoso_central_jugular_interna_seldinger",
+      "nome": "Acesso venoso central em jugular interna — técnica de Seldinger",
+      "categoria": "Habilidades Cirúrgicas I / Injeções e acessos vasculares",
+      "descricao_curta": "Roteiro prático de acesso venoso central temporário não tunelizado em veia jugular interna, pela técnica de Seldinger, com posicionamento em Trendelenburg, referência pelo triângulo de Sedillot, punção em aspiração contínua, passagem do fio-guia, dilatação, progressão do cateter, confirmação de refluxo, fixação e radiografia de controle.",
+      "indicacoes": [
+        "Acesso venoso periférico inadequado.",
+        "Administração de substâncias irritantes, como quimioterápicos e drogas vasoativas, pelo risco de flebite em acesso periférico.",
+        "Nutrição parenteral.",
+        "Monitorização hemodinâmica, como pressão venosa central e saturação venosa central.",
+        "Terapias extracorpóreas, como hemodiálise e plasmaférese.",
+        "Inserção de dispositivos venosos para intervenção, como marca-passo cardíaco transvenoso, filtro de veia cava inferior, stent venoso e terapia trombolítica venosa.",
+        "Coletas sucessivas de amostras de sangue.",
+        "Hemodiálise temporária, contexto em que a jugular interna é sítio de escolha no material."
+      ],
+      "contraindicacoes": [
+        "O procedimento não possui contraindicações absolutas no material, mas há situações que indicam escolha de outro sítio.",
+        "Distorção da anatomia local, como lesão vascular, cirurgia prévia ou histórico de radiação.",
+        "Trombose da veia escolhida.",
+        "Infecção no sítio de punção.",
+        "Problemas de anticoagulação ou distúrbios hemorrágicos, como contraindicações relativas.",
+        "DPOC como contraindicação relativa especialmente em caso de acesso subclávio."
+      ],
+      "preparo": [
+        "Confirmar indicação de acesso venoso central e avaliar alternativas menos invasivas.",
+        "Selecionar cateter venoso central não tunelizado, por ser o tipo mais comumente utilizado para acesso venoso central temporário.",
+        "Escolher número de lúmens conforme a indicação: uni, duplo ou triplo lúmen.",
+        "Preferir jugular interna direita quando possível, por ser mais calibrosa e apresentar trajeto mais direto para a veia cava superior.",
+        "Avaliar contraindicações locais: distorção anatômica, trombose ou infecção no sítio.",
+        "Posicionar em Trendelenburg, com rotação cervical de 45° para o lado contralateral ao da punção.",
+        "Separar material completo para técnica estéril, punção, fio-guia, dilatação, cateterização, heparinização/lavagem, sutura, curativo e controle radiológico."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro, capote/avental estéril e campo estéril amplo.",
+        "Solução antisséptica, gazes e material para antissepsia.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor para anestesia local.",
+        "Seringas e agulhas para anestesia e punção.",
+        "Kit de acesso venoso central não tunelizado, podendo ser uni, duplo ou triplo lúmen.",
+        "Agulha introdutora.",
+        "Fio-guia.",
+        "Bisturi lâmina pequena para incisão cutânea.",
+        "Dilatador.",
+        "Cateter venoso central.",
+        "Soro fisiológico 0,9% para lavar os lúmens e testar refluxo.",
+        "Tampas/conectores dos lúmens.",
+        "Fio de sutura, porta-agulha, pinça e tesoura.",
+        "Curativo estéril.",
+        "Material para radiografia de tórax de controle após o procedimento."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o acesso venoso central é procedimento invasivo e deve ser realizado com técnica estéril rigorosa.",
+        "Entender que a técnica de Seldinger consiste em puncionar o vaso, passar o fio-guia, retirar a agulha, dilatar o trajeto e avançar o cateter sobre o guia.",
+        "Escolher a jugular interna direita quando possível, pois o material destaca menor frequência de complicações em comparação ao lado esquerdo.",
+        "Na jugular interna, a punção arterial acidental é mais frequente que em algumas outras vias, mas seu reconhecimento e controle são mais fáceis que na subclávia.",
+        "Antes da punção, identificar o triângulo de Sedillot, formado pelas duas cabeças do músculo esternocleidomastóideo e pela clavícula."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e avaliar contraindicações",
+          "descricao": "Confirmar a necessidade de acesso venoso central e avaliar se há contraindicação local ou condição que exija escolha de outro sítio.",
+          "critico": true,
+          "alerta": "Infecção no sítio, trombose da veia ou distorção anatômica local devem levar à escolha de outro acesso.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Orientar o paciente e obter consentimento quando possível",
+          "descricao": "Explicar o procedimento ao paciente, quando possível, incluindo finalidade, riscos principais e necessidade de controle radiológico após a punção.",
+          "critico": true,
+          "alerta": "Em emergência, a prioridade é obter acesso seguro; quando houver tempo, orientar e obter consentimento conforme rotina local.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Separar e checar todo o material",
+          "descricao": "Reunir material de barreira máxima, anestesia, punção, fio-guia, dilatador, cateter, lavagem dos lúmens, sutura e curativo.",
+          "critico": true,
+          "alerta": "Interrupções durante a técnica de Seldinger aumentam risco de contaminação, perda do fio-guia e complicações.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Separar luvas estéreis, máscara, gorro, avental estéril e campo amplo."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Separar antisséptico, gazes e material de anestesia local."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Separar kit de acesso venoso central não tunelizado, com agulha introdutora, fio-guia, dilatador e cateter."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Separar soro fisiológico para testar refluxo e lavar os lúmens."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Separar fio de sutura, instrumentos, curativo estéril e material para radiografia de controle."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Preparar e lavar os lúmens do cateter",
+          "descricao": "Antes da punção, testar os lúmens do cateter com soro fisiológico, retirar ar do sistema e deixar os lúmens prontos para uso.",
+          "critico": true,
+          "alerta": "Retirar ar dos lúmens reduz risco de embolia gasosa pelo cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Colocar o paciente em posição de Trendelenburg, com o pescoço em rotação de aproximadamente 45° para o lado contralateral ao local da punção. Pode-se utilizar coxim subescapular para facilitar o acesso.",
+          "critico": true,
+          "alerta": "Rotação cervical excessiva pode distorcer a anatomia e sobrepor estruturas; manter cerca de 45°.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "5a",
+              "texto": "Colocar em Trendelenburg, com membros inferiores elevados em relação à cabeça."
+            },
+            {
+              "rotulo": "5b",
+              "texto": "Rodar o pescoço cerca de 45° para o lado contralateral à punção."
+            },
+            {
+              "rotulo": "5c",
+              "texto": "Usar coxim subescapular se isso facilitar a exposição anatômica."
+            },
+            {
+              "rotulo": "5d",
+              "texto": "Preferir lado direito quando possível, especialmente na jugular interna."
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "Identificar o triângulo de Sedillot",
+          "descricao": "Localizar o ápice do triângulo formado pelas duas cabeças do músculo esternocleidomastóideo e pela clavícula, identificando a referência para punção da jugular interna por via anterior.",
+          "critico": true,
+          "alerta": "Erro na identificação anatômica aumenta risco de punção arterial, pneumotórax e falha de acesso.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "6a",
+              "texto": "Identificar as cabeças esternal e clavicular do músculo esternocleidomastóideo."
+            },
+            {
+              "rotulo": "6b",
+              "texto": "Localizar o ápice do triângulo de Sedillot."
+            },
+            {
+              "rotulo": "6c",
+              "texto": "Palpar a carótida homolateral com a mão não dominante."
+            },
+            {
+              "rotulo": "6d",
+              "texto": "Reconhecer que a veia jugular interna corre profundamente ao músculo e emerge ao longo da borda medial da cabeça clavicular."
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "titulo": "Realizar antissepsia e campo estéril",
+          "descricao": "Realizar antissepsia ampla da região cervical e torácica superior, paramentar-se com técnica estéril e colocar campos estéreis.",
+          "critico": true,
+          "alerta": "A técnica estéril rigorosa reduz risco de infecção de corrente sanguínea associada ao cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Anestesiar pele e subcutâneo",
+          "descricao": "Realizar anestesia local da pele e do trajeto planejado de punção com lidocaína, aspirando antes de infiltrar para evitar injeção intravascular.",
+          "critico": true,
+          "alerta": "A anestesia deve respeitar o trajeto de punção e não dificultar a palpação dos referenciais.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Puncionar a veia jugular interna",
+          "descricao": "Com a mão não dominante palpando a carótida homolateral, puncionar imediatamente lateral ao pulso carotídeo e um pouco abaixo do ápice do triângulo de Sedillot, em aspiração contínua, com angulação de 30° a 45° em relação à pele e direção ao mamilo ipsilateral.",
+          "critico": true,
+          "alerta": "Sangue vermelho vivo e pulsátil sugere punção arterial; interromper e comprimir se houver suspeita.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Palpar a carótida homolateral com a mão não dominante."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Puncionar imediatamente lateral ao pulso carotídeo."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Entrar um pouco abaixo do ápice do triângulo de Sedillot."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Manter aspiração contínua durante o avanço."
+            },
+            {
+              "rotulo": "9e",
+              "texto": "Manter angulação de 30° a 45° com a pele."
+            },
+            {
+              "rotulo": "9f",
+              "texto": "Direcionar a agulha ao mamilo ipsilateral à punção."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Confirmar refluxo venoso",
+          "descricao": "Confirmar refluxo de sangue venoso escuro, não pulsátil, antes de avançar para a passagem do fio-guia.",
+          "critico": true,
+          "alerta": "Não avançar fio-guia se houver dúvida entre punção venosa e arterial.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Passar o fio-guia",
+          "descricao": "Introduzir o fio-guia pela agulha, mantendo controle contínuo de sua extremidade externa.",
+          "critico": true,
+          "alerta": "Nunca soltar o fio-guia; perda do guia para dentro do vaso é complicação grave e evitável.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Introduzir o fio-guia suavemente pela agulha."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Manter sempre uma extremidade do fio-guia segurada fora do paciente."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Não forçar se houver resistência."
+            },
+            {
+              "rotulo": "11d",
+              "texto": "Observar arritmias; se ocorrerem, tracionar discretamente o fio-guia."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Retirar a agulha mantendo o fio-guia",
+          "descricao": "Retirar a agulha introdutora mantendo o fio-guia na posição, sempre controlando sua extremidade externa.",
+          "critico": true,
+          "alerta": "Perder o controle do fio-guia nesta etapa compromete todo o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Fazer pequena incisão cutânea",
+          "descricao": "Realizar pequena incisão na pele junto ao ponto de entrada do fio-guia para facilitar a passagem do dilatador e do cateter.",
+          "critico": true,
+          "alerta": "A incisão deve ser suficiente para permitir dilatação, sem ampliar desnecessariamente o trauma local.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Dilatar o trajeto",
+          "descricao": "Passar o dilatador sobre o fio-guia, dilatando pele, subcutâneo e trajeto até o vaso; em seguida, retirar o dilatador mantendo o fio-guia no lugar.",
+          "critico": true,
+          "alerta": "O dilatador deve avançar apenas o necessário; avanço excessivo aumenta risco de lesão vascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Avançar o cateter sobre o fio-guia",
+          "descricao": "Introduzir o cateter venoso central sobre o fio-guia até a profundidade adequada, mantendo controle do fio-guia durante todo o avanço.",
+          "critico": true,
+          "alerta": "Não avançar o cateter sem visualizar/controlar a extremidade do fio-guia.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Retirar o fio-guia",
+          "descricao": "Após posicionar o cateter, retirar o fio-guia completamente e confirmar que ele foi removido íntegro.",
+          "critico": true,
+          "alerta": "Confirmar retirada completa do fio-guia é etapa obrigatória de segurança.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Testar refluxo e lavar os lúmens",
+          "descricao": "Aspirar cada lúmen para confirmar refluxo sanguíneo e lavar com soro fisiológico, deixando os lúmens preenchidos e fechados.",
+          "critico": true,
+          "alerta": "Lúmen sem refluxo ou com resistência ao flush exige reavaliação antes de uso.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "17a",
+              "texto": "Aspirar cada lúmen separadamente."
+            },
+            {
+              "rotulo": "17b",
+              "texto": "Confirmar refluxo de sangue."
+            },
+            {
+              "rotulo": "17c",
+              "texto": "Lavar cada lúmen com soro fisiológico."
+            },
+            {
+              "rotulo": "17d",
+              "texto": "Fechar os lúmens com tampas/conectores adequados."
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "titulo": "Fixar o cateter",
+          "descricao": "Fixar o cateter à pele com sutura e aplicar curativo estéril no local de inserção.",
+          "critico": true,
+          "alerta": "Fixação inadequada aumenta risco de deslocamento, sangramento, perda do acesso e contaminação.",
+          "imagem": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "Solicitar radiografia de tórax de controle",
+          "descricao": "Solicitar radiografia de tórax para confirmar posicionamento do cateter e avaliar complicações, como pneumotórax ou hemotórax.",
+          "critico": true,
+          "alerta": "Não considerar o procedimento completo sem controle de posicionamento e pesquisa de complicações, conforme rotina local.",
+          "imagem": ""
+        },
+        {
+          "numero": 20,
+          "titulo": "Registrar o procedimento",
+          "descricao": "Registrar indicação, sítio e lado puncionado, técnica utilizada, número de tentativas, intercorrências, refluxo nos lúmens, curativo e solicitação/resultado do controle radiológico.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "O acesso venoso central é frequentemente necessário em pacientes hospitalizados e permite infusão de drogas irritantes, nutrição parenteral, monitorização hemodinâmica, terapias extracorpóreas e coletas sucessivas.",
+        "Na monitoria, o material descreve a realização pela técnica de Seldinger e uso de cateter não tunelizado por ser o tipo mais comum em acesso temporário.",
+        "O lado direito costuma ser preferido na jugular interna porque a veia é mais calibrosa e apresenta trajeto mais direto para a veia cava superior.",
+        "As complicações citadas no material incluem punção arterial, hemotórax, pneumotórax, quilotórax, hidromediastino, mediastinite, embolia gasosa pelo cateter, tromboflebite e fístula arteriovenosa.",
+        "Na jugular interna, a punção arterial acidental é mais frequente, mas o reconhecimento e o controle costumam ser mais fáceis que na subclávia.",
+        "Complicações são mais frequentes após tentativas à esquerda, pois o ápice pulmonar é mais alto à esquerda e o ducto torácico localiza-se nesse lado."
+      ],
+      "referencias": [
+        "Padronização 06 - Habilidades Cirúrgicas I 25.1. Injeções, Acesso Periférico, Punção Intraóssea, Punção Arterial e Acesso Venoso Central.",
+        "Brasil. Ministério da Saúde; Agência Nacional de Vigilância Sanitária (ANVISA). Infecção de Corrente Sanguínea: Orientações para Prevenção de Infecção Primária de Corrente Sanguínea. 2010.",
+        "Araújo S. Acessos Venosos Centrais e Arteriais Periféricos: Aspectos Técnicos e Práticos. RBTI. 2003;15(2):70-82.",
+        "Carlotti AP. Acesso vascular. Medicina (Ribeirão Preto). 2012;45(2):208-214.",
+        "ATLS – Advanced Trauma Life Support. 10ª ed. American College of Surgeons; 2018.",
+        "Overview of central venous access. UpToDate. 2015."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

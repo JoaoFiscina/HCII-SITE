@@ -1,0 +1,226 @@
+{
+  "procedimentos": [
+    {
+      "id": "sonda_nasogastrica",
+      "nome": "Sonda nasogástrica",
+      "categoria": "Habilidades Cirúrgicas I / Sondas e drenos",
+      "descricao_curta": "Roteiro prático de passagem de sonda nasogástrica tipo Levin, com indicação, contraindicações, medida nariz-orelha-xifoide, lubrificação, introdução nasal, checagem clínica, fixação e confirmação radiológica.",
+      "indicacoes": [
+        "Avaliação de sangramentos gastrintestinais, incluindo presença e volume.",
+        "Administração de medicamentos ou contrastes orais para tomografias em pacientes que não conseguem deglutir ou que possuem comprometimento neurológico.",
+        "Tratamento de íleo paralítico e obstrução intestinal por descompressão gastrointestinal, melhorando conforto e reduzindo vômitos recorrentes.",
+        "Lavagem gástrica para remover sangue ou coágulos e facilitar endoscopia.",
+        "Aspiração de conteúdo gástrico, inclusive após ingestão de substâncias tóxicas.",
+        "Nutrição enteral."
+      ],
+      "contraindicacoes": [
+        "Fratura no terço médio da face ou fratura de base de crânio, pelo risco de introdução intracraniana.",
+        "Cirurgia nasal recente.",
+        "Estenose esofágica, pelo risco de perfuração esofágica.",
+        "Varizes esofágicas, pelo risco de sangramento.",
+        "Diátese hemorrágica, pois traumas mínimos em faringe, esôfago ou estômago podem causar sangramentos profusos.",
+        "Ingestão de substâncias alcalinas, podendo ser considerada apenas se a injúria à mucosa não tiver sido severa."
+      ],
+      "preparo": [
+        "Confirmar a indicação da sonda nasogástrica e avaliar contraindicações absolutas e relativas.",
+        "Selecionar sonda tipo Levin: em adultos, geralmente 16–18F, sendo 16F a mais utilizada; em crianças, o tamanho varia conforme a idade.",
+        "Explicar o procedimento ao paciente quando possível.",
+        "Posicionar o paciente em Fowler, com cabeceira a 45° e pernas semiflexionadas.",
+        "Separar material para medição, lubrificação, introdução, teste clínico, fixação e confirmação radiológica."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Sonda nasogástrica tipo Levin, preferencialmente 16–18F em adultos.",
+        "Lidocaína gel para lubrificação da sonda.",
+        "Esparadrapo ou Micropore® para marcação e fixação.",
+        "Seringa para injetar aproximadamente 20 mL de ar.",
+        "Estetoscópio para ausculta epigástrica.",
+        "Copo com água, se o paciente estiver consciente e puder deglutir.",
+        "Material para radiografia simples de tórax inferior e abdome superior para confirmação do posicionamento."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a sonda nasogástrica tipo Levin é uma sonda flexível, de lúmen único ou duplo, passada desde o nariz até o estômago.",
+        "Diferenciar finalidade diagnóstica, terapêutica, descompressiva, aspirativa e nutricional.",
+        "Antes da passagem, excluir fratura de base de crânio, fratura de terço médio da face e cirurgia nasal recente.",
+        "Em paciente intubado, evitar passagem às cegas quando possível; o material recomenda avançar a sonda sob visualização direta com laringoscópio pelo risco de passagem inadvertida ao pulmão."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Orientar o paciente e confirmar indicação",
+          "descricao": "Explicar o procedimento ao paciente, quando clinicamente possível, e confirmar a indicação da sondagem nasogástrica.",
+          "critico": true,
+          "alerta": "Antes de iniciar, revisar contraindicações como fratura de face/base de crânio, cirurgia nasal recente e estenose esofágica.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Higienizar as mãos e calçar luvas",
+          "descricao": "Realizar higienização simples das mãos e colocar luvas de procedimento.",
+          "critico": true,
+          "alerta": "A técnica deve reduzir contaminação e proteger o profissional durante manipulação de secreções.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar em Fowler",
+          "descricao": "Colocar o paciente em posição de Fowler, com cabeceira a 45° e pernas semiflexionadas.",
+          "critico": true,
+          "alerta": "O posicionamento reduz risco de broncoaspiração e facilita progressão da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Medir o comprimento da sonda",
+          "descricao": "Medir a sonda da asa do nariz ao lóbulo da orelha e, em seguida, até o processo xifoide, evitando deixar a sonda tocar no paciente durante a medida.",
+          "critico": true,
+          "alerta": "A medida correta reduz risco de posicionamento inadequado, passagem insuficiente ou progressão excessiva.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Iniciar a medida na asa do nariz."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Levar a sonda até o lóbulo da orelha."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Prosseguir até o processo xifoide."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Evitar encostar a sonda no paciente durante a medição."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Marcar o comprimento adequado",
+          "descricao": "Realizar marcação da sonda no tamanho medido, utilizando esparadrapo ou Micropore®.",
+          "critico": true,
+          "alerta": "A marcação serve como referência para saber até onde a sonda deve ser introduzida.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Lubrificar a sonda",
+          "descricao": "Aplicar lidocaína gel diretamente na sonda até o local previamente demarcado.",
+          "critico": true,
+          "alerta": "Lubrificação adequada reduz trauma nasal/faríngeo e facilita a progressão da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Flexionar a cabeça",
+          "descricao": "Flexionar a cabeça do paciente em direção ao esterno.",
+          "critico": true,
+          "alerta": "A flexão cervical facilita o direcionamento da sonda ao esôfago e ajuda a reduzir passagem inadvertida para a via aérea.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Introduzir pela cavidade nasal",
+          "descricao": "Introduzir a sonda pela cavidade nasal e avançá-la horizontalmente. Em caso de resistência, tentar a narina contralateral.",
+          "critico": true,
+          "alerta": "Não forçar contra resistência importante para evitar trauma e sangramento.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "8a",
+              "texto": "Escolher uma narina e iniciar a introdução de forma suave."
+            },
+            {
+              "rotulo": "8b",
+              "texto": "Avançar a sonda horizontalmente."
+            },
+            {
+              "rotulo": "8c",
+              "texto": "Se houver resistência, interromper e tentar a narina contralateral."
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "titulo": "Facilitar passagem com deglutição",
+          "descricao": "Se o paciente estiver consciente, pedir que realize movimentos de deglutição ou oferecer pequena quantidade de água para facilitar a progressão da sonda.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Interromper se houver sinais de passagem traqueal",
+          "descricao": "Caso o paciente tussa excessivamente ou não consiga falar, considerar que a sonda pode ter sido introduzida na traqueia, removendo-a e reiniciando o procedimento.",
+          "critico": true,
+          "alerta": "Tosse excessiva ou incapacidade de falar são sinais de alerta para posicionamento em via aérea.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Realizar checagem clínica inicial",
+          "descricao": "Injetar aproximadamente 20 mL de ar e auscultar ruídos hidroaéreos no epigástrio.",
+          "critico": true,
+          "alerta": "O próprio material ressalta que a ausculta após injeção de ar não é medida acurada para confirmar posicionamento definitivo da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Fixar no dorso nasal em formato de calça",
+          "descricao": "Cortar o esparadrapo ou Micropore® longitudinalmente até a metade, em formato de calça. Colar a porção íntegra no dorso nasal e, com a porção seccionada, envolver a sonda.",
+          "critico": true,
+          "alerta": "Evitar ocluir a narina com o esparadrapo durante a fixação.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "12a",
+              "texto": "Cortar o esparadrapo longitudinalmente até a metade."
+            },
+            {
+              "rotulo": "12b",
+              "texto": "Fixar a parte íntegra sobre o dorso nasal."
+            },
+            {
+              "rotulo": "12c",
+              "texto": "Envolver a sonda com as duas porções seccionadas."
+            },
+            {
+              "rotulo": "12d",
+              "texto": "Garantir que a narina não fique ocluída."
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Fixar sonda na face",
+          "descricao": "Fixar a sonda na região temporomandibular ou na fronte, com uma camada de esparadrapo ou Micropore® por baixo da sonda e outra por cima.",
+          "critico": true,
+          "alerta": "Não tracionar excessivamente a asa nasal para evitar ulceração ou necrose.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Confirmar posicionamento por radiografia",
+          "descricao": "Confirmar o posicionamento da sonda por radiografia simples de tórax inferior e abdome superior. Caso a sonda esteja após o piloro, tracioná-la para minimizar risco de anormalidades eletrolíticas.",
+          "critico": true,
+          "alerta": "A confirmação radiológica é a etapa de segurança para posicionamento definitivo da sonda.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A sonda nasogástrica tipo Levin pode ter lúmen único ou duplo e é passada do nariz ao estômago.",
+        "Em adultos, o tamanho usual é 16–18F, sendo 16F o mais utilizado.",
+        "A técnica de injetar 20 mL de ar e auscultar epigástrio pode ser feita como checagem clínica inicial, mas não é método acurado para confirmação definitiva.",
+        "A confirmação do posicionamento deve ser realizada por radiografia simples de tórax inferior e abdome superior.",
+        "Em paciente intubado, a passagem às cegas deve ser evitada quando possível; a melhor abordagem descrita é usar laringoscópio para avançar a sonda sob visualização direta.",
+        "A fixação deve evitar tração excessiva da asa nasal, pois pode causar ulceração ou necrose."
+      ],
+      "referencias": [
+        "Padronização 05 - Habilidades Cirúrgicas I 25.1. Sondas e Drenos.",
+        "Material institucional de Habilidades Cirúrgicas I — Sonda Nasogástrica."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
