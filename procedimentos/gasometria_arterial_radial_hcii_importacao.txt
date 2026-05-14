@@ -1,0 +1,208 @@
+{
+  "procedimentos": [
+    {
+      "id": "puncao_arterial_radial_gasometria_hcii",
+      "nome": "Punção arterial radial para gasometria",
+      "categoria": "Habilidades Cirúrgicas II / Acessos vasculares",
+      "descricao_curta": "Roteiro prático de punção arterial radial para gasometria arterial, com Teste de Allen, posicionamento, antissepsia, anestesia, punção com bisel voltado para cima, coleta de 2–3 mL, compressão, retirada de ar e homogeneização com heparina.",
+      "indicacoes": [
+        "Avaliação de distúrbios do equilíbrio ácido-base.",
+        "Avaliação da oxigenação arterial pela PaO2.",
+        "Avaliação da ventilação alveolar pela PaCO2.",
+        "Avaliação de resposta terapêutica a intervenções, como ventilação mecânica ou tratamento de cetoacidose diabética.",
+        "Detecção e quantificação de hemoglobinas anormais, como carboxihemoglobina e metahemoglobina.",
+        "Obtenção de sangue arterial periférico para análise rápida em pacientes graves."
+      ],
+      "contraindicacoes": [
+        "Teste de Allen alterado, devendo-se escolher outra via.",
+        "Infecção local, trombo ou anatomia distorcida no local da punção.",
+        "Doença vascular periférica grave da artéria selecionada.",
+        "Dermatite, celulite ou queimadura de espessura total no local.",
+        "Ausência de pulso palpável no local escolhido.",
+        "Má perfusão periférica.",
+        "Infusão de agentes trombolíticos.",
+        "Distúrbios graves de coagulação ou plaquetas abaixo de 50.000/mm³.",
+        "Síndrome de Raynaud, devendo-se evitar o sítio radial.",
+        "Terapia anticoagulante, como contraindicação relativa."
+      ],
+      "preparo": [
+        "Confirmar indicação clínica de gasometria arterial.",
+        "Escolher o sítio de punção, preferencialmente a artéria radial.",
+        "Realizar Teste de Allen no membro selecionado.",
+        "Preparar seringa pré-heparinizada de 3 mL.",
+        "Posicionar a mão em posição anatômica com punho em extensão suave de 30 a 45°.",
+        "Utilizar técnica estéril.",
+        "Preparar material para compressão e envio imediato da amostra."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro, avental cirúrgico e óculos de proteção.",
+        "Clorexidina alcoólica 0,5% ou PVPI, pinça de Foerster e campo estéril.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas de pavilhão rosa, marrom, verde ou preta.",
+        "Kit de gasometria arterial com seringa pré-heparinizada de 3 mL.",
+        "Gaze, Micropore® e coletor de perfurocortantes."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que gasometria arterial analisa pressões dos gases arteriais, bicarbonato e pH.",
+        "Interpretar inicialmente pelo pH e depois por PaCO2 e HCO3.",
+        "Referências usuais: PaCO2 35–45 mmHg e bicarbonato standard 21–26 mEq/L.",
+        "Distúrbio simples tem apenas um distúrbio primário; distúrbio misto envolve mais de um distúrbio simultâneo.",
+        "O padrão-ouro para avaliação do arco palmar é USG com Doppler, embora o Teste de Allen seja usado na prática."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar a sala e separar materiais de paramentação, antissepsia, anestesia, kit de gasometria arterial pré-heparinizado, gaze e Micropore®.",
+          "critico": true,
+          "alerta": "Amostra arterial exige preparo rápido e técnica estéril para evitar contaminação, coagulação e atraso na análise.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar luvas estéreis, máscara, gorro, avental cirúrgico e óculos."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar clorexidina alcoólica 0,5% ou PVPI, pinça de Foerster e campo estéril."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar lidocaína sem vasoconstrictor, seringa e agulhas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar kit de gasometria com seringa pré-heparinizada de 3 mL."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze e Micropore®."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Explicar que a punção pode ser dolorosa e que o punho precisa ficar imóvel.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Realizar Teste de Allen",
+          "descricao": "Avaliar fluxo colateral adequado antes da punção radial.",
+          "critico": true,
+          "alerta": "Se a cor não retornar à mão em até cerca de 6 segundos após liberação da artéria ulnar, considerar fluxo inadequado e escolher outro sítio.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Orientar o paciente a fechar o punho."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Comprimir artérias radial e ulnar simultaneamente."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Abaixar a mão e pedir que o paciente abra o punho."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Liberar a artéria ulnar mantendo compressão radial."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Confirmar retorno adequado da coloração palmar."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar mão e punho",
+          "descricao": "Dispor a mão em posição anatômica, com palma voltada para cima e punho em extensão suave de 30 a 45°.",
+          "critico": true,
+          "alerta": "Pode-se realizar imobilização e usar coxim para estabilizar o punho.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia da região que será puncionada.",
+          "critico": true,
+          "alerta": "Punção arterial é procedimento estéril; materiais e técnica adequados devem ser usados.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar em botão",
+          "descricao": "Anestesiar localmente a pele com 0,5 a 1 mL de lidocaína 1% a 2% sem vasoconstrictor.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Palpar e introduzir a agulha",
+          "descricao": "Palpar a artéria radial com a mão não dominante. Após identificar o pulso, introduzir a agulha acoplada à seringa com bisel para cima em 30 a 45°.",
+          "critico": true,
+          "alerta": "Para radial, braquial, axilar ou pediosa dorsal, usar 30 a 45°; na femoral, a angulação pode ser de 90°.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Progredir a agulha",
+          "descricao": "Puncionar a pele e progredir a agulha no local da punção arterial.",
+          "critico": true,
+          "alerta": "Se transfixar a artéria, retirar vagarosamente até a ponta alcançar o lúmen; não mudar direção sem retirar completamente a agulha.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Coletar sangue arterial",
+          "descricao": "Deslocar o êmbolo e aguardar refluxo de sangue na seringa, coletando aproximadamente 2 a 3 mL de sangue.",
+          "critico": true,
+          "alerta": "Volume insuficiente, bolhas de ar ou coagulação podem invalidar a amostra.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Retirar agulha e comprimir",
+          "descricao": "Após volume suficiente, remover a agulha enquanto se aplica pressão com gaze estéril até alcançar hemostasia.",
+          "critico": true,
+          "alerta": "Compressão inadequada aumenta risco de sangramento e hematoma.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Preparar a amostra",
+          "descricao": "Descartar a agulha, retirar excesso de ar da seringa na vertical, tampar a seringa e rolá-la entre as mãos para misturar o sangue com a heparina.",
+          "critico": true,
+          "alerta": "Ar na seringa e falta de homogeneização com heparina podem alterar o resultado.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Monitorar e encaminhar amostra",
+          "descricao": "Monitorar alterações de cor, dor persistente ou agravante, sangramento ativo e dificuldade de movimento/sensação; encaminhar rapidamente a amostra.",
+          "critico": true,
+          "alerta": "Sintomas isquêmicos, neurológicos ou sangramento persistente exigem reavaliação imediata.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A punção arterial pode ser feita em artéria radial, femoral, braquial, pediosa dorsal ou axilar.",
+        "A ultrassonografia não é rotina, mas pode ajudar quando há dificuldade de palpação por obesidade ou vasos pequenos.",
+        "Complicações incluem dor, sangramento, hematoma, vasoespasmo, oclusão arterial, tromboembolismo, infecção, laceração vascular e resposta vasovagal."
+      ],
+      "referencias": [
+        "Mayeaux EJ. Guia Ilustrado de Procedimentos Médicos. 1ª ed. Porto Alegre: Artmed; 2012.",
+        "Theodore AC, Manaker S, Finlay G. Arterial blood gases. UpToDate. Dez 2025.",
+        "Theodore AC, Clermont G, Dalton A. Indications, interpretation, and techniques for arterial catheterization for invasive monitoring. UpToDate. Dez 2025.",
+        "Moraes AAC. Procedimentos Médicos – Técnica e Tática. 2ª ed.; 2016.",
+        "A5B2 - G - Gasometria Arterial; A5B2 - R - Gasometria Arterial."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

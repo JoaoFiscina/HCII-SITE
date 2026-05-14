@@ -1,0 +1,242 @@
+{
+  "procedimentos": [
+    {
+      "id": "cateterizacao_arterial_radial_pam",
+      "nome": "Cateterização arterial radial para PAM",
+      "categoria": "Habilidades Cirúrgicas II / Acessos vasculares",
+      "descricao_curta": "Roteiro prático de cateterização arterial radial para monitorização invasiva da pressão arterial média, com Teste de Allen, punção radial, fio-guia, cateter arterial, transdutor, onda arterial, fixação e curativo.",
+      "indicacoes": [
+        "Choque hipovolêmico.",
+        "Crise hipertensiva.",
+        "Cirurgias de grande porte.",
+        "Monitorização hemodinâmica contínua.",
+        "Identificação de padrões anormais de onda arterial.",
+        "Coleta repetida de exames laboratoriais.",
+        "Necessidade de medida invasiva, contínua e precisa da pressão arterial."
+      ],
+      "contraindicacoes": [
+        "Teste de Allen alterado.",
+        "Infecção local, trombo ou anatomia distorcida no sítio de punção.",
+        "Doença vascular periférica grave da artéria selecionada.",
+        "Infusão de agentes trombolíticos.",
+        "Dermatite, celulite ou queimadura de espessura total no local.",
+        "Ausência de pulso palpável ou má perfusão periférica.",
+        "Terapia anticoagulante.",
+        "Distúrbios graves de coagulação ou plaquetas abaixo de 50.000/mm³.",
+        "Síndrome de Raynaud ativa."
+      ],
+      "preparo": [
+        "Confirmar indicação de monitorização invasiva da pressão arterial.",
+        "Selecionar artéria com boa circulação colateral, preferencialmente artéria radial quando adequada.",
+        "Realizar Teste de Allen antes da punção radial.",
+        "Preparar kit de cateter arterial, fio-guia, material de anestesia, transdutor e sistema de monitorização.",
+        "Dispor a mão do paciente com palma voltada para cima e punho em extensão suave de 30 a 45°.",
+        "Garantir técnica estéril durante todo o procedimento.",
+        "Preparar solução salina para preencher o cateter antes da conexão ao transdutor."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro, avental cirúrgico e óculos de proteção.",
+        "Clorexidina alcoólica 0,5% ou PVPI, pinça de Foerster e campo estéril.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas de pavilhão rosa, marrom, verde ou preta.",
+        "Kit de cateter arterial, fio-guia, fio agulhado inabsorvível, porta-agulha e tesoura Mayo.",
+        "Gaze, fita adesiva cirúrgica/Micropore®, solução salina 0,9%, transdutor e monitor."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a medida direta por cateter intra-arterial é padrão-ouro para monitorização contínua e precisa.",
+        "PAM pode ser estimada por: PAM ≈ (PAS + 2 x PAD) / 3.",
+        "Preferir artérias periféricas por serem mais acessíveis e terem menor risco infeccioso.",
+        "Em crianças, a artéria radial costuma ser preferida pelo menor risco de trombose.",
+        "Usar ultrassonografia em casos de dificuldade de palpação do pulso."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir previamente todo o material para cateterização arterial radial e monitorização invasiva.",
+          "critico": true,
+          "alerta": "Falhas no preparo podem atrasar a monitorização, aumentar contaminação e comprometer a leitura da pressão arterial.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar paramentação: luvas estéreis, máscara, gorro, avental cirúrgico e óculos."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar antissepsia e assepsia: clorexidina alcoólica 0,5% ou PVPI, pinça de Foerster e campo estéril."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar anestesia: lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar kit de cateter arterial, fio-guia, fio agulhado inabsorvível, porta-agulha e tesoura Mayo."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze, Micropore®, solução salina, transdutor e monitor."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Explicar a necessidade de imobilização do punho e a finalidade da monitorização invasiva.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Realizar Teste de Allen",
+          "descricao": "Avaliar fluxo colateral adequado antes da punção radial.",
+          "critico": true,
+          "alerta": "Teste de Allen alterado contraindica a punção radial naquele membro.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Orientar o paciente a fechar o punho."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Comprimir simultaneamente as artérias radial e ulnar."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Abaixar a mão e pedir que o paciente abra o punho."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Liberar a artéria ulnar mantendo compressão radial."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Verificar reperfusão palmar adequada."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar mão e punho",
+          "descricao": "Dispor a mão em posição anatômica, com palma voltada para cima, fixando o punho em extensão suave de 30 a 45°.",
+          "critico": true,
+          "alerta": "A imobilização pode ser realizada para manter estabilidade durante punção e cateterização.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia da região que será puncionada, mantendo técnica estéril.",
+          "critico": true,
+          "alerta": "Cateterização arterial é procedimento estéril; técnica inadequada aumenta risco infeccioso.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar localmente",
+          "descricao": "Anestesiar a pele com 0,5 a 1 mL de lidocaína 1% a 2% sem vasoconstrictor.",
+          "critico": true,
+          "alerta": "Evitar distorcer excessivamente a anatomia local com grande volume anestésico.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Palpar e puncionar a artéria radial",
+          "descricao": "Palpar a artéria radial com a mão não dominante. Após identificar o pulso, introduzir a agulha com a mão dominante, bisel voltado para cima, em angulação de 30 a 45°.",
+          "critico": true,
+          "alerta": "Nunca alterar a posição da agulha dentro do tecido; se precisar mudar direção, retirar completamente antes de nova inserção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Palpar o pulso radial com a mão não dominante."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Introduzir a agulha com bisel para cima, em 30 a 45°."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Se transfixar a artéria, retirar vagarosamente até a ponta alcançar o lúmen e surgir fluxo."
+            },
+            {
+              "rotulo": "7d",
+              "texto": "Se o vaso não for penetrado, retirar a agulha, ajustar local ou ângulo e tentar nova inserção."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Introduzir o fio-guia",
+          "descricao": "Introduzir o fio-guia através da agulha, garantindo que ele esteja dentro do vaso ou que sua extremidade distal ultrapasse a ponta da agulha.",
+          "critico": true,
+          "alerta": "Manter controle manual do fio-guia durante todo o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Retirar a agulha mantendo o fio-guia",
+          "descricao": "Retirar a agulha sem deslocar o fio-guia, que deve permanecer dentro do vaso.",
+          "critico": true,
+          "alerta": "Perder ou deslocar o fio-guia compromete a cateterização.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Inserir o cateter arterial",
+          "descricao": "Inserir o cateter arterial através do fio-guia. Em seguida, retirar o fio-guia.",
+          "critico": true,
+          "alerta": "Confirmar que o cateter avançou adequadamente antes de retirar o fio-guia.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Conectar o transdutor",
+          "descricao": "Conectar o transdutor à extremidade proximal do cateter. Administrar SF 0,9% antes da conexão para preencher o cateter e evitar coagulação/oclusão.",
+          "critico": true,
+          "alerta": "Cateter sem flush adequado pode coagular e ocluir.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Avaliar onda arterial",
+          "descricao": "Observar se o cateter está bem posicionado e se há boa onda de pressão arterial no monitor.",
+          "critico": true,
+          "alerta": "O transdutor deve estar ao nível do átrio direito, aproximadamente 5 cm atrás do esterno.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Fixar o cateter",
+          "descricao": "Fixar o cateter na pele com sutura em ponto simples.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento, sangramento e perda do acesso arterial.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Realizar curativo oclusivo",
+          "descricao": "Cobrir o local com curativo oclusivo, mantendo sistema organizado e visível para monitorização.",
+          "critico": true,
+          "alerta": "Manter vigilância de sangramento, hematoma, alteração isquêmica e qualidade da onda arterial.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A cateterização arterial permite monitorização invasiva contínua, coleta de gasometria arterial, exames laboratoriais e monitorização da saturação de oxigênio.",
+        "O transdutor deve ser mantido ao nível do átrio direito para evitar erro de leitura.",
+        "Complicações possíveis incluem dor, infecção, lesão nervosa, síndrome compartimental, sangramento, hematoma, fístula arteriovenosa, isquemia, oclusão, trombose, embolismo, vasoespasmo, pseudoaneurisma e dissecção."
+      ],
+      "referencias": [
+        "Mayeaux EJ. Guia Ilustrado de Procedimentos Médicos. 1ª ed. Porto Alegre: Artmed; 2012.",
+        "Theodore AC, Clermont G, Dalton A. Indications, interpretation, and techniques for arterial catheterization for invasive monitoring. UpToDate. Sep 2021.",
+        "Loukas M, Tubbs RS, Feldman J. Netter Introduction to Clinical Procedures. Elsevier; 2017.",
+        "Moraes AAC. Procedimentos Médicos – Técnica e Tática. 2ª ed.; 2016.",
+        "A5B2 - G - PAM; A5B2 - R - PAM."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "procedimentos": [
+    {
+      "id": "acesso_venoso_central_jugular_interna_posterior",
+      "nome": "Acesso venoso central — jugular interna posterior",
+      "categoria": "Habilidades Cirúrgicas II / Acessos vasculares",
+      "descricao_curta": "Roteiro prático de acesso venoso central posterior da veia jugular interna pela técnica de Seldinger, com Trendelenburg, rotação contralateral da cabeça, punção posterior ao esternocleidomastoideo, fio-guia, dilatação, cateter, flush, fixação, curativo e radiografia de controle.",
+      "indicacoes": [
+        "Acesso venoso periférico inadequado.",
+        "Administração de drogas irritantes aos vasos periféricos.",
+        "Monitorização hemodinâmica.",
+        "Impossibilidade de acesso venoso periférico.",
+        "Regime de infusão complexo.",
+        "Terapia extracorpórea.",
+        "Implantação de dispositivos venosos.",
+        "Necessidade de acesso venoso central por via jugular interna."
+      ],
+      "contraindicacoes": [
+        "Não há contraindicações absolutas para o procedimento em si, segundo o roteiro geral.",
+        "Anatomia anômala.",
+        "Lesão vascular proximal ao local de inserção.",
+        "Trombocitopenia.",
+        "Presença de dispositivo venoso.",
+        "Coagulopatias.",
+        "Infecção local.",
+        "Trombose da veia escolhida.",
+        "Distorção anatômica por cirurgia, radiação ou malformação."
+      ],
+      "preparo": [
+        "Confirmar indicação do acesso venoso central.",
+        "Selecionar via jugular interna, preferencialmente à direita quando possível.",
+        "Posicionar em Trendelenburg de 10 a 20°, com cabeça rotacionada para o lado contralateral ao acesso.",
+        "Realizar antissepsia do pescoço e tórax acima da linha dos mamilos.",
+        "Em acesso previamente difícil, realizar antissepsia bilateral.",
+        "Preparar kit de Seldinger, agulha 18G, fio-guia, dilatador, cateter, solução salina, sutura, curativo e radiografia de controle.",
+        "Considerar uso de ultrassonografia para localização e auxílio durante o procedimento."
+      ],
+      "materiais": [
+        "Luvas de procedimento e luvas estéreis, gorro, capa e máscara.",
+        "Clorexidina alcoólica 0,5%, pinça de Foerster, compressas estéreis e campos estéreis.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, seringa de 3 mL e agulhas de pavilhão rosa, marrom e verde/preto.",
+        "Seringa, agulha 18G, kit Seldinger, lâmina nº 11, bisturi cabo nº 3.",
+        "Porta-agulha, fio Nylon 2-0 ou 3-0.",
+        "Solução salina para flush.",
+        "Micropore®, gaze, tesoura ou curativo semipermeável tipo Tegaderm®.",
+        "Material para radiografia de tórax em PA."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que Trendelenburg aumenta o diâmetro da veia jugular em comparação ao decúbito dorsal.",
+        "Preferir a jugular interna direita quando possível, pois geralmente possui maior diâmetro.",
+        "A punção posterior é feita na região posterior do esternocleidomastoideo, entre a porção média e inferior, cerca de 5 cm acima da clavícula, frequentemente marcada pela veia jugular externa.",
+        "Manter aspiração contínua até refluxo sanguíneo e nunca avançar se houver muita resistência.",
+        "Manter controle manual constante do fio-guia."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar materiais",
+          "descricao": "Separar materiais de proteção, antissepsia, anestesia, kit Seldinger, agulha 18G, bisturi, sutura e curativo.",
+          "critico": true,
+          "alerta": "O procedimento exige técnica estéril rigorosa e todos os materiais disponíveis antes da punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Orientar ajuda a reduzir movimentação durante a punção cervical.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar em Trendelenburg",
+          "descricao": "Colocar o paciente em Trendelenburg de 10 a 20°, com a parte superior do dorso abaixada, membros inferiores elevados e cabeça rotacionada contralateralmente ao acesso.",
+          "critico": true,
+          "alerta": "Evitar rotação excessiva, que pode distorcer a anatomia cervical.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia do pescoço e do tórax acima da linha dos mamilos.",
+          "critico": true,
+          "alerta": "Em acesso previamente identificado como difícil, realizar antissepsia bilateral.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Anestesiar por planos",
+          "descricao": "Anestesiar inicialmente com agulha de pavilhão marrom e, em seguida, com agulha de pavilhão preto/verde conforme profundidade.",
+          "critico": true,
+          "alerta": "Aspirar antes de infiltrar para evitar injeção intravascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Identificar local de punção",
+          "descricao": "Identificar a região posterior do músculo esternocleidomastoideo, entre sua porção média e inferior, cerca de 5 cm acima da clavícula, normalmente marcada pela veia jugular externa.",
+          "critico": true,
+          "alerta": "Ultrassonografia pode confirmar localização da veia e auxiliar durante a punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Puncionar a veia jugular interna",
+          "descricao": "Introduzir a agulha 18G anteromedialmente em direção à fúrcula esternal.",
+          "critico": true,
+          "alerta": "Direção incorreta aumenta risco de punção arterial, falha de acesso e complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Progredir sob pressão negativa",
+          "descricao": "Progredir a agulha sob pressão negativa até refluir sangue, sem avançar se houver muita resistência.",
+          "critico": true,
+          "alerta": "Resistência importante deve interromper o avanço.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Introduzir o fio-guia",
+          "descricao": "Ao acessar a veia, desacoplar a seringa e introduzir o fio-guia enquanto estabiliza a agulha.",
+          "critico": true,
+          "alerta": "Introduzir no máximo 15 cm do lado direito ou 18 cm do lado esquerdo; manter controle manual constante do fio-guia.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Retirar agulha e dilatar trajeto",
+          "descricao": "Retirar a agulha 18G mantendo o fio-guia. Realizar incisão de 3 mm no local da punção e passar o dilatador pelo fio-guia, inserindo-o 3 a 4 cm.",
+          "critico": true,
+          "alerta": "Se houver resistência ao dilatador, realizar leve rotação; não forçar.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Introduzir o cateter",
+          "descricao": "Após retirar o dilatador, introduzir o cateter sobre o fio-guia: cerca de 16 a 18 cm no lado direito e 20 cm no lado esquerdo, até alcançar a veia cava superior.",
+          "critico": true,
+          "alerta": "Manter controle do fio-guia durante toda a progressão do cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Retirar fio-guia e confirmar refluxo",
+          "descricao": "Após introdução do cateter, retirar o fio-guia, fechar a porção distal do cateter e confirmar localização por aspiração.",
+          "critico": true,
+          "alerta": "Confirmar retirada completa do fio-guia.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Realizar flush das vias",
+          "descricao": "Realizar flush de solução salina em cada via do cateter.",
+          "critico": true,
+          "alerta": "Resistência ao flush ou ausência de refluxo exige reavaliação.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Fixar o cateter",
+          "descricao": "Fixar o cateter com ponto simples na pele.",
+          "critico": true,
+          "alerta": "Fixação adequada reduz risco de deslocamento, sangramento e perda de acesso.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Limpar, curativar e registrar",
+          "descricao": "Limpar a região, fazer curativo oclusivo transparente ou semipermeável para proteger a saída do cateter e anotar data e hora da colocação.",
+          "critico": true,
+          "alerta": "Manter curativo limpo e visível para avaliação diária.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Solicitar radiografia de tórax em PA",
+          "descricao": "Solicitar radiografia de tórax em PA para confirmação da posição do cateter.",
+          "critico": true,
+          "alerta": "Se o cateter estiver muito profundo, desfazer suturas, retirar um pouco e ressuturar; se muito superficial, reintroduzir fio-guia e repetir técnica asséptica, sem avançar cateter que não está estéril.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Solicitar avaliação diária",
+          "descricao": "Solicitar avaliação diária do local e trocar o cateter quando houver suspeita de infecção.",
+          "critico": true,
+          "alerta": "Infecção relacionada ao cateter exige reavaliação do acesso.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A via jugular interna direita geralmente possui maior diâmetro que a esquerda.",
+        "A posição de Trendelenburg aumenta o diâmetro jugular e pode facilitar o acesso.",
+        "Ultrassom pode confirmar a localização da veia e auxiliar durante a realização do procedimento.",
+        "Complicações gerais de acesso venoso central incluem lesão arterial, estenose, infecção, trombose, embolia gasosa, sangramento, arritmias e complicações pulmonares.",
+        "Nunca avançar um cateter superficial já exteriorizado sem reestabelecer técnica asséptica adequada com fio-guia."
+      ],
+      "referencias": [
+        "Heffner AC et al. Overview of central venous access. UpToDate. Aug 2021.",
+        "The American Society of Anesthesiologists. Anesthesiology. 2012;116:539–73.",
+        "Androes MP et al. Placement of jugular venous catheters. UpToDate. Aug 2021.",
+        "Practice Guidelines for Central Venous Access 2020. Anesthesiology. 2020;132:8–43.",
+        "A5B1 - G - AVC Jugular Interna; A5B1 - R - Acesso Venoso Central."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

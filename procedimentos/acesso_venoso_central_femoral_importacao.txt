@@ -1,0 +1,199 @@
+{
+  "procedimentos": [
+    {
+      "id": "acesso_venoso_central_femoral",
+      "nome": "Acesso venoso central — veia femoral",
+      "categoria": "Habilidades Cirúrgicas II / Acessos vasculares",
+      "descricao_curta": "Roteiro prático de acesso venoso central pela veia femoral pela técnica de Seldinger, com posicionamento supino, abertura do trígono femoral, punção medial à artéria femoral, fio-guia, dilatação, cateter, flush, fixação, curativo e confirmação por imagem.",
+      "indicacoes": [
+        "Acesso venoso periférico inadequado.",
+        "Administração de drogas irritantes aos vasos periféricos.",
+        "Monitorização hemodinâmica.",
+        "Impossibilidade de acesso venoso periférico.",
+        "Regime de infusão complexo.",
+        "Terapia extracorpórea.",
+        "Implantação de dispositivos venosos.",
+        "Necessidade de acesso venoso central quando a via femoral é a opção mais viável."
+      ],
+      "contraindicacoes": [
+        "Não há contraindicações absolutas para o procedimento em si, segundo o roteiro geral.",
+        "Anatomia anômala.",
+        "Lesão vascular proximal ao local de inserção.",
+        "Trombocitopenia.",
+        "Presença de dispositivo venoso no sítio.",
+        "Coagulopatias.",
+        "Infecção local.",
+        "Trombose da veia femoral.",
+        "Anatomia local distorcida."
+      ],
+      "preparo": [
+        "Confirmar indicação de acesso venoso central.",
+        "Explicar o procedimento ao paciente se possível.",
+        "Colocar o paciente em posição supina.",
+        "Realizar abdução da perna e rotação externa de 15° para abrir o trígono femoral.",
+        "Tosquiar antes da antissepsia quando necessário.",
+        "Preparar material de barreira, antissepsia, anestesia, kit de Seldinger, solução fisiológica, sutura, curativo e descarte de perfurocortantes.",
+        "Considerar uso de ultrassonografia, que aumenta sucesso na primeira tentativa e reduz complicações."
+      ],
+      "materiais": [
+        "Luvas de procedimento e luvas estéreis, gorro, avental cirúrgico, óculos de proteção e máscara.",
+        "Clorexidina alcoólica 0,5%, pinça de Foerster, gaze e campos estéreis.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, seringa de 3 mL e agulhas de pavilhão rosa, marrom e verde.",
+        "Seringa, agulha 18G, kit de Seldinger, lâmina nº 11, bisturi cabo nº 3.",
+        "Porta-agulha, fio Nylon/Silk 3-0 ou 4-0 e solução fisiológica para salinização.",
+        "Micropore®, gaze, tesoura Mayo, plástico estéril para transdutor se usar USG e caixa de perfurocortantes."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer o feixe vasculonervoso femoral no trígono: nervo, artéria e veia, de lateral para medial.",
+        "No acesso femoral, a punção é realizada medialmente à artéria femoral.",
+        "O trígono femoral é limitado superiormente pelo ligamento inguinal, medialmente pelo músculo adutor longo e lateralmente pelo músculo sartório.",
+        "Manter controle contínuo do fio-guia durante a técnica de Seldinger.",
+        "A ultrassonografia, quando disponível, aumenta a taxa de sucesso e reduz complicações."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar materiais",
+          "descricao": "Separar proteção, antissepsia, anestesia, kit de Seldinger, bisturi, fios, solução fisiológica, curativo, material para ultrassom e descarte de perfurocortantes.",
+          "critico": true,
+          "alerta": "Falhas de material durante a técnica de Seldinger aumentam risco de contaminação, perda do fio-guia e complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Comunicação adequada melhora colaboração e permite explicar posicionamento da perna.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar em supino e abrir o trígono femoral",
+          "descricao": "Colocar o paciente em posição supina, abduzir a perna e realizar rotação externa em 15° para abrir o trígono femoral.",
+          "critico": true,
+          "alerta": "Pode-se usar coxim para elevar a nádega e facilitar exposição do local.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Realizar tosquiamento se necessário",
+          "descricao": "Realizar tosquiamento antes da antissepsia, abrangendo superfície anterior e medial da região proximal da coxa e região superior ao ligamento inguinal.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Palpar artéria femoral e anestesiar",
+          "descricao": "Palpar a artéria femoral com a mão não dominante e anestesiar 1 cm medialmente à artéria, inicialmente com agulha marrom para botão anestésico e depois com agulha verde por planos.",
+          "critico": true,
+          "alerta": "A veia femoral está medial à artéria; punção muito lateral aumenta risco de punção arterial.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Introduzir agulha 18G",
+          "descricao": "Introduzir agulha 18G com angulação de 20 a 30° com o plano coronal, em direção cefálica, 1 a 2 cm inferior ao ligamento inguinal e 1 cm medial à artéria femoral.",
+          "critico": true,
+          "alerta": "Direção e ponto de entrada inadequados aumentam risco de falha ou lesão vascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Progredir sob pressão negativa",
+          "descricao": "Progredir a agulha sob pressão negativa até refluir sangue. A veia femoral costuma estar entre 2 e 4 cm de profundidade.",
+          "critico": true,
+          "alerta": "Não avançar se encontrar resistência.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Introduzir o fio-guia",
+          "descricao": "Ao acessar a veia femoral, desacoplar a seringa e introduzir gentilmente o fio-guia através da agulha.",
+          "critico": true,
+          "alerta": "Estabilizar a agulha e não introduzir mais que 50 cm de fio-guia; cada marcação costuma corresponder a 10 cm.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Retirar agulha mantendo fio-guia",
+          "descricao": "Após posicionar o fio-guia, retirar a agulha sem soltar o fio.",
+          "critico": true,
+          "alerta": "Nunca soltar o fio-guia.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Dilatar o trajeto",
+          "descricao": "Introduzir 2 a 3 cm do dilatador através do fio-guia. Pode ser necessária pequena incisão cutânea com bisturi para facilitar sua passagem.",
+          "critico": true,
+          "alerta": "Se houver resistência, realizar leve rotação; após retirar o dilatador, introduzir o cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Introduzir o cateter",
+          "descricao": "Introduzir entre 15 e 30 cm do cateter para alcançar a veia cava inferior. Após introdução, retirar o fio-guia, fechar a porção distal do cateter e confirmar com aspiração.",
+          "critico": true,
+          "alerta": "Confirmar refluxo antes de considerar o acesso funcional.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Realizar flush das vias",
+          "descricao": "Realizar flush de solução salina em cada via do cateter.",
+          "critico": true,
+          "alerta": "Via sem refluxo ou com resistência ao flush exige reavaliação.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Fixar o cateter",
+          "descricao": "Fixar o cateter com ponto simples na pele, usando nylon 2-0 ou 3-0.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento e perda do acesso.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Realizar curativo e registro",
+          "descricao": "Limpar o paciente, fazer curativo oclusivo transparente, proteger a saída do cateter e anotar data e hora da colocação.",
+          "critico": true,
+          "alerta": "Descartar perfurocortantes em local adequado.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Confirmar posicionamento",
+          "descricao": "Solicitar radiografia ou fluoroscopia para confirmação do posicionamento correto, idealmente acima da confluência das veias ilíacas comuns.",
+          "critico": true,
+          "alerta": "Controle de posicionamento é etapa de segurança antes de uso pleno do acesso.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Retirada do acesso quando indicada",
+          "descricao": "Na retirada, realizar técnica estéril, antissepsia local, tracionar lentamente sem resistência, comprimir o sítio por no mínimo 3 minutos e fazer curativo compressivo.",
+          "critico": true,
+          "alerta": "Se necessário, enviar 5 cm da extremidade distal em tubo Falcon estéril para cultura.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "O acesso femoral utiliza a relação anatômica N-A-V: nervo, artéria e veia, de lateral para medial.",
+        "Ultrassonografia aumenta a taxa de sucesso na primeira tentativa e reduz complicações.",
+        "Complicações gerais de acesso venoso central incluem lesão arterial, estenose, infecção, trombose, embolia gasosa, sangramento, arritmias e complicações pulmonares.",
+        "O posicionamento ideal do cateter femoral é acima da confluência das veias ilíacas comuns."
+      ],
+      "referencias": [
+        "Heffner AC, Androes MP. Overview of central venous access. UpToDate. Aug 2021.",
+        "Practice Guidelines for Central Venous Access. Anesthesiology. 2012;116:539–73.",
+        "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 7ª ed. Guanabara Koogan; 2014.",
+        "Neto RAB, Souza HP, Marino LO et al. Medicina de emergência: abordagem prática. 17ª ed. Manole; 2023.",
+        "A5B1 - G - AVC Acesso Femoral; A5B1 - R - Acesso Venoso Central."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

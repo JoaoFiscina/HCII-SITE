@@ -1,0 +1,300 @@
+{
+  "procedimentos": [
+    {
+      "id": "lavado_peritoneal_diagnostico",
+      "nome": "Lavado peritoneal diagnóstico",
+      "categoria": "Habilidades Cirúrgicas II / Trauma e LPD",
+      "descricao_curta": "Roteiro prático de lavado peritoneal diagnóstico com técnica aberta e técnica fechada, incluindo descompressão gástrica e vesical, escolha do sítio, acesso intraperitoneal, aspiração, infusão de cristaloide, drenagem, envio laboratorial e critérios de positividade.",
+      "indicacoes": [
+        "Avaliação do paciente traumatizado hemodinamicamente instável quando FAST é inconclusivo ou negativo.",
+        "Identificação de hemorragia em doentes hemodinamicamente instáveis.",
+        "Trauma fechado estável quando FAST ou tomografia estiverem indisponíveis.",
+        "Ausência de profissionais treinados para realizar e interpretar FAST.",
+        "Investigação de possível lesão de víscera oca.",
+        "Investigação de possível lesão de mesentério.",
+        "Trauma abdominal penetrante por arma branca sem peritonite/instabilidade, com penetração da fáscia reconhecida após exploração.",
+        "Diferenciação entre sangue e conteúdo intestinal na cavidade peritoneal.",
+        "Auxílio no diagnóstico de lesão diafragmática em pacientes selecionados."
+      ],
+      "contraindicacoes": [
+        "Indicação já estabelecida de laparotomia.",
+        "Cirurgias abdominais prévias, como contraindicação relativa.",
+        "Obesidade grau III, como contraindicação relativa.",
+        "Cirrose avançada, como contraindicação relativa.",
+        "Coagulopatia preexistente, como contraindicação relativa.",
+        "Gravidez, especialmente a partir do segundo trimestre, exigindo abordagem acima do fundo uterino.",
+        "Fratura pélvica, exigindo preferência por abordagem supraumbilical e técnica aberta para reduzir falsos positivos."
+      ],
+      "preparo": [
+        "Obter termo de consentimento livre e esclarecido se houver tempo.",
+        "Posicionar o paciente em decúbito dorsal.",
+        "Descomprimir estômago e bexiga com sonda gástrica e vesical.",
+        "Realizar antissepsia ampla desde margens costais até púbis e entre os flancos.",
+        "Escolher sítio padrão na linha média infraumbilical.",
+        "Em gestantes, palpar fundo uterino e realizar procedimento acima dele.",
+        "Em trauma pélvico suspeito ou confirmado, optar pela região supraumbilical.",
+        "Definir técnica aberta ou fechada; na fratura pélvica ou incisão prévia de linha média, evitar técnica fechada."
+      ],
+      "materiais": [
+        "Luvas estéreis, avental estéril, gorro e máscara.",
+        "Luvas de procedimento, quando técnica fechada exigir etapa inicial.",
+        "Clorexidina alcoólica 0,5%, pinça de Foerster e campos estéreis.",
+        "Seringa de 3 mL, agulhas de pavilhão rosa, verde, preta e marrom.",
+        "Lidocaína 1% com vasoconstrictor.",
+        "Seringa de 50 mL.",
+        "Bisturi cabo 3 e lâmina nº 11.",
+        "Pinças hemostáticas curvas.",
+        "Cateter de diálise peritoneal.",
+        "Soro fisiológico ou solução cristaloide isotônica, preferencialmente aquecida.",
+        "Equipo de soro.",
+        "Agulha 18G com fio-guia, para técnica fechada.",
+        "Sonda nasogástrica e sonda vesical.",
+        "Materiais para sutura de fáscia e pele, se necessário."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que o LPD é método invasivo, rápido e sensível para identificar injúrias intra-abdominais.",
+        "Entender que FAST e tomografia substituíram grande parte do uso do LPD em pacientes estáveis.",
+        "Não realizar LPD quando já houver indicação clara de laparotomia.",
+        "Lembrar que o LPD não determina a origem ou gravidade do sangramento e tem baixa especificidade.",
+        "Considerar que o LPD não pode ser repetido e pode interferir em TC ou FAST subsequentes."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Obter consentimento se houver tempo",
+          "descricao": "Obter termo de consentimento livre e esclarecido do paciente, se o tempo permitir.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Arrumar a sala e separar materiais",
+          "descricao": "Separar materiais de proteção, antissepsia, anestesia local, procedimento, sonda gástrica e sonda vesical.",
+          "critico": true,
+          "alerta": "A falta de sondagem gástrica ou vesical aumenta risco de perfuração de estômago ou bexiga, conforme o sítio escolhido.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar luvas estéreis, avental estéril, gorro e máscara."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Separar clorexidina alcoólica 0,5%, pinça de Foerster e campos estéreis."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Separar lidocaína 1% com vasoconstrictor, seringa e agulhas."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Separar seringa de 50 mL, bisturi, lâmina 11, hemostáticas curvas, cateter de diálise e solução cristaloide."
+            },
+            {
+              "rotulo": "2e",
+              "texto": "Na técnica fechada, separar agulha 18G com fio-guia."
+            },
+            {
+              "rotulo": "2f",
+              "texto": "Separar sonda nasogástrica e vesical."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Em trauma instável, a comunicação não deve atrasar condutas emergenciais.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar em decúbito dorsal",
+          "descricao": "Posicionar o paciente em posição supina/decúbito dorsal.",
+          "critico": true,
+          "alerta": "O posicionamento deve permitir acesso amplo ao abdome anterior.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Descomprimir estômago e bexiga",
+          "descricao": "Inserir sonda gástrica para descomprimir o estômago e sonda vesical para descomprimir a bexiga.",
+          "critico": true,
+          "alerta": "Descompressão vesical é indispensável em procedimentos infraumbilicais; descompressão gástrica é indispensável em procedimentos supraumbilicais.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar antissepsia ampla",
+          "descricao": "Realizar antissepsia e assepsia desde as margens costais até a região púbica e entre os flancos, anteriormente.",
+          "critico": true,
+          "alerta": "Campo amplo permite mudança de abordagem conforme condição anatômica ou trauma.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Determinar o sítio do procedimento",
+          "descricao": "Escolher o sítio de realização. A via padrão é linha média infraumbilical.",
+          "critico": true,
+          "alerta": "Em gestantes, realizar acima do fundo uterino; em trauma pélvico, preferir região supraumbilical.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "7a",
+              "texto": "Via padrão: linha média, região infraumbilical."
+            },
+            {
+              "rotulo": "7b",
+              "texto": "Gestantes: palpar fundo uterino e realizar acima dele."
+            },
+            {
+              "rotulo": "7c",
+              "texto": "Trauma pélvico suspeito ou confirmado: optar por região supraumbilical."
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "titulo": "Anestesiar por planos",
+          "descricao": "Anestesiar a região escolhida com lidocaína 1% com vasoconstrictor, iniciando com botão anestésico intradérmico e progredindo por planos até a fáscia.",
+          "critico": true,
+          "alerta": "Aspirar antes de cada infiltração para evitar injeção intravascular.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Técnica aberta — incisão e divulsão",
+          "descricao": "Realizar incisão vertical de pele e subcutâneo com cerca de 2 cm na linha média, mantendo a fáscia íntegra; divulsionar plano a plano com auxílio de Farabeuf até visualizar a fáscia.",
+          "critico": true,
+          "alerta": "A dissecção deve ser cuidadosa para evitar lesão de estruturas subjacentes.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Técnica aberta — abrir peritônio e avançar cateter",
+          "descricao": "Pinçar a fáscia com hemostáticas curvas em duas regiões adjacentes, tracionar, realizar pequena incisão controlada entre as pinças, abrir o peritônio e introduzir o cateter de diálise em direção à pelve.",
+          "critico": true,
+          "alerta": "Isolar previamente a fáscia reduz risco de apreensão inadvertida de alças intestinais.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Técnica fechada — punção com agulha 18G",
+          "descricao": "Na técnica fechada, puncionar pele e subcutâneo com agulha 18G acoplada a seringa em ângulo de 45° em direção à pelve, aspirando o conteúdo.",
+          "critico": true,
+          "alerta": "Evitar técnica fechada em fratura pélvica ou incisão prévia de linha média.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Técnica fechada — fio-guia e cateter",
+          "descricao": "Se não houver sangue vivo aspirado, introduzir fio-guia pela agulha, remover a agulha mantendo o fio-guia, fazer pequena incisão cutânea, introduzir o cateter de diálise pelo fio-guia e retirar o fio.",
+          "critico": true,
+          "alerta": "Manter controle do fio-guia durante todo o procedimento.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Aspirar pelo cateter",
+          "descricao": "Conectar o cateter a uma seringa e aspirar.",
+          "critico": true,
+          "alerta": "Se aspirar sangue vivo maior que 10 mL ou fibras alimentares/conteúdo gastrointestinal, encaminhar diretamente para laparotomia.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Infundir solução se persistir dúvida",
+          "descricao": "Na persistência de dúvida diagnóstica, infundir 1 litro de solução cristaloide isotônica, preferencialmente aquecida, pela cavidade abdominal por equipo conectado ao cateter.",
+          "critico": true,
+          "alerta": "Em crianças, calcular 10 mL/kg.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Agitar suavemente o abdome",
+          "descricao": "Agitar suavemente o abdome para distribuir o líquido pela cavidade e favorecer mistura com conteúdo livre.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Drenar o líquido",
+          "descricao": "Colocar a bolsa de solução abaixo do nível do paciente para permitir retorno passivo do fluido da cavidade.",
+          "critico": true,
+          "alerta": "Para análise adequada, é necessário retorno de pelo menos 20–30% do volume infundido.",
+          "imagem": ""
+        },
+        {
+          "numero": 17,
+          "titulo": "Enviar amostra ao laboratório",
+          "descricao": "Enviar amostra para contagem de hemácias e leucócitos, bilirrubina, creatinina, amilase e coloração de Gram.",
+          "critico": true,
+          "alerta": "A interpretação laboratorial define positividade quando não houve indicação imediata por aspiração inicial.",
+          "imagem": ""
+        },
+        {
+          "numero": 18,
+          "titulo": "Fechar fáscia e pele se necessário",
+          "descricao": "Fechar a fáscia e a pele por sutura, caso necessário. Na técnica semiaberta/fechada, pode ser necessário fechar apenas a pele.",
+          "critico": false,
+          "alerta": "",
+          "imagem": ""
+        },
+        {
+          "numero": 19,
+          "titulo": "Relembrar critérios de positividade",
+          "descricao": "Considerar LPD positivo se qualquer critério diagnóstico estiver presente.",
+          "critico": true,
+          "alerta": "LPD positivo em trauma geralmente direciona para laparotomia conforme contexto clínico.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "19a",
+              "texto": "Aspiração inicial de ≥ 10 mL de sangue franco."
+            },
+            {
+              "rotulo": "19b",
+              "texto": "Retorno de conteúdo gastrointestinal, fibras vegetais ou bile."
+            },
+            {
+              "rotulo": "19c",
+              "texto": "Hemácias > 100.000/mm³."
+            },
+            {
+              "rotulo": "19d",
+              "texto": "Leucócitos > 500/mm³."
+            },
+            {
+              "rotulo": "19e",
+              "texto": "Amilase > 175 U/dL."
+            },
+            {
+              "rotulo": "19f",
+              "texto": "Bilirrubina ou creatinina maiores na amostra que no plasma."
+            },
+            {
+              "rotulo": "19g",
+              "texto": "Detecção de bactérias pela coloração de Gram."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "O LPD é rápido, sensível e custo-efetivo, podendo ser feito à beira do leito.",
+        "É útil especialmente no trauma abdominal instável quando FAST é negativo/inconclusivo ou indisponível.",
+        "Tem baixa especificidade, não identifica a origem do sangramento e avalia mal retroperitônio.",
+        "Complicações incluem hemorragia, peritonite por perfuração intestinal, lesão de bexiga, lesão de estruturas abdominais/retroperitoneais e infecção tardia da ferida.",
+        "Não deve atrasar laparotomia quando já há indicação estabelecida."
+      ],
+      "referencias": [
+        "Whitehouse JS, Weigelt JA. Diagnostic peritoneal lavage: a review of indications, technique, and interpretation. Scand J Trauma Resusc Emerg Med. 2009.",
+        "Colégio Americano de Cirurgiões. Suporte Avançado de Vida no Trauma para Médicos. ATLS. 10ª ed.",
+        "A5B3 - G - LPD; A5B3 - R - LPD."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
