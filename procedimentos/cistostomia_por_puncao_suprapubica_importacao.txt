@@ -1,0 +1,241 @@
+{
+  "procedimentos": [
+    {
+      "id": "cistostomia_por_puncao_suprapubica",
+      "nome": "Cistostomia por punção suprapúbica",
+      "categoria": "Habilidades Cirúrgicas II / Cavidade abdominal e urologia",
+      "descricao_curta": "Roteiro prático de cistostomia por punção suprapúbica, com preparo, posicionamento em Trendelenburg, anestesia por planos, incisão na linha mediana 4 cm acima da sínfise púbica, introdução do trocarte, passagem da sonda Foley, insuflação do balonete, conexão ao coletor, fixação e curativo.",
+      "indicacoes": [
+        "Retenção urinária quando não é possível passar sonda uretral ou quando ela é contraindicada.",
+        "Obstrução abaixo do colo vesical em que a sondagem vesical não pode ser realizada.",
+        "Manejo de infecção complicada do trato geniturinário inferior.",
+        "Estenose de uretra.",
+        "Trauma uretral ou vesical, inclusive quando a passagem de sonda vesical dificultaria a cicatrização.",
+        "Hiperplasia prostática e outras causas de compressão uretral extrínseca.",
+        "Bexiga neurogênica quando há necessidade de manutenção prolongada da via de acesso.",
+        "Prevenção de fístulas e obstruções após procedimentos como prostatectomia, ampliações de ressecções vesicais, uretroplastias, cistoplastias, correção de incontinência e trauma.",
+        "Evitar contaminação urinária em pacientes com incontinência fecal."
+      ],
+      "contraindicacoes": [
+        "Paciente com suspeita ou diagnóstico de tumor maligno de bexiga, pelo risco de disseminação de células tumorais ou formação de fístulas.",
+        "Bexiga não distendida, não facilmente palpável ou não visualizada com auxílio da ultrassonografia.",
+        "Coagulopatias, como contraindicação relativa.",
+        "Histórico de cirurgias abdominais inferiores ou pélvicas e radioterapia, pelo risco de aderências.",
+        "Câncer pélvico com possibilidade de disseminação secundária ao procedimento, como contraindicação relativa."
+      ],
+      "preparo": [
+        "Confirmar a indicação de derivação urinária suprapúbica.",
+        "Confirmar que a bexiga está distendida, palpável ou visualizada por ultrassonografia.",
+        "Avaliar contraindicações como tumor vesical e coagulopatia.",
+        "Escolher punção suprapúbica quando a técnica à beira leito for adequada; considerar via aberta em fatores desafiadores como IMC elevado ou cirurgia abdominal prévia.",
+        "Posicionar o paciente em decúbito dorsal em Trendelenburg.",
+        "Realizar antissepsia da região suprapúbica e colocar campo cirúrgico.",
+        "Separar sonda Foley, trocarte, bisturi, material de fixação, sistema coletor e curativo."
+      ],
+      "materiais": [
+        "Luvas de procedimento.",
+        "Luvas estéreis.",
+        "Gorro.",
+        "Máscara.",
+        "Clorexidina alcoólica 0,5%.",
+        "Pinça de Foerster.",
+        "Campos estéreis.",
+        "Seringa de 3 mL.",
+        "Agulhas de pavilhão rosa, verde, preta e marrom.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor.",
+        "Seringa de 50 mL.",
+        "Bisturi cabo 3.",
+        "Lâmina de bisturi nº 13.",
+        "Sonda de Foley.",
+        "Trocarte.",
+        "Porta-agulha.",
+        "Fio de sutura.",
+        "Gaze.",
+        "Micropore®.",
+        "Água destilada para insuflar balonete.",
+        "Sistema coletor de urina."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a cistostomia é derivação urinária externa por cateter que alcança a bexiga pela região pré-vesical.",
+        "Diferenciar cistostomia a céu aberto de cistostomia por punção suprapúbica.",
+        "Entender que a punção suprapúbica é mais rápida, utiliza anestesia local e pode ser feita à beira do leito.",
+        "Usar ultrassonografia para guiar o procedimento se disponível, especialmente se houver dúvida sobre distensão vesical.",
+        "Lembrar que, em relação à sonda vesical de permanência, a cistostomia pode oferecer maior conforto, mobilidade e menor risco de traumatismo uretral."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar a sala e separar materiais de proteção, antissepsia, anestesia local, procedimento, fixação e curativo.",
+          "critico": true,
+          "alerta": "A bexiga deve estar distendida, palpável ou visualizada ao ultrassom antes da punção suprapúbica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar luvas de procedimento, luvas estéreis, gorro e máscara."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar clorexidina alcoólica 0,5%, pinça de Foerster e campos estéreis."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar lidocaína 1% ou 2% sem vasoconstrictor, seringa de 3 mL e agulhas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar seringa de 50 mL, bisturi cabo 3, lâmina nº 13, sonda Foley, trocarte, porta-agulha e fio de sutura."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze, Micropore®, água destilada para balonete e sistema coletor."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Explicar que será realizada derivação urinária pela região suprapúbica.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar e preparar campo",
+          "descricao": "Posicionar o paciente em decúbito dorsal em Trendelenburg. Realizar antissepsia e assepsia da região suprapúbica e colocar campo cirúrgico.",
+          "critico": true,
+          "alerta": "A posição e antissepsia adequadas facilitam o acesso e reduzem infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Anestesiar por planos",
+          "descricao": "Realizar anestesia local com lidocaína 2% sem vasoconstrictor, plano por plano, desde a pele até a parede vesical.",
+          "critico": true,
+          "alerta": "A anestesia deve acompanhar o trajeto planejado da punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar incisão suprapúbica",
+          "descricao": "Realizar incisão de 0,5 a 1 cm com bisturi, na linha mediana, 4 cm acima da sínfise púbica.",
+          "critico": true,
+          "alerta": "O ponto anatômico correto reduz risco de lesão de estruturas adjacentes.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Introduzir o trocarte",
+          "descricao": "Introduzir o trocarte até atingir o interior da bexiga, aplicando pressão associada a movimentos semigiratórios do punho para facilitar a punção.",
+          "critico": true,
+          "alerta": "Força excessiva pode causar perfuração da parede posterior da bexiga e/ou reto.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Retirar a ponteira do trocarte",
+          "descricao": "Retirar a porção central do trocarte, mantendo a bainha posicionada no interior da bexiga.",
+          "critico": true,
+          "alerta": "Manter a bainha adequadamente posicionada é essencial para introdução da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Introduzir a sonda Foley",
+          "descricao": "Introduzir rapidamente a sonda no interior da bexiga através da bainha do trocarte.",
+          "critico": true,
+          "alerta": "Evitar deslocar a bainha durante a passagem da sonda.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Insuflar balonete e remover bainha",
+          "descricao": "Insuflar o balonete com água destilada, remover a bainha do trocarte e manter o cateter posicionado.",
+          "critico": true,
+          "alerta": "Insuflar o balonete apenas após garantir que a sonda está no interior da bexiga.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Confirmar posicionamento por tração leve",
+          "descricao": "Realizar leve tração para confirmar o posicionamento do cateter.",
+          "critico": true,
+          "alerta": "Tração excessiva pode causar dor, sangramento ou deslocamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Conectar ao sistema coletor",
+          "descricao": "Conectar a sonda ao sistema coletor de urina.",
+          "critico": true,
+          "alerta": "A conexão deve permitir drenagem livre e reduzir contaminação.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Fixar o cateter à pele",
+          "descricao": "Fixar o cateter na pele com sutura em U. Em seguida, dar duas voltas no cateter com o fio e realizar 3 seminós, repetindo o processo por 3 vezes com fio monofilamentar.",
+          "critico": true,
+          "alerta": "Fixação inadequada favorece deslocamento, perda de urina ao redor do cateter e saída acidental.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "12a",
+              "texto": "Realizar sutura em U na pele."
+            },
+            {
+              "rotulo": "12b",
+              "texto": "Dar duas voltas no cateter com o fio."
+            },
+            {
+              "rotulo": "12c",
+              "texto": "Realizar 3 seminós."
+            },
+            {
+              "rotulo": "12d",
+              "texto": "Repetir a fixação por 3 vezes com fio monofilamentar."
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "titulo": "Retirar campo e reconectar ao coletor",
+          "descricao": "Após drenagem, desconectar o cateter do sistema coletor, retirar o campo cirúrgico e reconectar ao sistema coletor.",
+          "critico": true,
+          "alerta": "Evitar contaminação durante a desconexão e reconexão.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Realizar curativo em calça",
+          "descricao": "Realizar curativo em calça ao redor do cateter.",
+          "critico": true,
+          "alerta": "O curativo deve proteger a pele e permitir inspeção de sangramento, vazamento ou infecção.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "A cistostomia por punção suprapúbica é útil quando a sonda uretral não pode ser passada ou está contraindicada.",
+        "Pode ser realizada por via aberta ou por punção suprapúbica; a punção é mais rápida e pode ser feita à beira do leito.",
+        "A cistostomia deve ser evitada se a bexiga não estiver distendida, palpável ou visualizada por ultrassom.",
+        "Complicações incluem infecção no local da punção, perda de urina ao redor do cateter, obstrução ou deslocamento, infecção urinária, incrustações calcárias, sangramento cutâneo ou vesical, lesão intestinal e perfuração da parede posterior da bexiga ou reto.",
+        "Vídeo do procedimento: https://www.youtube.com/watch?v=DH7WB9V4iC4",
+        "Vídeo complementar: https://www.youtube.com/watch?v=xrQzS6f_BSc"
+      ],
+      "referencias": [
+        "Gama-Rodrigues JJ et al. Clínica Cirúrgica FMUSP Vol. 2. 1ª ed. Manole; 2008.",
+        "Cologna AJ et al. Fundamentos em Clínica Cirúrgica. Medicina Ribeirão Preto. 2011.",
+        "Peterson AA. Posterior urethral injuries and management. UpToDate. 2024.",
+        "Goyal NK et al. Safe percutaneous suprapubic catheterisation. Ann R Coll Surg Engl. 2012.",
+        "Robinson J. Insertion, care and management of suprapubic catheters. Nursing Standard. 2008.",
+        "Seth A et al. Suprapubic Cystostomy. 2016.",
+        "Fisher JS et al. Suprapubic cystostomy. Medscape. 2021.",
+        "Schaeffer AJ. Complications of urinary bladder catheters and preventive strategies. UpToDate. 2024.",
+        "A6B3 - G - Cistostomia; A6B3 - R - Cistostomia."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

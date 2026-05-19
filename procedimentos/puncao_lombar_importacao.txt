@@ -1,0 +1,266 @@
+{
+  "procedimentos": [
+    {
+      "id": "puncao_lombar",
+      "nome": "Punção lombar",
+      "categoria": "Habilidades Cirúrgicas II / Anestesiologia e neurologia",
+      "descricao_curta": "Roteiro prático de punção lombar, com indicações diagnósticas e terapêuticas, contraindicações, identificação dos espaços L3-L4 ou L4-L5, posicionamento, antissepsia, anestesia por planos, introdução da agulha liquórica, coleta do líquor e retirada segura.",
+      "indicacoes": [
+        "Investigação diagnóstica de infecções do sistema nervoso central, como neurossífilis, neurotoxoplasmose e neurocriptococose, exceto abscesso cerebral e infecções parameníngeas.",
+        "Investigação de hemorragia subaracnóidea em casos de tomografia de crânio sem alteração.",
+        "Investigação de hipertensão intracraniana idiopática.",
+        "Investigação de hidrocefalia de pressão normal.",
+        "Investigação de meningite carcinomatosa e meningite tuberculosa.",
+        "Investigação de doenças inflamatórias não infecciosas, como encefalite autoimune, mielite transversa aguda, síndrome de Guillain-Barré, vasculite primária do sistema nervoso central e esclerose múltipla.",
+        "Investigação de síndromes paraneoplásicas.",
+        "Investigação de linfoma do sistema nervoso central.",
+        "Injeção de contraste para mielografia ou cisternografia.",
+        "Anestesia espinhal.",
+        "Administração intratecal de medicamentos, como quimioterápicos, antibióticos e contraste.",
+        "Diminuição da pressão intracraniana em casos selecionados de meningite criptocócica e hidrocefalia comunicante aguda."
+      ],
+      "contraindicacoes": [
+        "Lesões expansivas intracranianas com risco de herniação cerebral.",
+        "Hidrocefalia obstrutiva não comunicante.",
+        "Diátese hemorrágica não corrigida.",
+        "Uso de terapia anticoagulante.",
+        "Plaquetas abaixo de 20.000/mm³.",
+        "Estenose espinhal ou compressão da medula acima do nível da punção.",
+        "Infecção de pele no local da punção.",
+        "Anomalias do desenvolvimento espinhal ou craniano, como mielomeningocele, síndrome da medula ancorada ou malformação de Chiari.",
+        "Contagem de plaquetas entre 20.000 e 40.000/mm³, como contraindicação relativa.",
+        "Tratamento com tienopiridinas ou outros antiplaquetários, como contraindicação relativa."
+      ],
+      "preparo": [
+        "Confirmar a indicação diagnóstica ou terapêutica da punção lombar.",
+        "Revisar contraindicações neurológicas, infecciosas e hematológicas antes do procedimento.",
+        "Avaliar necessidade de neuroimagem prévia quando houver suspeita de hipertensão intracraniana por lesão expansiva ou risco de herniação.",
+        "Separar material estéril, anestesia local, agulha de punção liquórica 20G ou 22G, frascos estéreis e medicação preparada quando aplicável.",
+        "Definir o espaço intervertebral a ser puncionado, preferencialmente L3-L4 ou L4-L5.",
+        "Escolher posicionamento em decúbito lateral fetal ou sentado, conforme condição do paciente e objetivo do procedimento.",
+        "Considerar ultrassonografia para marcação dos pontos anatômicos em pacientes com palpação difícil, como recém-nascidos, gestantes, obesos e pacientes com edema generalizado."
+      ],
+      "materiais": [
+        "Luvas estéreis.",
+        "Máscara.",
+        "Clorexidina alcoólica 0,5%.",
+        "PVPI.",
+        "Pinça de Foerster.",
+        "Campo estéril.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor.",
+        "Seringa de 5 mL.",
+        "Agulhas de pavilhão rosa, marrom, verde ou preta.",
+        "Agulha de punção liquórica 20G ou 22G.",
+        "Gaze.",
+        "Frascos estéreis para coleta do líquor.",
+        "Medicação preparada, quando o objetivo for administração intratecal.",
+        "Coxins para cabeça e joelhos, se necessário para alinhamento e conforto."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que a punção lombar é técnica invasiva caracterizada pela introdução de agulha no espaço subaracnóideo lombar para acessar o líquido cefalorraquidiano.",
+        "Identificar previamente o objetivo do procedimento: diagnóstico, terapêutico, anestésico ou administração intratecal.",
+        "Evitar punção lombar em contexto de risco de herniação cerebral, coagulopatia não corrigida ou infecção de pele no local.",
+        "Lembrar que o bisel deve ficar paralelo às fibras longitudinais da dura-máter para reduzir risco de cefaleia pós-punção.",
+        "Evitar aspiração ativa de líquor, pelo risco de sangramento, lesão de estruturas nervosas e perda excessiva de líquor."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar a sala e separar previamente todos os materiais necessários para punção lombar.",
+          "critico": true,
+          "alerta": "A falta de material estéril ou frascos adequados pode comprometer a coleta, contaminar a amostra ou atrasar o procedimento.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar paramentação: luvas estéreis e máscara."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar antissepsia e assepsia: clorexidina alcoólica 0,5%, PVPI, pinça de Foerster e campo estéril."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar anestesia: lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas adequadas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar procedimento: agulha de punção liquórica 20G ou 22G."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar gaze, frascos estéreis para coleta do líquor ou medicação preparada."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "A orientação melhora colaboração e ajuda o paciente a manter o posicionamento adequado.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Palpar referenciais anatômicos e demarcar o sítio",
+          "descricao": "Palpar as espinhas ilíacas posterosuperiores e traçar uma linha imaginária entre suas bordas superiores. A interseção com a coluna geralmente corresponde a L4. Demarcar o espaço L3-L4 ou L4-L5.",
+          "critico": true,
+          "alerta": "Em mulheres e pessoas obesas, os referenciais podem corresponder a níveis vertebrais mais elevados; considerar ultrassonografia se a palpação for difícil.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "3a",
+              "texto": "Palpar as espinhas ilíacas posterosuperiores."
+            },
+            {
+              "rotulo": "3b",
+              "texto": "Traçar uma linha imaginária entre as bordas superiores das espinhas ilíacas."
+            },
+            {
+              "rotulo": "3c",
+              "texto": "Identificar a interseção da linha com a coluna, geralmente correspondente a L4."
+            },
+            {
+              "rotulo": "3d",
+              "texto": "Escolher e demarcar o espaço L3-L4 ou L4-L5."
+            },
+            {
+              "rotulo": "3e",
+              "texto": "Usar ultrassonografia para marcos anatômicos em recém-nascidos, gestantes, obesos ou pacientes com edema generalizado, quando disponível."
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito lateral, com pescoço, coluna e membros inferiores fletidos em direção ao tronco, ou sentado com pescoço fletido e pés apoiados.",
+          "critico": true,
+          "alerta": "O objetivo é abrir os espaços interespinhosos e manter alinhamento adequado da coluna. A posição sentada é mais indicada em neonatos.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Em decúbito lateral, colocar o paciente em posição fetal."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Manter pescoço, coluna e membros inferiores fletidos em direção ao tronco."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Na posição sentada, apoiar o pescoço e manter os pés apoiados."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Usar coxins sob a cabeça e entre os joelhos para melhorar conforto e alinhamento quando necessário."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e assepsia",
+          "descricao": "Realizar antissepsia e assepsia da região previamente demarcada.",
+          "critico": true,
+          "alerta": "Técnica asséptica rigorosa reduz risco de meningite e infecção local.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar por planos",
+          "descricao": "Realizar botão anestésico seguido de anestesia local por planos até a profundidade esperada do trajeto.",
+          "critico": true,
+          "alerta": "A anestesia deve respeitar o trajeto planejado de punção, sem distorcer excessivamente a anatomia.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Introduzir a agulha liquórica",
+          "descricao": "Introduzir a agulha de punção liquórica angulada em 15° em direção cefálica, direcionada para o umbigo. Em decúbito lateral, manter o bisel voltado para cima; se sentado, manter o bisel voltado para a lateral do paciente.",
+          "critico": true,
+          "alerta": "O bisel deve ficar paralelo às fibras longitudinais da dura-máter para afastá-las e reduzir risco de cefaleia pós-punção.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Progredir até o ligamento amarelo",
+          "descricao": "Progredir a agulha até encontrar resistência, correspondente ao ligamento amarelo.",
+          "critico": true,
+          "alerta": "Progressão inadequada pode causar dor irradiada ou lesão de raiz nervosa.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Perfurar o ligamento amarelo",
+          "descricao": "Perfurar o ligamento amarelo. Espera-se que a agulha penetre cerca de 4 a 5 cm a partir da pele até esse momento.",
+          "critico": true,
+          "alerta": "A profundidade pode variar conforme biotipo; evitar avanço brusco.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Retirar o mandril",
+          "descricao": "Retirar o mandril da agulha para verificar saída de líquor.",
+          "critico": true,
+          "alerta": "Retirar e recolocar o mandril corretamente ajuda a reduzir complicações e permite checar gotejamento.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Aguardar gotejamento de líquor",
+          "descricao": "Aguardar o gotejamento espontâneo do líquor.",
+          "critico": true,
+          "alerta": "Evitar aspirar o líquor, pois isso aumenta risco de sangramento, lesão de estruturas nervosas e perda excessiva de líquor.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "11a",
+              "texto": "Se o fluxo estiver baixo, pode-se rotacionar o bisel para a região cefálica."
+            },
+            {
+              "rotulo": "11b",
+              "texto": "Também pode ser solicitado ao paciente que estenda os membros inferiores ou realize manobra de Valsalva."
+            },
+            {
+              "rotulo": "11c",
+              "texto": "Se não houver saída de líquor, reintroduzir o mandril, recuar alguns milímetros e reintroduzir conforme o trajeto adequado."
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "titulo": "Coletar o líquor",
+          "descricao": "Coletar cerca de 8 a 15 mL em frascos estéreis, avaliando o aspecto do líquor durante a coleta. Fechar os frascos e encaminhar ao laboratório.",
+          "critico": true,
+          "alerta": "Para estudos especiais, como citologia ou culturas de fungos e micobactérias, até 40 mL podem ser removidos com segurança segundo o roteiro.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Reintroduzir mandril e retirar a agulha",
+          "descricao": "Após a coleta, reintroduzir o mandril e retirar a agulha com o bisel voltado para a lateral do paciente.",
+          "critico": true,
+          "alerta": "A retirada com mandril reintroduzido reduz risco de complicações relacionadas ao trajeto.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "Complicações possíveis incluem herniação cerebral, dor lombar, cefaleia pós-punção, meningite, punção traumática, hematoma espinhal, dor irradiada para membros inferiores, tumor epidermoide tardio, síncope vasovagal e vazamento de líquor pelo local.",
+        "A punção deve ser feita abaixo do término da medula, preferencialmente em L3-L4 ou L4-L5.",
+        "Ultrassonografia pode melhorar a taxa de sucesso, especialmente em pacientes com marcos anatômicos difíceis.",
+        "A coleta usual descrita no guia é de 8 a 15 mL, mas estudos especiais podem exigir volumes maiores.",
+        "Vídeo do procedimento: https://youtu.be/ErNhuKfoYAU?si=-oxDzxZZPBBEhpK-"
+      ],
+      "referencias": [
+        "Wright BLC, Lai JTF, Sinclair AJ. Cerebrospinal Fluid and Lumbar Puncture. A Practical Review. J Neurol. 2012;259:1530-1545.",
+        "Costerus JM, Brouwer MC, van de Beek D. Technological advances and changing indications for lumbar puncture in neurological disorders. Lancet Neurol. 2018;17(3):268-278.",
+        "Doherty CM, Forbes RB. Diagnostic Lumbar Puncture. Ulster Med J. 2014;83(2):93-102.",
+        "Hull C, Johnson KS, Sexton DJ. Lumbar puncture: Technique, indications, contraindications, and complications in adults. UpToDate.",
+        "Roehr CC et al. Techniques to increase lumbar puncture success in newborn babies: the NeoCLEAR RCT. Health Technology Assessment. 2023;27(33):1-97.",
+        "A6B1 - G - Punção Lombar; A6B1 - R - Punção Lombar."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

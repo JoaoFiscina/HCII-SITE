@@ -1,0 +1,231 @@
+{
+  "procedimentos": [
+    {
+      "id": "paracentese",
+      "nome": "Paracentese",
+      "categoria": "Habilidades Cirúrgicas II / Cavidade abdominal",
+      "descricao_curta": "Roteiro prático de paracentese diagnóstica e terapêutica, com posicionamento, escolha do quadrante inferior esquerdo, técnica Z-track, anestesia por planos, punção com seringa ou Jelco®, coleta do líquido ascítico, drenagem terapêutica, retirada e curativo oclusivo.",
+      "indicacoes": [
+        "Todos os pacientes com ascite recente para investigação etiológica.",
+        "Pacientes com ascite e sinais ou sintomas de infecção, como dor ou hipersensibilidade abdominal, febre, encefalopatia, hipotensão, insuficiência renal, acidose metabólica ou leucocitose.",
+        "Confirmação da presença de ascite.",
+        "Diagnóstico da causa da ascite e avaliação de infecção do líquido ascítico.",
+        "Alívio de dispneia e desconforto abdominal em pacientes com ascite tensa.",
+        "Ascite resistente ao tratamento clínico otimizado.",
+        "Paracentese diagnóstica para coleta de 20 a 50 mL de líquido ascítico.",
+        "Paracentese terapêutica para drenagem de maior volume de líquido ascítico."
+      ],
+      "contraindicacoes": [
+        "Coagulação intravascular disseminada.",
+        "Fibrinólise clinicamente evidente.",
+        "Distensão severa de alças intestinais.",
+        "Infecção cutânea no local possível de punção.",
+        "Hematoma no local possível de punção.",
+        "Vasos ingurgitados no local possível de punção.",
+        "Cicatriz cirúrgica nos locais possíveis de punção.",
+        "Gravidez, como contraindicação relativa.",
+        "Distensão intestinal severa, como contraindicação relativa.",
+        "Histórico de cirurgia abdominal ou pélvica extensa, como contraindicação relativa."
+      ],
+      "preparo": [
+        "Confirmar se a paracentese será diagnóstica, terapêutica ou ambas.",
+        "Avaliar presença de obstrução intestinal ou retenção urinária; nesses casos, realizar esvaziamento gástrico ou vesical antes do procedimento para reduzir riscos.",
+        "Posicionar o paciente em decúbito dorsal, com cabeceira preferencialmente elevada entre 30° e 45°.",
+        "Definir o local de punção, preferencialmente no quadrante abdominal inferior esquerdo, dois dedos acima e dois dedos medialmente à espinha ilíaca ântero-superior.",
+        "Evitar cicatrizes cirúrgicas e vasos superficiais.",
+        "Considerar ultrassonografia para marcar ou guiar o procedimento em pacientes obesos, com laparotomia prévia ou contraindicações relativas.",
+        "Separar tubos coletores e solicitar exames necessários do líquido ascítico e sangue conforme objetivo diagnóstico."
+      ],
+      "materiais": [
+        "Luvas estéreis.",
+        "Gorro.",
+        "Máscara opcional.",
+        "Clorexidina alcoólica 0,5%.",
+        "Pinça de Foerster.",
+        "Gazes.",
+        "Campos estéreis.",
+        "Seringa de 5 mL para anestesia.",
+        "Agulhas de pavilhão rosa, verde, preto e marrom.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor.",
+        "Seringa de 50 mL.",
+        "Jelco® 14G ou 16G.",
+        "Bisturi de lâmina nº 9.",
+        "Sistema coletor a vácuo ou outro recipiente.",
+        "Tubos coletores para amostras.",
+        "Material para curativo oclusivo."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que paracentese é a remoção de fluidos da cavidade peritoneal por punção.",
+        "Entender que a análise do líquido ascítico é método rápido, eficaz e econômico para investigar etiologia da ascite.",
+        "Na suspeita de infecção do líquido ascítico, antibióticos de amplo espectro devem ser iniciados imediatamente conforme avaliação clínica.",
+        "Lembrar que paracentese de grande volume é definida como remoção de mais de 5 litros.",
+        "Em paracentese de grande volume, repor albumina 6 a 8 g por litro removido para reduzir risco de disfunção circulatória induzida por paracentese.",
+        "Usar o GASA como ferramenta etiológica: GASA ≥ 1,1 sugere hipertensão portal; GASA < 1,1 sugere ascite não relacionada à hipertensão portal."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Organizar o ambiente e reunir materiais de proteção, antissepsia, anestesia, punção, coleta, drenagem e curativo.",
+          "critico": true,
+          "alerta": "Em obstrução intestinal ou retenção urinária, esvaziar estômago ou bexiga antes do procedimento para reduzir risco de lesão.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "1a",
+              "texto": "Separar luvas estéreis, gorro e máscara, se usada."
+            },
+            {
+              "rotulo": "1b",
+              "texto": "Separar clorexidina alcoólica 0,5%, pinça de Foerster, gazes e campos estéreis."
+            },
+            {
+              "rotulo": "1c",
+              "texto": "Separar lidocaína 1% ou 2% sem vasoconstrictor, seringa de 5 mL e agulhas."
+            },
+            {
+              "rotulo": "1d",
+              "texto": "Separar seringa de 50 mL, Jelco® 14G ou 16G, bisturi lâmina 9, sistema coletor e tubos de amostra."
+            },
+            {
+              "rotulo": "1e",
+              "texto": "Separar material para curativo oclusivo."
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Explicar a diferença entre punção diagnóstica e terapêutica quando aplicável.",
+          "imagem": ""
+        },
+        {
+          "numero": 3,
+          "titulo": "Posicionar o paciente",
+          "descricao": "Posicionar o paciente em decúbito dorsal, com cabeceira preferencialmente elevada entre 30° e 45° para permitir acúmulo de fluido no abdome inferior.",
+          "critico": true,
+          "alerta": "Posicionamento adequado aumenta chance de encontrar líquido e reduz complicações.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Definir o local de punção",
+          "descricao": "Definir o local de punção, preferencialmente no quadrante inferior esquerdo, dois dedos acima e dois dedos medialmente à espinha ilíaca ântero-superior.",
+          "critico": true,
+          "alerta": "Evitar cicatrizes cirúrgicas, vasos superficiais, hematomas, infecção cutânea e locais com alças distendidas.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Escolher preferencialmente o quadrante abdominal inferior esquerdo."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Usar referência de dois dedos acima e dois dedos medialmente à EIAS."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Evitar cicatrizes cirúrgicas e vasos superficiais."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Usar ultrassonografia em obesos, laparotomia prévia ou contraindicações relativas."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e campo estéril",
+          "descricao": "Realizar antissepsia e assepsia da região com clorexidina alcoólica 0,5% e colocar campos estéreis.",
+          "critico": true,
+          "alerta": "Técnica asséptica reduz risco de infecção local e peritonite.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar por planos com Z-track",
+          "descricao": "Realizar anestesia local por planos da pele até o peritônio. Durante a anestesia, tracionar a pele com a mão não dominante no sentido caudal para aplicar o método Z-track.",
+          "critico": true,
+          "alerta": "O Z-track ajuda a ocluir o canal formado após o procedimento, reduzindo vazamento de líquido ascítico.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Puncionar o sítio escolhido",
+          "descricao": "Puncionar perpendicularmente o sítio escolhido aplicando o método Z-track, usando seringa de 50 mL acoplada à agulha de pavilhão preto para punção diagnóstica ou ao Jelco® 14G/16G para punção terapêutica.",
+          "critico": true,
+          "alerta": "Na paracentese terapêutica, pode-se ampliar o local com bisturi lâmina nº 9 para facilitar a passagem do cateter.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Avançar aspirando até refluxo",
+          "descricao": "Avançar lentamente pelo tecido, aspirando até constatar refluxo de líquido ascítico.",
+          "critico": true,
+          "alerta": "O líquido ascítico costuma ter aspecto amarelado e transparente; aspecto turvo, sanguinolento ou purulento deve ser valorizado.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Punção diagnóstica — coletar amostra",
+          "descricao": "Na punção diagnóstica, aspirar de 20 a 50 mL na seringa, transferir o líquido para tubos coletores e encaminhar para os testes indicados.",
+          "critico": true,
+          "alerta": "Coletar também sangue simultaneamente quando for necessário calcular o GASA.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Punção terapêutica — avançar cateter e drenar",
+          "descricao": "Na punção terapêutica, após refluxo de líquido ascítico, retirar seringa e agulha, avançar o cateter e conectá-lo ao sistema coletor. Se for necessária amostra diagnóstica, aspirar 20 a 50 mL pelo cateter antes da drenagem ampla.",
+          "critico": true,
+          "alerta": "Paracentese de grande volume exige atenção à reposição de albumina quando removidos mais de 5 litros.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Retirar agulha ou cateter",
+          "descricao": "Quando a quantidade desejada de fluido for obtida, retirar a agulha na punção diagnóstica ou o cateter na terapêutica, de forma suave e rápida.",
+          "critico": true,
+          "alerta": "Na punção terapêutica, certificar-se de que o sistema coletor está fechado antes de retirar o cateter. Pode-se pedir ao paciente que tussa durante a retirada para reduzir dor.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Comprimir o sítio",
+          "descricao": "Aplicar pressão com gaze por um curto período para evitar sangramento e vazamento de líquido.",
+          "critico": true,
+          "alerta": "Vazamento contínuo de ascite pelo sítio de punção é complicação possível e deve ser monitorado.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Realizar curativo oclusivo",
+          "descricao": "Realizar curativo oclusivo no local da punção.",
+          "critico": true,
+          "alerta": "O curativo deve proteger o sítio e reduzir vazamento de líquido.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "Exames do líquido ascítico podem incluir Gram, cultura, albumina, amilase, adenosina desaminase e LDH quando houver suspeita de peritonite.",
+        "Exames do sangue incluem albumina sérica para cálculo do GASA.",
+        "PBE é sugerida por PMN no líquido ascítico ≥ 250 células/mm³, com cultura positiva e exclusão de causas secundárias.",
+        "Complicações incluem hematoma de parede, hemoperitônio, perfuração de vísceras, infecção local/peritonite, vazamento contínuo de líquido, disfunção circulatória pós-paracentese e hemorragia por artéria epigástrica inferior.",
+        "Vídeo do procedimento: https://www.youtube.com/watch?app=desktop&v=XPAFno8xcLU&feature=youtu.be"
+      ],
+      "referencias": [
+        "McGibbon A et al. An Evidence-Based Manual for Abdominal Paracentesis. Digestive Diseases and Sciences. 2007;52(12):3307-3315.",
+        "Wong CL, Thorpe KE, Straus SE. Does This Patient Have Bacterial Peritonitis or Portal Hypertension? JAMA. 2008;299(10):1166-1178.",
+        "Runyon BA. Management of Adult Patients With Ascites Due to Cirrhosis: An Update. Hepatology. 2009;49(6):2087-2107.",
+        "Thomsen TW et al. Paracentesis. N Engl J Med. 2006;355:e21.",
+        "Ghiggi KC et al. Paracentese abdominal. Vittalle. 2021;33(1):84-100.",
+        "Runyon BA. Spontaneous bacterial peritonitis in adults: Diagnosis. UpToDate. 2025.",
+        "Biggins SW. Evaluation of adults with ascites. UpToDate. 2025.",
+        "A6B2 - G - Paracentese; A6B2 - R - Paracentese."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
