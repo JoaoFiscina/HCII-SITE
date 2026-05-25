@@ -39,6 +39,8 @@ body {
   font-size: clamp(1rem, 0.22vw + 0.96rem, 1.08rem);
   line-height: 1.7;
   color: var(--text);
+  overflow-x: hidden;
+  overflow-y: auto;
   background:
     radial-gradient(circle at top right, rgba(190, 222, 216, 0.54), transparent 30%),
     radial-gradient(circle at bottom left, rgba(245, 226, 200, 0.46), transparent 34%),
@@ -164,6 +166,27 @@ summary:focus-visible,
   flex-wrap: wrap;
 }
 
+.topbar-toolbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex: 0 0 auto;
+}
+
+.topbar-toolbar .topbar-actions {
+  min-width: 0;
+}
+
+.topbar-bisturi {
+  width: clamp(42px, 4.2vw, 56px);
+  height: clamp(42px, 4.2vw, 56px);
+  object-fit: contain;
+  opacity: 0.86;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 18px rgba(6, 31, 30, 0.18));
+}
+
 .eyebrow {
   margin: 0;
   font-size: 0.78rem;
@@ -190,8 +213,16 @@ summary:focus-visible,
 .sidebar {
   position: sticky;
   top: 18px;
-  max-height: calc(100vh - 36px);
+  max-height: calc(100dvh - 36px);
   align-self: start;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding-right: 6px;
+  margin-right: -6px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(28, 92, 89, 0.3) transparent;
 }
 
 .panel,
@@ -518,11 +549,8 @@ summary:focus-visible,
 }
 
 .procedure-list {
-  max-height: min(58vh, 680px);
-  overflow-y: auto;
-  padding-right: 4px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(28, 92, 89, 0.28) transparent;
+  overflow: visible;
+  padding-right: 0;
 }
 
 .procedure-panel {
@@ -1143,10 +1171,15 @@ summary:focus-visible,
   .sidebar {
     position: static;
     max-height: none;
+    overflow: visible;
+    padding-right: 0;
+    margin-right: 0;
+    scrollbar-gutter: auto;
   }
 
   .procedure-list {
-    max-height: 420px;
+    max-height: none;
+    overflow: visible;
   }
 
   .hero {
@@ -1200,7 +1233,8 @@ summary:focus-visible,
 
   .status-actions,
   .hero-actions,
-  .topbar-actions {
+  .topbar-actions,
+  .topbar-toolbar {
     width: 100%;
   }
 
@@ -1208,6 +1242,21 @@ summary:focus-visible,
   .hero-actions .button,
   .topbar-actions .button {
     flex: 1 1 100%;
+  }
+
+  .topbar-toolbar {
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .topbar-toolbar .topbar-actions {
+    width: auto;
+    flex: 1 1 auto;
+  }
+
+  .topbar-bisturi {
+    width: 38px;
+    height: 38px;
   }
 
   .field input,
@@ -1225,7 +1274,8 @@ summary:focus-visible,
   }
 
   .procedure-list {
-    max-height: 340px;
+    max-height: none;
+    overflow: visible;
   }
 
   .procedure-card,
@@ -1328,6 +1378,13 @@ summary:focus-visible,
 
   .step-subaction-label {
     justify-self: start;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar-bisturi {
+    width: 34px;
+    height: 34px;
   }
 }
 

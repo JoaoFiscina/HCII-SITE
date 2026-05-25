@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Bisturi</title>
+  <desc id="desc">Icone minimalista de um bisturi cirurgico.</desc>
+  <defs>
+    <linearGradient id="handle" x1="12" x2="72" y1="76" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#123f3d"/>
+      <stop offset="1" stop-color="#2c7a73"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="58" x2="88" y1="25" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dfe9e7"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="26" fill="#f4faf7"/>
+  <path d="M17 72.5 57.5 32c2.2-2.2 5.7-2.2 7.9 0l1.2 1.2c2.2 2.2 2.2 5.7 0 7.9L26.1 81.6c-2 2-5.2 2-7.2 0l-1.9-1.9c-2-2-2-5.2 0-7.2Z" fill="url(#handle)"/>
+  <path d="m62.4 33.9 8.7-18.1c.9-1.9 2.7-3.3 4.8-3.7l10.6-2.1-2.2 10.6c-.4 2-1.8 3.8-3.7 4.7L62.4 33.9Z" fill="url(#blade)" stroke="#8fa7a2" stroke-width="2"/>
+  <path d="M27 70 57.8 39.2" fill="none" stroke="#d9ebe9" stroke-linecap="round" stroke-width="4"/>
+  <path d="M35 62 49 48" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-width="2" opacity=".7"/>
+</svg>
