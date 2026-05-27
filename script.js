@@ -457,7 +457,7 @@ async function reloadPrimaryProcedures() {
     };
     appState.baseProcedures = [];
     appState.baseIssues = [...configIssues, ...exampleResult.issues];
-    setStatusDetail("Nenhum roteiro encontrado. Importe arquivo local para continuar.");
+    setStatusDetail("Nenhum procedimento encontrado. Importe arquivo local para continuar.");
     rebuildCatalog();
     showMessage("Não foi possível carregar a pasta do GitHub nem o manifest local.", "error");
   } catch (error) {
@@ -594,7 +594,7 @@ async function loadProceduresFromGitHub(config) {
             "warning",
             "github",
             folderPath,
-            "A pasta foi encontrada, mas não há arquivos .txt ou .json de roteiros."
+            "A pasta foi encontrada, mas não há arquivos .txt ou .json de procedimentos."
           )
         ],
         source: {
@@ -620,7 +620,7 @@ async function loadProceduresFromGitHub(config) {
 
     logInfo(`Leitura do GitHub concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
     setLoadingState(false, "Leitura do GitHub concluída", candidateFiles.length, candidateFiles.length);
-    setStatusDetail(`${aggregate.entries.length} roteiro(s) válidos carregados do GitHub.`);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados do GitHub.`);
 
     if (!aggregate.entries.length) {
       return {
@@ -632,7 +632,7 @@ async function loadProceduresFromGitHub(config) {
             "warning",
             "github",
             folderPath,
-            "Os arquivos do GitHub foram lidos, mas nenhum roteiro válido foi encontrado. O sistema tentará o manifest local."
+            "Os arquivos do GitHub foram lidos, mas nenhum procedimento válido foi encontrado. O sistema tentará o manifest local."
           )
         ],
         source: {
@@ -720,7 +720,7 @@ async function loadProceduresFromManifest(config, previousIssues) {
             "warning",
             "manifest",
             manifestPath,
-            "O manifest local foi lido, mas não contém arquivos de roteiros válidos."
+            "O manifest local foi lido, mas não contém arquivos de procedimentos válidos."
           )
         ],
         source: {
@@ -746,7 +746,7 @@ async function loadProceduresFromManifest(config, previousIssues) {
 
     logInfo(`Leitura do manifest concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
     setLoadingState(false, "Leitura do manifest concluída", files.length, files.length);
-    setStatusDetail(`${aggregate.entries.length} roteiro(s) válidos carregados do manifest local.`);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados do manifest local.`);
 
     if (!aggregate.entries.length) {
       return {
@@ -759,7 +759,7 @@ async function loadProceduresFromManifest(config, previousIssues) {
             "warning",
             "manifest",
             manifestPath,
-            "O manifest foi lido, mas nenhum roteiro válido foi encontrado. O sistema tentará os exemplos locais."
+            "O manifest foi lido, mas nenhum procedimento válido foi encontrado. O sistema tentará os exemplos locais."
           )
         ],
         source: {
@@ -838,7 +838,7 @@ async function loadProceduresFromLocalExamples(config, previousIssues) {
     const aggregate = await loadProcedureFilesSequentially(files, "Lendo exemplos locais");
     logInfo(`Leitura dos exemplos locais concluída com ${aggregate.entries.length} procedimento(s) válido(s).`);
     setLoadingState(false, "Leitura dos exemplos concluída", files.length, files.length);
-    setStatusDetail(`${aggregate.entries.length} roteiro(s) válidos carregados dos exemplos locais.`);
+    setStatusDetail(`${aggregate.entries.length} procedimento(s) válidos carregados dos exemplos locais.`);
 
     if (!aggregate.entries.length) {
       return {
@@ -850,7 +850,7 @@ async function loadProceduresFromLocalExamples(config, previousIssues) {
             "error",
             "example",
             "Exemplos locais",
-            "Os exemplos locais foram encontrados, mas nenhum roteiro válido pôde ser carregado."
+            "Os exemplos locais foram encontrados, mas nenhum procedimento válido pôde ser carregado."
           ),
           ...aggregate.issues
         ],
@@ -1312,7 +1312,7 @@ function rebuildCatalog() {
   logInfo(`Catálogo reconstruído. ${appState.procedures.length} procedimento(s) final(is) disponível(is).`);
 
   if (!appState.procedures.length) {
-    setStatusDetail("Nenhum roteiro encontrado, importe arquivo local.");
+    setStatusDetail("Nenhum procedimento encontrado, importe arquivo local.");
   }
 }
 
