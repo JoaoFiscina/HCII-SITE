@@ -3,46 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atlas Cirúrgico de Bolso</title>
-    <link rel="icon" type="image/jpeg" href="assets/bisturi.jpg" />
+    <title>Guia de Cirurgia de Bolso da LACIR</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%235A141A'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='white'%3ELACIR%3C/text%3E%3C/svg%3E"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="topbar">
-        <div class="topbar-copy">
-          <p class="eyebrow">Estudo estruturado de habilidades cirúrgicas</p>
-          <h1>Atlas Cirúrgico de Bolso</h1>
-          <p class="topbar-description">
-            Leitura automática de roteiros salvos no próprio repositório, pronta para crescer no
-            GitHub Pages sem mexer no código principal.
-          </p>
+        <div class="topbar-main">
+          <div class="lacir-logo-frame" data-logo-src="assets/lacir-logo.png">
+            <img
+              alt="Logo da LACIR"
+              class="lacir-logo"
+              width="72"
+              height="72"
+              loading="eager"
+              decoding="async"
+              hidden
+            />
+            <span class="lacir-logo-fallback" role="img" aria-label="Logo da LACIR">
+              LACIR
+            </span>
+          </div>
+
+          <div class="topbar-copy">
+            <p class="eyebrow">Liga Acadêmica de Cirurgia - LACIR</p>
+            <h1>Guia de Cirurgia de Bolso da LACIR</h1>
+            <p class="topbar-description">
+              Roteiros práticos, checklists e sequências de estudo para procedimentos cirúrgicos.
+            </p>
+          </div>
         </div>
 
-        <div class="topbar-toolbar">
-          <img
-            src="assets/bisturi.jpg"
-            alt="Bisturi"
-            class="topbar-bisturi"
-            width="56"
-            height="56"
-            loading="lazy"
-            decoding="async"
-          />
-
-          <div class="topbar-actions">
-            <button type="button" id="clearSavedProgressButton" class="button button-ghost">
-              Limpar progresso
-            </button>
-          </div>
+        <div class="topbar-actions">
+          <button type="button" id="clearSavedProgressButton" class="button button-ghost">
+            Limpar progresso
+          </button>
         </div>
       </header>
 
       <section class="panel status-panel">
         <div class="status-intro">
           <div>
-            <p class="eyebrow">Sincronização dos dados</p>
-            <h2>Carregamento automático do repositório</h2>
+            <p class="eyebrow">Biblioteca de roteiros</p>
+            <h2>Dados e importação</h2>
           </div>
 
           <p id="statusMessage" class="status-message" aria-live="polite">
@@ -55,13 +63,13 @@
 
           <div class="status-grid">
             <article class="status-card">
-            <span class="status-label">Procedimentos únicos</span>
+            <span class="status-label">Roteiros únicos</span>
             <strong id="loadedProcedureCount">0</strong>
             <small id="statusProcedureBreakdown">Aguardando carregamento</small>
           </article>
 
             <article class="status-card">
-            <span class="status-label">Fonte dos dados</span>
+            <span class="status-label">Fonte dos roteiros</span>
             <strong id="dataSourceLabel">Carregando</strong>
             <small id="configSummary">Configuração ainda não lida.</small>
           </article>
@@ -87,7 +95,7 @@
 
         <div class="status-actions">
           <button type="button" id="reloadProceduresButton" class="button button-primary">
-            Recarregar procedimentos
+            Recarregar roteiros
           </button>
           <button type="button" id="importSingleButton" class="button button-secondary">
             Importar arquivo local
@@ -121,7 +129,7 @@
             <div class="panel-heading">
               <div>
                 <p class="eyebrow">Seleção</p>
-                <h2>Procedimentos</h2>
+                <h2>Roteiros</h2>
               </div>
 
               <span id="procedureCountBadge" class="badge neutral-badge">0 / 0</span>
@@ -137,7 +145,7 @@
               <input
                 type="search"
                 id="searchInput"
-                placeholder="Ex.: sonda vesical, enxertia, sutura..."
+                placeholder="Ex.: punção lombar, paracentese, sutura..."
                 autocomplete="off"
               />
             </label>
@@ -153,7 +161,7 @@
               <label class="field quick-picker-field">
                 <span>Seleção rápida</span>
                 <select id="quickProcedureSelect">
-                  <option value="">Escolha um procedimento...</option>
+                  <option value="">Escolha um roteiro...</option>
                 </select>
               </label>
 
@@ -166,7 +174,7 @@
               </button>
 
               <p id="quickProcedureHint" class="quick-picker-hint">
-                O sorteio usa os procedimentos visíveis com os filtros atuais.
+                O sorteio usa os roteiros visíveis com os filtros atuais.
               </p>
             </div>
 
@@ -194,11 +202,25 @@
         <main class="content">
           <section id="emptyState" class="empty-state">
             <div class="empty-state-card">
-              <p class="eyebrow">Leitura automática ativa</p>
+              <div class="empty-logo-mark" data-logo-src="assets/lacir-logo.png">
+                <img
+                  alt="Logo da LACIR"
+                  class="lacir-logo"
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                  decoding="async"
+                  hidden
+                />
+                <span class="lacir-logo-fallback" role="img" aria-label="Logo da LACIR">
+                  LACIR
+                </span>
+              </div>
+              <p class="eyebrow">Cirurgia de Bolso LACIR</p>
               <h2 id="emptyStateTitle">Escolha um procedimento para começar</h2>
               <p id="emptyStateText">
-                O site carrega os arquivos da pasta <strong>/procedimentos</strong>, normaliza tudo
-                em uma lista única e mantém seus dois modos de estudo para treino prático e mental.
+                Use a lista lateral para selecionar um roteiro, revisar as etapas no modo estudo ou
+                treinar a sequência passo a passo.
               </p>
             </div>
           </section>

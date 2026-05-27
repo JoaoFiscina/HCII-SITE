@@ -2,7 +2,7 @@ const STORAGE_KEY = "atlas-cirurgico-de-bolso:v2";
 const CONFIG_PATH = "config/app-config.json";
 const MANIFEST_FILENAME = "procedimentos-manifest.json";
 const SUPPORTED_EXTENSIONS = [".json", ".txt"];
-const DEBUG_PREFIX = "[Atlas]";
+const DEBUG_PREFIX = "[Guia LACIR]";
 const DEFAULT_APP_CONFIG = {
   github: {
     owner: "JoaoFiscina",
@@ -123,6 +123,7 @@ async function initializeApp() {
   try {
     restoreState();
     bindEvents();
+    initializeLogoMarks();
     render();
     await bootstrapCatalog();
   } catch (error) {
@@ -158,6 +159,50 @@ function logError(message, details) {
   }
 
   console.error(`${DEBUG_PREFIX} ${message}`, details);
+}
+
+function initializeLogoMarks() {
+  document.querySelectorAll("[data-logo-src]").forEach((logoMark) => {
+    const image = logoMark.querySelector("img.lacir-logo");
+    const fallback = logoMark.querySelector(".lacir-logo-fallback");
+    const logoSrc = logoMark.dataset.logoSrc;
+
+    if (!image || !fallback || !logoSrc) {
+      return;
+    }
+
+    fallback.hidden = false;
+    image.hidden = true;
+
+    fetch(logoSrc, { method: "HEAD", cache: "no-store" })
+      .then((response) => {
+        if (!response.ok) {
+          return;
+        }
+
+        image.addEventListener(
+          "load",
+          () => {
+            image.hidden = false;
+            fallback.hidden = true;
+          },
+          { once: true }
+        );
+        image.addEventListener(
+          "error",
+          () => {
+            image.hidden = true;
+            fallback.hidden = false;
+          },
+          { once: true }
+        );
+        image.src = logoSrc;
+      })
+      .catch(() => {
+        image.hidden = true;
+        fallback.hidden = false;
+      });
+  });
 }
 
 function bindEvents() {
@@ -219,7 +264,7 @@ function bindEvents() {
 
   elements.clearSavedProgressButton.addEventListener("click", () => {
     const confirmed = window.confirm(
-      "Limpar o progresso salvo removerá checklist, sequência, filtros persistidos e o último procedimento aberto. Deseja continuar?"
+      "Limpar o progresso salvo removerá checklist, sequência, filtros persistidos e o último roteiro aberto. Deseja continuar?"
     );
 
     if (!confirmed) {
@@ -1411,16 +1456,16 @@ function renderQuickProcedurePicker() {
   elements.quickProcedureSelect.disabled = allProcedures.length === 0;
   elements.randomProcedureButton.disabled = filteredProcedures.length === 0;
   elements.randomProcedureButton.title = filteredProcedures.length
-    ? "Seleciona aleatoriamente um procedimento visível com os filtros atuais."
-    : "Nenhum procedimento visível para sorteio com os filtros atuais.";
+    ? "Seleciona aleatoriamente um roteiro visível com os filtros atuais."
+    : "Nenhum roteiro visível para sorteio com os filtros atuais.";
   elements.quickProcedureHint.textContent = filteredProcedures.length
-    ? `${filteredProcedures.length} procedimento(s) disponíveis para sorteio com os filtros atuais.`
-    : "Nenhum procedimento visível com os filtros atuais. Ajuste a busca ou a categoria para sortear.";
+    ? `${filteredProcedures.length} roteiro(s) disponíveis para sorteio com os filtros atuais.`
+    : "Nenhum roteiro visível com os filtros atuais. Ajuste a busca ou a categoria para sortear.";
 
   if (!allProcedures.length) {
-    elements.quickProcedureHint.textContent = "Nenhum procedimento carregado ainda.";
+    elements.quickProcedureHint.textContent = "Nenhum roteiro carregado ainda.";
     elements.quickProcedureSelect.innerHTML = `
-      <option value="">Nenhum procedimento carregado</option>
+      <option value="">Nenhum roteiro carregado</option>
     `;
     return;
   }
@@ -1428,7 +1473,7 @@ function renderQuickProcedurePicker() {
   const selectedProcedureExists = allProcedures.some((procedure) => procedure.id === appState.selectedProcedureId);
 
   elements.quickProcedureSelect.innerHTML = `
-    <option value="">Escolha um procedimento...</option>
+    <option value="">Escolha um roteiro...</option>
     ${allProcedures
       .map(
         (procedure) => `
@@ -1450,7 +1495,7 @@ function renderStatusPanel() {
   elements.statusProcedureBreakdown.textContent = buildProcedureBreakdownText(sourceCounts);
   elements.dataSourceLabel.textContent = buildSourceLabel();
   elements.configSummary.textContent = appState.config
-    ? `${buildRepositoryLabel(appState.config)} • /${appState.config.github.proceduresPath}`
+    ? `Pasta configurada: /${appState.config.github.proceduresPath}`
     : "Configuração não carregada.";
   elements.fileLoadSummary.textContent = `${appState.primarySource.filesProcessed || 0} / ${appState.primarySource.fileCount || 0}`;
   elements.issueSummary.textContent = issueCount
@@ -1504,7 +1549,7 @@ function renderProcedureList() {
   if (!appState.procedures.length) {
     elements.procedureList.innerHTML = `
       <div class="empty-procedures">
-        Nenhum procedimento válido carregado ainda. Verifique o painel de erros ou importe um arquivo local para pré-visualizar.
+        Nenhum roteiro válido carregado ainda. Verifique o painel de erros ou importe um arquivo local para pré-visualizar.
       </div>
     `;
     return;
@@ -1513,7 +1558,7 @@ function renderProcedureList() {
   if (!procedures.length) {
     elements.procedureList.innerHTML = `
       <div class="empty-procedures">
-        Nenhum procedimento corresponde aos filtros atuais.
+        Nenhum roteiro corresponde aos filtros atuais.
       </div>
     `;
     return;
@@ -1571,7 +1616,7 @@ function renderSelectedProcedure() {
 function renderEmptyState(selectedProcedure) {
   if (!appState.procedures.length) {
     elements.emptyState.classList.remove("hidden");
-    elements.emptyStateTitle.textContent = "Nenhum procedimento válido carregado";
+    elements.emptyStateTitle.textContent = "Nenhum roteiro válido carregado";
     elements.emptyStateText.textContent =
       "Verifique app-config.json, a pasta /procedimentos, o manifest local ou use a importação local temporária para testar novos roteiros.";
     return;
@@ -1581,7 +1626,7 @@ function renderEmptyState(selectedProcedure) {
     elements.emptyState.classList.remove("hidden");
     elements.emptyStateTitle.textContent = "Escolha um procedimento para começar";
     elements.emptyStateText.textContent =
-      "Os roteiros já foram carregados. Selecione um item na lista para estudar no modo completo ou revisar a sequência passo a passo.";
+      "Use a lista lateral para selecionar um roteiro, revisar as etapas no modo estudo ou treinar a sequência passo a passo.";
     return;
   }
 
@@ -2057,7 +2102,7 @@ function buildProcedureBreakdownText(sourceCounts) {
     parts.push(`Exemplos: ${sourceCounts.example}`);
   }
 
-  return parts.length ? parts.join(" • ") : "Nenhum procedimento final carregado.";
+  return parts.length ? parts.join(" • ") : "Nenhum roteiro final carregado.";
 }
 
 function buildSourceLabel() {
@@ -2088,7 +2133,7 @@ function buildStatusMessage(totalProcedures, localCount) {
   }
 
   if (!totalProcedures) {
-    return "Nenhum procedimento válido disponível no momento. Confira o painel de erros, o manifest ou importe arquivos locais para teste.";
+    return "Nenhum roteiro válido disponível no momento. Confira o painel de erros, o manifest ou importe arquivos locais para teste.";
   }
 
   if (appState.primarySource.kind === "manifest") {
@@ -2099,8 +2144,8 @@ function buildStatusMessage(totalProcedures, localCount) {
 
   if (appState.primarySource.kind === "github") {
     return localCount
-      ? "Procedimentos lidos do GitHub e enriquecidos com arquivos locais temporários para pré-visualização."
-      : "Procedimentos lidos automaticamente da pasta configurada no repositório GitHub.";
+      ? "Roteiros lidos do GitHub e enriquecidos com arquivos locais temporários para pré-visualização."
+      : "Roteiros lidos automaticamente da pasta configurada no repositório GitHub.";
   }
 
   if (appState.primarySource.kind === "example") {
