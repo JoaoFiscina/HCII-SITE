@@ -229,7 +229,7 @@ summary:focus-visible,
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(300px, 340px) minmax(0, 1fr);
+  grid-template-columns: minmax(330px, 380px) minmax(0, 1fr);
   gap: 22px;
   align-items: start;
 }
@@ -431,6 +431,10 @@ summary:focus-visible,
   background: #ffffff;
   color: var(--text);
   transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.field input::placeholder {
+  font-size: 0.9rem;
 }
 
 .field input:focus,
