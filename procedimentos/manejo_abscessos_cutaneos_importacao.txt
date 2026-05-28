@@ -1,0 +1,263 @@
+{
+  "procedimentos": [
+    {
+      "id": "manejo_abscessos_cutaneos",
+      "nome": "Manejo de abscessos cutâneos",
+      "categoria": "Habilidades Cirúrgicas II / Lesões de pele e subcutâneo",
+      "descricao_curta": "Roteiro prático de manejo de abscessos cutâneos, com avaliação clínica e ultrassonográfica quando indicada, critérios de sala cirúrgica, anestesia, incisão e drenagem, cultura, quebra de loculações com pinça hemostática, irrigação copiosa, curativo, antibiótico, tétano e reavaliação.",
+      "indicacoes": [
+        "Maioria dos pacientes com abscesso cutâneo.",
+        "Abscessos maiores que 5 mm.",
+        "Abscessos palpáveis e com flutuação.",
+        "Abscessos que não respondem ao tratamento conservador.",
+        "Coleção de pus localizada dentro da derme ou espaço subcutâneo com dor, eritema, endurecimento, flutuação ou pústula."
+      ],
+      "contraindicacoes": [
+        "Não há contraindicações absolutas descritas para drenagem de abscesso cutâneo.",
+        "Abscessos perirretais, em mama, mão, triângulo central da face, região cervical anterior/lateral por cistos congênitos ou adjacentes a nervos/vacos importantes devem ser avaliados para drenagem em sala cirúrgica.",
+        "Abscessos grandes, profundos, múltiplos, recorrentes, interconectados ou associados a celulite extensa podem exigir manejo em sala operatória.",
+        "Pacientes com distúrbios de coagulação devem ter a condição de base corrigida antes do procedimento, quando possível.",
+        "Pacientes com risco de via aérea, dificuldade ventilatória ou risco de aspiração exigem cuidado especial se houver necessidade de sedação."
+      ],
+      "preparo": [
+        "Confirmar diagnóstico clínico de abscesso cutâneo.",
+        "Avaliar tamanho, profundidade, flutuação, extensão, celulite associada, dor, localização e fatores de risco.",
+        "Utilizar ultrassonografia à beira do leito em casos duvidosos, crianças ou quando houver dúvida entre celulite e abscesso.",
+        "Identificar se há indicação de sala cirúrgica ou especialista.",
+        "Avaliar necessidade de profilaxia para endocardite bacteriana.",
+        "Avaliar necessidade de antibioticoterapia, cultura e profilaxia antitetânica.",
+        "Separar material para anestesia, incisão, drenagem, cultura, quebra de loculações, irrigação, curativo e reavaliação."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Clorexidina, PVPI, pinça de Foerster e campo estéril.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, respeitando dose máxima do serviço.",
+        "Seringa de 5 mL e agulhas rosa, marrom, verde ou preta.",
+        "Bisturi com lâmina nº 11 ou 15.",
+        "Pinça hemostática curva.",
+        "Pinças de dissecção traumática e atraumática.",
+        "Tesoura Mayo reta e tesoura Metzenbaum curva.",
+        "Soro fisiológico.",
+        "Seringa de 30 a 60 mL sem agulha e cateter IV calibre 19G para irrigação.",
+        "Cuba estéril.",
+        "Gaze, Micropore® e swab para cultura."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que abscesso cutâneo é infecção cutânea com coleção de pus localizada na derme ou tecido subcutâneo.",
+        "Lembrar que Staphylococcus aureus é causa frequente, mas regiões orais, perirretais e vulvovaginais podem ter flora polimicrobiana.",
+        "Em abscessos pequenos com drenagem espontânea, pode ser considerada conduta expectante se a drenagem for adequada e o quadro leve.",
+        "Abscesso inicial sem ponto de flutuação pode ser manejado conservadoramente com compressas mornas, analgesia e reavaliação.",
+        "O manejo pode envolver drenagem, antibiótico se indicado e cultura se indicada."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar diagnóstico e avaliar gravidade",
+          "descricao": "Avaliar nódulo eritematoso, doloroso, endurecido, flutuante, com possível pústula e borda eritematosa, definindo extensão, profundidade e gravidade.",
+          "critico": true,
+          "alerta": "Abscessos em locais de alto risco ou com celulite extensa, sinais sistêmicos ou profundidade importante podem exigir sala cirúrgica ou especialista.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Separar material de paramentação, antissepsia, anestesia, incisão, drenagem, irrigação, cultura, curativo e descarte.",
+          "critico": true,
+          "alerta": "A drenagem envolve secreção purulenta; proteção ocular e técnica asséptica são importantes.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar luvas estéreis, máscara, gorro e óculos."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Separar clorexidina, PVPI, Foerster e campo."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Separar lidocaína, seringa e agulhas."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Separar bisturi, hemostática, pinças, tesouras, soro e seringa de irrigação."
+            },
+            {
+              "rotulo": "2e",
+              "texto": "Separar gaze, Micropore® e swab."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se, tranquilizar e explicar o procedimento.",
+          "critico": true,
+          "alerta": "A drenagem e exploração podem ser dolorosas e podem exigir anestesia adicional.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Avaliar profilaxias e antibiótico",
+          "descricao": "Avaliar profilaxia para endocardite, antibioticoterapia e profilaxia antitetânica conforme risco do paciente, localização, extensão, sinais sistêmicos e comorbidades.",
+          "critico": true,
+          "alerta": "Antibiótico não substitui drenagem adequada quando há coleção.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Considerar antibiótico em abscesso ≥2 cm, múltiplas lesões, celulite extensa, extremos de idade ou imunossupressão."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Considerar antibiótico em febre, hipotensão, taquicardia sustentada, resposta inadequada à drenagem ou dispositivo médico interno."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Avaliar profilaxia para endocardite em pacientes de alto risco."
+            },
+            {
+              "rotulo": "4d",
+              "texto": "Avaliar profilaxia antitetânica."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Avaliar local e extensão",
+          "descricao": "Avaliar local, extensão e profundidade. Usar ultrassonografia à beira do leito quando houver dúvida clínica.",
+          "critico": true,
+          "alerta": "O maior benefício da USG foi observado em crianças e pacientes com achados clínicos duvidosos.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Antissepsia e campo estéril",
+          "descricao": "Realizar antissepsia e assepsia local e delimitar campo estéril.",
+          "critico": true,
+          "alerta": "Evitar contaminação adicional e proteger áreas adjacentes.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Anestesiar",
+          "descricao": "Realizar anestesia local. Em dor intensa ou irritabilidade, considerar bloqueio regional e sedação em ambiente adequado.",
+          "critico": true,
+          "alerta": "A acidez local pode reduzir eficácia da anestesia; a quebra de loculações pode exigir anestesia adicional.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Realizar incisão",
+          "descricao": "Usar lâmina nº 11 ou 15 para incisão linear simples, respeitando linhas de tensão, com até 2 cm através do abscesso.",
+          "critico": true,
+          "alerta": "Em áreas cosméticas ou de tensão, incisão em facada pode reduzir lesão tecidual e cicatriz.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Coletar cultura se indicada",
+          "descricao": "Coletar conteúdo purulento com swab quando houver indicação.",
+          "critico": true,
+          "alerta": "Cultura é útil em infecção grave, sinais sistêmicos, abscessos múltiplos/recorrentes, falha terapêutica, extremos de idade, comorbidades ou exposições especiais.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Drenar e quebrar loculações",
+          "descricao": "Drenar com dígito-pressão usando gazes bilateralmente e explorar a cavidade com pinça hemostática curva para romper loculações e retirar corpos estranhos.",
+          "critico": true,
+          "alerta": "Não é recomendada exploração digital nem com bisturi; a exploração é dolorosa e pode precisar de mais anestesia.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "10a",
+              "texto": "Comprimir as bordas com gaze para exteriorizar pus."
+            },
+            {
+              "rotulo": "10b",
+              "texto": "Introduzir hemostática curva controladamente."
+            },
+            {
+              "rotulo": "10c",
+              "texto": "Abrir delicadamente a pinça para desfazer loculações."
+            },
+            {
+              "rotulo": "10d",
+              "texto": "Retirar corpos estranhos se encontrados."
+            },
+            {
+              "rotulo": "10e",
+              "texto": "Evitar exploração digital ou com bisturi."
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "titulo": "Irrigar copiosamente",
+          "descricao": "Irrigar a cavidade com soro fisiológico usando seringa de 30–60 mL sem agulha e cateter IV 19G até remover secreção purulenta visível.",
+          "critico": true,
+          "alerta": "Irrigação insuficiente favorece persistência ou recorrência.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Deixar aberto para cicatrização secundária",
+          "descricao": "Deixar o abscesso aberto para cicatrização por segunda intenção, salvo orientação específica diferente do serviço.",
+          "critico": true,
+          "alerta": "Fechamento primário inadequado pode aprisionar infecção residual.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Antibiótico e tétano se indicados",
+          "descricao": "Iniciar antibioticoterapia e profilaxia antitetânica quando houver indicação clínica.",
+          "critico": true,
+          "alerta": "Cobertura empírica deve considerar S. aureus; após cultura, direcionar conforme sensibilidade.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Curativo e reavaliação",
+          "descricao": "Colocar curativo oclusivo com gaze seca e reavaliar a ferida em 24 a 48 horas.",
+          "critico": true,
+          "alerta": "Enquanto houver drenagem purulenta encharcando gaze, repetir drenagem e trocar curativo a cada 24 a 48 horas.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Cuidados após cessar drenagem",
+          "descricao": "Se a drenagem cessar, retirar o curativo, orientar molhar a ferida com água morna e sabão até cicatrização e retornar em 7 a 10 dias.",
+          "critico": true,
+          "alerta": "O paciente deve retornar precocemente se houver sinais de alarme.",
+          "imagem": ""
+        },
+        {
+          "numero": 16,
+          "titulo": "Orientar sinais de alarme",
+          "descricao": "Orientar retorno precoce se houver febre, calafrios, novo acúmulo de pus, piora da dor, eritema, edema ou listras vermelhas.",
+          "critico": true,
+          "alerta": "Sinais sistêmicos ou progressão local podem indicar falha terapêutica ou complicação.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "Abscesso cutâneo é coleção de pus na derme ou tecido subcutâneo, frequentemente causada por Staphylococcus aureus.",
+        "Abscessos em região oral, perirretal e vulvovaginal podem ter etiologia polimicrobiana.",
+        "Complicações incluem reexpansão local, osteomielite, tenossinovite, tromboflebite séptica, fasciíte necrosante, fistulização, danos a estruturas adjacentes, endocardite e bacteremia.",
+        "Antibiótico é reservado para situações clínicas específicas, como abscesso ≥2 cm, múltiplas lesões, celulite extensa, extremos de idade, imunossupressão, toxemia, resposta inadequada ou dispositivos internos."
+      ],
+      "referencias": [
+        "Squire BT, Fox JC, Anderson C. ABSCESS. Acad Emerg Med. 2005;12(7):601.",
+        "Downey KA, Becker T, Kaplan SL, Wolfson AB. Technique of incision and drainage for skin abscess. UpToDate. 2019.",
+        "Blaivas M, Adhikari S. J Ultrasound Med. 2011;30(10):1425.",
+        "Butler K. Incision and drainage. Clinical Procedures in Emergency Medicine. 5th ed. 2010.",
+        "Daly L, Durani Y. Incision and drainage of a cutaneous abscess. 2008.",
+        "Korownyk C, Allan GM. Evidence-based approach to abscess management. Can Fam Physician. 2007.",
+        "Fitch MT et al. Abscess incision and drainage. N Engl J Med. 2007;357:e20.",
+        "A1B3 - G - Manejo de Abscessos Cutâneos; A1B3 - R - Manejo de Abscessos Cutâneos."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

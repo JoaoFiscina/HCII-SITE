@@ -1,0 +1,244 @@
+{
+  "procedimentos": [
+    {
+      "id": "exerese_lipoma",
+      "nome": "Exérese de lipoma",
+      "categoria": "Habilidades Cirúrgicas II / Lesões de pele e subcutâneo",
+      "descricao_curta": "Roteiro prático de exérese de lipoma, com avaliação de sinais de malignidade, marcação cutânea, anestesia local, incisão respeitando linhas de força, dissecção, enucleação, inspeção da cavidade, hemostasia, fechamento, curativo e retirada de pontos conforme localização.",
+      "indicacoes": [
+        "Questões estéticas.",
+        "Tumores sintomáticos, com desconforto ou dor.",
+        "Compressão de estruturas que gere quadro clínico.",
+        "Alívio da ansiedade quanto ao diagnóstico.",
+        "Lipoma clinicamente benigno, móvel, macio, encapsulado, de crescimento lento e sem sinais suspeitos de malignidade."
+      ],
+      "contraindicacoes": [
+        "Distúrbios graves de coagulação, como contraindicação relativa.",
+        "Tumores com sinais clínicos sugestivos de malignidade.",
+        "Lesão maior que 5 cm sem avaliação adequada.",
+        "Calcificação associada.",
+        "Lesão pouco móvel.",
+        "Aderência ou invasão de planos profundos, como fáscias.",
+        "Consistência endurecida.",
+        "Crescimento rápido.",
+        "Local de alto risco, como pernas, glúteos ou ombros, quando houver suspeita de malignidade ou complexidade técnica."
+      ],
+      "preparo": [
+        "Confirmar que a lesão é compatível com lipoma benigno.",
+        "Avaliar sinais de malignidade: tamanho >5 cm, crescimento rápido, consistência endurecida, baixa mobilidade, aderência profunda ou localização de risco.",
+        "Na dúvida diagnóstica, solicitar ultrassonografia com Doppler, tomografia ou ressonância conforme o caso e encaminhar ao especialista.",
+        "Palpar o tumor para determinar extensão, profundidade, mobilidade e relação com planos profundos.",
+        "Traçar o contorno do nódulo na pele com caneta marcadora cutânea.",
+        "Planejar incisão respeitando linhas de força da pele.",
+        "Preparar recipiente para coleta e encaminhamento do material para análise histológica."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Clorexidina ou PVPI, campo estéril e pinça de Foerster.",
+        "Seringa de 5 ou 10 mL, agulhas rosa, marrom, verde ou preta e lidocaína 1% ou 2% sem vasoconstrictor.",
+        "Caneta marcadora cutânea e afastadores de Farabeuf.",
+        "Bisturi com lâmina nº 15.",
+        "Pinça hemostática curva, pinça de Allis e pinças de dissecção traumática/atraumática.",
+        "Tesoura Metzenbaum curva, soro fisiológico, porta-agulha e fios de sutura.",
+        "Nylon 4-0 e poliglactina 3-0 ou 4-0.",
+        "Tesoura Mayo reta, gaze, Micropore® e recipiente para coleta do lipoma."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que lipomas são tumores benignos de tecido adiposo envolvidos por cápsula translúcida fina e fibrosa.",
+        "Lembrar que geralmente são móveis, macios, compressíveis, encapsulados, de crescimento lento e assintomáticos.",
+        "Considerar exames de imagem quando houver dúvida diagnóstica ou suspeita de malignidade.",
+        "Entender que a exérese cirúrgica completa com cápsula é o método mais eficaz para evitar recidiva.",
+        "Retirar lipomas quando ainda menores tende a facilitar a excisão e reduzir invasividade."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e avaliar sinais de alerta",
+          "descricao": "Confirmar que a lesão tem características clínicas de lipoma benigno e avaliar sinais sugestivos de malignidade.",
+          "critico": true,
+          "alerta": "Lesões >5 cm, endurecidas, aderidas, pouco móveis, de crescimento rápido ou profundas devem ser avaliadas com imagem e/ou especialista antes da exérese ambulatorial.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Separar materiais de proteção, antissepsia, anestesia, marcação, incisão, dissecção, enucleação, hemostasia, sutura, curativo e coleta da peça.",
+          "critico": true,
+          "alerta": "A remoção completa exige material adequado para dissecção e hemostasia.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar paramentação e antissepsia."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Separar anestesia local e agulhas."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Separar caneta, Farabeuf, bisturi, pinças, Metzenbaum e hemostática."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Separar fios, porta-agulha, tesoura, gaze, Micropore® e recipiente."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Lavar as mãos e orientar o paciente",
+          "descricao": "Lavar as mãos, apresentar-se ao paciente, tranquilizá-lo e orientá-lo sobre o procedimento.",
+          "critico": true,
+          "alerta": "Explicar riscos de cicatriz, hematoma, seroma, infecção, recidiva e necessidade de análise histológica.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Palpar e marcar a lesão",
+          "descricao": "Palpar o tumor para determinar sua extensão e traçar o contorno do nódulo na pele com caneta marcadora cutânea.",
+          "critico": true,
+          "alerta": "A marcação ajuda a planejar a incisão e garantir remoção completa.",
+          "imagem": ""
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e campo estéril",
+          "descricao": "Realizar antissepsia e assepsia da região e delimitar o campo estéril.",
+          "critico": true,
+          "alerta": "Técnica asséptica reduz infecção cirúrgica.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Realizar anestesia local",
+          "descricao": "Fazer botão anestésico com agulha marrom e prosseguir com injeção de anestésico ao redor da lesão com agulha verde ou preta.",
+          "critico": true,
+          "alerta": "Evitar injetar dentro da massa; infiltrar ao redor da lesão para analgesia adequada sem distorcer excessivamente planos.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Incisar a pele",
+          "descricao": "Incisar respeitando as linhas de força. Usar incisão linear; em lipomas maiores, usar o centro do tumor como referência.",
+          "critico": true,
+          "alerta": "Incisão fusiforme com largura de cerca de um terço do diâmetro do lipoma costuma ser suficiente para remoção.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Dissecar ao redor do lipoma",
+          "descricao": "Realizar dissecção para baixo e em torno do topo do lipoma.",
+          "critico": true,
+          "alerta": "Atentar para não lesar estruturas abaixo do lipoma, como nervos, artérias e músculos.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Enuclear o lipoma",
+          "descricao": "Aplicar pressão para baixo e para fora para enuclear lipomas pequenos. Em lipomas maiores, usar pinça hemostática curva para alavanca.",
+          "critico": true,
+          "alerta": "Evitar tração excessiva e dissecção cega profunda.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "9a",
+              "texto": "Em lipomas pequenos, tentar enucleação por pressão controlada."
+            },
+            {
+              "rotulo": "9b",
+              "texto": "Em lipomas maiores, usar hemostática curva como alavanca."
+            },
+            {
+              "rotulo": "9c",
+              "texto": "Manter dissecção próxima à cápsula."
+            },
+            {
+              "rotulo": "9d",
+              "texto": "Remover a lesão com a cápsula para reduzir recidiva."
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Palpar a cavidade",
+          "descricao": "Realizar palpação digital da cavidade após retirada para garantir remoção completa.",
+          "critico": true,
+          "alerta": "Resíduo tumoral ou cápsula remanescente aumenta risco de recidiva.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Realizar hemostasia",
+          "descricao": "Realizar hemostasia durante e ao final do procedimento.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada favorece hematoma, seroma, infecção e deiscência.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Fechar planos e pele",
+          "descricao": "Em cavidades grandes, realizar pontos internos com fios absorvíveis, como poliglactina 3-0 ou 4-0. Fechar pele com sutura simples usando nylon 4-0.",
+          "critico": true,
+          "alerta": "Reduzir espaço morto ajuda a prevenir seroma e hematoma.",
+          "imagem": ""
+        },
+        {
+          "numero": 13,
+          "titulo": "Curativo e histologia",
+          "descricao": "Realizar curativo oclusivo e encaminhar o material para análise histológica.",
+          "critico": true,
+          "alerta": "Análise histológica confirma diagnóstico e exclui lesões atípicas.",
+          "imagem": ""
+        },
+        {
+          "numero": 14,
+          "titulo": "Orientar cuidados domiciliares",
+          "descricao": "Instruir o paciente a não manipular a sutura e, após 24 horas, lavar suavemente a área e secá-la adequadamente.",
+          "critico": true,
+          "alerta": "Recomendar elevação da ferida para diminuir edema, reduzir dor e acelerar cicatrização, quando possível.",
+          "imagem": ""
+        },
+        {
+          "numero": 15,
+          "titulo": "Programar retirada de pontos",
+          "descricao": "Programar retirada dos pontos conforme localização: face em 5 dias, tronco e extremidade superior em 7 dias, extremidade inferior em 8 a 10 dias.",
+          "critico": true,
+          "alerta": "Retirada precoce favorece deiscência; retirada tardia aumenta marcas de sutura.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "15a",
+              "texto": "Face: 5 dias."
+            },
+            {
+              "rotulo": "15b",
+              "texto": "Tronco e extremidade superior: 7 dias."
+            },
+            {
+              "rotulo": "15c",
+              "texto": "Extremidade inferior: 8 a 10 dias."
+            }
+          ]
+        }
+      ],
+      "observacoes_finais": [
+        "Lipomas são tumores benignos de tecido adiposo e geralmente não apresentam risco de transformação maligna.",
+        "USG pode ajudar a diferenciar lipoma de cisto epidermoide e avaliar lesões menores.",
+        "Complicações comuns incluem seroma, equimose, hematoma, hemorragia, infecção cirúrgica e recidiva.",
+        "Complicações raras incluem lesão de nervos e vasos, deformidade permanente, fibrose excessiva, lesão muscular, embolia gordurosa, periostite e osteomielite.",
+        "Vídeo do procedimento: https://www.youtube.com/watch?v=zkXrvoIwDlI"
+      ],
+      "referencias": [
+        "Mayeaux EJ. Guia Ilustrado de Procedimentos Médicos. Atheneu; 2011.",
+        "Ministério da Saúde. Caderno de Atenção Primária, n. 30. Brasília; 2011.",
+        "Hugh JM et al. Minor dermatologic procedures. UpToDate; 2019/2023.",
+        "Salam GA. Lipoma excision. Am Fam Physician. 2002;65(5):901-905.",
+        "M deLemos D. Closure of minor skin wounds with sutures. UpToDate; 2020.",
+        "Park JK et al. Minimal one-third incision and four-step excision method for lipoma. Biomed Res Int. 2021.",
+        "A1B2 - G - Exérese de lipoma; A1B2 - R - Exérese de lipoma."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}

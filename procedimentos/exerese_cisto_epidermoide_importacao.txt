@@ -1,0 +1,196 @@
+{
+  "procedimentos": [
+    {
+      "id": "exerese_cisto_epidermoide",
+      "nome": "Exérese de cisto epidermoide",
+      "categoria": "Habilidades Cirúrgicas II / Lesões de pele e subcutâneo",
+      "descricao_curta": "Roteiro prático de exérese de cisto epidermoide não inflamado e não infectado, com avaliação clínica, marcação, antissepsia, anestesia local, incisão, dissecção cuidadosa da cápsula, retirada completa, hemostasia, fechamento e curativo.",
+      "indicacoes": [
+        "Cisto epidermoide quiescente ou assintomático, sem infecção ou inflamação.",
+        "Cisto sintomático por desconforto, incômodo local, crescimento ou questão estética, desde que não infectado.",
+        "Lesão clinicamente compatível com cisto epidermoide, arredondada, lisa, de limites precisos, móvel em relação aos planos profundos e de crescimento lento.",
+        "Cisto previamente roto ou drenado que voltou a preencher com conteúdo típico, sem inflamação ou infecção ativa, permitindo exérese completa com cápsula."
+      ],
+      "contraindicacoes": [
+        "Cisto infectado, pois a cápsula costuma estar rota ou mal delimitada e a exérese aumenta risco de recidiva.",
+        "Celulite local.",
+        "Distúrbios graves de coagulação.",
+        "Cisto inflamado de forma importante, doloroso e eritematoso, devendo-se considerar tratamento sintomático e reavaliação.",
+        "Lesão atípica ou com dúvida diagnóstica relevante, devendo-se considerar avaliação especializada."
+      ],
+      "preparo": [
+        "Confirmar se a lesão é compatível com cisto epidermoide e se está quiescente.",
+        "Avaliar sinais de infecção: eritema importante, dor, calor local, flutuação, saída de pus, celulite adjacente ou toxemia.",
+        "Se houver cisto infectado, não realizar exérese definitiva; priorizar drenagem e antibioticoterapia se houver toxemia.",
+        "Identificar ponto central, quando presente, pois pode representar o orifício pilossebáceo ocluído.",
+        "Planejar incisão que permita retirada completa da cápsula, evitando ruptura.",
+        "Orientar o paciente sobre cicatriz, infecção, hematoma, seroma, lesão de estruturas adjacentes e recidiva."
+      ],
+      "materiais": [
+        "Luvas estéreis, máscara, gorro e óculos de proteção.",
+        "Clorexidina ou PVPI, campo estéril e pinça de Foerster.",
+        "Lidocaína 1% ou 2% sem vasoconstrictor, seringa e agulhas para botão anestésico e infiltração por planos.",
+        "Caneta marcadora cutânea.",
+        "Bisturi com lâmina nº 15 ou lâmina adequada para pequena incisão.",
+        "Pinças de dissecção traumática e atraumática.",
+        "Pinça hemostática curva e tesoura Metzenbaum curva.",
+        "Soro fisiológico, se necessário para irrigação.",
+        "Porta-agulha, fios de sutura e tesoura Mayo.",
+        "Gaze, Micropore® e recipiente para envio da peça quando indicado."
+      ],
+      "acoes_iniciais": [
+        "Reconhecer que cistos epidermoides são lesões benignas originadas da proliferação de células epidérmicas produtoras de queratina no interior da derme.",
+        "Lembrar que podem conter queratina, células epidérmicas e resíduos lipídicos.",
+        "Procurar ponto central visível, que pode corresponder ao orifício pilossebáceo ocluído.",
+        "Diferenciar de lipoma, cisto dermoide, abscesso, cisto ganglionar, pilomatricoma, esteatocistoma múltiplo e cistos pilares/triquilemais.",
+        "Suspeitar de Síndrome de Gardner diante de múltiplas lesões, especialmente em extremidades.",
+        "O objetivo cirúrgico é remover o cisto com sua cápsula íntegra para reduzir recidiva."
+      ],
+      "passos": [
+        {
+          "numero": 1,
+          "titulo": "Confirmar indicação e excluir infecção ativa",
+          "descricao": "Avaliar se o cisto está quiescente, sem infecção, inflamação intensa, celulite local ou drenagem purulenta.",
+          "critico": true,
+          "alerta": "Cisto infectado não deve ser excisado como cirurgia definitiva; a conduta é drenagem e controle da infecção.",
+          "imagem": ""
+        },
+        {
+          "numero": 2,
+          "titulo": "Arrumar a sala e separar os materiais",
+          "descricao": "Separar materiais de proteção, antissepsia, anestesia local, marcação, incisão, dissecção, hemostasia, sutura, curativo e recipiente para peça.",
+          "critico": true,
+          "alerta": "A retirada incompleta da cápsula aumenta risco de recidiva.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "2a",
+              "texto": "Separar paramentação e antissepsia."
+            },
+            {
+              "rotulo": "2b",
+              "texto": "Separar anestésico, seringa e agulhas."
+            },
+            {
+              "rotulo": "2c",
+              "texto": "Separar bisturi, pinças, tesoura Metzenbaum, hemostática, porta-agulha e fios."
+            },
+            {
+              "rotulo": "2d",
+              "texto": "Separar gaze, Micropore® e recipiente para peça."
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "Orientar o paciente",
+          "descricao": "Explicar procedimento, objetivo de retirar a cápsula, riscos principais e cuidados pós-procedimento.",
+          "critico": true,
+          "alerta": "Ruptura da cápsula durante a dissecção pode dificultar retirada completa e aumentar recidiva.",
+          "imagem": ""
+        },
+        {
+          "numero": 4,
+          "titulo": "Palpar e marcar a lesão",
+          "descricao": "Palpar o cisto para definir limites, mobilidade e ponto central. Marcar contorno e planejar incisão.",
+          "critico": true,
+          "alerta": "Lesões pouco móveis, endurecidas, profundas ou atípicas devem levantar dúvida diagnóstica.",
+          "imagem": "",
+          "subacoes": [
+            {
+              "rotulo": "4a",
+              "texto": "Delimitar o contorno."
+            },
+            {
+              "rotulo": "4b",
+              "texto": "Identificar ponto central, se presente."
+            },
+            {
+              "rotulo": "4c",
+              "texto": "Planejar incisão respeitando linhas de tensão."
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "titulo": "Realizar antissepsia e campo estéril",
+          "descricao": "Realizar antissepsia ampla da região e colocar campo estéril.",
+          "critico": true,
+          "alerta": "Técnica asséptica reduz infecção do sítio cirúrgico.",
+          "imagem": ""
+        },
+        {
+          "numero": 6,
+          "titulo": "Anestesiar localmente",
+          "descricao": "Fazer botão anestésico e infiltrar anestésico ao redor da lesão, evitando injeção dentro do cisto.",
+          "critico": true,
+          "alerta": "Injetar dentro do cisto pode aumentar pressão, romper a cápsula e dificultar a exérese.",
+          "imagem": ""
+        },
+        {
+          "numero": 7,
+          "titulo": "Realizar incisão cutânea",
+          "descricao": "Realizar incisão planejada sobre o cisto, podendo incluir o ponto central quando presente, com extensão suficiente para dissecção segura.",
+          "critico": true,
+          "alerta": "Incisão insuficiente aumenta risco de ruptura capsular e retirada incompleta.",
+          "imagem": ""
+        },
+        {
+          "numero": 8,
+          "titulo": "Dissecar a cápsula",
+          "descricao": "Realizar dissecção cuidadosa e progressiva ao redor da cápsula, separando-a dos tecidos adjacentes.",
+          "critico": true,
+          "alerta": "Evitar tração excessiva e dissecção agressiva para não romper a cápsula nem lesar estruturas vizinhas.",
+          "imagem": ""
+        },
+        {
+          "numero": 9,
+          "titulo": "Remover o cisto completo",
+          "descricao": "Retirar o cisto preferencialmente íntegro, com a cápsula completa, sem deixar fragmentos no leito.",
+          "critico": true,
+          "alerta": "Cápsula remanescente é causa importante de recidiva.",
+          "imagem": ""
+        },
+        {
+          "numero": 10,
+          "titulo": "Inspecionar cavidade e realizar hemostasia",
+          "descricao": "Inspecionar a cavidade em busca de restos de cápsula ou queratina e realizar hemostasia cuidadosa.",
+          "critico": true,
+          "alerta": "Hemostasia inadequada favorece hematoma, seroma, infecção e deiscência.",
+          "imagem": ""
+        },
+        {
+          "numero": 11,
+          "titulo": "Fechar a ferida",
+          "descricao": "Fechar planos profundos se houver cavidade significativa e suturar a pele com técnica adequada ao local.",
+          "critico": true,
+          "alerta": "Não eliminar espaço morto pode favorecer seroma ou hematoma.",
+          "imagem": ""
+        },
+        {
+          "numero": 12,
+          "titulo": "Curativo e orientações",
+          "descricao": "Realizar curativo oclusivo, enviar peça quando indicado e orientar sinais de alarme e retorno para retirada de pontos.",
+          "critico": true,
+          "alerta": "Febre, dor progressiva, eritema, secreção purulenta, sangramento persistente ou deiscência exigem reavaliação.",
+          "imagem": ""
+        }
+      ],
+      "observacoes_finais": [
+        "Cistos infectados não devem ser excisados definitivamente porque a cápsula costuma estar rota ou mal delimitada.",
+        "Cistos rotos devem ter o conteúdo expresso e a exérese definitiva adiada até novo preenchimento típico sem inflamação ou infecção.",
+        "Complicações incluem seroma, hematoma, hemorragia, infecção, lesão de estruturas adjacentes, cicatriz, deformidade e recidiva."
+      ],
+      "referencias": [
+        "Doherty GM. CURRENT Cirurgia: Diagnóstico e tratamento. 14ª ed. AMGH; 2017.",
+        "Goldstein BG. Overview of benign lesions of the skin. UpToDate; 2023.",
+        "Hugh JM et al. Minor dermatologic procedures. UpToDate; 2021.",
+        "Mayeaux EJ. Guia Ilustrado de Procedimentos Médicos. Artmed; 2011.",
+        "Petri V. Dermatologia Prática. Guanabara Koogan; 2009.",
+        "Rivitti EA. Manual de Dermatologia Clínica de Sampaio e Rivitti. Artes Médicas; 2014.",
+        "A1B1 - R - Cisto Epidermoide."
+      ],
+      "imagem_capa": ""
+    }
+  ]
+}
